@@ -1,5 +1,5 @@
 
-name: スロナビ関西PRO 自動データ収集
+name: スロナビ関西PRO 自動収集・分析
 
 on:
   workflow_dispatch:
@@ -29,12 +29,15 @@ jobs:
       - name: 台データ収集
         run: python collector.py
 
-      - name: データ保存
+      - name: 狙い台ランキング分析
+        run: python analyzer.py
+
+      - name: データ・ランキング保存
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/
           if ! git diff --cached --quiet; then
-            git commit -m "Update slot data"
+            git commit -m "Update slot data and ranking"
             git push
           fi
