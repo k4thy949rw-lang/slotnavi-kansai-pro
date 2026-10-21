@@ -35,6 +35,9 @@ jobs:
       - name: 曜日・特定日分析
         run: python trend_analyzer.py
 
+      - name: 台番号別の履歴分析
+        run: python history_analyzer.py
+
       - name: データ・分析結果保存
         run: |
           git config user.name "github-actions[bot]"
