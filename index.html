@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#101827">
+<meta name="theme-color" content="#0b1220">
 <title>スロナビ関西PRO</title>
 <style>
 *{box-sizing:border-box}
@@ -14,78 +14,121 @@ body{
  "Helvetica Neue",sans-serif
 }
 header{
- padding:22px 16px;background:#101b30;
- border-bottom:1px solid #263449
+ background:#101b30;padding:20px 16px;
+ border-bottom:1px solid #293a51
 }
 h1{font-size:23px;margin:0 0 6px}
-.subtitle{color:#94a3b8;font-size:12px}
-main{max-width:900px;margin:auto;padding:16px}
+h2{font-size:17px;margin:0 0 14px}
+small,.muted{color:#94a3b8}
+main{max-width:950px;margin:auto;padding:14px}
 .panel{
  background:#172338;border:1px solid #293a51;
- border-radius:14px;padding:16px;margin-bottom:14px
+ border-radius:14px;padding:15px;margin-bottom:14px
 }
-h2{font-size:17px;margin:0 0 12px}
-.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tabs{
+ display:grid;grid-template-columns:repeat(4,1fr);
+ gap:5px;margin-bottom:14px
+}
+.tab{
+ border:1px solid #334155;background:#172338;
+ color:#cbd5e1;border-radius:9px;
+ padding:12px 3px;font-size:12px;cursor:pointer
+}
+.tab.active{background:#2563eb;color:white}
+.stats{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:10px
+}
 .stat{
  background:#101b30;border-radius:10px;
- padding:14px
+ padding:13px
 }
-.stat small{color:#94a3b8}
-.stat strong{display:block;font-size:25px;margin-top:5px}
+.stat strong{
+ display:block;font-size:24px;margin-top:6px
+}
 input,select,button{
  width:100%;padding:12px;border-radius:9px;
  border:1px solid #40516a;background:#0b1220;
- color:white;font-size:15px
+ color:white;font-size:14px
 }
-.controls{display:grid;gap:10px}
-button{background:#2563eb;border:0;font-weight:bold}
-.card{
- padding:14px 0;border-bottom:1px solid #334155
+.controls{display:grid;gap:9px}
+.reload{background:#2563eb;border:0;font-weight:bold}
+.item{
+ border-bottom:1px solid #334155;padding:13px 0
 }
-.card:last-child{border:0}
-.top{display:flex;align-items:center;gap:9px}
+.item:last-child{border:0}
+.item-head{
+ display:flex;align-items:center;
+ gap:8px;flex-wrap:wrap
+}
 .rank{
- background:#334155;border-radius:7px;
- padding:6px 9px;font-weight:bold
+ background:#334155;padding:5px 8px;
+ border-radius:7px;font-weight:bold
 }
-.machine{font-weight:bold;flex:1}
-.unit{font-size:18px;color:#93c5fd;font-weight:bold}
+.item-name{font-weight:bold;flex:1}
+.unit{color:#93c5fd;font-weight:bold}
 .metrics{
  display:grid;grid-template-columns:repeat(3,1fr);
- gap:8px;margin-top:12px
+ gap:7px;margin-top:10px
 }
 .metric{
  background:#101b30;border-radius:8px;
- padding:9px;text-align:center
+ padding:9px 4px;text-align:center
 }
-.metric small{
- display:block;color:#94a3b8;font-size:11px
+.metric small{display:block;font-size:10px}
+.metric strong{
+ display:block;font-size:14px;margin-top:5px
 }
-.metric strong{display:block;margin-top:5px;font-size:14px}
 .positive{color:#4ade80}
 .negative{color:#f87171}
-.note{font-size:12px;color:#94a3b8;line-height:1.7}
-#message{color:#94a3b8;font-size:14px}
+.note{
+ color:#94a3b8;font-size:12px;
+ line-height:1.7
+}
+.hidden{display:none}
+.bar{
+ height:8px;background:#334155;
+ border-radius:5px;overflow:hidden;margin-top:9px
+}
+.bar-fill{
+ height:100%;background:#60a5fa;
+ border-radius:5px
+}
+#message{font-size:13px;color:#94a3b8}
 </style>
 </head>
 <body>
 
 <header>
 <h1>スロナビ関西 PRO</h1>
-<div class="subtitle">奈良・大阪 スロットデータ分析</div>
+<div class="muted" style="font-size:12px">
+奈良・大阪 スロットデータ分析
+</div>
 </header>
 
 <main>
-<section class="panel">
-<h2>HYPER ARROW美原店</h2>
-<div class="subtitle" id="updated">データ読み込み中...</div>
-</section>
 
 <section class="panel">
-<h2>分析データ</h2>
+<h2>HYPER ARROW美原店</h2>
+<div class="note" id="updated">読み込み中...</div>
+<button class="reload" id="reload" style="margin-top:12px">
+最新データを取得
+</button>
+</section>
+
+<div class="tabs">
+<button class="tab active" data-tab="ranking">台ランキング</button>
+<button class="tab" data-tab="weekdays">曜日別</button>
+<button class="tab" data-tab="special">特定日</button>
+<button class="tab" data-tab="machines">機種別</button>
+</div>
+
+<section id="rankingView">
+<div class="panel">
+<h2>台番号別ランキング</h2>
 <div class="stats">
 <div class="stat">
-<small>ランキング対象</small>
+<small>対象台数</small>
 <strong id="total">--</strong>
 </div>
 <div class="stat">
@@ -93,66 +136,135 @@ button{background:#2563eb;border:0;font-weight:bold}
 <strong id="period">--</strong>
 </div>
 </div>
-</section>
+</div>
 
-<section class="panel">
-<h2>ランキング検索</h2>
+<div class="panel">
 <div class="controls">
-<input id="search" placeholder="機種名・台番号で検索">
+<input id="search" placeholder="台番号・機種名で検索">
 <select id="sort">
 <option value="score">注目スコア順</option>
 <option value="diff">平均差枚順</option>
 <option value="games">平均回転数順</option>
 <option value="win">プラス率順</option>
 </select>
-<select id="machine">
+<select id="machineFilter">
 <option value="">すべての機種</option>
 </select>
-<button id="reload">最新データを取得</button>
+</div>
+</div>
+
+<div class="panel">
+<h2>注目台一覧</h2>
+<div id="message">読み込み中...</div>
+<div id="rankingList"></div>
+</div>
+</section>
+
+<section id="weekdaysView" class="hidden">
+<div class="panel">
+<h2>曜日別の傾向</h2>
+<p class="note">
+各曜日の1台1日あたりの平均差枚。
+集計日数も確認して比較してください。
+</p>
+<div id="weekdayList"></div>
+</div>
+</section>
+
+<section id="specialView" class="hidden">
+<div class="panel">
+<h2>特定日別の傾向</h2>
+<p class="note">
+日付による分類です。
+店舗の公式イベント日を示すものではありません。
+</p>
+<div id="specialList"></div>
+</div>
+</section>
+
+<section id="machinesView" class="hidden">
+<div class="panel">
+<h2>機種別ランキング</h2>
+<input id="machineSearch" placeholder="機種名で検索">
+<div id="machineList"></div>
 </div>
 </section>
 
 <section class="panel">
-<h2>注目台ランキング</h2>
-<div id="message">読み込み中...</div>
-<div id="ranking"></div>
-</section>
-
-<section class="panel">
 <p class="note">
-※公開データをもとにした独自の注目度ランキングです。
-設定1〜6の確率や翌日の勝率を示すものではありません。
-過去の差枚だけで高設定を断定することはできません。
+※公開データに基づく過去の実績分析です。
+設定1〜6の確率、翌日の設定投入、勝率を保証するものではありません。
+集計日数や機種の入れ替えによって比較結果は変わります。
 </p>
 </section>
+
 </main>
 
 <script>
-const DATA_URL =
+const BASE =
  "https://raw.githubusercontent.com/" +
  "k4thy949rw-lang/slotnavi-kansai-pro/" +
- "main/data/arrow_mihara_ranking.json";
+ "main/data/";
 
-let allRows = [];
+let ranking = [];
+let trends = null;
 
 const $ = id => document.getElementById(id);
 
 function signed(n){
- return (n > 0 ? "+" : "") + n.toLocaleString();
+ return (n > 0 ? "+" : "") +
+ Number(n).toLocaleString("ja-JP");
 }
 
-function render(){
- const keyword = $("search").value.trim().toLowerCase();
- const machine = $("machine").value;
- const sort = $("sort").value;
+function diffClass(n){
+ return n >= 0 ? "positive" : "negative";
+}
 
- let rows = allRows.filter(r =>
-   (!machine || r.machine === machine) &&
-   (
-     r.machine.toLowerCase().includes(keyword) ||
-     String(r.unit).includes(keyword)
-   )
- );
+function metric(label,value,css=""){
+ return `
+ <div class="metric">
+ <small>${label}</small>
+ <strong class="${css}">${value}</strong>
+ </div>`;
+}
+
+function createItem(name,subtitle,metrics,rank){
+ const el = document.createElement("div");
+ el.className = "item";
+
+ const head = document.createElement("div");
+ head.className = "item-head";
+
+ if(rank !== null){
+   const badge = document.createElement("span");
+   badge.className = "rank";
+   badge.textContent = rank + "位";
+   head.appendChild(badge);
+ }
+
+ const title = document.createElement("span");
+ title.className = "item-name";
+ title.textContent = name;
+ head.appendChild(title);
+
+ el.appendChild(head);
+
+ const grid = document.createElement("div");
+ grid.className = "metrics";
+ grid.innerHTML = metrics;
+ el.appendChild(grid);
+
+ const foot = document.createElement("p");
+ foot.className = "note";
+ foot.textContent = subtitle;
+ el.appendChild(foot);
+
+ return el;
+}
+
+function renderRanking(){
+ const keyword = $("search").value.trim().toLowerCase();
+ const filter = $("machineFilter").value;
 
  const keys = {
    score:"score",
@@ -161,114 +273,220 @@ function render(){
    win:"win_rate"
  };
 
- rows.sort((a,b) =>
-   b[keys[sort]] - a[keys[sort]]
- );
+ const key = keys[$("sort").value];
 
- $("ranking").replaceChildren();
+ const rows = ranking.filter(r =>
+   (!filter || r.machine === filter) &&
+   (
+     r.machine.toLowerCase().includes(keyword) ||
+     String(r.unit).includes(keyword)
+   )
+ ).sort((a,b) => b[key] - a[key]);
+
+ $("rankingList").replaceChildren();
 
  $("message").textContent =
-   rows.length ? `${rows.length}台を表示中` :
-   "該当する台がありません";
+   rows.length + "台を表示中";
 
- rows.forEach((r,i) => {
-   const card = document.createElement("div");
-   card.className = "card";
+ rows.forEach((r,i)=>{
+   const el = createItem(
+     `${r.unit}番台 / ${r.machine}`,
+     `平均${r.avg_games.toLocaleString()}G・集計${r.days}日`,
+     metric(
+       "平均差枚",
+       signed(r.avg_diff)+"枚",
+       diffClass(r.avg_diff)
+     ) +
+     metric("プラス率",r.win_rate+"%") +
+     metric("注目スコア",r.score),
+     i+1
+   );
 
-   const diffClass =
-     r.avg_diff >= 0 ? "positive" : "negative";
-
-   card.innerHTML = `
-     <div class="top">
-       <span class="rank">${i+1}位</span>
-       <span class="machine"></span>
-       <span class="unit">${r.unit}番台</span>
-     </div>
-     <div class="metrics">
-       <div class="metric">
-         <small>平均差枚</small>
-         <strong class="${diffClass}">
-           ${signed(r.avg_diff)}枚
-         </strong>
-       </div>
-       <div class="metric">
-         <small>プラス率</small>
-         <strong>${r.win_rate}%</strong>
-       </div>
-       <div class="metric">
-         <small>注目スコア</small>
-         <strong>${r.score}</strong>
-       </div>
-     </div>
-     <p class="note">
-       平均${r.avg_games.toLocaleString()}G /
-       集計${r.days}日
-     </p>
-   `;
-
-   card.querySelector(".machine").textContent =
-     r.machine;
-
-   $("ranking").appendChild(card);
+   $("rankingList").appendChild(el);
  });
 }
 
-async function loadData(){
- $("message").textContent = "データ取得中...";
+function renderWeekdays(){
+ const list = $("weekdayList");
+ list.replaceChildren();
 
- try{
-   const response = await fetch(
-     DATA_URL + "?t=" + Date.now(),
-     {cache:"no-store"}
+ if(!trends) return;
+
+ trends.weekdays.forEach(r=>{
+   const el = createItem(
+     r.weekday,
+     `集計${r.days}日・${r.records}台日`,
+     metric(
+       "平均差枚",
+       signed(r.avg_diff)+"枚",
+       diffClass(r.avg_diff)
+     ) +
+     metric("プラス率",r.positive_rate+"%") +
+     metric("平均回転数",r.avg_games+"G"),
+     null
    );
 
-   if(!response.ok){
-     throw new Error("HTTP " + response.status);
-   }
+   list.appendChild(el);
+ });
+}
 
-   const data = await response.json();
+function renderSpecial(){
+ const list = $("specialList");
+ list.replaceChildren();
 
-   allRows = Array.isArray(data.ranking)
-     ? data.ranking : [];
+ if(!trends) return;
 
-   $("total").textContent =
-     allRows.length.toLocaleString() + "台";
+ trends.special_days.forEach(r=>{
+   const el = createItem(
+     r.name,
+     `集計${r.days}日・${r.records}台日`,
+     metric(
+       "平均差枚",
+       signed(r.avg_diff)+"枚",
+       diffClass(r.avg_diff)
+     ) +
+     metric("プラス率",r.positive_rate+"%") +
+     metric("平均回転数",r.avg_games+"G"),
+     null
+   );
 
+   list.appendChild(el);
+ });
+}
+
+function renderMachines(){
+ const list = $("machineList");
+ list.replaceChildren();
+
+ if(!trends) return;
+
+ const keyword =
+   $("machineSearch").value.trim().toLowerCase();
+
+ const rows = trends.machines.filter(r =>
+   r.machine.toLowerCase().includes(keyword)
+ );
+
+ rows.forEach((r,i)=>{
+   const el = createItem(
+     r.machine,
+     `集計${r.days}日・${r.records}台日`,
+     metric(
+       "平均差枚",
+       signed(r.avg_diff)+"枚",
+       diffClass(r.avg_diff)
+     ) +
+     metric("プラス率",r.positive_rate+"%") +
+     metric("平均回転数",r.avg_games+"G"),
+     i+1
+   );
+
+   list.appendChild(el);
+ });
+}
+
+function switchTab(name){
+ const views = {
+   ranking:"rankingView",
+   weekdays:"weekdaysView",
+   special:"specialView",
+   machines:"machinesView"
+ };
+
+ Object.values(views).forEach(id =>
+   $(id).classList.add("hidden")
+ );
+
+ $(views[name]).classList.remove("hidden");
+
+ document.querySelectorAll(".tab").forEach(btn=>{
+   btn.classList.toggle(
+     "active",
+     btn.dataset.tab === name
+   );
+ });
+}
+
+async function getJSON(filename){
+ const response = await fetch(
+   BASE + filename + "?t=" + Date.now(),
+   {cache:"no-store"}
+ );
+
+ if(!response.ok){
+   throw new Error(
+     filename + ": HTTP " + response.status
+   );
+ }
+
+ return response.json();
+}
+
+async function loadData(){
+ $("updated").textContent = "データ更新中...";
+
+ try{
+   const [rankData,trendData] = await Promise.all([
+     getJSON("arrow_mihara_ranking.json"),
+     getJSON("arrow_mihara_trends.json")
+   ]);
+
+   ranking = rankData.ranking || [];
+   trends = trendData;
+
+   $("total").textContent = ranking.length + "台";
    $("period").textContent =
-     data.analysis_days + "日";
+     rankData.analysis_days + "日";
 
    $("updated").textContent =
-     "最終分析: " +
-     new Date(data.updated_at).toLocaleString("ja-JP");
+     "ランキング更新: " +
+     new Date(rankData.updated_at)
+       .toLocaleString("ja-JP") +
+     " / 傾向分析更新: " +
+     new Date(trendData.updated_at)
+       .toLocaleString("ja-JP");
 
    const machines = [...new Set(
-     allRows.map(r => r.machine)
-   )].sort((a,b) => a.localeCompare(b,"ja"));
+     ranking.map(r=>r.machine)
+   )].sort((a,b)=>a.localeCompare(b,"ja"));
 
-   const previous = $("machine").value;
-   $("machine").replaceChildren(
+   const previous = $("machineFilter").value;
+
+   $("machineFilter").replaceChildren(
      new Option("すべての機種","")
    );
 
-   machines.forEach(name =>
-     $("machine").add(new Option(name,name))
-   );
+   machines.forEach(name=>{
+     $("machineFilter").add(
+       new Option(name,name)
+     );
+   });
 
    if(machines.includes(previous)){
-     $("machine").value = previous;
+     $("machineFilter").value = previous;
    }
 
-   render();
+   renderRanking();
+   renderWeekdays();
+   renderSpecial();
+   renderMachines();
 
  }catch(error){
-   $("message").textContent =
-     "データを取得できませんでした: " + error.message;
+   $("updated").textContent =
+     "データ取得エラー: " + error.message;
  }
 }
 
-$("search").addEventListener("input",render);
-$("sort").addEventListener("change",render);
-$("machine").addEventListener("change",render);
+document.querySelectorAll(".tab").forEach(btn=>{
+ btn.addEventListener("click",()=>{
+   switchTab(btn.dataset.tab);
+ });
+});
+
+$("search").addEventListener("input",renderRanking);
+$("sort").addEventListener("change",renderRanking);
+$("machineFilter").addEventListener("change",renderRanking);
+$("machineSearch").addEventListener("input",renderMachines);
 $("reload").addEventListener("click",loadData);
 
 loadData();
