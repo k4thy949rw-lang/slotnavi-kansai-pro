@@ -11,6 +11,7 @@ from html.parser import HTMLParser
 from zoneinfo import ZoneInfo
 
 JST = ZoneInfo("Asia/Tokyo")
+
 STORE = "HYPER ARROW美原店"
 STORE_ID = "11019"
 
@@ -23,10 +24,14 @@ STORE_DIR.mkdir(parents=True, exist_ok=True)
 
 LOOKBACK_DAYS = 30
 MAX_PAGES = 10
+
 REQUEST_INTERVAL = 2
+REQUEST_TIMEOUT = 40
+MAX_RETRIES = 3
 
 
 class PageParser(HTMLParser):
+
     def __init__(self):
         super().__init__()
         self.links = []
@@ -59,6 +64,7 @@ class PageParser(HTMLParser):
             self.cell += data
 
     def handle_endtag(self, tag):
+
         if tag == "a" and self.in_link:
             self.links.append(
                 (self.link_url, self.link_text.strip())
@@ -76,18 +82,78 @@ class PageParser(HTMLParser):
 
 
 def fetch(url):
-    request = Request(
-        url,
-        headers={
-            "User-Agent": "SlotNaviKansaiPRO/1.0"
-        }
-    )
+    last_error = None
 
-    with urlopen(request, timeout=25) as response:
-        return response.read().decode(
-            "utf-8-sig",
-            errors="replace"
-        )
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            print(
+                f"通信開始 ({attempt}/{MAX_RETRIES}): {url}",
+                flush=True
+            )
+
+            request = Request(
+                url,
+                headers={
+                    "User-Agent": (
+                        "Mozilla/5.0 "
+                        "(compatible; SlotNaviKansaiPRO/1.0)"
+                    ),
+                    "Accept": "text/html,application/xhtml+xml",
+                    "Accept-Language": "ja,en;q=0.8"
+                }
+            )
+
+            with urlopen(
+                request,
+                timeout=REQUEST_TIMEOUT
+            ) as response:
+                content = response.read()
+
+            html = content.decode(
+                "utf-8-sig",
+                errors="replace"
+            )
+
+            print(
+                f"通信成功: {url}",
+                flush=True
+            )
+
+            return html
+
+        except HTTPError as e:
+            last_error = e
+            print(
+                f"HTTPエラー: {e.code} / {url}",
+                flush=True
+            )
+
+            # 403や404などは無理に再試行しない
+            if e.code not in (408, 429, 500, 502, 503, 504):
+                break
+
+        except (
+            URLError,
+            TimeoutError,
+            OSError
+        ) as e:
+            last_error = e
+            print(
+                f"通信エラー ({attempt}/{MAX_RETRIES}): {e}",
+                flush=True
+            )
+
+        if attempt < MAX_RETRIES:
+            wait = attempt * 3
+            print(
+                f"{wait}秒待って再試行します",
+                flush=True
+            )
+            time.sleep(wait)
+
+    raise RuntimeError(
+        f"ページ取得失敗: {url} / {last_error}"
+    )
 
 
 def to_int(value):
@@ -133,9 +199,9 @@ def discover_articles():
         visited.add(url)
 
         try:
-            print(f"記事一覧確認: {url}")
-            html = fetch(url)
+            print(f"記事一覧確認: {url}", flush=True)
 
+            html = fetch(url)
             articles.update(find_articles(html))
 
             parser = PageParser()
@@ -153,8 +219,17 @@ def discover_articles():
                 if re.search(r"/page/\d+/?$", next_url):
                     pending.append(next_url)
 
-        except (HTTPError, URLError) as e:
-            print(f"一覧取得失敗: {e}")
+        except (
+            HTTPError,
+            URLError,
+            TimeoutError,
+            OSError,
+            RuntimeError
+        ) as e:
+            print(
+                f"記事一覧取得失敗: {url} / {e}",
+                flush=True
+            )
 
         time.sleep(REQUEST_INTERVAL)
 
@@ -205,6 +280,30 @@ def parse_units(html, date):
     return units
 
 
+def save_json_safely(path, data):
+    """
+    一時ファイルに保存してから置き換える。
+    保存途中の失敗で既存データを壊さない。
+    """
+    temporary = path.with_suffix(".tmp")
+
+    try:
+        temporary.write_text(
+            json.dumps(
+                data,
+                ensure_ascii=False,
+                indent=2
+            ),
+            encoding="utf-8"
+        )
+
+        temporary.replace(path)
+
+    finally:
+        if temporary.exists():
+            temporary.unlink()
+
+
 def main():
     now = datetime.now(JST)
     today = now.date()
@@ -219,7 +318,18 @@ def main():
         "errors": []
     }
 
-    articles = discover_articles()
+    try:
+        articles = discover_articles()
+    except Exception as e:
+        print(
+            f"記事一覧の処理でエラー: {e}",
+            flush=True
+        )
+        articles = {}
+        status["errors"].append(
+            f"記事一覧: {e}"
+        )
+
     status["discovered_articles"] = len(articles)
 
     target_dates = [
@@ -235,28 +345,29 @@ def main():
 
         output = STORE_DIR / f"{date}.json"
 
-        # 今日・昨日は更新の可能性があるので再取得
-        if output.exists() and day < today - timedelta(days=1):
+        # 今日と昨日は再取得する
+        if (
+            output.exists()
+            and day < today - timedelta(days=1)
+        ):
             status["skipped_dates"].append(date)
             continue
 
         try:
-            print(f"台データ取得: {date}")
+            print(
+                f"台データ取得: {date}",
+                flush=True
+            )
 
             html = fetch(articles[date])
             units = parse_units(html, date)
 
             if not units:
-                raise ValueError("台データを抽出できません")
+                raise ValueError(
+                    "台データを抽出できません"
+                )
 
-            output.write_text(
-                json.dumps(
-                    units,
-                    ensure_ascii=False,
-                    indent=2
-                ),
-                encoding="utf-8"
-            )
+            save_json_safely(output, units)
 
             status["saved_dates"].append({
                 "date": date,
@@ -264,33 +375,56 @@ def main():
                 "url": articles[date]
             })
 
-            print(f"保存成功: {date} / {len(units)}台")
+            print(
+                f"保存成功: {date} / {len(units)}台",
+                flush=True
+            )
 
-        except (HTTPError, URLError, ValueError) as e:
-            status["errors"].append(f"{date}: {e}")
-            print(f"取得失敗: {date} / {e}")
+        except (
+            HTTPError,
+            URLError,
+            TimeoutError,
+            OSError,
+            RuntimeError,
+            ValueError
+        ) as e:
+            message = f"{date}: {e}"
+            status["errors"].append(message)
+
+            print(
+                f"取得失敗: {message}",
+                flush=True
+            )
 
         time.sleep(REQUEST_INTERVAL)
 
-    if status["saved_dates"] or status["skipped_dates"]:
+    if status["saved_dates"]:
         status["status"] = "success"
+
+    elif status["skipped_dates"]:
+        status["status"] = "partial"
+
     elif status["errors"]:
         status["status"] = "error"
 
-    (DATA_DIR / "status.json").write_text(
+    save_json_safely(
+        DATA_DIR / "status.json",
+        status
+    )
+
+    print(
         json.dumps(
             status,
             ensure_ascii=False,
             indent=2
         ),
-        encoding="utf-8"
+        flush=True
     )
 
-    print(json.dumps(
-        status,
-        ensure_ascii=False,
-        indent=2
-    ))
+    print(
+        "台データ収集処理終了",
+        flush=True
+    )
 
 
 if __name__ == "__main__":
