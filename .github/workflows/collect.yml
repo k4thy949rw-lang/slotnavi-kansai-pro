@@ -38,6 +38,9 @@ jobs:
       - name: 台番号別の履歴分析
         run: python history_analyzer.py
 
+      - name: 特定日・機種・3台並び分析
+        run: python target_analyzer.py
+
       - name: データ・分析結果保存
         run: |
           git config user.name "github-actions[bot]"
