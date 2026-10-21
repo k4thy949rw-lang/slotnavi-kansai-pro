@@ -44,6 +44,9 @@ jobs:
       - name: 翌日の狙い台予測
         run: python tomorrow_analyzer.py
 
+      - name: 予測保存・答え合わせ
+        run: python prediction_tracker.py
+
       - name: データ・分析結果保存
         run: |
           git config user.name "github-actions[bot]"
