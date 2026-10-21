@@ -51,8 +51,11 @@ input,select,button{
  border:1px solid #40516a;background:#0b1220;
  color:white;font-size:14px
 }
+button{cursor:pointer}
 .controls{display:grid;gap:9px}
-.reload{background:#2563eb;border:0;font-weight:bold}
+.reload,.primary{
+ background:#2563eb;border:0;font-weight:bold
+}
 .item{
  border-bottom:1px solid #334155;padding:13px 0
 }
@@ -85,16 +88,27 @@ input,select,button{
  color:#94a3b8;font-size:12px;
  line-height:1.7
 }
-.hidden{display:none}
-.bar{
- height:8px;background:#334155;
- border-radius:5px;overflow:hidden;margin-top:9px
+.hidden{display:none!important}
+.chart-wrap{
+ width:100%;overflow:hidden;
+ background:#101b30;border-radius:10px;
+ padding:10px;margin:14px 0
 }
-.bar-fill{
- height:100%;background:#60a5fa;
- border-radius:5px
+.chart-wrap svg{width:100%;height:auto}
+.history-row{
+ display:grid;
+ grid-template-columns:1fr 1fr 1fr;
+ gap:5px;align-items:center;
+ padding:11px 3px;
+ border-bottom:1px solid #334155;
+ font-size:13px
 }
+.history-row span:nth-child(2),
+.history-row span:nth-child(3){text-align:right}
 #message{font-size:13px;color:#94a3b8}
+.clickable{cursor:pointer}
+.clickable:active{background:#243650}
+.back{margin-bottom:12px}
 </style>
 </head>
 <body>
@@ -115,6 +129,8 @@ input,select,button{
 最新データを取得
 </button>
 </section>
+
+<div id="mainContent">
 
 <div class="tabs">
 <button class="tab active" data-tab="ranking">台ランキング</button>
@@ -155,6 +171,9 @@ input,select,button{
 
 <div class="panel">
 <h2>注目台一覧</h2>
+<p class="note">
+台番号をタップすると過去30日間の履歴を表示します。
+</p>
 <div id="message">読み込み中...</div>
 <div id="rankingList"></div>
 </div>
@@ -190,6 +209,66 @@ input,select,button{
 </div>
 </section>
 
+</div>
+
+<section id="detailView" class="hidden">
+
+<button class="back" id="backButton">
+← ランキングに戻る
+</button>
+
+<div class="panel">
+<h2 id="detailTitle">台データ</h2>
+<p class="note" id="detailInfo"></p>
+
+<div class="stats">
+<div class="stat">
+<small>累計差枚</small>
+<strong id="detailTotal">--</strong>
+</div>
+<div class="stat">
+<small>プラス日数</small>
+<strong id="detailPositive">--</strong>
+</div>
+<div class="stat">
+<small>平均差枚</small>
+<strong id="detailAverage">--</strong>
+</div>
+<div class="stat">
+<small>プラス率</small>
+<strong id="detailRate">--</strong>
+</div>
+</div>
+</div>
+
+<div class="panel">
+<h2>日別差枚グラフ</h2>
+<p class="note">
+各日の差枚を表示。中央の線が差枚0枚です。
+</p>
+<div class="chart-wrap" id="dailyChart"></div>
+</div>
+
+<div class="panel">
+<h2>累計差枚グラフ</h2>
+<p class="note">
+集計対象日の差枚を順番に足し合わせた推移です。
+</p>
+<div class="chart-wrap" id="cumulativeChart"></div>
+</div>
+
+<div class="panel">
+<h2>日別履歴</h2>
+<div class="history-row muted">
+<span>日付</span>
+<span>回転数</span>
+<span>差枚</span>
+</div>
+<div id="historyList"></div>
+</div>
+
+</section>
+
 <section class="panel">
 <p class="note">
 ※公開データに基づく過去の実績分析です。
@@ -208,6 +287,7 @@ const BASE =
 
 let ranking = [];
 let trends = null;
+let historyData = null;
 
 const $ = id => document.getElementById(id);
 
@@ -301,6 +381,21 @@ function renderRanking(){
      metric("注目スコア",r.score),
      i+1
    );
+
+   el.classList.add("clickable");
+   el.setAttribute("role","button");
+   el.tabIndex = 0;
+
+   el.addEventListener("click",()=>{
+     showDetail(r.unit,r.machine);
+   });
+
+   el.addEventListener("keydown",e=>{
+     if(e.key === "Enter" || e.key === " "){
+       e.preventDefault();
+       showDetail(r.unit,r.machine);
+     }
+   });
 
    $("rankingList").appendChild(el);
  });
@@ -407,6 +502,194 @@ function switchTab(name){
  });
 }
 
+function makeChart(rows,key,type){
+ const width = 340;
+ const height = 200;
+ const pad = 32;
+
+ const values = rows.map(r=>Number(r[key]));
+ const max = Math.max(0,...values);
+ const min = Math.min(0,...values);
+ const range = Math.max(1,max-min);
+
+ const x = i =>
+   pad + i*(width-pad*2) /
+   Math.max(1,rows.length-1);
+
+ const y = value =>
+   height-pad -
+   (value-min)/range*(height-pad*2);
+
+ const zeroY = y(0);
+
+ let svg = `
+ <svg viewBox="0 0 ${width} ${height}"
+ xmlns="http://www.w3.org/2000/svg"
+ role="img"
+ aria-label="${type==="bar"?"日別差枚":"累計差枚"}グラフ">
+ <line x1="${pad}" y1="${zeroY}"
+ x2="${width-pad}" y2="${zeroY}"
+ stroke="#94a3b8" stroke-dasharray="4 4"/>
+ <text x="2" y="${Math.max(12,zeroY-4)}"
+ fill="#94a3b8" font-size="10">0</text>`;
+
+ if(type==="bar"){
+   const slot = (width-pad*2) /
+     Math.max(1,rows.length);
+
+   const barWidth = Math.max(2,slot*0.65);
+
+   rows.forEach((r,i)=>{
+     const value = Number(r[key]);
+     const bx = pad+i*slot+(slot-barWidth)/2;
+     const by = Math.min(y(value),zeroY);
+     const bh = Math.max(1,Math.abs(y(value)-zeroY));
+     const color = value >= 0 ?
+       "#4ade80" : "#f87171";
+
+     svg += `
+     <rect x="${bx}" y="${by}"
+     width="${barWidth}" height="${bh}"
+     fill="${color}">
+     <title>${r.date}: ${signed(value)}枚</title>
+     </rect>`;
+   });
+ }else{
+   const points = rows.map((r,i)=>
+     `${x(i)},${y(Number(r[key]))}`
+   ).join(" ");
+
+   svg += `
+   <polyline points="${points}"
+   fill="none" stroke="#60a5fa"
+   stroke-width="2.5"
+   stroke-linecap="round"
+   stroke-linejoin="round"/>`;
+
+   rows.forEach((r,i)=>{
+     svg += `
+     <circle cx="${x(i)}"
+     cy="${y(Number(r[key]))}"
+     r="2.5" fill="#93c5fd">
+     <title>${r.date}: ${signed(r[key])}枚</title>
+     </circle>`;
+   });
+ }
+
+ if(rows.length){
+   svg += `
+   <text x="${pad}" y="${height-5}"
+   fill="#94a3b8" font-size="10">
+   ${rows[0].date.slice(5)}
+   </text>
+   <text x="${width-pad}" y="${height-5}"
+   text-anchor="end"
+   fill="#94a3b8" font-size="10">
+   ${rows[rows.length-1].date.slice(5)}
+   </text>`;
+ }
+
+ svg += "</svg>";
+ return svg;
+}
+
+async function showDetail(unit,machine){
+ $("mainContent").classList.add("hidden");
+ $("detailView").classList.remove("hidden");
+
+ $("detailTitle").textContent =
+   `${unit}番台 / ${machine}`;
+
+ $("detailInfo").textContent =
+   "履歴データを読み込み中...";
+
+ $("dailyChart").replaceChildren();
+ $("cumulativeChart").replaceChildren();
+ $("historyList").replaceChildren();
+
+ window.scrollTo(0,0);
+
+ try{
+   if(!historyData){
+     historyData = await getJSON(
+       "arrow_mihara_history.json"
+     );
+   }
+
+   const item = historyData.units.find(r =>
+     Number(r.unit) === Number(unit) &&
+     r.machine === machine
+   );
+
+   if(!item){
+     $("detailInfo").textContent =
+       "この台の履歴データはありません。";
+     return;
+   }
+
+   const rows = [...item.history].sort(
+     (a,b)=>a.date.localeCompare(b.date)
+   );
+
+   $("detailInfo").textContent =
+     `集計${item.days}日 / 過去30日間`;
+
+   $("detailTotal").textContent =
+     signed(item.total_diff)+"枚";
+
+   $("detailTotal").className =
+     diffClass(item.total_diff);
+
+   $("detailPositive").textContent =
+     `${item.positive_days}/${item.days}日`;
+
+   $("detailAverage").textContent =
+     signed(item.avg_diff)+"枚";
+
+   $("detailAverage").className =
+     diffClass(item.avg_diff);
+
+   $("detailRate").textContent =
+     item.positive_rate+"%";
+
+   $("dailyChart").innerHTML =
+     makeChart(rows,"diff","bar");
+
+   $("cumulativeChart").innerHTML =
+     makeChart(rows,"cumulative_diff","line");
+
+   [...rows].reverse().forEach(r=>{
+     const el = document.createElement("div");
+     el.className = "history-row";
+
+     const date = document.createElement("span");
+     date.textContent = r.date;
+
+     const games = document.createElement("span");
+     games.textContent =
+       Number(r.games).toLocaleString()+"G";
+
+     const diff = document.createElement("span");
+     diff.textContent = signed(r.diff)+"枚";
+     diff.className = diffClass(r.diff);
+
+     el.append(date,games,diff);
+     $("historyList").appendChild(el);
+   });
+
+ }catch(error){
+   $("detailInfo").textContent =
+     "履歴データの取得に失敗しました: " +
+     error.message;
+ }
+}
+
+function closeDetail(){
+ $("detailView").classList.add("hidden");
+ $("mainContent").classList.remove("hidden");
+ window.scrollTo(0,0);
+}
+
 async function getJSON(filename){
  const response = await fetch(
    BASE + filename + "?t=" + Date.now(),
@@ -433,6 +716,7 @@ async function loadData(){
 
    ranking = rankData.ranking || [];
    trends = trendData;
+   historyData = null;
 
    $("total").textContent = ranking.length + "台";
    $("period").textContent =
@@ -488,6 +772,7 @@ $("sort").addEventListener("change",renderRanking);
 $("machineFilter").addEventListener("change",renderRanking);
 $("machineSearch").addEventListener("input",renderMachines);
 $("reload").addEventListener("click",loadData);
+$("backButton").addEventListener("click",closeDetail);
 
 loadData();
 </script>
