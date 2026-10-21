@@ -1,6 +1,7 @@
 {
-  "updated_at": "2026-10-21T21:17:44.801742+09:00",
-  "sources_configured": 0,
-  "sources_succeeded": 0,
-  "status": "no_data"
+  "checked_at": "2026-10-21T21:27:00.785460+09:00",
+  "store": "HYPER ARROW美原店",
+  "source": "https://slo-navi.com/data/2026-09-18-11019/",
+  "status": "success",
+  "records": 690
 }
