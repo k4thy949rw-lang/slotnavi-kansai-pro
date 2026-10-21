@@ -26,13 +26,15 @@ main{max-width:950px;margin:auto;padding:14px}
  border-radius:14px;padding:15px;margin-bottom:14px
 }
 .tabs{
- display:grid;grid-template-columns:repeat(4,1fr);
- gap:5px;margin-bottom:14px
+ display:grid;
+ grid-template-columns:repeat(5,minmax(0,1fr));
+ gap:4px;margin-bottom:14px
 }
 .tab{
  border:1px solid #334155;background:#172338;
  color:#cbd5e1;border-radius:9px;
- padding:12px 3px;font-size:12px;cursor:pointer
+ padding:12px 2px;font-size:11px;cursor:pointer;
+ overflow-wrap:anywhere
 }
 .tab.active{background:#2563eb;color:white}
 .stats{
@@ -105,7 +107,9 @@ button{cursor:pointer}
 }
 .history-row span:nth-child(2),
 .history-row span:nth-child(3){text-align:right}
-#message{font-size:13px;color:#94a3b8}
+#message,#targetMessage{
+ font-size:13px;color:#94a3b8
+}
 .clickable{cursor:pointer}
 .clickable:active{background:#243650}
 .back{margin-bottom:12px}
@@ -125,7 +129,8 @@ button{cursor:pointer}
 <section class="panel">
 <h2>HYPER ARROW美原店</h2>
 <div class="note" id="updated">読み込み中...</div>
-<button class="reload" id="reload" style="margin-top:12px">
+<button class="reload" id="reload"
+ style="margin-top:12px">
 最新データを取得
 </button>
 </section>
@@ -133,10 +138,21 @@ button{cursor:pointer}
 <div id="mainContent">
 
 <div class="tabs">
-<button class="tab active" data-tab="ranking">台ランキング</button>
-<button class="tab" data-tab="weekdays">曜日別</button>
-<button class="tab" data-tab="special">特定日</button>
-<button class="tab" data-tab="machines">機種別</button>
+<button class="tab active" data-tab="ranking">
+台ランキング
+</button>
+<button class="tab" data-tab="weekdays">
+曜日別
+</button>
+<button class="tab" data-tab="special">
+特定日
+</button>
+<button class="tab" data-tab="machines">
+機種別
+</button>
+<button class="tab" data-tab="targets">
+狙い台
+</button>
 </div>
 
 <section id="rankingView">
@@ -156,7 +172,8 @@ button{cursor:pointer}
 
 <div class="panel">
 <div class="controls">
-<input id="search" placeholder="台番号・機種名で検索">
+<input id="search"
+ placeholder="台番号・機種名で検索">
 <select id="sort">
 <option value="score">注目スコア順</option>
 <option value="diff">平均差枚順</option>
@@ -204,9 +221,57 @@ button{cursor:pointer}
 <section id="machinesView" class="hidden">
 <div class="panel">
 <h2>機種別ランキング</h2>
-<input id="machineSearch" placeholder="機種名で検索">
+<input id="machineSearch"
+ placeholder="機種名で検索">
 <div id="machineList"></div>
 </div>
+</section>
+
+<section id="targetsView" class="hidden">
+
+<div class="panel">
+<h2>アロー美原 狙い台分析</h2>
+<p class="note">
+保存済みの過去データから注目候補を抽出します。
+スコアは高設定確率や翌日の勝率ではありません。
+</p>
+<div class="stats">
+<div class="stat">
+<small>分析期間</small>
+<strong id="targetDays">--</strong>
+</div>
+<div class="stat">
+<small>分析データ</small>
+<strong id="targetRecords">--</strong>
+</div>
+</div>
+</div>
+
+<div class="panel">
+<h2>分析メニュー</h2>
+<select id="targetMode">
+<option value="special">特定日 × 機種</option>
+<option value="sequence">3台連番の傾向</option>
+<option value="unit">台番号別の注目度</option>
+</select>
+<p class="note" id="targetDescription"></p>
+</div>
+
+<div class="panel">
+<h2 id="targetListTitle">注目ランキング</h2>
+<div id="targetMessage">読み込み中...</div>
+<div id="targetList"></div>
+</div>
+
+<div class="panel">
+<p class="note">
+※特定日はカレンダー上の日付による分類であり、
+公式イベント日を意味するものではありません。
+連番3台は実際に隣接する3台とは限りません。
+集計日数が少ない候補は特に慎重に判断してください。
+</p>
+</div>
+
 </section>
 
 </div>
@@ -214,7 +279,7 @@ button{cursor:pointer}
 <section id="detailView" class="hidden">
 
 <button class="back" id="backButton">
-← ランキングに戻る
+← 一覧に戻る
 </button>
 
 <div class="panel">
@@ -288,16 +353,18 @@ const BASE =
 let ranking = [];
 let trends = null;
 let historyData = null;
+let targetData = null;
 
 const $ = id => document.getElementById(id);
 
 function signed(n){
- return (n > 0 ? "+" : "") +
+ return (Number(n) > 0 ? "+" : "") +
  Number(n).toLocaleString("ja-JP");
 }
 
 function diffClass(n){
- return n >= 0 ? "positive" : "negative";
+ return Number(n) >= 0 ?
+   "positive" : "negative";
 }
 
 function metric(label,value,css=""){
@@ -343,7 +410,8 @@ function createItem(name,subtitle,metrics,rank){
 }
 
 function renderRanking(){
- const keyword = $("search").value.trim().toLowerCase();
+ const keyword =
+   $("search").value.trim().toLowerCase();
  const filter = $("machineFilter").value;
 
  const keys = {
@@ -371,7 +439,7 @@ function renderRanking(){
  rows.forEach((r,i)=>{
    const el = createItem(
      `${r.unit}番台 / ${r.machine}`,
-     `平均${r.avg_games.toLocaleString()}G・集計${r.days}日`,
+     `平均${Number(r.avg_games).toLocaleString()}G・集計${r.days}日`,
      metric(
        "平均差枚",
        signed(r.avg_diff)+"枚",
@@ -407,7 +475,7 @@ function renderWeekdays(){
 
  if(!trends) return;
 
- trends.weekdays.forEach(r=>{
+ (trends.weekdays || []).forEach(r=>{
    const el = createItem(
      r.weekday,
      `集計${r.days}日・${r.records}台日`,
@@ -431,7 +499,7 @@ function renderSpecial(){
 
  if(!trends) return;
 
- trends.special_days.forEach(r=>{
+ (trends.special_days || []).forEach(r=>{
    const el = createItem(
      r.name,
      `集計${r.days}日・${r.records}台日`,
@@ -458,7 +526,7 @@ function renderMachines(){
  const keyword =
    $("machineSearch").value.trim().toLowerCase();
 
- const rows = trends.machines.filter(r =>
+ const rows = (trends.machines || []).filter(r =>
    r.machine.toLowerCase().includes(keyword)
  );
 
@@ -480,17 +548,169 @@ function renderMachines(){
  });
 }
 
+function renderTargets(){
+ const list = $("targetList");
+ const mode = $("targetMode").value;
+
+ list.replaceChildren();
+
+ if(!targetData){
+   $("targetMessage").textContent =
+     "分析データを読み込み中...";
+   return;
+ }
+
+ let rows = [];
+ let title = "";
+ let description = "";
+
+ if(mode === "special"){
+   rows = targetData.special_machine_targets || [];
+   title = "特定日 × 機種ランキング";
+   description =
+     "カレンダー上の特定日における機種別実績です。";
+
+ }else if(mode === "sequence"){
+   rows = targetData.sequence_targets || [];
+   title = "3台連番ランキング";
+   description =
+     "同一機種の連番3台を分析。" +
+     "実際の隣接配置とは限りません。";
+
+ }else{
+   rows = targetData.unit_targets || [];
+   title = "台番号別の注目ランキング";
+   description =
+     "平均差枚・プラス率・回転数・" +
+     "集計日数による独自スコアです。";
+ }
+
+ $("targetListTitle").textContent = title;
+ $("targetDescription").textContent = description;
+
+ // 特定日ごとにまとまっているデータを
+ // 全体スコア順に並べ直す
+ rows = [...rows].sort((a,b) =>
+   Number(b.score) - Number(a.score)
+ );
+
+ $("targetMessage").textContent =
+   rows.length + "件中、上位" +
+   Math.min(100,rows.length) + "件を表示";
+
+ rows.slice(0,100).forEach((r,i)=>{
+   let name = "";
+   let subtitle = "";
+   let metrics = "";
+
+   if(mode === "special"){
+     name = r.special_day + " / " + r.machine;
+     subtitle =
+       "集計" + r.days + "日・" +
+       r.records + "台日";
+
+     metrics =
+       metric(
+         "平均差枚",
+         signed(r.avg_diff)+"枚",
+         diffClass(r.avg_diff)
+       ) +
+       metric(
+         "プラス率",
+         r.positive_rate+"%"
+       ) +
+       metric(
+         "注目スコア",
+         r.score
+       );
+
+   }else if(mode === "sequence"){
+     name =
+       r.start_unit + "〜" +
+       r.end_unit + "番台";
+
+     subtitle =
+       r.machine + " / 集計" +
+       r.days + "日";
+
+     metrics =
+       metric(
+         "平均差枚",
+         signed(r.avg_diff)+"枚",
+         diffClass(r.avg_diff)
+       ) +
+       metric(
+         "好成績日率",
+         r.strong_rate+"%"
+       ) +
+       metric(
+         "注目スコア",
+         r.score
+       );
+
+   }else{
+     name =
+       r.unit + "番台 / " + r.machine;
+
+     subtitle =
+       "集計" + r.days + "日・平均" +
+       Number(r.avg_games).toLocaleString() + "G";
+
+     metrics =
+       metric(
+         "平均差枚",
+         signed(r.avg_diff)+"枚",
+         diffClass(r.avg_diff)
+       ) +
+       metric(
+         "プラス率",
+         r.positive_rate+"%"
+       ) +
+       metric(
+         "注目スコア",
+         r.score
+       );
+   }
+
+   const el = createItem(
+     name,subtitle,metrics,i+1
+   );
+
+   if(mode === "unit"){
+     el.classList.add("clickable");
+     el.setAttribute("role","button");
+     el.tabIndex = 0;
+
+     el.addEventListener("click",()=>{
+       showDetail(r.unit,r.machine);
+     });
+
+     el.addEventListener("keydown",e=>{
+       if(e.key === "Enter" || e.key === " "){
+         e.preventDefault();
+         showDetail(r.unit,r.machine);
+       }
+     });
+   }
+
+   list.appendChild(el);
+ });
+}
+
 function switchTab(name){
  const views = {
    ranking:"rankingView",
    weekdays:"weekdaysView",
    special:"specialView",
-   machines:"machinesView"
+   machines:"machinesView",
+   targets:"targetsView"
  };
 
  Object.values(views).forEach(id =>
    $(id).classList.add("hidden")
  );
+
+ if(!views[name]) return;
 
  $(views[name]).classList.remove("hidden");
 
@@ -500,6 +720,10 @@ function switchTab(name){
      btn.dataset.tab === name
    );
  });
+
+ if(name === "targets" && !targetData){
+   loadTargets();
+ }
 }
 
 function makeChart(rows,key,type){
@@ -543,7 +767,9 @@ function makeChart(rows,key,type){
      const value = Number(r[key]);
      const bx = pad+i*slot+(slot-barWidth)/2;
      const by = Math.min(y(value),zeroY);
-     const bh = Math.max(1,Math.abs(y(value)-zeroY));
+     const bh = Math.max(
+       1,Math.abs(y(value)-zeroY)
+     );
      const color = value >= 0 ?
        "#4ade80" : "#f87171";
 
@@ -705,6 +931,30 @@ async function getJSON(filename){
  return response.json();
 }
 
+async function loadTargets(){
+ $("targetMessage").textContent =
+   "分析データを取得中...";
+
+ try{
+   targetData = await getJSON(
+     "arrow_mihara_targets.json"
+   );
+
+   $("targetDays").textContent =
+     targetData.total_days + "日";
+
+   $("targetRecords").textContent =
+     Number(targetData.total_records)
+       .toLocaleString("ja-JP") + "件";
+
+   renderTargets();
+
+ }catch(error){
+   $("targetMessage").textContent =
+     "分析データ取得エラー: " + error.message;
+ }
+}
+
 async function loadData(){
  $("updated").textContent = "データ更新中...";
 
@@ -717,8 +967,11 @@ async function loadData(){
    ranking = rankData.ranking || [];
    trends = trendData;
    historyData = null;
+   targetData = null;
 
-   $("total").textContent = ranking.length + "台";
+   $("total").textContent =
+     ranking.length + "台";
+
    $("period").textContent =
      rankData.analysis_days + "日";
 
@@ -755,6 +1008,12 @@ async function loadData(){
    renderSpecial();
    renderMachines();
 
+   if(
+     !$("targetsView").classList.contains("hidden")
+   ){
+     await loadTargets();
+   }
+
  }catch(error){
    $("updated").textContent =
      "データ取得エラー: " + error.message;
@@ -767,12 +1026,27 @@ document.querySelectorAll(".tab").forEach(btn=>{
  });
 });
 
-$("search").addEventListener("input",renderRanking);
-$("sort").addEventListener("change",renderRanking);
-$("machineFilter").addEventListener("change",renderRanking);
-$("machineSearch").addEventListener("input",renderMachines);
-$("reload").addEventListener("click",loadData);
-$("backButton").addEventListener("click",closeDetail);
+$("search").addEventListener(
+ "input",renderRanking
+);
+$("sort").addEventListener(
+ "change",renderRanking
+);
+$("machineFilter").addEventListener(
+ "change",renderRanking
+);
+$("machineSearch").addEventListener(
+ "input",renderMachines
+);
+$("targetMode").addEventListener(
+ "change",renderTargets
+);
+$("reload").addEventListener(
+ "click",loadData
+);
+$("backButton").addEventListener(
+ "click",closeDetail
+);
 
 loadData();
 </script>
