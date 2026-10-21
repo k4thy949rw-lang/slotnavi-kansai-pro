@@ -32,12 +32,15 @@ jobs:
       - name: 狙い台ランキング分析
         run: python analyzer.py
 
-      - name: データ・ランキング保存
+      - name: 曜日・特定日分析
+        run: python trend_analyzer.py
+
+      - name: データ・分析結果保存
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/
           if ! git diff --cached --quiet; then
-            git commit -m "Update slot data and ranking"
+            git commit -m "Update slot data and analysis"
             git push
           fi
