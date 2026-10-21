@@ -1,0 +1,16 @@
+{
+  "updated_at": "2026-10-21T22:45:31.364837+09:00",
+  "store": "HYPER ARROW美原店",
+  "evaluated_days": 0,
+  "complete_top10_days": 0,
+  "top10_avg_diff": 0,
+  "store_avg_diff": 0,
+  "top10_advantage": 0,
+  "daily_results": [],
+  "notes": [
+    "予測上位10台を全件照合できた日だけを平均に使用",
+    "過去予測を保存した日以降の実績が対象",
+    "サンプルが少ない期間の成績は参考値",
+    "高設定の的中率を表すものではありません"
+  ]
+}
