@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T00:35:01.894960+09:00",
+  "updated_at": "2026-10-22T01:11:16.044929+09:00",
   "store": "HYPER ARROW美原店",
   "analysis_days": 30,
   "minimum_days": 3,
@@ -1221,21 +1221,21 @@
       "score": 45.8
     },
     {
-      "unit": 969,
-      "machine": "ウルトラミラクルジャグラー",
-      "days": 29,
-      "avg_diff": 289,
-      "avg_games": 5038,
-      "win_rate": 48.3,
-      "score": 45.7
-    },
-    {
       "unit": 661,
       "machine": "攻殻機動隊",
       "days": 14,
       "avg_diff": 280,
       "avg_games": 5006,
       "win_rate": 50.0,
+      "score": 45.7
+    },
+    {
+      "unit": 969,
+      "machine": "ウルトラミラクルジャグラー",
+      "days": 29,
+      "avg_diff": 289,
+      "avg_games": 5038,
+      "win_rate": 48.3,
       "score": 45.7
     },
     {
@@ -1563,21 +1563,21 @@
       "score": 41.6
     },
     {
-      "unit": 953,
-      "machine": "ミスタージャグラー",
-      "days": 29,
-      "avg_diff": 162,
-      "avg_games": 5049,
-      "win_rate": 55.2,
-      "score": 41.5
-    },
-    {
       "unit": 733,
       "machine": "革命機ヴァルヴレイヴ2",
       "days": 14,
       "avg_diff": 407,
       "avg_games": 3146,
       "win_rate": 35.7,
+      "score": 41.5
+    },
+    {
+      "unit": 953,
+      "machine": "ミスタージャグラー",
+      "days": 29,
+      "avg_diff": 162,
+      "avg_games": 5049,
+      "win_rate": 55.2,
       "score": 41.5
     },
     {
@@ -1806,21 +1806,21 @@
       "score": 39.5
     },
     {
-      "unit": 606,
-      "machine": "ソードアート・オンラインⅡ",
-      "days": 29,
-      "avg_diff": 100,
-      "avg_games": 7132,
-      "win_rate": 48.3,
-      "score": 39.5
-    },
-    {
       "unit": 725,
       "machine": "革命機ヴァルヴレイヴ2",
       "days": 29,
       "avg_diff": 330,
       "avg_games": 3484,
       "win_rate": 37.9,
+      "score": 39.5
+    },
+    {
+      "unit": 606,
+      "machine": "ソードアート・オンラインⅡ",
+      "days": 29,
+      "avg_diff": 100,
+      "avg_games": 7132,
+      "win_rate": 48.3,
       "score": 39.5
     },
     {
@@ -1869,6 +1869,15 @@
       "score": 38.6
     },
     {
+      "unit": 732,
+      "machine": "革命機ヴァルヴレイヴ2",
+      "days": 14,
+      "avg_diff": 260,
+      "avg_games": 3118,
+      "win_rate": 50.0,
+      "score": 38.4
+    },
+    {
       "unit": 661,
       "machine": "モンスターハンターライズ:サンブレイク",
       "days": 15,
@@ -1884,15 +1893,6 @@
       "avg_diff": 214,
       "avg_games": 4718,
       "win_rate": 40.0,
-      "score": 38.4
-    },
-    {
-      "unit": 732,
-      "machine": "革命機ヴァルヴレイヴ2",
-      "days": 14,
-      "avg_diff": 260,
-      "avg_games": 3118,
-      "win_rate": 50.0,
       "score": 38.4
     },
     {
@@ -3201,21 +3201,21 @@
       "score": 24.8
     },
     {
-      "unit": 1095,
-      "machine": "攻殻機動隊",
-      "days": 15,
-      "avg_diff": -43,
-      "avg_games": 4474,
-      "win_rate": 40.0,
-      "score": 24.8
-    },
-    {
       "unit": 665,
       "machine": "攻殻機動隊",
       "days": 14,
       "avg_diff": 49,
       "avg_games": 3483,
       "win_rate": 35.7,
+      "score": 24.8
+    },
+    {
+      "unit": 1095,
+      "machine": "攻殻機動隊",
+      "days": 15,
+      "avg_diff": -43,
+      "avg_games": 4474,
+      "win_rate": 40.0,
       "score": 24.8
     },
     {
@@ -3624,21 +3624,21 @@
       "score": 19.8
     },
     {
-      "unit": 662,
-      "machine": "モンスターハンターライズ:サンブレイク",
-      "days": 15,
-      "avg_diff": -214,
-      "avg_games": 4934,
-      "win_rate": 46.7,
-      "score": 19.8
-    },
-    {
       "unit": 866,
       "machine": "邪神ちゃんドロップキック",
       "days": 29,
       "avg_diff": -67,
       "avg_games": 4145,
       "win_rate": 31.0,
+      "score": 19.8
+    },
+    {
+      "unit": 662,
+      "machine": "モンスターハンターライズ:サンブレイク",
+      "days": 15,
+      "avg_diff": -214,
+      "avg_games": 4934,
+      "win_rate": 46.7,
       "score": 19.8
     },
     {
@@ -4335,21 +4335,21 @@
       "score": 8.4
     },
     {
-      "unit": 634,
-      "machine": "ゴッドイーター リザレクション",
-      "days": 29,
-      "avg_diff": -210,
-      "avg_games": 3082,
-      "win_rate": 27.6,
-      "score": 8.1
-    },
-    {
       "unit": 663,
       "machine": "攻殻機動隊",
       "days": 14,
       "avg_diff": -330,
       "avg_games": 4172,
       "win_rate": 35.7,
+      "score": 8.1
+    },
+    {
+      "unit": 634,
+      "machine": "ゴッドイーター リザレクション",
+      "days": 29,
+      "avg_diff": -210,
+      "avg_games": 3082,
+      "win_rate": 27.6,
       "score": 8.1
     },
     {
@@ -4515,21 +4515,21 @@
       "score": 4.9
     },
     {
-      "unit": 669,
-      "machine": "モンスターハンターライズ:サンブレイク",
-      "days": 15,
-      "avg_diff": -392,
-      "avg_games": 4943,
-      "win_rate": 26.7,
-      "score": 4.9
-    },
-    {
       "unit": 697,
       "machine": "とある魔術の禁書目録2",
       "days": 29,
       "avg_diff": -375,
       "avg_games": 3689,
       "win_rate": 37.9,
+      "score": 4.9
+    },
+    {
+      "unit": 669,
+      "machine": "モンスターハンターライズ:サンブレイク",
+      "days": 15,
+      "avg_diff": -392,
+      "avg_games": 4943,
+      "win_rate": 26.7,
       "score": 4.9
     },
     {
@@ -4650,21 +4650,21 @@
       "score": 1.5
     },
     {
-      "unit": 665,
-      "machine": "モンスターハンターライズ:サンブレイク",
-      "days": 15,
-      "avg_diff": -544,
-      "avg_games": 4970,
-      "win_rate": 40.0,
-      "score": 1.4
-    },
-    {
       "unit": 709,
       "machine": "彼女、お借りします",
       "days": 29,
       "avg_diff": -270,
       "avg_games": 2295,
       "win_rate": 24.1,
+      "score": 1.4
+    },
+    {
+      "unit": 665,
+      "machine": "モンスターハンターライズ:サンブレイク",
+      "days": 15,
+      "avg_diff": -544,
+      "avg_games": 4970,
+      "win_rate": 40.0,
       "score": 1.4
     },
     {
@@ -5172,21 +5172,21 @@
       "score": -22.0
     },
     {
-      "unit": 1068,
-      "machine": "スーパーリオエース2",
-      "days": 15,
-      "avg_diff": -754,
-      "avg_games": 3289,
-      "win_rate": 13.3,
-      "score": -22.7
-    },
-    {
       "unit": 1092,
       "machine": "ストリートファイター6",
       "days": 14,
       "avg_diff": -827,
       "avg_games": 3033,
       "win_rate": 28.6,
+      "score": -22.7
+    },
+    {
+      "unit": 1068,
+      "machine": "スーパーリオエース2",
+      "days": 15,
+      "avg_diff": -754,
+      "avg_games": 3289,
+      "win_rate": 13.3,
       "score": -22.7
     },
     {
