@@ -1,6 +1,7 @@
 
 import json
 import re
+import time
 from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.request import Request, urlopen
@@ -17,7 +18,12 @@ BASE_URL = "https://slo-navi.com"
 HALL_URL = f"{BASE_URL}/hall/{STORE_ID}/"
 
 DATA_DIR = Path("data")
-DATA_DIR.mkdir(exist_ok=True)
+STORE_DIR = DATA_DIR / "arrow_mihara"
+STORE_DIR.mkdir(parents=True, exist_ok=True)
+
+LOOKBACK_DAYS = 30
+MAX_PAGES = 10
+REQUEST_INTERVAL = 2
 
 
 class PageParser(HTMLParser):
@@ -54,10 +60,9 @@ class PageParser(HTMLParser):
 
     def handle_endtag(self, tag):
         if tag == "a" and self.in_link:
-            self.links.append((
-                self.link_url,
-                self.link_text.strip()
-            ))
+            self.links.append(
+                (self.link_url, self.link_text.strip())
+            )
             self.in_link = False
 
         if tag in ("td", "th") and self.cell is not None:
@@ -71,16 +76,17 @@ class PageParser(HTMLParser):
 
 
 def fetch(url):
-    req = Request(
+    request = Request(
         url,
         headers={
             "User-Agent": "SlotNaviKansaiPRO/1.0"
         }
     )
 
-    with urlopen(req, timeout=25) as response:
+    with urlopen(request, timeout=25) as response:
         return response.read().decode(
-            "utf-8-sig", errors="replace"
+            "utf-8-sig",
+            errors="replace"
         )
 
 
@@ -108,8 +114,49 @@ def find_articles(html):
         match = pattern.search(url)
 
         if match:
-            date = match.group(1)
-            articles[date] = url
+            articles[match.group(1)] = url
+
+    return articles
+
+
+def discover_articles():
+    articles = {}
+    visited = set()
+    pending = [HALL_URL]
+
+    while pending and len(visited) < MAX_PAGES:
+        url = pending.pop(0)
+
+        if url in visited:
+            continue
+
+        visited.add(url)
+
+        try:
+            print(f"記事一覧確認: {url}")
+            html = fetch(url)
+
+            articles.update(find_articles(html))
+
+            parser = PageParser()
+            parser.feed(html)
+
+            for href, title in parser.links:
+                next_url = urljoin(url, href)
+
+                if not next_url.startswith(HALL_URL):
+                    continue
+
+                if next_url in visited or next_url in pending:
+                    continue
+
+                if re.search(r"/page/\d+/?$", next_url):
+                    pending.append(next_url)
+
+        except (HTTPError, URLError) as e:
+            print(f"一覧取得失敗: {e}")
+
+        time.sleep(REQUEST_INTERVAL)
 
     return articles
 
@@ -132,6 +179,7 @@ def parse_units(html, date):
             diff = to_int(row[3])
             bb = to_int(row[4])
             rb = to_int(row[5])
+
         except (ValueError, IndexError):
             continue
 
@@ -157,81 +205,77 @@ def parse_units(html, date):
     return units
 
 
-def save_units(date, units):
-    folder = DATA_DIR / "arrow_mihara"
-    folder.mkdir(exist_ok=True)
-
-    path = folder / f"{date}.json"
-
-    path.write_text(
-        json.dumps(
-            units,
-            ensure_ascii=False,
-            indent=2
-        ),
-        encoding="utf-8"
-    )
-
-    print(f"保存完了: {date} / {len(units)}台")
-
-
 def main():
     now = datetime.now(JST)
+    today = now.date()
 
     status = {
         "checked_at": now.isoformat(),
         "store": STORE,
         "status": "no_data",
+        "discovered_articles": 0,
         "saved_dates": [],
+        "skipped_dates": [],
         "errors": []
     }
 
-    try:
-        hall_html = fetch(HALL_URL)
-        articles = find_articles(hall_html)
+    articles = discover_articles()
+    status["discovered_articles"] = len(articles)
 
-        print(f"発見した記事: {len(articles)}件")
+    target_dates = [
+        today - timedelta(days=i)
+        for i in range(LOOKBACK_DAYS + 1)
+    ]
 
-        targets = [
-            now.date(),
-            now.date() - timedelta(days=1)
-        ]
+    for day in target_dates:
+        date = day.isoformat()
 
-        for day in targets:
-            date = day.isoformat()
+        if date not in articles:
+            continue
 
-            if date not in articles:
-                print(f"未掲載: {date}")
-                continue
+        output = STORE_DIR / f"{date}.json"
 
-            try:
-                html = fetch(articles[date])
-                units = parse_units(html, date)
+        # 今日・昨日は更新の可能性があるので再取得
+        if output.exists() and day < today - timedelta(days=1):
+            status["skipped_dates"].append(date)
+            continue
 
-                if not units:
-                    raise ValueError(
-                        "台データを抽出できません"
-                    )
+        try:
+            print(f"台データ取得: {date}")
 
-                save_units(date, units)
+            html = fetch(articles[date])
+            units = parse_units(html, date)
 
-                status["saved_dates"].append({
-                    "date": date,
-                    "records": len(units),
-                    "url": articles[date]
-                })
+            if not units:
+                raise ValueError("台データを抽出できません")
 
-            except Exception as e:
-                status["errors"].append(
-                    f"{date}: {e}"
-                )
+            output.write_text(
+                json.dumps(
+                    units,
+                    ensure_ascii=False,
+                    indent=2
+                ),
+                encoding="utf-8"
+            )
 
-        if status["saved_dates"]:
-            status["status"] = "success"
+            status["saved_dates"].append({
+                "date": date,
+                "records": len(units),
+                "url": articles[date]
+            })
 
-    except (HTTPError, URLError, ValueError) as e:
+            print(f"保存成功: {date} / {len(units)}台")
+
+        except (HTTPError, URLError, ValueError) as e:
+            status["errors"].append(f"{date}: {e}")
+            print(f"取得失敗: {date} / {e}")
+
+        time.sleep(REQUEST_INTERVAL)
+
+    if status["saved_dates"] or status["skipped_dates"]:
+        status["status"] = "success"
+    elif status["errors"]:
         status["status"] = "error"
-        status["errors"].append(str(e))
 
     (DATA_DIR / "status.json").write_text(
         json.dumps(
