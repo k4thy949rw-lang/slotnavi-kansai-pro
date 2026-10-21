@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>スロナビ関西PRO</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;background:#0b1220;color:#f1f5f9;
+ font-family:-apple-system,BlinkMacSystemFont,
+ "Helvetica Neue",sans-serif
+}
+header{
+ padding:22px 16px;background:#101b30;
+ border-bottom:1px solid #263449
+}
+h1{font-size:23px;margin:0 0 6px}
+.subtitle{color:#94a3b8;font-size:12px}
+main{max-width:900px;margin:auto;padding:16px}
+.panel{
+ background:#172338;border:1px solid #293a51;
+ border-radius:14px;padding:16px;margin-bottom:14px
+}
+h2{font-size:17px;margin:0 0 12px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.stat{
+ background:#101b30;border-radius:10px;
+ padding:14px
+}
+.stat small{color:#94a3b8}
+.stat strong{display:block;font-size:25px;margin-top:5px}
+input,select,button{
+ width:100%;padding:12px;border-radius:9px;
+ border:1px solid #40516a;background:#0b1220;
+ color:white;font-size:15px
+}
+.controls{display:grid;gap:10px}
+button{background:#2563eb;border:0;font-weight:bold}
+.card{
+ padding:14px 0;border-bottom:1px solid #334155
+}
+.card:last-child{border:0}
+.top{display:flex;align-items:center;gap:9px}
+.rank{
+ background:#334155;border-radius:7px;
+ padding:6px 9px;font-weight:bold
+}
+.machine{font-weight:bold;flex:1}
+.unit{font-size:18px;color:#93c5fd;font-weight:bold}
+.metrics{
+ display:grid;grid-template-columns:repeat(3,1fr);
+ gap:8px;margin-top:12px
+}
+.metric{
+ background:#101b30;border-radius:8px;
+ padding:9px;text-align:center
+}
+.metric small{
+ display:block;color:#94a3b8;font-size:11px
+}
+.metric strong{display:block;margin-top:5px;font-size:14px}
+.positive{color:#4ade80}
+.negative{color:#f87171}
+.note{font-size:12px;color:#94a3b8;line-height:1.7}
+#message{color:#94a3b8;font-size:14px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>スロナビ関西 PRO</h1>
+<div class="subtitle">奈良・大阪 スロットデータ分析</div>
+</header>
+
+<main>
+<section class="panel">
+<h2>HYPER ARROW美原店</h2>
+<div class="subtitle" id="updated">データ読み込み中...</div>
+</section>
+
+<section class="panel">
+<h2>分析データ</h2>
+<div class="stats">
+<div class="stat">
+<small>ランキング対象</small>
+<strong id="total">--</strong>
+</div>
+<div class="stat">
+<small>分析期間</small>
+<strong id="period">--</strong>
+</div>
+</div>
+</section>
+
+<section class="panel">
+<h2>ランキング検索</h2>
+<div class="controls">
+<input id="search" placeholder="機種名・台番号で検索">
+<select id="sort">
+<option value="score">注目スコア順</option>
+<option value="diff">平均差枚順</option>
+<option value="games">平均回転数順</option>
+<option value="win">プラス率順</option>
+</select>
+<select id="machine">
+<option value="">すべての機種</option>
+</select>
+<button id="reload">最新データを取得</button>
+</div>
+</section>
+
+<section class="panel">
+<h2>注目台ランキング</h2>
+<div id="message">読み込み中...</div>
+<div id="ranking"></div>
+</section>
+
+<section class="panel">
+<p class="note">
+※公開データをもとにした独自の注目度ランキングです。
+設定1〜6の確率や翌日の勝率を示すものではありません。
+過去の差枚だけで高設定を断定することはできません。
+</p>
+</section>
+</main>
+
+<script>
+const DATA_URL =
+ "https://raw.githubusercontent.com/" +
+ "k4thy949rw-lang/slotnavi-kansai-pro/" +
+ "main/data/arrow_mihara_ranking.json";
+
+let allRows = [];
+
+const $ = id => document.getElementById(id);
+
+function signed(n){
+ return (n > 0 ? "+" : "") + n.toLocaleString();
+}
+
+function render(){
+ const keyword = $("search").value.trim().toLowerCase();
+ const machine = $("machine").value;
+ const sort = $("sort").value;
+
+ let rows = allRows.filter(r =>
+   (!machine || r.machine === machine) &&
+   (
+     r.machine.toLowerCase().includes(keyword) ||
+     String(r.unit).includes(keyword)
+   )
+ );
+
+ const keys = {
+   score:"score",
+   diff:"avg_diff",
+   games:"avg_games",
+   win:"win_rate"
+ };
+
+ rows.sort((a,b) =>
+   b[keys[sort]] - a[keys[sort]]
+ );
+
+ $("ranking").replaceChildren();
+
+ $("message").textContent =
+   rows.length ? `${rows.length}台を表示中` :
+   "該当する台がありません";
+
+ rows.forEach((r,i) => {
+   const card = document.createElement("div");
+   card.className = "card";
+
+   const diffClass =
+     r.avg_diff >= 0 ? "positive" : "negative";
+
+   card.innerHTML = `
+     <div class="top">
+       <span class="rank">${i+1}位</span>
+       <span class="machine"></span>
+       <span class="unit">${r.unit}番台</span>
+     </div>
+     <div class="metrics">
+       <div class="metric">
+         <small>平均差枚</small>
+         <strong class="${diffClass}">
+           ${signed(r.avg_diff)}枚
+         </strong>
+       </div>
+       <div class="metric">
+         <small>プラス率</small>
+         <strong>${r.win_rate}%</strong>
+       </div>
+       <div class="metric">
+         <small>注目スコア</small>
+         <strong>${r.score}</strong>
+       </div>
+     </div>
+     <p class="note">
+       平均${r.avg_games.toLocaleString()}G /
+       集計${r.days}日
+     </p>
+   `;
+
+   card.querySelector(".machine").textContent =
+     r.machine;
+
+   $("ranking").appendChild(card);
+ });
+}
+
+async function loadData(){
+ $("message").textContent = "データ取得中...";
+
+ try{
+   const response = await fetch(
+     DATA_URL + "?t=" + Date.now(),
+     {cache:"no-store"}
+   );
+
+   if(!response.ok){
+     throw new Error("HTTP " + response.status);
+   }
+
+   const data = await response.json();
+
+   allRows = Array.isArray(data.ranking)
+     ? data.ranking : [];
+
+   $("total").textContent =
+     allRows.length.toLocaleString() + "台";
+
+   $("period").textContent =
+     data.analysis_days + "日";
+
+   $("updated").textContent =
+     "最終分析: " +
+     new Date(data.updated_at).toLocaleString("ja-JP");
+
+   const machines = [...new Set(
+     allRows.map(r => r.machine)
+   )].sort((a,b) => a.localeCompare(b,"ja"));
+
+   const previous = $("machine").value;
+   $("machine").replaceChildren(
+     new Option("すべての機種","")
+   );
+
+   machines.forEach(name =>
+     $("machine").add(new Option(name,name))
+   );
+
+   if(machines.includes(previous)){
+     $("machine").value = previous;
+   }
+
+   render();
+
+ }catch(error){
+   $("message").textContent =
+     "データを取得できませんでした: " + error.message;
+ }
+}
+
+$("search").addEventListener("input",render);
+$("sort").addEventListener("change",render);
+$("machine").addEventListener("change",render);
+$("reload").addEventListener("click",loadData);
+
+loadData();
+</script>
+</body>
+</html>
