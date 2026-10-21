@@ -27,14 +27,13 @@ main{max-width:950px;margin:auto;padding:14px}
 }
 .tabs{
  display:grid;
- grid-template-columns:repeat(5,minmax(0,1fr));
- gap:4px;margin-bottom:14px
+ grid-template-columns:repeat(3,minmax(0,1fr));
+ gap:5px;margin-bottom:14px
 }
 .tab{
  border:1px solid #334155;background:#172338;
  color:#cbd5e1;border-radius:9px;
- padding:12px 2px;font-size:11px;cursor:pointer;
- overflow-wrap:anywhere
+ padding:12px 3px;font-size:12px;cursor:pointer
 }
 .tab.active{background:#2563eb;color:white}
 .stats{
@@ -43,10 +42,11 @@ main{max-width:950px;margin:auto;padding:14px}
 }
 .stat{
  background:#101b30;border-radius:10px;
- padding:13px
+ padding:13px;min-width:0
 }
 .stat strong{
- display:block;font-size:24px;margin-top:6px
+ display:block;font-size:22px;margin-top:6px;
+ overflow-wrap:anywhere
 }
 input,select,button{
  width:100%;padding:12px;border-radius:9px;
@@ -70,19 +70,22 @@ button{cursor:pointer}
  background:#334155;padding:5px 8px;
  border-radius:7px;font-weight:bold
 }
-.item-name{font-weight:bold;flex:1}
-.unit{color:#93c5fd;font-weight:bold}
+.item-name{font-weight:bold;flex:1;min-width:0}
 .metrics{
  display:grid;grid-template-columns:repeat(3,1fr);
  gap:7px;margin-top:10px
 }
 .metric{
  background:#101b30;border-radius:8px;
- padding:9px 4px;text-align:center
+ padding:9px 4px;text-align:center;min-width:0
 }
-.metric small{display:block;font-size:10px}
+.metric small{
+ display:block;font-size:10px;
+ overflow-wrap:anywhere
+}
 .metric strong{
- display:block;font-size:14px;margin-top:5px
+ display:block;font-size:14px;margin-top:5px;
+ overflow-wrap:anywhere
 }
 .positive{color:#4ade80}
 .negative{color:#f87171}
@@ -107,12 +110,20 @@ button{cursor:pointer}
 }
 .history-row span:nth-child(2),
 .history-row span:nth-child(3){text-align:right}
-#message,#targetMessage{
- font-size:13px;color:#94a3b8
+.status{
+ font-size:13px;color:#94a3b8;
+ margin:12px 0
 }
 .clickable{cursor:pointer}
 .clickable:active{background:#243650}
 .back{margin-bottom:12px}
+.highlight{
+ border-color:#2563eb
+}
+.section-label{
+ color:#93c5fd;font-size:13px;
+ font-weight:bold;margin:12px 0
+}
 </style>
 </head>
 <body>
@@ -128,7 +139,9 @@ button{cursor:pointer}
 
 <section class="panel">
 <h2>HYPER ARROW美原店</h2>
-<div class="note" id="updated">読み込み中...</div>
+<div class="note" id="updated">
+読み込み中...
+</div>
 <button class="reload" id="reload"
  style="margin-top:12px">
 最新データを取得
@@ -152,6 +165,9 @@ button{cursor:pointer}
 </button>
 <button class="tab" data-tab="targets">
 狙い台
+</button>
+<button class="tab" data-tab="tomorrow">
+翌日予測
 </button>
 </div>
 
@@ -191,7 +207,9 @@ button{cursor:pointer}
 <p class="note">
 台番号をタップすると過去30日間の履歴を表示します。
 </p>
-<div id="message">読み込み中...</div>
+<div class="status" id="message">
+読み込み中...
+</div>
 <div id="rankingList"></div>
 </div>
 </section>
@@ -258,8 +276,12 @@ button{cursor:pointer}
 </div>
 
 <div class="panel">
-<h2 id="targetListTitle">注目ランキング</h2>
-<div id="targetMessage">読み込み中...</div>
+<h2 id="targetListTitle">
+注目ランキング
+</h2>
+<div class="status" id="targetMessage">
+読み込み中...
+</div>
 <div id="targetList"></div>
 </div>
 
@@ -268,7 +290,79 @@ button{cursor:pointer}
 ※特定日はカレンダー上の日付による分類であり、
 公式イベント日を意味するものではありません。
 連番3台は実際に隣接する3台とは限りません。
-集計日数が少ない候補は特に慎重に判断してください。
+集計日数が少ない候補は慎重に判断してください。
+</p>
+</div>
+</section>
+
+<section id="tomorrowView" class="hidden">
+
+<div class="panel highlight">
+<h2>翌日の狙い台予測</h2>
+<p class="note">
+過去の曜日・特定日・直近実績を組み合わせた
+参考ランキングです。
+</p>
+
+<div class="stats">
+<div class="stat">
+<small>予測対象日</small>
+<strong id="tomorrowDate">--</strong>
+</div>
+<div class="stat">
+<small>曜日</small>
+<strong id="tomorrowWeekday">--</strong>
+</div>
+</div>
+
+<p class="section-label" id="tomorrowSpecial">
+特定日条件：読み込み中
+</p>
+<p class="note" id="tomorrowUpdated"></p>
+</div>
+
+<div class="panel">
+<h2>予測ランキングの種類</h2>
+<select id="tomorrowMode">
+<option value="unit">おすすめ台番号</option>
+<option value="machine">おすすめ機種</option>
+</select>
+<p class="note">
+スコアが高い順に表示します。
+台番号を押すと過去の差枚履歴を確認できます。
+</p>
+</div>
+
+<div class="panel">
+<div class="stats">
+<div class="stat">
+<small>分析日数</small>
+<strong id="tomorrowDays">--</strong>
+</div>
+<div class="stat">
+<small>分析データ</small>
+<strong id="tomorrowRecords">--</strong>
+</div>
+</div>
+</div>
+
+<div class="panel">
+<h2 id="tomorrowListTitle">
+翌日の注目台ランキング
+</h2>
+<div class="status" id="tomorrowMessage">
+読み込み中...
+</div>
+<div id="tomorrowList"></div>
+</div>
+
+<div class="panel">
+<p class="note">
+※予測スコアは設定1〜6の確率ではありません。
+過去の好成績が翌日も続く保証はありません。
+曜日や特定日のサンプルが少ない場合、
+予測の不確実性が大きくなります。
+予測対象日が古い場合は自動更新の状況を確認してください。
 </p>
 </div>
 
@@ -354,6 +448,7 @@ let ranking = [];
 let trends = null;
 let historyData = null;
 let targetData = null;
+let tomorrowData = null;
 
 const $ = id => document.getElementById(id);
 
@@ -409,6 +504,23 @@ function createItem(name,subtitle,metrics,rank){
  return el;
 }
 
+function addDetailAction(el,unit,machine){
+ el.classList.add("clickable");
+ el.setAttribute("role","button");
+ el.tabIndex = 0;
+
+ el.addEventListener("click",()=>{
+   showDetail(unit,machine);
+ });
+
+ el.addEventListener("keydown",e=>{
+   if(e.key === "Enter" || e.key === " "){
+     e.preventDefault();
+     showDetail(unit,machine);
+   }
+ });
+}
+
 function renderRanking(){
  const keyword =
    $("search").value.trim().toLowerCase();
@@ -450,21 +562,7 @@ function renderRanking(){
      i+1
    );
 
-   el.classList.add("clickable");
-   el.setAttribute("role","button");
-   el.tabIndex = 0;
-
-   el.addEventListener("click",()=>{
-     showDetail(r.unit,r.machine);
-   });
-
-   el.addEventListener("keydown",e=>{
-     if(e.key === "Enter" || e.key === " "){
-       e.preventDefault();
-       showDetail(r.unit,r.machine);
-     }
-   });
-
+   addDetailAction(el,r.unit,r.machine);
    $("rankingList").appendChild(el);
  });
 }
@@ -588,8 +686,6 @@ function renderTargets(){
  $("targetListTitle").textContent = title;
  $("targetDescription").textContent = description;
 
- // 特定日ごとにまとまっているデータを
- // 全体スコア順に並べ直す
  rows = [...rows].sort((a,b) =>
    Number(b.score) - Number(a.score)
  );
@@ -677,20 +773,74 @@ function renderTargets(){
    );
 
    if(mode === "unit"){
-     el.classList.add("clickable");
-     el.setAttribute("role","button");
-     el.tabIndex = 0;
+     addDetailAction(el,r.unit,r.machine);
+   }
 
-     el.addEventListener("click",()=>{
-       showDetail(r.unit,r.machine);
-     });
+   list.appendChild(el);
+ });
+}
 
-     el.addEventListener("keydown",e=>{
-       if(e.key === "Enter" || e.key === " "){
-         e.preventDefault();
-         showDetail(r.unit,r.machine);
-       }
-     });
+function renderTomorrow(){
+ const list = $("tomorrowList");
+ const mode = $("tomorrowMode").value;
+
+ list.replaceChildren();
+
+ if(!tomorrowData){
+   $("tomorrowMessage").textContent =
+     "予測データを読み込み中...";
+   return;
+ }
+
+ const isUnit = mode === "unit";
+
+ const rows = isUnit ?
+   (tomorrowData.unit_predictions || []) :
+   (tomorrowData.machine_predictions || []);
+
+ $("tomorrowListTitle").textContent =
+   isUnit ?
+   "翌日の注目台番号ランキング" :
+   "翌日の注目機種ランキング";
+
+ const sorted = [...rows].sort((a,b)=>
+   Number(b.score) - Number(a.score)
+ );
+
+ $("tomorrowMessage").textContent =
+   sorted.length + "件の予測候補";
+
+ sorted.forEach((r,i)=>{
+   const name = isUnit ?
+     `${r.unit}番台 / ${r.machine}` :
+     r.machine;
+
+   const subtitle =
+     `集計${r.days}日・` +
+     `同曜日${r.weekday_days}日・` +
+     `該当特定日${r.special_days_count}日`;
+
+   const metrics =
+     metric(
+       "予測スコア",
+       r.score
+     ) +
+     metric(
+       "平均差枚",
+       signed(r.avg_diff)+"枚",
+       diffClass(r.avg_diff)
+     ) +
+     metric(
+       "プラス率",
+       r.positive_rate+"%"
+     );
+
+   const el = createItem(
+     name,subtitle,metrics,i+1
+   );
+
+   if(isUnit){
+     addDetailAction(el,r.unit,r.machine);
    }
 
    list.appendChild(el);
@@ -703,14 +853,15 @@ function switchTab(name){
    weekdays:"weekdaysView",
    special:"specialView",
    machines:"machinesView",
-   targets:"targetsView"
+   targets:"targetsView",
+   tomorrow:"tomorrowView"
  };
+
+ if(!views[name]) return;
 
  Object.values(views).forEach(id =>
    $(id).classList.add("hidden")
  );
-
- if(!views[name]) return;
 
  $(views[name]).classList.remove("hidden");
 
@@ -723,6 +874,10 @@ function switchTab(name){
 
  if(name === "targets" && !targetData){
    loadTargets();
+ }
+
+ if(name === "tomorrow" && !tomorrowData){
+   loadTomorrow();
  }
 }
 
@@ -955,6 +1110,61 @@ async function loadTargets(){
  }
 }
 
+async function loadTomorrow(){
+ $("tomorrowMessage").textContent =
+   "翌日予測を読み込み中...";
+
+ try{
+   tomorrowData = await getJSON(
+     "arrow_mihara_tomorrow.json"
+   );
+
+   const date = tomorrowData.target_date;
+
+   $("tomorrowDate").textContent =
+     date ? date.slice(5).replace("-","/") : "--";
+
+   $("tomorrowWeekday").textContent =
+     tomorrowData.target_weekday || "--";
+
+   const special =
+     tomorrowData.target_special_days || [];
+
+   $("tomorrowSpecial").textContent =
+     "特定日条件：" +
+     (special.length ?
+       special.join("・") : "通常日");
+
+   $("tomorrowDays").textContent =
+     tomorrowData.total_days + "日";
+
+   $("tomorrowRecords").textContent =
+     Number(tomorrowData.total_records)
+       .toLocaleString("ja-JP") + "件";
+
+   $("tomorrowUpdated").textContent =
+     "予測データ更新：" +
+     new Date(tomorrowData.updated_at)
+       .toLocaleString("ja-JP");
+
+   const todayJST =
+     new Date().toLocaleDateString("sv-SE",{
+       timeZone:"Asia/Tokyo"
+     });
+
+   if(date && date <= todayJST){
+     $("tomorrowMessage").textContent =
+       "注意：予測対象日が古くなっています。";
+   }
+
+   renderTomorrow();
+
+ }catch(error){
+   $("tomorrowMessage").textContent =
+     "翌日予測の取得エラー: " + error.message;
+ }
+}
+
 async function loadData(){
  $("updated").textContent = "データ更新中...";
 
@@ -968,6 +1178,7 @@ async function loadData(){
    trends = trendData;
    historyData = null;
    targetData = null;
+   tomorrowData = null;
 
    $("total").textContent =
      ranking.length + "台";
@@ -1014,6 +1225,12 @@ async function loadData(){
      await loadTargets();
    }
 
+   if(
+     !$("tomorrowView").classList.contains("hidden")
+   ){
+     await loadTomorrow();
+   }
+
  }catch(error){
    $("updated").textContent =
      "データ取得エラー: " + error.message;
@@ -1040,6 +1257,9 @@ $("machineSearch").addEventListener(
 );
 $("targetMode").addEventListener(
  "change",renderTargets
+);
+$("tomorrowMode").addEventListener(
+ "change",renderTomorrow
 );
 $("reload").addEventListener(
  "click",loadData
