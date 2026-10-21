@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T08:01:29.773394+09:00",
+  "updated_at": "2026-10-22T08:22:11.690381+09:00",
   "store": "HYPER ARROW美原店",
   "analysis_days": 30,
   "minimum_days": 3,
@@ -1275,21 +1275,21 @@
       "score": 45.7
     },
     {
-      "unit": 851,
-      "machine": "モグモグ風林火山 大海戦の巻",
-      "days": 30,
-      "avg_diff": 362,
-      "avg_games": 4385,
-      "win_rate": 43.3,
-      "score": 45.7
-    },
-    {
       "unit": 661,
       "machine": "攻殻機動隊",
       "days": 14,
       "avg_diff": 280,
       "avg_games": 5006,
       "win_rate": 50.0,
+      "score": 45.7
+    },
+    {
+      "unit": 851,
+      "machine": "モグモグ風林火山 大海戦の巻",
+      "days": 30,
+      "avg_diff": 362,
+      "avg_games": 4385,
+      "win_rate": 43.3,
       "score": 45.7
     },
     {
@@ -1842,21 +1842,21 @@
       "score": 38.5
     },
     {
-      "unit": 1063,
-      "machine": "ワールドダイスター",
-      "days": 30,
-      "avg_diff": 357,
-      "avg_games": 3767,
-      "win_rate": 26.7,
-      "score": 38.4
-    },
-    {
       "unit": 732,
       "machine": "革命機ヴァルヴレイヴ2",
       "days": 14,
       "avg_diff": 260,
       "avg_games": 3118,
       "win_rate": 50.0,
+      "score": 38.4
+    },
+    {
+      "unit": 1063,
+      "machine": "ワールドダイスター",
+      "days": 30,
+      "avg_diff": 357,
+      "avg_games": 3767,
+      "win_rate": 26.7,
       "score": 38.4
     },
     {
@@ -2535,6 +2535,15 @@
       "score": 31.5
     },
     {
+      "unit": 669,
+      "machine": "攻殻機動隊",
+      "days": 14,
+      "avg_diff": 133,
+      "avg_games": 3583,
+      "win_rate": 42.9,
+      "score": 31.5
+    },
+    {
       "unit": 1109,
       "machine": "モンスターハンターライズ",
       "days": 30,
@@ -2550,15 +2559,6 @@
       "avg_diff": 48,
       "avg_games": 5130,
       "win_rate": 40.0,
-      "score": 31.5
-    },
-    {
-      "unit": 669,
-      "machine": "攻殻機動隊",
-      "days": 14,
-      "avg_diff": 133,
-      "avg_games": 3583,
-      "win_rate": 42.9,
       "score": 31.5
     },
     {
@@ -3705,21 +3705,21 @@
       "score": 19.6
     },
     {
-      "unit": 783,
-      "machine": "炎炎ノ消防隊2",
-      "days": 30,
-      "avg_diff": -77,
-      "avg_games": 3706,
-      "win_rate": 36.7,
-      "score": 19.5
-    },
-    {
       "unit": 736,
       "machine": "革命機ヴァルヴレイヴ2",
       "days": 14,
       "avg_diff": -73,
       "avg_games": 3087,
       "win_rate": 42.9,
+      "score": 19.5
+    },
+    {
+      "unit": 783,
+      "machine": "炎炎ノ消防隊2",
+      "days": 30,
+      "avg_diff": -77,
+      "avg_games": 3706,
+      "win_rate": 36.7,
       "score": 19.5
     },
     {
