@@ -19,8 +19,8 @@ header{
 }
 main{max-width:950px;margin:auto;padding:14px}
 h1{font-size:23px;margin:0 0 5px}
-h2{font-size:18px;margin:0 0 14px}
-h3{font-size:15px;margin:0 0 8px}
+h2{font-size:18px;margin:0 0 12px}
+h3{font-size:15px;margin:14px 0 8px}
 a{color:#93c5fd}
 .note{
  color:#94a3b8;font-size:12px;
@@ -31,12 +31,12 @@ a{color:#93c5fd}
  border-radius:14px;padding:15px;margin-bottom:14px
 }
 .stats{
- display:grid;grid-template-columns:1fr 1fr;
+ display:grid;grid-template-columns:repeat(2,1fr);
  gap:10px
 }
 .stat{
  background:#101b30;border-radius:10px;
- padding:13px
+ padding:13px;min-width:0
 }
 .stat small{
  display:block;color:#94a3b8;font-size:11px
@@ -46,17 +46,18 @@ a{color:#93c5fd}
 }
 button,select{
  border:1px solid #40516a;background:#101b30;
- color:white;border-radius:9px;padding:12px;
- font-size:14px
+ color:white;border-radius:9px;padding:11px;
+ font-size:14px;min-width:0
 }
 button{cursor:pointer}
+select{width:100%;margin-bottom:12px}
 .primary{
  background:#2563eb;border-color:#2563eb
 }
-.actions{display:flex;gap:8px;flex-wrap:wrap}
+.actions{display:flex;gap:8px}
 .actions button{flex:1}
 .item{
- padding:15px 0;border-bottom:1px solid #334155
+ padding:14px 0;border-bottom:1px solid #334155
 }
 .item:last-child{border-bottom:0}
 .item-title{
@@ -72,17 +73,18 @@ button{cursor:pointer}
 .confirmed{background:#164e3b;color:#86efac}
 .metrics{
  display:grid;grid-template-columns:repeat(3,1fr);
- gap:6px;margin-top:12px
+ gap:6px;margin-top:10px
 }
 .metric{
- background:#101b30;padding:10px 5px;
- text-align:center;border-radius:8px
+ background:#101b30;padding:10px 4px;
+ text-align:center;border-radius:8px;min-width:0
 }
 .metric small{
  display:block;font-size:10px;color:#94a3b8
 }
 .metric strong{
- display:block;margin-top:5px;font-size:14px
+ display:block;margin-top:5px;
+ font-size:14px;overflow-wrap:anywhere
 }
 .positive{color:#4ade80}
 .negative{color:#f87171}
@@ -95,7 +97,7 @@ button{cursor:pointer}
  gap:5px
 }
 .day{
- min-width:0;min-height:64px;
+ min-width:0;min-height:65px;
  border:1px solid #334155;
  border-radius:8px;padding:7px 2px;
  text-align:center;background:#101b30
@@ -118,23 +120,53 @@ button{cursor:pointer}
 }
 .monthbar button{width:46px}
 .monthbar strong{font-size:17px}
-#message{margin:12px 0}
+.compare{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:8px;margin:12px 0
+}
+.compare>div{
+ background:#101b30;padding:12px;
+ border-radius:10px;min-width:0
+}
+.compare small{
+ display:block;color:#94a3b8;font-size:11px
+}
+.compare strong{
+ display:block;font-size:19px;margin-top:6px
+}
+.bar{
+ height:7px;border-radius:6px;
+ background:#334155;overflow:hidden;margin-top:9px
+}
+.bar span{
+ display:block;height:100%;background:#60a5fa
+}
+.warning{
+ border:1px solid #725826;
+ background:#30291e;
+ border-radius:10px;padding:13px;
+ color:#fde68a;font-size:13px;line-height:1.8
+}
+.sectionline{
+ border-top:1px solid #334155;
+ margin:16px 0
+}
 </style>
 </head>
 <body>
 <header>
 <h1>スロナビ美原 ULTIMATE</h1>
-<div class="note">HYPER ARROW美原店 専用イベント分析</div>
+<div class="note">
+ HYPER ARROW美原店 | イベント・差枚比較分析
+</div>
 </header>
 <main>
 
 <section class="panel">
  <div class="actions">
-  <button onclick="location.href='./index.html'">
-   ← メイン画面
-  </button>
-  <button class="primary" onclick="loadData()">
-   最新情報を取得
+  <button id="back">← メイン画面</button>
+  <button class="primary" id="reload">
+   最新データ取得
   </button>
  </div>
  <p class="note" id="updated">読み込み中...</p>
@@ -160,10 +192,27 @@ button{cursor:pointer}
    <strong id="pendingCount">--</strong>
   </div>
  </div>
+</section>
+
+<section class="panel">
+ <h2>イベント vs 通常日</h2>
  <p class="note">
-  掲載情報を自動収集しています。
-  未確認候補は開催を保証するものではありません。
+  確認済みイベント開催日と、
+  同じ曜日のイベント登録がない日を比較。
+  どちらも最低3日分必要です。
  </p>
+ <div class="stats">
+  <div class="stat">
+   <small>実績取得日</small>
+   <strong id="historyDays">--</strong>
+  </div>
+  <div class="stat">
+   <small>比較可能イベント</small>
+   <strong id="comparisonCount">--</strong>
+  </div>
+ </div>
+ <div id="comparisonStatus"></div>
+ <div id="comparisonBody"></div>
 </section>
 
 <section class="panel">
@@ -175,8 +224,8 @@ button{cursor:pointer}
  </div>
  <div class="calendar" id="calendar"></div>
  <p class="note">
-  青い点がイベント登録日。
-  日付を押すと詳細を確認できます。
+  青い点はイベント登録日。
+  日付を押すと詳細を表示します。
  </p>
 </section>
 
@@ -192,10 +241,6 @@ button{cursor:pointer}
 
 <section class="panel">
  <h2>過去イベント別の実績</h2>
- <p class="note">
-  確認済みイベントのみ集計します。
-  平均差枚は対象台1台・1日あたりの平均です。
- </p>
  <div id="eventResults"></div>
 </section>
 
@@ -207,85 +252,72 @@ button{cursor:pointer}
 <section class="panel">
  <h2>日付パターン別の実績</h2>
  <p class="note">
-  0のつく日などのカレンダー条件です。
-  公式イベントを意味しません。
+  0のつく日などの日付条件。
+  公式イベントとは限りません。
  </p>
  <div id="tagResults"></div>
 </section>
 
 <section class="panel">
  <p class="note">
-  差枚・プラス台率は過去の集計値です。
-  設定投入や将来の勝率を保証しません。
-  同じ日の複数イベントは集計が重複する場合があります。
+  イベント候補は開催未確認の場合があります。
+  差枚実績は将来の勝率や設定投入を保証しません。
+  比較対象の台数・機種構成・曜日構成が異なる場合があり、
+  観測された差はイベントの因果効果を意味しません。
  </p>
 </section>
 
 </main>
-
 <script>
-const BASE =
+const BASE=
  "https://raw.githubusercontent.com/" +
  "k4thy949rw-lang/slotnavi-kansai-pro/" +
  "main/data/";
 
-const $ = id => document.getElementById(id);
+const $=id=>document.getElementById(id);
 
-const fmt = n =>
- Number(n || 0).toLocaleString("ja-JP");
-
-const signed = n =>
- (Number(n)>0?"+":"")+fmt(n);
-
-const esc = s =>
- String(s??"").replace(/[&<>"']/g,c=>({
+const esc=s=>String(s??"").replace(
+ /[&<>"']/g,
+ c=>({
   "&":"&amp;",
   "<":"&lt;",
   ">":"&gt;",
   '"':"&quot;",
   "'":"&#39;"
- })[c]);
+ })[c]
+);
 
-const cls = n =>
- Number(n)>=0?"positive":"negative";
+const num=n=>Number(n||0);
+const fmt=n=>num(n).toLocaleString("ja-JP");
+const signed=n=>(num(n)>0?"+":"")+fmt(n);
+const cls=n=>num(n)>=0?"positive":"negative";
 
-const today = () =>
- new Date().toLocaleDateString(
-  "sv-SE",{timeZone:"Asia/Tokyo"}
- );
+const today=()=>new Date().toLocaleDateString(
+ "sv-SE",{timeZone:"Asia/Tokyo"}
+);
 
-let data=null;
+let eventData=null;
+let comparisonData=null;
 let calendarMap=new Map();
 let selected=today();
 let month=selected.slice(0,7);
 
-async function getJSON(name){
- const response=await fetch(
-  BASE+name+"?t="+Date.now(),
-  {cache:"no-store"}
- );
- if(!response.ok){
-  throw Error("HTTP "+response.status);
- }
- return response.json();
-}
-
-function metric(label,value,style=""){
- return `<div class="metric">
-  <small>${esc(label)}</small>
-  <strong class="${style}">${esc(value)}</strong>
- </div>`;
-}
-
-function showEmpty(id,message){
+function empty(id,message){
  $(id).innerHTML=
   `<div class="empty">${esc(message)}</div>`;
 }
 
-function dateLabel(value){
- if(!value)return"--";
- const p=value.split("-");
- return `${Number(p[1])}月${Number(p[2])}日`;
+function metric(label,value,color=""){
+ return `<div class="metric">
+  <small>${esc(label)}</small>
+  <strong class="${color}">${esc(value)}</strong>
+ </div>`;
+}
+
+function dateLabel(date){
+ if(!date)return"--";
+ const p=date.split("-");
+ return `${num(p[1])}月${num(p[2])}日`;
 }
 
 function makeDate(y,m,d){
@@ -296,88 +328,95 @@ function makeDate(y,m,d){
  ].join("-");
 }
 
-function eventCard(event){
- const confirmed=event.status==="confirmed";
- const status=confirmed?"確認済み":"未確認候補";
- const source=event.source||"";
+function formatTime(value){
+ if(!value)return"--";
+ const d=new Date(value);
+ if(isNaN(d.getTime()))return value;
+ return d.toLocaleString("ja-JP",{
+  timeZone:"Asia/Tokyo"
+ });
+}
 
- let html=`
-  <div class="item">
-   <div class="item-title">
-    ${esc(dateLabel(event.date))}
-    ${esc(event.name)}
-   </div>
-   <span class="tag">${esc(event.type)}</span>
-   <span class="tag ${
-    confirmed?"confirmed":"pending"
-   }">${status}</span>
-   <p class="note">
-    登録方法：
-    ${event.origin==="manual"?"手動":"自動取得"}
-   </p>
- `;
-
- if(/^https?:\/\//.test(source)){
-  html+=`<a href="${esc(source)}"
-   target="_blank" rel="noopener noreferrer">
-   掲載元を確認 ↗
-  </a>`;
+async function getJSON(file){
+ const response=await fetch(
+  BASE+file+"?t="+Date.now(),
+  {cache:"no-store"}
+ );
+ if(!response.ok){
+  throw Error(file+": HTTP "+response.status);
  }
+ return response.json();
+}
 
- return html+"</div>";
+function eventCard(e){
+ const confirmed=e.status==="confirmed";
+ const source=String(e.source||"");
+ const safeSource=/^https?:\/\//i.test(source);
+
+ return `<div class="item">
+  <div class="item-title">
+   ${esc(dateLabel(e.date))} ${esc(e.name)}
+  </div>
+  <span class="tag">${esc(e.type)}</span>
+  <span class="tag ${
+   confirmed?"confirmed":"pending"
+  }">${
+   confirmed?"確認済み":"未確認候補"
+  }</span>
+  ${safeSource?
+   `<p><a href="${esc(source)}"
+    target="_blank" rel="noopener noreferrer">
+    掲載元を確認 ↗
+   </a></p>`:""}
+ </div>`;
 }
 
 function renderCalendar(){
- const [year,mon]=month.split("-").map(Number);
- const first=new Date(year,mon-1,1);
- const count=new Date(year,mon,0).getDate();
- const offset=first.getDay();
+ const [y,m]=month.split("-").map(Number);
+ const first=new Date(y,m-1,1).getDay();
+ const count=new Date(y,m,0).getDate();
 
- $("monthTitle").textContent=
-  `${year}年${mon}月`;
+ $("monthTitle").textContent=`${y}年${m}月`;
 
- const names=["日","月","火","水","木","金","土"];
+ const weekdays=["日","月","火","水","木","金","土"];
 
- let html=names.map((name,i)=>
-  `<div class="day ${i===0?"sun":i===6?"sat":""}"
-   style="min-height:auto">
-   <b>${name}</b>
+ let html=weekdays.map((w,i)=>
+  `<div class="day ${
+   i===0?"sun":i===6?"sat":""
+  }" style="min-height:auto">
+   <b>${w}</b>
   </div>`
  ).join("");
 
- for(let i=0;i<offset;i++){
-  html+='<div></div>';
- }
+ for(let i=0;i<first;i++)html+="<div></div>";
 
  for(let d=1;d<=count;d++){
-  const date=makeDate(year,mon,d);
+  const date=makeDate(y,m,d);
   const row=calendarMap.get(date);
   const hasEvent=(row?.events||[]).length>0;
-  const dayOfWeek=new Date(
-   year,mon-1,d
-  ).getDay();
+  const wd=new Date(y,m-1,d).getDay();
 
   const classes=[
    "day",
    hasEvent?"event":"",
    date===selected?"selected":"",
    date===today()?"today":"",
-   dayOfWeek===0?"sun":"",
-   dayOfWeek===6?"sat":""
+   wd===0?"sun":"",
+   wd===6?"sat":""
   ].join(" ");
 
-  html+=`
-   <button class="${classes}" data-date="${date}">
-    <b>${d}</b>
-    <small>${row?.actual?"実績あり":""}</small>
-    ${hasEvent?'<span class="dot"></span>':""}
-   </button>`;
+  html+=`<button class="${classes}"
+   data-date="${date}">
+   <b>${d}</b>
+   <small>${row?.actual?"実績あり":""}</small>
+   ${hasEvent?'<span class="dot"></span>':""}
+  </button>`;
  }
 
  $("calendar").innerHTML=html;
 
  $("calendar").querySelectorAll(
-  "button[data-date]"
+  "[data-date]"
  ).forEach(button=>{
   button.addEventListener("click",()=>{
    selected=button.dataset.date;
@@ -389,76 +428,62 @@ function renderCalendar(){
 
 function renderSelected(){
  $("selectedTitle").textContent=
-  `${selected} の詳細`;
+  selected+" の詳細";
 
  const row=calendarMap.get(selected);
 
  if(!row){
-  showEmpty(
-   "selectedDetails",
-   "この日のイベント・差枚データは未登録です"
-  );
+  empty("selectedDetails","この日の登録データはありません");
   return;
  }
 
- let html="";
+ let html=(row.calendar_tags||[]).map(
+  t=>`<span class="tag">${esc(t)}</span>`
+ ).join("");
 
- for(const tag of row.calendar_tags||[]){
-  html+=`<span class="tag">${esc(tag)}</span>`;
- }
-
- const events=row.events||[];
-
- if(events.length){
-  html+=events.map(eventCard).join("");
+ if(row.events?.length){
+  html+=row.events.map(eventCard).join("");
  }else{
   html+='<p class="note">登録イベントなし</p>';
  }
 
  if(row.actual){
   const a=row.actual;
+  html+="<h3>当日の差枚実績</h3>";
+  html+=`<div class="metrics">
+   ${metric("対象台数",fmt(a.units)+"台")}
+   ${metric(
+    "平均差枚",signed(a.avg_diff)+"枚",
+    cls(a.avg_diff)
+   )}
+   ${metric("プラス台率",a.positive_rate+"%")}
+  </div>`;
 
-  html+=`
-   <h3>当日の差枚実績</h3>
-   <div class="metrics">
-    ${metric("対象台数",fmt(a.units)+"台")}
-    ${metric(
-     "平均差枚",
-     signed(a.avg_diff)+"枚",
-     cls(a.avg_diff)
-    )}
-    ${metric("プラス台率",a.positive_rate+"%")}
-   </div>
-   <p class="note">
-    総差枚：${signed(a.total_diff)}枚 /
-    平均回転数：${fmt(a.avg_games)}G
-   </p>
-  `;
+  html+=`<p class="note">
+   総差枚：${signed(a.total_diff)}枚 /
+   平均回転数：${fmt(a.avg_games)}G
+  </p>`;
 
   const machines=(row.machines||[])
-   .filter(m=>m.units>=2)
-   .sort((a,b)=>b.avg_diff-a.avg_diff)
+   .filter(m=>num(m.units)>=2)
+   .sort((a,b)=>num(b.avg_diff)-num(a.avg_diff))
    .slice(0,10);
 
   if(machines.length){
-   html+="<h3>当日の機種別上位実績</h3>";
+   html+="<h3>当日の機種別実績 TOP10</h3>";
 
    for(const m of machines){
-    html+=`
-     <div class="item">
-      <div class="item-title">
-       ${esc(m.machine)}
-      </div>
-      <div class="metrics">
-       ${metric("台数",m.units+"台")}
-       ${metric(
-        "平均差枚",
-        signed(m.avg_diff)+"枚",
-        cls(m.avg_diff)
-       )}
-       ${metric("プラス台率",m.positive_rate+"%")}
-      </div>
-     </div>`;
+    html+=`<div class="item">
+     <div class="item-title">${esc(m.machine)}</div>
+     <div class="metrics">
+      ${metric("台数",m.units+"台")}
+      ${metric(
+       "平均差枚",signed(m.avg_diff)+"枚",
+       cls(m.avg_diff)
+      )}
+      ${metric("プラス台率",m.positive_rate+"%")}
+     </div>
+    </div>`;
    }
   }
  }else{
@@ -468,24 +493,9 @@ function renderSelected(){
  $("selectedDetails").innerHTML=html;
 }
 
-function renderUpcoming(){
- const events=data.upcoming_events||[];
-
- if(!events.length){
-  showEmpty("upcoming","今後の登録イベントはありません");
-  return;
- }
-
- $("upcoming").innerHTML=
-  events.map(eventCard).join("");
-}
-
 function renderGroup(id,rows){
  if(!rows?.length){
-  showEmpty(
-   id,
-   "集計できる確認済みイベントの実績はまだありません"
-  );
+  empty(id,"集計可能な実績はまだありません");
   return;
  }
 
@@ -498,8 +508,7 @@ function renderGroup(id,rows){
    </p>
    <div class="metrics">
     ${metric(
-     "平均差枚",
-     signed(r.avg_diff)+"枚",
+     "平均差枚",signed(r.avg_diff)+"枚",
      cls(r.avg_diff)
     )}
     ${metric("プラス台率",r.positive_rate+"%")}
@@ -509,49 +518,274 @@ function renderGroup(id,rows){
  `).join("");
 }
 
-function render(){
- $("updated").textContent=
-  "最終分析："+(data.updated_at||"--");
-
+function renderEvents(){
  $("eventCount").textContent=
-  fmt(data.event_count);
+  fmt(eventData.event_count);
 
  $("upcomingCount").textContent=
-  fmt((data.upcoming_events||[]).length);
+  fmt(eventData.upcoming_events?.length);
 
  $("confirmedCount").textContent=
-  fmt(data.confirmed_count);
+  fmt(eventData.confirmed_count);
 
  $("pendingCount").textContent=
-  fmt(data.unverified_count);
+  fmt(eventData.unverified_count);
 
  calendarMap=new Map(
-  (data.calendar||[]).map(row=>[row.date,row])
+  (eventData.calendar||[]).map(
+   row=>[row.date,row]
+  )
  );
 
  renderCalendar();
  renderSelected();
- renderUpcoming();
 
- renderGroup("eventResults",data.event_analysis);
- renderGroup("typeResults",data.type_analysis);
- renderGroup("tagResults",data.tag_analysis);
+ const upcoming=eventData.upcoming_events||[];
+
+ if(upcoming.length){
+  $("upcoming").innerHTML=
+   upcoming.map(eventCard).join("");
+ }else{
+  empty("upcoming","今後の登録イベントはありません");
+ }
+
+ renderGroup(
+  "eventResults",eventData.event_analysis
+ );
+ renderGroup(
+  "typeResults",eventData.type_analysis
+ );
+ renderGroup(
+  "tagResults",eventData.tag_analysis
+ );
+}
+
+function comparisonMetrics(a,b,diff){
+ return `
+  <div class="compare">
+   <div>
+    <small>イベント開催日</small>
+    <strong>${signed(a.avg_diff)}枚</strong>
+    <small>平均差枚</small>
+   </div>
+   <div>
+    <small>通常日（同曜日）</small>
+    <strong>${signed(b.avg_diff)}枚</strong>
+    <small>平均差枚</small>
+   </div>
+  </div>
+  <div class="metrics">
+   ${metric(
+    "平均差枚差",
+    signed(diff.avg_diff_gap)+"枚",
+    cls(diff.avg_diff_gap)
+   )}
+   ${metric(
+    "プラス台率差",
+    (num(diff.positive_rate_gap)>0?"+":"")+
+    diff.positive_rate_gap+"pt",
+    cls(diff.positive_rate_gap)
+   )}
+   ${metric(
+    "平均回転数差",
+    signed(diff.games_gap)+"G",
+    cls(diff.games_gap)
+   )}
+  </div>
+  <p class="note">
+   イベント：${a.days}日 / ${a.units}台日 /
+   プラス台率${a.positive_rate}%<br>
+   通常日：${b.days}日 / ${b.units}台日 /
+   プラス台率${b.positive_rate}%
+  </p>`;
+}
+
+function machineCards(rows){
+ if(!rows?.length){
+  return `<div class="empty">
+   機種別比較に必要なデータがありません。
+   各機種について両条件で3日以上必要です。
+  </div>`;
+ }
+
+ return rows.slice(0,20).map((m,i)=>{
+  const gap=num(m.avg_diff_gap);
+  const barWidth=Math.min(
+   100,Math.abs(gap)/30
+  );
+
+  return `<div class="item">
+   <div class="item-title">
+    ${i+1}位 ${esc(m.machine)}
+   </div>
+   <div class="metrics">
+    ${metric(
+     "イベント平均",
+     signed(m.event.avg_diff)+"枚",
+     cls(m.event.avg_diff)
+    )}
+    ${metric(
+     "通常日平均",
+     signed(m.baseline.avg_diff)+"枚",
+     cls(m.baseline.avg_diff)
+    )}
+    ${metric(
+     "平均との差",
+     signed(gap)+"枚",
+     cls(gap)
+    )}
+   </div>
+   <div class="bar">
+    <span style="width:${barWidth}%"></span>
+   </div>
+   <p class="note">
+    イベント${m.event.days}日 /
+    通常日${m.baseline.days}日 /
+    プラス台率差
+    ${num(m.positive_rate_gap)>0?"+":""}
+    ${m.positive_rate_gap}pt
+   </p>
+  </div>`;
+ }).join("");
+}
+
+function renderComparison(){
+ const data=comparisonData;
+
+ $("historyDays").textContent=
+  fmt(data.historical_days_with_data)+"日";
+
+ $("comparisonCount").textContent=
+  fmt(data.comparison_count)+"件";
+
+ const results=data.results||[];
+ const available=results.filter(
+  r=>r.status==="comparison_available"
+  && r.comparison
+  && r.event_stats
+  && r.normal_stats
+ );
+
+ if(!available.length){
+  $("comparisonStatus").innerHTML=`
+   <div class="warning" style="margin-top:14px">
+    現在は比較データ不足です。<br>
+    確認済みイベント日：
+    ${fmt(data.confirmed_event_days)}日<br>
+    通常日：
+    ${fmt(data.normal_days)}日<br>
+    確認済みイベントと同曜日の通常日が
+    それぞれ3日以上集まると、
+    比較結果を表示できます。
+   </div>`;
+
+  $("comparisonBody").innerHTML="";
+  return;
+ }
+
+ $("comparisonStatus").innerHTML=
+  `<p class="note">
+   比較可能イベント：
+   ${available.length}件
+  </p>`;
+
+ let html=`
+  <label class="note" for="eventSelect">
+   比較するイベント
+  </label>
+  <select id="eventSelect"></select>
+  <div id="eventComparisonDetail"></div>
+ `;
+
+ $("comparisonBody").innerHTML=html;
+
+ const select=$("eventSelect");
+
+ available.forEach((r,i)=>{
+  select.add(new Option(r.event,String(i)));
+ });
+
+ function show(){
+  const r=available[Number(select.value)];
+
+  if(!r)return;
+
+  $("eventComparisonDetail").innerHTML=`
+   <h3>${esc(r.event)}</h3>
+   ${comparisonMetrics(
+    r.event_stats,
+    r.normal_stats,
+    r.comparison
+   )}
+   <div class="sectionline"></div>
+   <h3>機種別 平均差枚差ランキング</h3>
+   <p class="note">
+    通常日との差が大きい順。
+    上位でも将来の優位性を保証しません。
+   </p>
+   ${machineCards(r.machine_comparison)}
+  `;
+ }
+
+ select.addEventListener("change",show);
+ show();
 }
 
 async function loadData(){
  $("updated").textContent="読み込み中...";
 
- try{
-  data=await getJSON("mihara_event_analysis.json");
+ const results=await Promise.allSettled([
+  getJSON("mihara_event_analysis.json"),
+  getJSON("mihara_event_comparison.json")
+ ]);
 
-  if(!data || !Array.isArray(data.calendar)){
-   throw Error("イベント分析データの形式が古いです");
+ const eventsResult=results[0];
+ const comparisonResult=results[1];
+
+ if(eventsResult.status==="fulfilled"){
+  eventData=eventsResult.value;
+
+  if(Array.isArray(eventData.calendar)){
+   renderEvents();
+  }else{
+   $("updated").textContent=
+    "イベント分析データの形式が不正です";
   }
-
-  render();
- }catch(error){
+ }else{
   $("updated").textContent=
-   "取得エラー："+error.message;
+   "イベントデータ取得失敗："+
+   eventsResult.reason.message;
+ }
+
+ if(comparisonResult.status==="fulfilled"){
+  comparisonData=comparisonResult.value;
+
+  if(Array.isArray(comparisonData.results)){
+   renderComparison();
+  }else{
+   empty(
+    "comparisonStatus",
+    "比較データの形式が不正です"
+   );
+  }
+ }else{
+  empty(
+   "comparisonStatus",
+   "比較データを取得できませんでした"
+  );
+ }
+
+ if(
+  eventsResult.status==="fulfilled" &&
+  comparisonResult.status==="fulfilled"
+ ){
+  $("updated").textContent=
+   "イベント更新："+formatTime(
+    eventData.updated_at
+   )+
+   " / 比較更新："+formatTime(
+    comparisonData.updated_at
+   );
  }
 }
 
@@ -574,6 +808,14 @@ $("prev").addEventListener(
 
 $("next").addEventListener(
  "click",()=>moveMonth(1)
+);
+
+$("reload").addEventListener(
+ "click",loadData
+);
+
+$("back").addEventListener(
+ "click",()=>location.href="./index.html"
 );
 
 loadData();
