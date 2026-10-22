@@ -6,12 +6,15 @@ from datetime import datetime
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.request import Request, urlopen
+from zoneinfo import ZoneInfo
 
 SOURCE = (
     "https://www.p-world.co.jp/hall/interviews/"
     "prefs/osaka?city_cd=27007"
 )
 OUTPUT = Path("data/mihara_event_candidates.json")
+JST = ZoneInfo("Asia/Tokyo")
+
 
 class Parser(HTMLParser):
     def __init__(self):
@@ -33,8 +36,6 @@ class Parser(HTMLParser):
             if value:
                 self.parts.append(value)
 
-def normalize(value):
-    return unicodedata.normalize("NFKC", value)
 
 def fetch():
     request = Request(
@@ -51,7 +52,11 @@ def fetch():
 
     parser = Parser()
     parser.feed(html)
-    return normalize(" ".join(parser.parts))
+
+    return unicodedata.normalize(
+        "NFKC", " ".join(parser.parts)
+    )
+
 
 def collect(text):
     events = []
@@ -79,7 +84,6 @@ def collect(text):
         )
         section = text[match.end():end]
 
-        # 店舗名と掲載内容をセットで確認
         blocks = re.split(
             r"(?=HYPER\s*ARROW\s*美原店)",
             section,
@@ -87,10 +91,8 @@ def collect(text):
         )
 
         for block in blocks[1:]:
-            # 他店舗の情報が混ざるのを防ぐ
             block = block[:1500]
 
-            # 店舗所在地が一致する場合のみ採用
             if "堺市美原区黒山1000" not in block:
                 continue
 
@@ -105,10 +107,11 @@ def collect(text):
                     found.group(2).split()
                 )
 
-                if len(name) > 100:
+                if not name or len(name) > 100:
                     continue
 
                 key = (day, kind, name)
+
                 if key in seen:
                     continue
 
@@ -123,38 +126,116 @@ def collect(text):
 
     return events
 
+
+def read_history():
+    if not OUTPUT.exists():
+        return []
+
+    try:
+        data = json.loads(
+            OUTPUT.read_text(encoding="utf-8")
+        )
+        return data if isinstance(data, list) else []
+    except (OSError, ValueError):
+        return []
+
+
+def merge_history(old, new):
+    merged = {}
+
+    for event in old + new:
+        if not isinstance(event, dict):
+            continue
+
+        date = str(event.get("date", ""))
+        name = str(event.get("name", "")).strip()
+        kind = str(event.get("type", "")).strip()
+
+        try:
+            datetime.strptime(date, "%Y-%m-%d")
+        except ValueError:
+            continue
+
+        if not name or not kind:
+            continue
+
+        key = (date, kind, name)
+
+        if key not in merged:
+            merged[key] = dict(event)
+        else:
+            previous = merged[key]
+
+            # 確認済みの状態を維持
+            if event.get("status") == "confirmed":
+                previous["status"] = "confirmed"
+
+            if not previous.get("source"):
+                previous["source"] = event.get(
+                    "source", ""
+                )
+
+    return sorted(
+        merged.values(),
+        key=lambda x: (
+            x["date"],
+            x["type"],
+            x["name"]
+        )
+    )
+
+
 def main():
-    text = fetch()
-    events = collect(text)
+    now = datetime.now(JST).isoformat()
+    old = read_history()
 
-    print("日付見出し数:", len(re.findall(
-        r"20\d{2}/\d{1,2}/\d{1,2}",
-        text
-    )))
-    print("イベント候補数:", len(events))
-
-    if not events:
-        print("抽出0件。既存データは変更しません")
+    try:
+        text = fetch()
+        new = collect(text)
+    except Exception as error:
+        print("取得失敗:", error)
+        print("既存履歴は維持します")
         raise SystemExit(1)
+
+    print("今回取得:", len(new), "件")
+    print("既存履歴:", len(old), "件")
+
+    if not new:
+        print("抽出0件。既存履歴は維持します")
+        raise SystemExit(1)
+
+    merged = merge_history(old, new)
+
+    for event in merged:
+        if event in new:
+            event.setdefault("first_seen", now)
+        event["last_collected_at"] = (
+            now if any(
+                event["date"] == n["date"]
+                and event["type"] == n["type"]
+                and event["name"] == n["name"]
+                for n in new
+            )
+            else event.get("last_collected_at")
+        )
 
     OUTPUT.parent.mkdir(
         parents=True, exist_ok=True
     )
+
     OUTPUT.write_text(
         json.dumps(
-            events,
+            merged,
             ensure_ascii=False,
             indent=2
         ),
         encoding="utf-8"
     )
 
-    for event in events:
-        print(
-            event["date"],
-            event["type"],
-            event["name"]
-        )
+    print("累計保存:", len(merged), "件")
+    print("新規追加:", len(merged) - len(old), "件")
+    print("最終取得:", now)
+
 
 if __name__ == "__main__":
     main()
