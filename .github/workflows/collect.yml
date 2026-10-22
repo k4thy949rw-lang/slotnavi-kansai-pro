@@ -29,6 +29,10 @@ jobs:
       - name: 台データ収集
         run: python collector.py
 
+      - name: イベント情報の自動取得
+        continue-on-error: true
+        run: python event_collector.py
+
       - name: 狙い台ランキング分析
         run: python analyzer.py
 
@@ -56,6 +60,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/
           if ! git diff --cached --quiet; then
-            git commit -m "Update slot data and event analysis"
+            git commit -m "Update Mihara slot and event data"
             git push
           fi
