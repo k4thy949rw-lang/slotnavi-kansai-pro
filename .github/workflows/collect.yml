@@ -1,5 +1,5 @@
 
-name: スロナビ関西PRO 自動収集・分析
+name: スロナビ美原ULTIMATE 自動収集・分析
 
 on:
   workflow_dispatch:
@@ -38,6 +38,9 @@ jobs:
       - name: 台番号別の履歴分析
         run: python history_analyzer.py
 
+      - name: 美原イベント・差枚分析
+        run: python event_analyzer.py
+
       - name: 特定日・機種・3台並び分析
         run: python target_analyzer.py
 
@@ -53,6 +56,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/
           if ! git diff --cached --quiet; then
-            git commit -m "Update slot data and analysis"
+            git commit -m "Update slot data and event analysis"
             git push
           fi
