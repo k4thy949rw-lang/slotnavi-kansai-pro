@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T08:57:10.993273+09:00",
+  "updated_at": "2026-10-22T09:07:52.924708+09:00",
   "store": "HYPER ARROW美原店",
   "evaluated_days": 0,
   "complete_top10_days": 0,
@@ -7,9 +7,45 @@
   "store_avg_diff": 0,
   "top10_advantage": 0,
   "daily_results": [],
+  "long_term_accuracy": {
+    "all_time": {
+      "evaluated_days": 0,
+      "complete_days": 0,
+      "top10_avg_diff": null,
+      "store_avg_diff": null,
+      "advantage": null,
+      "top10_positive_rate": null
+    },
+    "last_30_evaluated_days": {
+      "evaluated_days": 0,
+      "complete_days": 0,
+      "top10_avg_diff": null,
+      "store_avg_diff": null,
+      "advantage": null,
+      "top10_positive_rate": null
+    },
+    "previous_30_evaluated_days": {
+      "evaluated_days": 0,
+      "complete_days": 0,
+      "top10_avg_diff": null,
+      "store_avg_diff": null,
+      "advantage": null,
+      "top10_positive_rate": null
+    },
+    "last_90_evaluated_days": {
+      "evaluated_days": 0,
+      "complete_days": 0,
+      "top10_avg_diff": null,
+      "store_avg_diff": null,
+      "advantage": null,
+      "top10_positive_rate": null
+    }
+  },
   "notes": [
-    "予測上位10台を全件照合できた日だけを平均に使用",
-    "過去予測を保存した日以降の実績が対象",
+    "上位10台を全件照合できた日だけを集計",
+    "長期成績は保存済みの全期間を対象",
+    "直近30日と前30日は評価済み日数で区切る",
+    "予測ロジックの重みは自動変更しません",
     "サンプルが少ない期間の成績は参考値",
     "高設定の的中率を表すものではありません"
   ]
