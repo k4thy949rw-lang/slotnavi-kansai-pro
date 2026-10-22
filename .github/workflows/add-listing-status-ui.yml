@@ -1,0 +1,64 @@
+
+name: イベント掲載状況を画面に追加
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: コード取得
+        uses: actions/checkout@v4
+
+      - name: 掲載状況の表示を追加
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("events.html")
+          html = path.read_text(encoding="utf-8")
+
+          marker = 'const actual = e.actual_available'
+          if marker not in html:
+              raise SystemExit("表示コードが見つかりません")
+
+          if 'const listing = e.listing_status' in html:
+              print("すでに追加済み")
+              raise SystemExit(0)
+
+          old = 'const actual = e.actual_available'
+          new = (
+              'const listing = e.listing_status || "掲載状況不明";\n'
+              '                    const actual = e.actual_available'
+          )
+          html = html.replace(old, new, 1)
+
+          old_tag = '<span class="tag">${safe(actual)}</span>'
+          new_tag = (
+              '<span class="tag">${safe(listing)}</span>\n'
+              '                      <span class="tag">${safe(actual)}</span>'
+          )
+
+          if old_tag not in html:
+              raise SystemExit("タグの挿入位置が見つかりません")
+
+          html = html.replace(old_tag, new_tag, 1)
+          path.write_text(html, encoding="utf-8")
+          print("掲載状況を表示するように更新しました")
+          PY
+
+      - name: 変更を保存
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add events.html
+          if ! git diff --cached --quiet; then
+            git commit -m "Show event listing status"
+            git pull --rebase
+            git push
+          fi
