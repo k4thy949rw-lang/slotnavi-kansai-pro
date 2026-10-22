@@ -267,6 +267,21 @@ select{width:100%;margin-bottom:12px}
  </p>
 </section>
 
+
+<section class="panel" id="verificationPanel">
+  <h2>イベント開催確認・照合結果</h2>
+  <p class="note">掲載情報と差枚実績を照合します。差枚データだけでは開催確認済みとは判定しません。</p>
+  <div class="stats">
+    <div class="stat"><small>登録イベント</small><strong id="verifyTotal">--</strong></div>
+    <div class="stat"><small>開催確認済み</small><strong id="verifyConfirmed">--</strong></div>
+    <div class="stat"><small>分析可能</small><strong id="verifyReady">--</strong></div>
+    <div class="stat"><small>未確認・実績あり</small><strong id="verifyPendingActual">--</strong></div>
+  </div>
+  <h3>イベント別の確認状況</h3>
+  <div id="verificationRows">照合結果を読み込み中...</div>
+  <p class="note" id="verificationUpdated"></p>
+</section>
+
 </main>
 <script>
 const BASE=
@@ -820,5 +835,51 @@ $("back").addEventListener(
 
 loadData();
 </script>
+
+<script>
+(async function(){
+  const byId = id => document.getElementById(id);
+  const safe = value => String(value ?? "").replace(
+    /[&<>"']/g,
+    c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])
+  );
+  try {
+    const url = "https://raw.githubusercontent.com/k4thy949rw-lang/slotnavi-kansai-pro/main/data/mihara_event_verification.json?t=" + Date.now();
+    const response = await fetch(url, {cache:"no-store"});
+    if (!response.ok) throw new Error("HTTP " + response.status);
+    const data = await response.json();
+
+    byId("verifyTotal").textContent = data.total_events ?? 0;
+    byId("verifyConfirmed").textContent = data.confirmed_events ?? 0;
+    byId("verifyReady").textContent = data.analysis_ready_events ?? 0;
+    byId("verifyPendingActual").textContent = data.unverified_with_actual ?? 0;
+
+    const rows = Array.isArray(data.events) ? data.events : [];
+    byId("verificationRows").innerHTML = rows.length
+      ? rows.map(e => {
+          const confirmed = e.status === "confirmed";
+          const actual = e.actual_available
+            ? "差枚実績あり（" + Number(e.actual_units || 0) + "台）"
+            : "差枚実績なし";
+          return `<div class="item">
+            <div class="item-title">${safe(e.date)} ${safe(e.name)}</div>
+            <span class="tag">${safe(e.type)}</span>
+            <span class="tag ${confirmed ? "confirmed" : "pending"}">${confirmed ? "確認済み" : "未確認"}</span>
+            <span class="tag">${safe(actual)}</span>
+            <span class="tag">${e.analysis_ready ? "分析可能" : "分析対象外"}</span>
+            <p class="note">${safe(e.reason)}</p>
+          </div>`;
+        }).join("")
+      : '<div class="empty">登録イベントなし</div>';
+
+    byId("verificationUpdated").textContent =
+      "最終照合：" + new Date(data.updated_at).toLocaleString("ja-JP", {timeZone:"Asia/Tokyo"});
+  } catch(error) {
+    byId("verificationRows").textContent = "照合結果を取得できませんでした。";
+    console.error(error);
+  }
+})();
+</script>
+
 </body>
 </html>
