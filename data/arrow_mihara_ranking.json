@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T06:50:41.806685+09:00",
+  "updated_at": "2026-10-23T06:51:07.338465+09:00",
   "store": "HYPER ARROW美原店",
   "analysis_days": 30,
   "minimum_days": 3,
@@ -492,21 +492,21 @@
       "score": 60.8
     },
     {
-      "unit": 659,
-      "machine": "真打 吉宗",
-      "days": 30,
-      "avg_diff": 629,
-      "avg_games": 5145,
-      "win_rate": 40.0,
-      "score": 60.6
-    },
-    {
       "unit": 731,
       "machine": "革命機ヴァルヴレイヴ2",
       "days": 13,
       "avg_diff": 749,
       "avg_games": 2787,
       "win_rate": 46.2,
+      "score": 60.6
+    },
+    {
+      "unit": 659,
+      "machine": "真打 吉宗",
+      "days": 30,
+      "avg_diff": 629,
+      "avg_games": 5145,
+      "win_rate": 40.0,
       "score": 60.6
     },
     {
@@ -1554,21 +1554,21 @@
       "score": 41.1
     },
     {
-      "unit": 735,
-      "machine": "獣王",
-      "days": 17,
-      "avg_diff": 207,
-      "avg_games": 7491,
-      "win_rate": 35.3,
-      "score": 41.0
-    },
-    {
       "unit": 947,
       "machine": "ハッピージャグラーVⅢ",
       "days": 30,
       "avg_diff": 116,
       "avg_games": 5759,
       "win_rate": 53.3,
+      "score": 41.0
+    },
+    {
+      "unit": 735,
+      "machine": "獣王",
+      "days": 17,
+      "avg_diff": 207,
+      "avg_games": 7491,
+      "win_rate": 35.3,
       "score": 41.0
     },
     {
@@ -2796,21 +2796,21 @@
       "score": 29.5
     },
     {
-      "unit": 806,
-      "machine": "ゴーゴージャグラー3",
-      "days": 30,
-      "avg_diff": -1,
-      "avg_games": 4980,
-      "win_rate": 43.3,
-      "score": 29.5
-    },
-    {
       "unit": 726,
       "machine": "革命機ヴァルヴレイヴ2",
       "days": 30,
       "avg_diff": 226,
       "avg_games": 3054,
       "win_rate": 26.7,
+      "score": 29.5
+    },
+    {
+      "unit": 806,
+      "machine": "ゴーゴージャグラー3",
+      "days": 30,
+      "avg_diff": -1,
+      "avg_games": 4980,
+      "win_rate": 43.3,
       "score": 29.5
     },
     {
@@ -3300,21 +3300,21 @@
       "score": 23.7
     },
     {
-      "unit": 1097,
-      "machine": "攻殻機動隊",
-      "days": 17,
-      "avg_diff": -43,
-      "avg_games": 4559,
-      "win_rate": 35.3,
-      "score": 23.7
-    },
-    {
       "unit": 1054,
       "machine": "バーサスリヴァイズ",
       "days": 30,
       "avg_diff": 4,
       "avg_games": 4057,
       "win_rate": 33.3,
+      "score": 23.7
+    },
+    {
+      "unit": 1097,
+      "machine": "攻殻機動隊",
+      "days": 17,
+      "avg_diff": -43,
+      "avg_games": 4559,
+      "win_rate": 35.3,
       "score": 23.7
     },
     {
@@ -4776,21 +4776,21 @@
       "score": -1.7
     },
     {
-      "unit": 669,
-      "machine": "モンスターハンターライズ:サンブレイク",
-      "days": 17,
-      "avg_diff": -506,
-      "avg_games": 4900,
-      "win_rate": 23.5,
-      "score": -1.9
-    },
-    {
       "unit": 1065,
       "machine": "戦国乙女4 戦乱に閃く炯眼の軍師",
       "days": 13,
       "avg_diff": -339,
       "avg_games": 2443,
       "win_rate": 23.1,
+      "score": -1.9
+    },
+    {
+      "unit": 669,
+      "machine": "モンスターハンターライズ:サンブレイク",
+      "days": 17,
+      "avg_diff": -506,
+      "avg_games": 4900,
+      "win_rate": 23.5,
       "score": -1.9
     },
     {
@@ -5208,21 +5208,21 @@
       "score": -27.7
     },
     {
-      "unit": 1066,
-      "machine": "無職転生 ～異世界行ったら本気だす～",
-      "days": 17,
-      "avg_diff": -976,
-      "avg_games": 3621,
-      "win_rate": 29.4,
-      "score": -27.9
-    },
-    {
       "unit": 664,
       "machine": "攻殻機動隊",
       "days": 13,
       "avg_diff": -852,
       "avg_games": 3008,
       "win_rate": 15.4,
+      "score": -27.9
+    },
+    {
+      "unit": 1066,
+      "machine": "無職転生 ～異世界行ったら本気だす～",
+      "days": 17,
+      "avg_diff": -976,
+      "avg_games": 3621,
+      "win_rate": 29.4,
       "score": -27.9
     },
     {
