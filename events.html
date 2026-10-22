@@ -858,14 +858,16 @@ loadData();
     byId("verificationRows").innerHTML = rows.length
       ? rows.map(e => {
           const confirmed = e.status === "confirmed";
-          const actual = e.actual_available
+          const listing = e.listing_status || "掲載状況不明";
+                    const actual = e.actual_available
             ? "差枚実績あり（" + Number(e.actual_units || 0) + "台）"
             : "差枚実績なし";
           return `<div class="item">
             <div class="item-title">${safe(e.date)} ${safe(e.name)}</div>
             <span class="tag">${safe(e.type)}</span>
             <span class="tag ${confirmed ? "confirmed" : "pending"}">${confirmed ? "確認済み" : "未確認"}</span>
-            <span class="tag">${safe(actual)}</span>
+            <span class="tag">${safe(listing)}</span>
+                      <span class="tag">${safe(actual)}</span>
             <span class="tag">${e.analysis_ready ? "分析可能" : "分析対象外"}</span>
             <p class="note">${safe(e.reason)}</p>
           </div>`;
