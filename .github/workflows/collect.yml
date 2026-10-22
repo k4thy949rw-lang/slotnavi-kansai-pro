@@ -45,6 +45,9 @@ jobs:
       - name: 美原イベント・差枚分析
         run: python event_analyzer.py
 
+      - name: イベントと通常日の実績比較
+        run: python event_comparison.py
+
       - name: 特定日・機種・3台並び分析
         run: python target_analyzer.py
 
@@ -61,5 +64,6 @@ jobs:
           git add data/
           if ! git diff --cached --quiet; then
             git commit -m "Update Mihara slot and event data"
+            git pull --rebase
             git push
           fi
