@@ -1,0 +1,111 @@
+
+name: イベント照合画面を追加
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: コード取得
+        uses: actions/checkout@v4
+
+      - name: イベント画面更新
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("events.html")
+          html = path.read_text(encoding="utf-8")
+
+          if 'id="verificationPanel"' in html:
+              print("照合画面は追加済みです")
+              raise SystemExit(0)
+
+          panel = """
+          <section class="panel" id="verificationPanel">
+            <h2>イベント開催確認・照合結果</h2>
+            <p class="note">掲載情報と差枚実績を照合します。差枚データだけでは開催確認済みとは判定しません。</p>
+            <div class="stats">
+              <div class="stat"><small>登録イベント</small><strong id="verifyTotal">--</strong></div>
+              <div class="stat"><small>開催確認済み</small><strong id="verifyConfirmed">--</strong></div>
+              <div class="stat"><small>分析可能</small><strong id="verifyReady">--</strong></div>
+              <div class="stat"><small>未確認・実績あり</small><strong id="verifyPendingActual">--</strong></div>
+            </div>
+            <h3>イベント別の確認状況</h3>
+            <div id="verificationRows">照合結果を読み込み中...</div>
+            <p class="note" id="verificationUpdated"></p>
+          </section>
+          """
+
+          script = """
+          <script>
+          (async function(){
+            const byId = id => document.getElementById(id);
+            const safe = value => String(value ?? "").replace(
+              /[&<>"']/g,
+              c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])
+            );
+            try {
+              const url = "https://raw.githubusercontent.com/k4thy949rw-lang/slotnavi-kansai-pro/main/data/mihara_event_verification.json?t=" + Date.now();
+              const response = await fetch(url, {cache:"no-store"});
+              if (!response.ok) throw new Error("HTTP " + response.status);
+              const data = await response.json();
+
+              byId("verifyTotal").textContent = data.total_events ?? 0;
+              byId("verifyConfirmed").textContent = data.confirmed_events ?? 0;
+              byId("verifyReady").textContent = data.analysis_ready_events ?? 0;
+              byId("verifyPendingActual").textContent = data.unverified_with_actual ?? 0;
+
+              const rows = Array.isArray(data.events) ? data.events : [];
+              byId("verificationRows").innerHTML = rows.length
+                ? rows.map(e => {
+                    const confirmed = e.status === "confirmed";
+                    const actual = e.actual_available
+                      ? "差枚実績あり（" + Number(e.actual_units || 0) + "台）"
+                      : "差枚実績なし";
+                    return `<div class="item">
+                      <div class="item-title">${safe(e.date)} ${safe(e.name)}</div>
+                      <span class="tag">${safe(e.type)}</span>
+                      <span class="tag ${confirmed ? "confirmed" : "pending"}">${confirmed ? "確認済み" : "未確認"}</span>
+                      <span class="tag">${safe(actual)}</span>
+                      <span class="tag">${e.analysis_ready ? "分析可能" : "分析対象外"}</span>
+                      <p class="note">${safe(e.reason)}</p>
+                    </div>`;
+                  }).join("")
+                : '<div class="empty">登録イベントなし</div>';
+
+              byId("verificationUpdated").textContent =
+                "最終照合：" + new Date(data.updated_at).toLocaleString("ja-JP", {timeZone:"Asia/Tokyo"});
+            } catch(error) {
+              byId("verificationRows").textContent = "照合結果を取得できませんでした。";
+              console.error(error);
+            }
+          })();
+          </script>
+          """
+
+          if "</main>" not in html or "</body>" not in html:
+              raise SystemExit("必要なHTMLタグが見つかりません")
+
+          html = html.replace("</main>", panel + "\n</main>", 1)
+          html = html.replace("</body>", script + "\n</body>", 1)
+          path.write_text(html, encoding="utf-8")
+          print("イベント照合画面を追加しました")
+          PY
+
+      - name: 変更を保存
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add events.html
+          if ! git diff --cached --quiet; then
+            git commit -m "Add event verification panel"
+            git pull --rebase
+            git push
+          fi
