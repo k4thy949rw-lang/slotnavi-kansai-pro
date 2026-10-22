@@ -1,0 +1,429 @@
+{
+  "updated_at": "2026-10-23T06:28:50.437645+09:00",
+  "store": "HYPER ARROW美原店",
+  "calendar": [
+    {
+      "date": "2026-09-21",
+      "calendar_tags": [
+        "1のつく日"
+      ],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 693,
+        "avg_diff": -17,
+        "positive_rate": 32.8
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "calendar_tags": [
+        "ゾロ目の日"
+      ],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 692,
+        "avg_diff": -8,
+        "positive_rate": 36.0
+      }
+    },
+    {
+      "date": "2026-09-23",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 707,
+        "avg_diff": 22,
+        "positive_rate": 38.2
+      }
+    },
+    {
+      "date": "2026-09-24",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 690,
+        "avg_diff": 8,
+        "positive_rate": 33.6
+      }
+    },
+    {
+      "date": "2026-09-25",
+      "calendar_tags": [
+        "5のつく日"
+      ],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 652,
+        "avg_diff": -18,
+        "positive_rate": 31.6
+      }
+    },
+    {
+      "date": "2026-09-26",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 681,
+        "avg_diff": -54,
+        "positive_rate": 33.9
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 694,
+        "avg_diff": -48,
+        "positive_rate": 37.3
+      }
+    },
+    {
+      "date": "2026-09-28",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 722,
+        "avg_diff": 237,
+        "positive_rate": 38.0
+      }
+    },
+    {
+      "date": "2026-09-29",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 683,
+        "avg_diff": 19,
+        "positive_rate": 32.8
+      }
+    },
+    {
+      "date": "2026-09-30",
+      "calendar_tags": [
+        "0のつく日"
+      ],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 681,
+        "avg_diff": 16,
+        "positive_rate": 33.0
+      }
+    },
+    {
+      "date": "2026-10-01",
+      "calendar_tags": [
+        "1のつく日"
+      ],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 688,
+        "avg_diff": 34,
+        "positive_rate": 34.2
+      }
+    },
+    {
+      "date": "2026-10-02",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 686,
+        "avg_diff": 82,
+        "positive_rate": 32.9
+      }
+    },
+    {
+      "date": "2026-10-03",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 694,
+        "avg_diff": -14,
+        "positive_rate": 33.7
+      }
+    },
+    {
+      "date": "2026-10-04",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 681,
+        "avg_diff": 57,
+        "positive_rate": 34.9
+      }
+    },
+    {
+      "date": "2026-10-05",
+      "calendar_tags": [
+        "5のつく日"
+      ],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 665,
+        "avg_diff": 90,
+        "positive_rate": 32.9
+      }
+    },
+    {
+      "date": "2026-10-06",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 669,
+        "avg_diff": -67,
+        "positive_rate": 30.5
+      }
+    },
+    {
+      "date": "2026-10-07",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 683,
+        "avg_diff": 118,
+        "positive_rate": 34.4
+      }
+    },
+    {
+      "date": "2026-10-08",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 696,
+        "avg_diff": 21,
+        "positive_rate": 34.1
+      }
+    },
+    {
+      "date": "2026-10-09",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 662,
+        "avg_diff": -11,
+        "positive_rate": 28.4
+      }
+    },
+    {
+      "date": "2026-10-10",
+      "calendar_tags": [
+        "0のつく日"
+      ],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 703,
+        "avg_diff": 181,
+        "positive_rate": 37.4
+      }
+    },
+    {
+      "date": "2026-10-11",
+      "calendar_tags": [
+        "1のつく日",
+        "ゾロ目の日"
+      ],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 689,
+        "avg_diff": 50,
+        "positive_rate": 34.3
+      }
+    },
+    {
+      "date": "2026-10-12",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 706,
+        "avg_diff": -9,
+        "positive_rate": 32.0
+      }
+    },
+    {
+      "date": "2026-10-13",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 692,
+        "avg_diff": 179,
+        "positive_rate": 32.7
+      }
+    },
+    {
+      "date": "2026-10-14",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 683,
+        "avg_diff": -25,
+        "positive_rate": 31.6
+      }
+    },
+    {
+      "date": "2026-10-15",
+      "calendar_tags": [
+        "5のつく日"
+      ],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 661,
+        "avg_diff": -36,
+        "positive_rate": 33.9
+      }
+    },
+    {
+      "date": "2026-10-16",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 672,
+        "avg_diff": -3,
+        "positive_rate": 31.4
+      }
+    },
+    {
+      "date": "2026-10-17",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 690,
+        "avg_diff": 63,
+        "positive_rate": 32.8
+      }
+    },
+    {
+      "date": "2026-10-18",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 713,
+        "avg_diff": 151,
+        "positive_rate": 37.7
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "calendar_tags": [],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 713,
+        "avg_diff": 209,
+        "positive_rate": 35.8
+      }
+    },
+    {
+      "date": "2026-10-20",
+      "calendar_tags": [
+        "0のつく日"
+      ],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 687,
+        "avg_diff": -94,
+        "positive_rate": 29.5
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "calendar_tags": [
+        "1のつく日"
+      ],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 698,
+        "avg_diff": 101,
+        "positive_rate": 33.7
+      }
+    },
+    {
+      "date": "2026-10-22",
+      "calendar_tags": [
+        "ゾロ目の日"
+      ],
+      "events": [],
+      "actual": {
+        "days": 1,
+        "records": 715,
+        "avg_diff": 147,
+        "positive_rate": 33.4
+      }
+    },
+    {
+      "date": "2026-10-25",
+      "calendar_tags": [
+        "5のつく日"
+      ],
+      "events": [
+        {
+          "name": "イベント登録テスト",
+          "type": "来店",
+          "source": "",
+          "status": "unverified"
+        }
+      ],
+      "actual": null
+    }
+  ],
+  "analysis": [
+    {
+      "tag": "1のつく日",
+      "days": 4,
+      "records": 2768,
+      "avg_diff": 42,
+      "positive_rate": 33.7
+    },
+    {
+      "tag": "0のつく日",
+      "days": 3,
+      "records": 2071,
+      "avg_diff": 35,
+      "positive_rate": 33.4
+    },
+    {
+      "tag": "5のつく日",
+      "days": 3,
+      "records": 1978,
+      "avg_diff": 13,
+      "positive_rate": 32.8
+    },
+    {
+      "tag": "ゾロ目の日",
+      "days": 3,
+      "records": 2096,
+      "avg_diff": 64,
+      "positive_rate": 34.5
+    }
+  ],
+  "event_count": 1
+}
