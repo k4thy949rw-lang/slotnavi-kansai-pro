@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T07:23:27.053913+09:00",
+  "updated_at": "2026-10-23T07:29:50.373144+09:00",
   "store": "HYPER ARROW美原店",
   "total_events": 6,
   "confirmed_events": 0,
@@ -20,6 +20,8 @@
       "first_seen": "2026-10-23T06:50:40.775032+09:00",
       "last_collected_at": "2026-10-23T07:23:25.360315+09:00",
       "seen_count": 6,
+      "listing_status": "当日掲載確認",
+      "listed_on_event_day": true,
       "manual_record": false
     },
     {
@@ -36,6 +38,8 @@
       "first_seen": "2026-10-23T06:50:40.775032+09:00",
       "last_collected_at": "2026-10-23T07:23:25.360315+09:00",
       "seen_count": 6,
+      "listing_status": "掲載履歴あり",
+      "listed_on_event_day": false,
       "manual_record": false
     },
     {
@@ -52,6 +56,8 @@
       "first_seen": "2026-10-23T06:50:40.775032+09:00",
       "last_collected_at": "2026-10-23T07:23:25.360315+09:00",
       "seen_count": 6,
+      "listing_status": "掲載履歴あり",
+      "listed_on_event_day": false,
       "manual_record": false
     },
     {
@@ -68,6 +74,8 @@
       "first_seen": "2026-10-23T06:50:40.775032+09:00",
       "last_collected_at": "2026-10-23T07:23:25.360315+09:00",
       "seen_count": 6,
+      "listing_status": "掲載履歴あり",
+      "listed_on_event_day": false,
       "manual_record": false
     },
     {
@@ -84,6 +92,8 @@
       "first_seen": "2026-10-23T06:50:40.775032+09:00",
       "last_collected_at": "2026-10-23T07:23:25.360315+09:00",
       "seen_count": 6,
+      "listing_status": "掲載履歴あり",
+      "listed_on_event_day": false,
       "manual_record": false
     },
     {
@@ -100,6 +110,8 @@
       "first_seen": "2026-10-23T06:50:40.775032+09:00",
       "last_collected_at": "2026-10-23T07:23:25.360315+09:00",
       "seen_count": 6,
+      "listing_status": "掲載履歴あり",
+      "listed_on_event_day": false,
       "manual_record": false
     }
   ],

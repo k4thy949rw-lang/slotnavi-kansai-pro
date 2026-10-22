@@ -172,6 +172,15 @@ def main():
             analysis_ready = False
             reason = "開催未確認・差枚実績なし"
 
+        # 告知掲載と実際の開催を区別する
+        last_seen = str(event.get("last_collected_at") or "")
+        listed_on_event_day = last_seen[:10] == date
+        listing_status = (
+            "当日掲載確認" if listed_on_event_day
+            else "掲載履歴あり" if event.get("source")
+            else "掲載情報なし"
+        )
+
         rows.append({
             "date": date,
             "name": name,
@@ -199,6 +208,8 @@ def main():
             "seen_count": event.get(
                 "seen_count", 0
             ),
+            "listing_status": listing_status,
+            "listed_on_event_day": listed_on_event_day,
             "manual_record": (
                 matching_manual is not None
             )
