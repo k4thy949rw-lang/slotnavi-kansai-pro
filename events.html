@@ -1,0 +1,582 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1220">
+<title>美原ULTIMATE | イベント分析</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;background:#0b1220;color:#f1f5f9;
+ font-family:-apple-system,BlinkMacSystemFont,
+ "Helvetica Neue",sans-serif
+}
+header{
+ padding:20px 16px;background:#101b30;
+ border-bottom:1px solid #334155
+}
+main{max-width:950px;margin:auto;padding:14px}
+h1{font-size:23px;margin:0 0 5px}
+h2{font-size:18px;margin:0 0 14px}
+h3{font-size:15px;margin:0 0 8px}
+a{color:#93c5fd}
+.note{
+ color:#94a3b8;font-size:12px;
+ line-height:1.7
+}
+.panel{
+ background:#172338;border:1px solid #293a51;
+ border-radius:14px;padding:15px;margin-bottom:14px
+}
+.stats{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:10px
+}
+.stat{
+ background:#101b30;border-radius:10px;
+ padding:13px
+}
+.stat small{
+ display:block;color:#94a3b8;font-size:11px
+}
+.stat strong{
+ display:block;font-size:23px;margin-top:6px
+}
+button,select{
+ border:1px solid #40516a;background:#101b30;
+ color:white;border-radius:9px;padding:12px;
+ font-size:14px
+}
+button{cursor:pointer}
+.primary{
+ background:#2563eb;border-color:#2563eb
+}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+.actions button{flex:1}
+.item{
+ padding:15px 0;border-bottom:1px solid #334155
+}
+.item:last-child{border-bottom:0}
+.item-title{
+ font-weight:700;line-height:1.6;
+ overflow-wrap:anywhere
+}
+.tag{
+ display:inline-block;padding:4px 8px;
+ border-radius:6px;background:#334155;
+ font-size:11px;margin:4px 4px 4px 0
+}
+.pending{background:#493b20;color:#fde68a}
+.confirmed{background:#164e3b;color:#86efac}
+.metrics{
+ display:grid;grid-template-columns:repeat(3,1fr);
+ gap:6px;margin-top:12px
+}
+.metric{
+ background:#101b30;padding:10px 5px;
+ text-align:center;border-radius:8px
+}
+.metric small{
+ display:block;font-size:10px;color:#94a3b8
+}
+.metric strong{
+ display:block;margin-top:5px;font-size:14px
+}
+.positive{color:#4ade80}
+.negative{color:#f87171}
+.empty{
+ padding:25px 5px;text-align:center;
+ color:#94a3b8;line-height:1.8
+}
+.calendar{
+ display:grid;grid-template-columns:repeat(7,1fr);
+ gap:5px
+}
+.day{
+ min-width:0;min-height:64px;
+ border:1px solid #334155;
+ border-radius:8px;padding:7px 2px;
+ text-align:center;background:#101b30
+}
+.day small{display:block;font-size:10px}
+.day b{font-size:14px}
+.day.event{border-color:#60a5fa}
+.day.selected{background:#1d4ed8}
+.day.today{outline:1px solid #fbbf24}
+.day.sun{color:#fca5a5}
+.day.sat{color:#93c5fd}
+.dot{
+ display:block;width:6px;height:6px;
+ border-radius:50%;background:#60a5fa;
+ margin:5px auto 0
+}
+.monthbar{
+ display:flex;justify-content:space-between;
+ align-items:center;gap:8px;margin-bottom:12px
+}
+.monthbar button{width:46px}
+.monthbar strong{font-size:17px}
+#message{margin:12px 0}
+</style>
+</head>
+<body>
+<header>
+<h1>スロナビ美原 ULTIMATE</h1>
+<div class="note">HYPER ARROW美原店 専用イベント分析</div>
+</header>
+<main>
+
+<section class="panel">
+ <div class="actions">
+  <button onclick="location.href='./index.html'">
+   ← メイン画面
+  </button>
+  <button class="primary" onclick="loadData()">
+   最新情報を取得
+  </button>
+ </div>
+ <p class="note" id="updated">読み込み中...</p>
+</section>
+
+<section class="panel">
+ <h2>イベント収集状況</h2>
+ <div class="stats">
+  <div class="stat">
+   <small>登録イベント</small>
+   <strong id="eventCount">--</strong>
+  </div>
+  <div class="stat">
+   <small>今後の予定</small>
+   <strong id="upcomingCount">--</strong>
+  </div>
+  <div class="stat">
+   <small>確認済み</small>
+   <strong id="confirmedCount">--</strong>
+  </div>
+  <div class="stat">
+   <small>未確認候補</small>
+   <strong id="pendingCount">--</strong>
+  </div>
+ </div>
+ <p class="note">
+  掲載情報を自動収集しています。
+  未確認候補は開催を保証するものではありません。
+ </p>
+</section>
+
+<section class="panel">
+ <h2>イベントカレンダー</h2>
+ <div class="monthbar">
+  <button id="prev">‹</button>
+  <strong id="monthTitle">--</strong>
+  <button id="next">›</button>
+ </div>
+ <div class="calendar" id="calendar"></div>
+ <p class="note">
+  青い点がイベント登録日。
+  日付を押すと詳細を確認できます。
+ </p>
+</section>
+
+<section class="panel">
+ <h2 id="selectedTitle">選択日の詳細</h2>
+ <div id="selectedDetails"></div>
+</section>
+
+<section class="panel">
+ <h2>今後の来店・取材予定</h2>
+ <div id="upcoming"></div>
+</section>
+
+<section class="panel">
+ <h2>過去イベント別の実績</h2>
+ <p class="note">
+  確認済みイベントのみ集計します。
+  平均差枚は対象台1台・1日あたりの平均です。
+ </p>
+ <div id="eventResults"></div>
+</section>
+
+<section class="panel">
+ <h2>イベント種類別の実績</h2>
+ <div id="typeResults"></div>
+</section>
+
+<section class="panel">
+ <h2>日付パターン別の実績</h2>
+ <p class="note">
+  0のつく日などのカレンダー条件です。
+  公式イベントを意味しません。
+ </p>
+ <div id="tagResults"></div>
+</section>
+
+<section class="panel">
+ <p class="note">
+  差枚・プラス台率は過去の集計値です。
+  設定投入や将来の勝率を保証しません。
+  同じ日の複数イベントは集計が重複する場合があります。
+ </p>
+</section>
+
+</main>
+
+<script>
+const BASE =
+ "https://raw.githubusercontent.com/" +
+ "k4thy949rw-lang/slotnavi-kansai-pro/" +
+ "main/data/";
+
+const $ = id => document.getElementById(id);
+
+const fmt = n =>
+ Number(n || 0).toLocaleString("ja-JP");
+
+const signed = n =>
+ (Number(n)>0?"+":"")+fmt(n);
+
+const esc = s =>
+ String(s??"").replace(/[&<>"']/g,c=>({
+  "&":"&amp;",
+  "<":"&lt;",
+  ">":"&gt;",
+  '"':"&quot;",
+  "'":"&#39;"
+ })[c]);
+
+const cls = n =>
+ Number(n)>=0?"positive":"negative";
+
+const today = () =>
+ new Date().toLocaleDateString(
+  "sv-SE",{timeZone:"Asia/Tokyo"}
+ );
+
+let data=null;
+let calendarMap=new Map();
+let selected=today();
+let month=selected.slice(0,7);
+
+async function getJSON(name){
+ const response=await fetch(
+  BASE+name+"?t="+Date.now(),
+  {cache:"no-store"}
+ );
+ if(!response.ok){
+  throw Error("HTTP "+response.status);
+ }
+ return response.json();
+}
+
+function metric(label,value,style=""){
+ return `<div class="metric">
+  <small>${esc(label)}</small>
+  <strong class="${style}">${esc(value)}</strong>
+ </div>`;
+}
+
+function showEmpty(id,message){
+ $(id).innerHTML=
+  `<div class="empty">${esc(message)}</div>`;
+}
+
+function dateLabel(value){
+ if(!value)return"--";
+ const p=value.split("-");
+ return `${Number(p[1])}月${Number(p[2])}日`;
+}
+
+function makeDate(y,m,d){
+ return [
+  y,
+  String(m).padStart(2,"0"),
+  String(d).padStart(2,"0")
+ ].join("-");
+}
+
+function eventCard(event){
+ const confirmed=event.status==="confirmed";
+ const status=confirmed?"確認済み":"未確認候補";
+ const source=event.source||"";
+
+ let html=`
+  <div class="item">
+   <div class="item-title">
+    ${esc(dateLabel(event.date))}
+    ${esc(event.name)}
+   </div>
+   <span class="tag">${esc(event.type)}</span>
+   <span class="tag ${
+    confirmed?"confirmed":"pending"
+   }">${status}</span>
+   <p class="note">
+    登録方法：
+    ${event.origin==="manual"?"手動":"自動取得"}
+   </p>
+ `;
+
+ if(/^https?:\/\//.test(source)){
+  html+=`<a href="${esc(source)}"
+   target="_blank" rel="noopener noreferrer">
+   掲載元を確認 ↗
+  </a>`;
+ }
+
+ return html+"</div>";
+}
+
+function renderCalendar(){
+ const [year,mon]=month.split("-").map(Number);
+ const first=new Date(year,mon-1,1);
+ const count=new Date(year,mon,0).getDate();
+ const offset=first.getDay();
+
+ $("monthTitle").textContent=
+  `${year}年${mon}月`;
+
+ const names=["日","月","火","水","木","金","土"];
+
+ let html=names.map((name,i)=>
+  `<div class="day ${i===0?"sun":i===6?"sat":""}"
+   style="min-height:auto">
+   <b>${name}</b>
+  </div>`
+ ).join("");
+
+ for(let i=0;i<offset;i++){
+  html+='<div></div>';
+ }
+
+ for(let d=1;d<=count;d++){
+  const date=makeDate(year,mon,d);
+  const row=calendarMap.get(date);
+  const hasEvent=(row?.events||[]).length>0;
+  const dayOfWeek=new Date(
+   year,mon-1,d
+  ).getDay();
+
+  const classes=[
+   "day",
+   hasEvent?"event":"",
+   date===selected?"selected":"",
+   date===today()?"today":"",
+   dayOfWeek===0?"sun":"",
+   dayOfWeek===6?"sat":""
+  ].join(" ");
+
+  html+=`
+   <button class="${classes}" data-date="${date}">
+    <b>${d}</b>
+    <small>${row?.actual?"実績あり":""}</small>
+    ${hasEvent?'<span class="dot"></span>':""}
+   </button>`;
+ }
+
+ $("calendar").innerHTML=html;
+
+ $("calendar").querySelectorAll(
+  "button[data-date]"
+ ).forEach(button=>{
+  button.addEventListener("click",()=>{
+   selected=button.dataset.date;
+   renderCalendar();
+   renderSelected();
+  });
+ });
+}
+
+function renderSelected(){
+ $("selectedTitle").textContent=
+  `${selected} の詳細`;
+
+ const row=calendarMap.get(selected);
+
+ if(!row){
+  showEmpty(
+   "selectedDetails",
+   "この日のイベント・差枚データは未登録です"
+  );
+  return;
+ }
+
+ let html="";
+
+ for(const tag of row.calendar_tags||[]){
+  html+=`<span class="tag">${esc(tag)}</span>`;
+ }
+
+ const events=row.events||[];
+
+ if(events.length){
+  html+=events.map(eventCard).join("");
+ }else{
+  html+='<p class="note">登録イベントなし</p>';
+ }
+
+ if(row.actual){
+  const a=row.actual;
+
+  html+=`
+   <h3>当日の差枚実績</h3>
+   <div class="metrics">
+    ${metric("対象台数",fmt(a.units)+"台")}
+    ${metric(
+     "平均差枚",
+     signed(a.avg_diff)+"枚",
+     cls(a.avg_diff)
+    )}
+    ${metric("プラス台率",a.positive_rate+"%")}
+   </div>
+   <p class="note">
+    総差枚：${signed(a.total_diff)}枚 /
+    平均回転数：${fmt(a.avg_games)}G
+   </p>
+  `;
+
+  const machines=(row.machines||[])
+   .filter(m=>m.units>=2)
+   .sort((a,b)=>b.avg_diff-a.avg_diff)
+   .slice(0,10);
+
+  if(machines.length){
+   html+="<h3>当日の機種別上位実績</h3>";
+
+   for(const m of machines){
+    html+=`
+     <div class="item">
+      <div class="item-title">
+       ${esc(m.machine)}
+      </div>
+      <div class="metrics">
+       ${metric("台数",m.units+"台")}
+       ${metric(
+        "平均差枚",
+        signed(m.avg_diff)+"枚",
+        cls(m.avg_diff)
+       )}
+       ${metric("プラス台率",m.positive_rate+"%")}
+      </div>
+     </div>`;
+   }
+  }
+ }else{
+  html+='<p class="note">差枚実績は未取得です。</p>';
+ }
+
+ $("selectedDetails").innerHTML=html;
+}
+
+function renderUpcoming(){
+ const events=data.upcoming_events||[];
+
+ if(!events.length){
+  showEmpty("upcoming","今後の登録イベントはありません");
+  return;
+ }
+
+ $("upcoming").innerHTML=
+  events.map(eventCard).join("");
+}
+
+function renderGroup(id,rows){
+ if(!rows?.length){
+  showEmpty(
+   id,
+   "集計できる確認済みイベントの実績はまだありません"
+  );
+  return;
+ }
+
+ $(id).innerHTML=rows.map(r=>`
+  <div class="item">
+   <div class="item-title">${esc(r.name)}</div>
+   <p class="note">
+    集計${fmt(r.days)}日 /
+    ${fmt(r.units)}台日
+   </p>
+   <div class="metrics">
+    ${metric(
+     "平均差枚",
+     signed(r.avg_diff)+"枚",
+     cls(r.avg_diff)
+    )}
+    ${metric("プラス台率",r.positive_rate+"%")}
+    ${metric("平均回転数",fmt(r.avg_games)+"G")}
+   </div>
+  </div>
+ `).join("");
+}
+
+function render(){
+ $("updated").textContent=
+  "最終分析："+(data.updated_at||"--");
+
+ $("eventCount").textContent=
+  fmt(data.event_count);
+
+ $("upcomingCount").textContent=
+  fmt((data.upcoming_events||[]).length);
+
+ $("confirmedCount").textContent=
+  fmt(data.confirmed_count);
+
+ $("pendingCount").textContent=
+  fmt(data.unverified_count);
+
+ calendarMap=new Map(
+  (data.calendar||[]).map(row=>[row.date,row])
+ );
+
+ renderCalendar();
+ renderSelected();
+ renderUpcoming();
+
+ renderGroup("eventResults",data.event_analysis);
+ renderGroup("typeResults",data.type_analysis);
+ renderGroup("tagResults",data.tag_analysis);
+}
+
+async function loadData(){
+ $("updated").textContent="読み込み中...";
+
+ try{
+  data=await getJSON("mihara_event_analysis.json");
+
+  if(!data || !Array.isArray(data.calendar)){
+   throw Error("イベント分析データの形式が古いです");
+  }
+
+  render();
+ }catch(error){
+  $("updated").textContent=
+   "取得エラー："+error.message;
+ }
+}
+
+function moveMonth(delta){
+ const [y,m]=month.split("-").map(Number);
+ const next=new Date(y,m-1+delta,1);
+
+ month=makeDate(
+  next.getFullYear(),
+  next.getMonth()+1,
+  1
+ ).slice(0,7);
+
+ renderCalendar();
+}
+
+$("prev").addEventListener(
+ "click",()=>moveMonth(-1)
+);
+
+$("next").addEventListener(
+ "click",()=>moveMonth(1)
+);
+
+loadData();
+</script>
+</body>
+</html>
