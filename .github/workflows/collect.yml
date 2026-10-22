@@ -42,6 +42,9 @@ jobs:
       - name: 台番号別の履歴分析
         run: python history_analyzer.py
 
+      - name: イベント開催情報と実績の照合
+        run: python event_verifier.py
+
       - name: 美原イベント・差枚分析
         run: python event_analyzer.py
 
