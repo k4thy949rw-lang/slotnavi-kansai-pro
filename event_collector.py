@@ -12,6 +12,7 @@ SOURCE = (
     "https://www.p-world.co.jp/hall/interviews/"
     "prefs/osaka?city_cd=27007"
 )
+
 OUTPUT = Path("data/mihara_event_candidates.json")
 JST = ZoneInfo("Asia/Tokyo")
 
@@ -45,6 +46,7 @@ def fetch():
             "Accept-Language": "ja-JP,ja;q=0.9"
         }
     )
+
     with urlopen(request, timeout=30) as response:
         html = response.read().decode(
             "utf-8", errors="replace"
@@ -82,6 +84,7 @@ def collect(text):
             if i + 1 < len(dates)
             else len(text)
         )
+
         section = text[match.end():end]
 
         blocks = re.split(
@@ -116,6 +119,7 @@ def collect(text):
                     continue
 
                 seen.add(key)
+
                 events.append({
                     "date": day,
                     "name": name,
@@ -140,48 +144,87 @@ def read_history():
         return []
 
 
-def merge_history(old, new):
+def event_key(event):
+    return (
+        str(event.get("date", "")),
+        str(event.get("type", "")).strip(),
+        str(event.get("name", "")).strip()
+    )
+
+
+def valid_event(event):
+    if not isinstance(event, dict):
+        return False
+
+    date, kind, name = event_key(event)
+
+    try:
+        datetime.strptime(date, "%Y-%m-%d")
+    except ValueError:
+        return False
+
+    return bool(kind and name)
+
+
+def merge_history(old, new, now):
     merged = {}
 
-    for event in old + new:
-        if not isinstance(event, dict):
+    # 既存履歴を先に保存
+    for event in old:
+        if not valid_event(event):
             continue
 
-        date = str(event.get("date", ""))
-        name = str(event.get("name", "")).strip()
-        kind = str(event.get("type", "")).strip()
+        key = event_key(event)
+        merged[key] = dict(event)
 
-        try:
-            datetime.strptime(date, "%Y-%m-%d")
-        except ValueError:
+    # 今回取得した情報を照合
+    for event in new:
+        if not valid_event(event):
             continue
 
-        if not name or not kind:
-            continue
-
-        key = (date, kind, name)
+        key = event_key(event)
 
         if key not in merged:
-            merged[key] = dict(event)
-        else:
-            previous = merged[key]
+            merged[key] = {
+                **event,
+                "first_seen": now,
+                "last_collected_at": now,
+                "seen_count": 1,
+                "source_history": [SOURCE]
+            }
+            continue
 
-            # 確認済みの状態を維持
-            if event.get("status") == "confirmed":
-                previous["status"] = "confirmed"
+        previous = merged[key]
 
-            if not previous.get("source"):
-                previous["source"] = event.get(
-                    "source", ""
-                )
+        previous.setdefault(
+            "first_seen", now
+        )
+
+        previous["last_collected_at"] = now
+
+        previous["seen_count"] = (
+            int(previous.get("seen_count", 1)) + 1
+        )
+
+        sources = previous.get(
+            "source_history", []
+        )
+
+        if not isinstance(sources, list):
+            sources = []
+
+        if SOURCE not in sources:
+            sources.append(SOURCE)
+
+        previous["source_history"] = sources
+
+        # 確認済み状態を勝手に取り消さない
+        if previous.get("status") != "confirmed":
+            previous["status"] = "unverified"
 
     return sorted(
         merged.values(),
-        key=lambda x: (
-            x["date"],
-            x["type"],
-            x["name"]
-        )
+        key=lambda x: event_key(x)
     )
 
 
@@ -204,20 +247,7 @@ def main():
         print("抽出0件。既存履歴は維持します")
         raise SystemExit(1)
 
-    merged = merge_history(old, new)
-
-    for event in merged:
-        if event in new:
-            event.setdefault("first_seen", now)
-        event["last_collected_at"] = (
-            now if any(
-                event["date"] == n["date"]
-                and event["type"] == n["type"]
-                and event["name"] == n["name"]
-                for n in new
-            )
-            else event.get("last_collected_at")
-        )
+    merged = merge_history(old, new, now)
 
     OUTPUT.parent.mkdir(
         parents=True, exist_ok=True
