@@ -10,6 +10,7 @@ permissions:
 jobs:
   improve:
     runs-on: ubuntu-latest
+
     steps:
       - name: コード取得
         uses: actions/checkout@v4
@@ -21,37 +22,40 @@ jobs:
           from pathlib import Path
 
           path = Path("event_verifier.py")
-          text = path.read_text(encoding="utf-8")
+          source = path.read_text(encoding="utf-8")
 
-          marker = '        rows.append({\n'
-          addition = '''        # 告知の掲載履歴と開催実績は別々に管理
-                  last_seen = str(event.get("last_collected_at") or "")
-                  listed_on_event_day = last_seen[:10] == date
-                  listing_status = (
-                      "当日掲載確認" if listed_on_event_day
-                      else "掲載履歴あり" if event.get("source")
-                      else "掲載情報なし"
-                  )
+          marker = "        rows.append({\n"
 
-          '''
-          # インデントを正規化
-          addition = "\n".join(
-              line[8:] if line.startswith("        ") else line
-              for line in addition.splitlines()
-          ) + "\n"
+          addition = (
+              '        # 告知掲載と実際の開催を区別する\n'
+              '        last_seen = str(event.get("last_collected_at") or "")\n'
+              '        listed_on_event_day = last_seen[:10] == date\n'
+              '        listing_status = (\n'
+              '            "当日掲載確認" if listed_on_event_day\n'
+              '            else "掲載履歴あり" if event.get("source")\n'
+              '            else "掲載情報なし"\n'
+              '        )\n\n'
+          )
 
-          if '"listing_status": listing_status' not in text:
-              if marker not in text:
+          if '"listing_status": listing_status' not in source:
+              if marker not in source:
                   raise SystemExit("挿入位置が見つかりません")
-              text = text.replace(marker, addition + marker, 1)
-              text = text.replace(
+
+              source = source.replace(
+                  marker,
+                  addition + marker,
+                  1
+              )
+
+              source = source.replace(
                   '            "manual_record": (',
                   '            "listing_status": listing_status,\n'
                   '            "listed_on_event_day": listed_on_event_day,\n'
                   '            "manual_record": (',
                   1
               )
-              path.write_text(text, encoding="utf-8")
+
+              path.write_text(source, encoding="utf-8")
 
           print("イベント掲載確認機能を更新しました")
           PY
@@ -66,7 +70,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add event_verifier.py data/mihara_event_verification.json
+
           if ! git diff --cached --quiet; then
             git commit -m "Add event listing verification"
             git pull --rebase
