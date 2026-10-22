@@ -11,32 +11,21 @@ DAILY_DIR = DATA_DIR / "arrow_mihara"
 PREDICTION_DIR = DATA_DIR / "predictions"
 RESULT_DIR = DATA_DIR / "prediction_results"
 
-CURRENT_PREDICTION = (
-    DATA_DIR / "arrow_mihara_tomorrow.json"
-)
-SUMMARY_OUTPUT = (
-    DATA_DIR / "arrow_mihara_prediction_accuracy.json"
-)
+CURRENT_PREDICTION = DATA_DIR / "arrow_mihara_tomorrow.json"
+SUMMARY_OUTPUT = DATA_DIR / "arrow_mihara_prediction_accuracy.json"
 
 
 def read_json(path):
     try:
-        return json.loads(
-            path.read_text(encoding="utf-8")
-        )
+        return json.loads(path.read_text(encoding="utf-8"))
     except (OSError, ValueError):
         return None
 
 
 def write_json(path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
-
     path.write_text(
-        json.dumps(
-            data,
-            ensure_ascii=False,
-            indent=2
-        ),
+        json.dumps(data, ensure_ascii=False, indent=2),
         encoding="utf-8"
     )
 
@@ -48,11 +37,7 @@ def average(values):
 def positive_rate(values):
     if not values:
         return 0
-
-    return round(
-        sum(v > 0 for v in values) / len(values) * 100,
-        1
-    )
+    return round(sum(v > 0 for v in values) / len(values) * 100, 1)
 
 
 def save_prediction():
@@ -65,22 +50,17 @@ def save_prediction():
     date = prediction.get("target_date")
 
     try:
-        target = datetime.strptime(
-            date, "%Y-%m-%d"
-        ).date()
+        target = datetime.strptime(date, "%Y-%m-%d").date()
     except (TypeError, ValueError):
         print("予測対象日が不正です")
         return
 
-    # 未来の予測のみを保存する
     if target <= NOW.date():
         print("過去または当日の予測なので保存しません")
         return
 
     path = PREDICTION_DIR / f"{date}.json"
 
-    # 一度保存した予測は上書きしない
-    # 後から有利な予測に書き換わるのを防ぐ
     if path.exists():
         print(f"予測保存済み: {date}")
         return
@@ -107,7 +87,6 @@ def normalize_daily(data):
         if not machine or games < 0:
             continue
 
-        # 同じ台番号が重複する場合は最初の行を採用
         if unit not in units:
             units[unit] = {
                 "unit": unit,
@@ -125,14 +104,11 @@ def evaluate(date, prediction, daily):
     if not actual:
         return None
 
-    predicted = prediction.get(
-        "unit_predictions", []
-    )
+    predicted = prediction.get("unit_predictions", [])
 
     if not isinstance(predicted, list) or not predicted:
         return None
 
-    # 予測順位をスコア順に確定
     predicted = sorted(
         predicted,
         key=lambda r: -float(r.get("score", 0))
@@ -150,7 +126,6 @@ def evaluate(date, prediction, daily):
 
         row = actual.get(unit)
 
-        # 台番号と機種の両方が一致する場合のみ照合
         if row is None or row["machine"] != machine:
             continue
 
@@ -164,30 +139,21 @@ def evaluate(date, prediction, daily):
             "positive": row["diff"] > 0
         })
 
-    # 当日データが一部しか取得できていない場合は
-    # 照合件数を明示する
     def top_summary(limit):
         selected = [
             r for r in matches if r["rank"] <= limit
         ]
-
-        diffs = [
-            r["actual_diff"] for r in selected
-        ]
+        diffs = [r["actual_diff"] for r in selected]
 
         return {
-            "predicted_count": min(
-                limit, len(predicted)
-            ),
+            "predicted_count": min(limit, len(predicted)),
             "matched_count": len(selected),
             "avg_diff": average(diffs),
             "positive_rate": positive_rate(diffs),
             "total_diff": sum(diffs)
         }
 
-    store_diffs = [
-        r["diff"] for r in actual.values()
-    ]
+    store_diffs = [r["diff"] for r in actual.values()]
 
     return {
         "date": date,
@@ -196,9 +162,7 @@ def evaluate(date, prediction, daily):
         "matched_count": len(matches),
         "actual_unit_count": len(actual),
         "store_avg_diff": average(store_diffs),
-        "store_positive_rate": positive_rate(
-            store_diffs
-        ),
+        "store_positive_rate": positive_rate(store_diffs),
         "top_5": top_summary(5),
         "top_10": top_summary(10),
         "top_20": top_summary(20),
@@ -216,19 +180,14 @@ def evaluate_saved_predictions():
     if not PREDICTION_DIR.exists():
         return
 
-    for path in sorted(
-        PREDICTION_DIR.glob("*.json")
-    ):
+    for path in sorted(PREDICTION_DIR.glob("*.json")):
         date = path.stem
 
         try:
-            target = datetime.strptime(
-                date, "%Y-%m-%d"
-            ).date()
+            target = datetime.strptime(date, "%Y-%m-%d").date()
         except ValueError:
             continue
 
-        # 当日が終了するまで評価しない
         if target >= NOW.date():
             continue
 
@@ -244,9 +203,7 @@ def evaluate_saved_predictions():
         if not isinstance(prediction, dict):
             continue
 
-        result = evaluate(
-            date, prediction, daily
-        )
+        result = evaluate(date, prediction, daily)
 
         if result is None:
             print(f"照合できるデータなし: {date}")
@@ -257,20 +214,42 @@ def evaluate_saved_predictions():
 
         print(
             f"答え合わせ: {date} "
-            f"上位10台 "
-            f"{result['top_10']['matched_count']}台照合"
+            f"上位10台 {result['top_10']['matched_count']}台照合"
         )
+
+
+def period_stats(items):
+    complete = [
+        r for r in items
+        if r.get("top_10", {}).get("predicted_count") == 10
+        and r.get("top_10", {}).get("matched_count") == 10
+    ]
+
+    top = [r["top_10"]["avg_diff"] for r in complete]
+    store = [r["store_avg_diff"] for r in complete]
+    rates = [r["top_10"]["positive_rate"] for r in complete]
+
+    return {
+        "evaluated_days": len(items),
+        "complete_days": len(complete),
+        "top10_avg_diff": average(top) if complete else None,
+        "store_avg_diff": average(store) if complete else None,
+        "advantage": (
+            round(average(top) - average(store), 1)
+            if complete else None
+        ),
+        "top10_positive_rate": (
+            average(rates) if complete else None
+        )
+    }
 
 
 def create_summary():
     results = []
 
     if RESULT_DIR.exists():
-        for path in sorted(
-            RESULT_DIR.glob("*.json")
-        ):
+        for path in sorted(RESULT_DIR.glob("*.json")):
             data = read_json(path)
-
             if isinstance(data, dict):
                 results.append(data)
 
@@ -279,24 +258,15 @@ def create_summary():
         reverse=True
     )
 
-    # 全件照合できた日だけを集計対象にする
     complete = [
         r for r in results
-        if (
-            r.get("top_10", {}).get("matched_count")
-            == r.get("top_10", {}).get(
-                "predicted_count"
-            )
-            and r.get("top_10", {}).get(
-                "predicted_count", 0
-            ) == 10
-        )
+        if r.get("top_10", {}).get("matched_count") == 10
+        and r.get("top_10", {}).get("predicted_count") == 10
     ]
 
     top10_diffs = [
         r["top_10"]["avg_diff"] for r in complete
     ]
-
     store_diffs = [
         r["store_avg_diff"] for r in complete
     ]
@@ -308,15 +278,22 @@ def create_summary():
         "complete_top10_days": len(complete),
         "top10_avg_diff": average(top10_diffs),
         "store_avg_diff": average(store_diffs),
-        "top10_advantage": round(
-            average(top10_diffs) -
-            average(store_diffs),
-            1
-        ) if complete else 0,
+        "top10_advantage": (
+            round(average(top10_diffs) - average(store_diffs), 1)
+            if complete else 0
+        ),
         "daily_results": results[:90],
+        "long_term_accuracy": {
+            "all_time": period_stats(results),
+            "last_30_evaluated_days": period_stats(results[:30]),
+            "previous_30_evaluated_days": period_stats(results[30:60]),
+            "last_90_evaluated_days": period_stats(results[:90])
+        },
         "notes": [
-            "予測上位10台を全件照合できた日だけを平均に使用",
-            "過去予測を保存した日以降の実績が対象",
+            "上位10台を全件照合できた日だけを集計",
+            "長期成績は保存済みの全期間を対象",
+            "直近30日と前30日は評価済み日数で区切る",
+            "予測ロジックの重みは自動変更しません",
             "サンプルが少ない期間の成績は参考値",
             "高設定の的中率を表すものではありません"
         ]
@@ -325,8 +302,7 @@ def create_summary():
     write_json(SUMMARY_OUTPUT, summary)
 
     print(
-        f"答え合わせ集計完了: "
-        f"{len(results)}日分"
+        f"答え合わせ集計完了: {len(results)}日分"
     )
 
 
