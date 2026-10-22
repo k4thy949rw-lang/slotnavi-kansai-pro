@@ -1,0 +1,93 @@
+
+name: 美原ULTIMATE イベントタブ追加
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/add-event-tab.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  add-event-tab:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: コード取得
+        uses: actions/checkout@v4
+
+      - name: イベントタブを追加
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("index.html")
+          html = path.read_text(encoding="utf-8")
+
+          marker = 'data-tab="accuracy">予測検証</button>'
+          event_link = (
+              '<a class="tab event-tab" '
+              'href="./events.html">'
+              'イベント</a>'
+          )
+
+          if 'href="./events.html"' in html:
+              print("イベントボタンは追加済みです")
+          elif marker not in html:
+              raise SystemExit(
+                  "追加位置が見つかりません。"
+                  "index.htmlは変更しません。"
+              )
+          else:
+              html = html.replace(
+                  marker,
+                  marker + event_link,
+                  1
+              )
+
+              css = (
+                  '<style>'
+                  '.event-tab{'
+                  'display:flex;'
+                  'align-items:center;'
+                  'justify-content:center;'
+                  'text-align:center;'
+                  'text-decoration:none;'
+                  'font-size:12px;'
+                  'padding:12px 3px;'
+                  'border:1px solid #40516a;'
+                  'border-radius:9px;'
+                  'background:#164e63;'
+                  'color:#fff;'
+                  'min-width:0;'
+                  '}'
+                  '</style>'
+              )
+
+              html = html.replace(
+                  '</head>',
+                  css + '</head>',
+                  1
+              )
+
+              path.write_text(
+                  html,
+                  encoding="utf-8"
+              )
+
+              print("イベントボタン追加完了")
+          PY
+
+      - name: 変更を保存
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if ! git diff --cached --quiet; then
+            git commit -m "Add Mihara event tab"
+            git pull --rebase
+            git push
+          fi
