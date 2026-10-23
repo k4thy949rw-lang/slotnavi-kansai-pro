@@ -1,20 +1,12 @@
 {
-  "updated_at": "2026-10-23T23:56:34.028128+09:00",
+  "updated_at": "2026-10-24T00:34:33.977882+09:00",
   "store": "HYPER ARROW美原店",
   "history_days": 180,
   "future_days": 90,
-  "event_count": 6,
+  "event_count": 7,
   "confirmed_count": 0,
-  "unverified_count": 6,
+  "unverified_count": 7,
   "upcoming_events": [
-    {
-      "date": "2026-10-23",
-      "name": "黒バラ芦屋虎徹来店ジャンバリ炎",
-      "type": "来店",
-      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
-      "status": "unverified",
-      "origin": "automatic"
-    },
     {
       "date": "2026-10-24",
       "name": "超エクソシスト取材",
@@ -51,6 +43,14 @@
       "date": "2026-10-30",
       "name": "こしあん来店★超花鳥風月取材",
       "type": "来店",
+      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+      "status": "unverified",
+      "origin": "automatic"
+    },
+    {
+      "date": "2026-10-31",
+      "name": "超エクソシスト取材",
+      "type": "取材",
       "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
       "status": "unverified",
       "origin": "automatic"
@@ -52053,6 +52053,25 @@
           "date": "2026-10-30",
           "name": "こしあん来店★超花鳥風月取材",
           "type": "来店",
+          "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+          "status": "unverified",
+          "origin": "automatic"
+        }
+      ],
+      "actual": null,
+      "machines": []
+    },
+    {
+      "date": "2026-10-31",
+      "weekday": 5,
+      "calendar_tags": [
+        "1のつく日"
+      ],
+      "events": [
+        {
+          "date": "2026-10-31",
+          "name": "超エクソシスト取材",
+          "type": "取材",
           "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
           "status": "unverified",
           "origin": "automatic"
