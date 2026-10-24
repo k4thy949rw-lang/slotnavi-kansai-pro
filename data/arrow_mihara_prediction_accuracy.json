@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T03:29:22.393707+09:00",
+  "updated_at": "2026-10-25T04:03:01.795629+09:00",
   "store": "HYPER ARROW美原店",
   "evaluated_days": 3,
   "complete_top10_days": 3,
@@ -9,7 +9,7 @@
   "daily_results": [
     {
       "date": "2026-10-24",
-      "evaluated_at": "2026-10-25T03:29:22.393707+09:00",
+      "evaluated_at": "2026-10-25T04:03:01.795629+09:00",
       "predicted_count": 100,
       "matched_count": 95,
       "actual_unit_count": 700,
@@ -902,7 +902,7 @@
     },
     {
       "date": "2026-10-23",
-      "evaluated_at": "2026-10-25T03:29:22.393707+09:00",
+      "evaluated_at": "2026-10-25T04:03:01.795629+09:00",
       "predicted_count": 100,
       "matched_count": 98,
       "actual_unit_count": 690,
@@ -1822,7 +1822,7 @@
     },
     {
       "date": "2026-10-22",
-      "evaluated_at": "2026-10-25T03:29:22.393707+09:00",
+      "evaluated_at": "2026-10-25T04:03:01.795629+09:00",
       "predicted_count": 100,
       "matched_count": 95,
       "actual_unit_count": 715,
