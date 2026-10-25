@@ -1,0 +1,920 @@
+{
+  "date": "2026-10-25",
+  "evaluated_at": "2026-10-26T01:28:16.980417+09:00",
+  "predicted_count": 100,
+  "matched_count": 98,
+  "actual_unit_count": 671,
+  "store_avg_diff": -114.8,
+  "store_positive_rate": 32.5,
+  "top_5": {
+    "predicted_count": 5,
+    "matched_count": 5,
+    "avg_diff": -1045.0,
+    "positive_rate": 20.0,
+    "total_diff": -5225
+  },
+  "top_10": {
+    "predicted_count": 10,
+    "matched_count": 10,
+    "avg_diff": -1481.4,
+    "positive_rate": 20.0,
+    "total_diff": -14814
+  },
+  "top_20": {
+    "predicted_count": 20,
+    "matched_count": 20,
+    "avg_diff": -1119.7,
+    "positive_rate": 25.0,
+    "total_diff": -22393
+  },
+  "matches": [
+    {
+      "rank": 1,
+      "unit": 739,
+      "machine": "獣王",
+      "prediction_score": 75.3,
+      "actual_diff": -3047,
+      "actual_games": 6740,
+      "positive": false
+    },
+    {
+      "rank": 2,
+      "unit": 838,
+      "machine": "東京喰種",
+      "prediction_score": 72.1,
+      "actual_diff": -3486,
+      "actual_games": 4001,
+      "positive": false
+    },
+    {
+      "rank": 3,
+      "unit": 605,
+      "machine": "ソードアート・オンラインⅡ",
+      "prediction_score": 69.4,
+      "actual_diff": 3281,
+      "actual_games": 7952,
+      "positive": true
+    },
+    {
+      "rank": 4,
+      "unit": 831,
+      "machine": "東京喰種",
+      "prediction_score": 69.2,
+      "actual_diff": -747,
+      "actual_games": 4196,
+      "positive": false
+    },
+    {
+      "rank": 5,
+      "unit": 1075,
+      "machine": "東京喰種",
+      "prediction_score": 68.3,
+      "actual_diff": -1226,
+      "actual_games": 1352,
+      "positive": false
+    },
+    {
+      "rank": 6,
+      "unit": 822,
+      "machine": "東京喰種",
+      "prediction_score": 67.3,
+      "actual_diff": 751,
+      "actual_games": 7832,
+      "positive": true
+    },
+    {
+      "rank": 7,
+      "unit": 995,
+      "machine": "ファンキージャグラー2",
+      "prediction_score": 67.2,
+      "actual_diff": -674,
+      "actual_games": 4103,
+      "positive": false
+    },
+    {
+      "rank": 8,
+      "unit": 737,
+      "machine": "獣王",
+      "prediction_score": 67.2,
+      "actual_diff": -4017,
+      "actual_games": 8254,
+      "positive": false
+    },
+    {
+      "rank": 9,
+      "unit": 655,
+      "machine": "真打 吉宗",
+      "prediction_score": 66.9,
+      "actual_diff": -1997,
+      "actual_games": 2170,
+      "positive": false
+    },
+    {
+      "rank": 10,
+      "unit": 1050,
+      "machine": "A‐SLOT+ ディスクアップ ULTRAREMIX",
+      "prediction_score": 66.5,
+      "actual_diff": -3652,
+      "actual_games": 5574,
+      "positive": false
+    },
+    {
+      "rank": 11,
+      "unit": 817,
+      "machine": "ゴーゴージャグラー3",
+      "prediction_score": 65.7,
+      "actual_diff": -899,
+      "actual_games": 5720,
+      "positive": false
+    },
+    {
+      "rank": 12,
+      "unit": 1081,
+      "machine": "東京喰種",
+      "prediction_score": 65.5,
+      "actual_diff": -4920,
+      "actual_games": 6453,
+      "positive": false
+    },
+    {
+      "rank": 13,
+      "unit": 1100,
+      "machine": "戦国コレクション6",
+      "prediction_score": 65.4,
+      "actual_diff": -925,
+      "actual_games": 2074,
+      "positive": false
+    },
+    {
+      "rank": 14,
+      "unit": 978,
+      "machine": "ファンキージャグラー2",
+      "prediction_score": 64.6,
+      "actual_diff": 1766,
+      "actual_games": 8499,
+      "positive": true
+    },
+    {
+      "rank": 15,
+      "unit": 1017,
+      "machine": "ミリオンゴッド‐神々の軌跡‐",
+      "prediction_score": 64.5,
+      "actual_diff": -2605,
+      "actual_games": 4697,
+      "positive": false
+    },
+    {
+      "rank": 16,
+      "unit": 828,
+      "machine": "東京喰種",
+      "prediction_score": 64.3,
+      "actual_diff": -1381,
+      "actual_games": 9915,
+      "positive": false
+    },
+    {
+      "rank": 17,
+      "unit": 913,
+      "machine": "マイジャグラーV",
+      "prediction_score": 64.3,
+      "actual_diff": -155,
+      "actual_games": 5488,
+      "positive": false
+    },
+    {
+      "rank": 18,
+      "unit": 1015,
+      "machine": "ミリオンゴッド‐神々の軌跡‐",
+      "prediction_score": 63.8,
+      "actual_diff": -1813,
+      "actual_games": 5590,
+      "positive": false
+    },
+    {
+      "rank": 19,
+      "unit": 1039,
+      "machine": "ミリオンゴッド‐神々の軌跡‐",
+      "prediction_score": 63.6,
+      "actual_diff": 2982,
+      "actual_games": 4872,
+      "positive": true
+    },
+    {
+      "rank": 20,
+      "unit": 936,
+      "machine": "ネオアイムジャグラーEX",
+      "prediction_score": 63.4,
+      "actual_diff": 371,
+      "actual_games": 7705,
+      "positive": true
+    },
+    {
+      "rank": 21,
+      "unit": 661,
+      "machine": "モンスターハンターライズ:サンブレイク",
+      "prediction_score": 63.2,
+      "actual_diff": 1527,
+      "actual_games": 4342,
+      "positive": true
+    },
+    {
+      "rank": 22,
+      "unit": 970,
+      "machine": "ウルトラミラクルジャグラー",
+      "prediction_score": 63.1,
+      "actual_diff": -1229,
+      "actual_games": 3173,
+      "positive": false
+    },
+    {
+      "rank": 23,
+      "unit": 698,
+      "machine": "とある魔術の禁書目録2",
+      "prediction_score": 62.9,
+      "actual_diff": -1148,
+      "actual_games": 852,
+      "positive": false
+    },
+    {
+      "rank": 24,
+      "unit": 670,
+      "machine": "モンスターハンターライズ:サンブレイク",
+      "prediction_score": 62.9,
+      "actual_diff": -3707,
+      "actual_games": 4906,
+      "positive": false
+    },
+    {
+      "rank": 25,
+      "unit": 625,
+      "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+      "prediction_score": 62.5,
+      "actual_diff": -26,
+      "actual_games": 5113,
+      "positive": false
+    },
+    {
+      "rank": 26,
+      "unit": 1037,
+      "machine": "ミリオンゴッド‐神々の軌跡‐",
+      "prediction_score": 62.4,
+      "actual_diff": -796,
+      "actual_games": 1231,
+      "positive": false
+    },
+    {
+      "rank": 27,
+      "unit": 719,
+      "machine": "北斗の拳",
+      "prediction_score": 62.0,
+      "actual_diff": 953,
+      "actual_games": 2087,
+      "positive": true
+    },
+    {
+      "rank": 28,
+      "unit": 1078,
+      "machine": "東京喰種",
+      "prediction_score": 61.8,
+      "actual_diff": -4495,
+      "actual_games": 5970,
+      "positive": false
+    },
+    {
+      "rank": 29,
+      "unit": 1072,
+      "machine": "東京喰種",
+      "prediction_score": 61.7,
+      "actual_diff": -1991,
+      "actual_games": 2873,
+      "positive": false
+    },
+    {
+      "rank": 30,
+      "unit": 1090,
+      "machine": "東京喰種",
+      "prediction_score": 61.6,
+      "actual_diff": -2677,
+      "actual_games": 2502,
+      "positive": false
+    },
+    {
+      "rank": 32,
+      "unit": 690,
+      "machine": "モンキーターンV",
+      "prediction_score": 61.4,
+      "actual_diff": -1447,
+      "actual_games": 1745,
+      "positive": false
+    },
+    {
+      "rank": 33,
+      "unit": 830,
+      "machine": "東京喰種",
+      "prediction_score": 61.4,
+      "actual_diff": 3138,
+      "actual_games": 7884,
+      "positive": true
+    },
+    {
+      "rank": 34,
+      "unit": 1074,
+      "machine": "東京喰種",
+      "prediction_score": 61.2,
+      "actual_diff": -2738,
+      "actual_games": 3080,
+      "positive": false
+    },
+    {
+      "rank": 35,
+      "unit": 606,
+      "machine": "ソードアート・オンラインⅡ",
+      "prediction_score": 61.2,
+      "actual_diff": -2888,
+      "actual_games": 6795,
+      "positive": false
+    },
+    {
+      "rank": 36,
+      "unit": 658,
+      "machine": "真打 吉宗",
+      "prediction_score": 61.1,
+      "actual_diff": -2563,
+      "actual_games": 2898,
+      "positive": false
+    },
+    {
+      "rank": 37,
+      "unit": 1077,
+      "machine": "東京喰種",
+      "prediction_score": 60.9,
+      "actual_diff": 2619,
+      "actual_games": 5819,
+      "positive": true
+    },
+    {
+      "rank": 38,
+      "unit": 1086,
+      "machine": "東京喰種",
+      "prediction_score": 60.8,
+      "actual_diff": -1637,
+      "actual_games": 5631,
+      "positive": false
+    },
+    {
+      "rank": 39,
+      "unit": 1027,
+      "machine": "ミリオンゴッド‐神々の軌跡‐",
+      "prediction_score": 60.4,
+      "actual_diff": -2465,
+      "actual_games": 4364,
+      "positive": false
+    },
+    {
+      "rank": 40,
+      "unit": 741,
+      "machine": "リコリス・リコイル",
+      "prediction_score": 60.4,
+      "actual_diff": -737,
+      "actual_games": 2018,
+      "positive": false
+    },
+    {
+      "rank": 41,
+      "unit": 948,
+      "machine": "ハッピージャグラーVⅢ",
+      "prediction_score": 60.4,
+      "actual_diff": 1166,
+      "actual_games": 6915,
+      "positive": true
+    },
+    {
+      "rank": 42,
+      "unit": 956,
+      "machine": "ネオアイムジャグラーEX",
+      "prediction_score": 60.2,
+      "actual_diff": -2876,
+      "actual_games": 6544,
+      "positive": false
+    },
+    {
+      "rank": 43,
+      "unit": 808,
+      "machine": "ゴーゴージャグラー3",
+      "prediction_score": 60.1,
+      "actual_diff": -1814,
+      "actual_games": 6223,
+      "positive": false
+    },
+    {
+      "rank": 44,
+      "unit": 954,
+      "machine": "ミスタージャグラー",
+      "prediction_score": 60.1,
+      "actual_diff": -1269,
+      "actual_games": 4922,
+      "positive": false
+    },
+    {
+      "rank": 46,
+      "unit": 832,
+      "machine": "東京喰種",
+      "prediction_score": 59.9,
+      "actual_diff": 2140,
+      "actual_games": 6082,
+      "positive": true
+    },
+    {
+      "rank": 47,
+      "unit": 880,
+      "machine": "マイジャグラーV",
+      "prediction_score": 59.8,
+      "actual_diff": 1122,
+      "actual_games": 9081,
+      "positive": true
+    },
+    {
+      "rank": 48,
+      "unit": 893,
+      "machine": "マイジャグラーV",
+      "prediction_score": 59.8,
+      "actual_diff": -126,
+      "actual_games": 8136,
+      "positive": false
+    },
+    {
+      "rank": 49,
+      "unit": 959,
+      "machine": "ネオアイムジャグラーEX",
+      "prediction_score": 59.8,
+      "actual_diff": 2010,
+      "actual_games": 6579,
+      "positive": true
+    },
+    {
+      "rank": 50,
+      "unit": 1014,
+      "machine": "ミリオンゴッド‐神々の軌跡‐",
+      "prediction_score": 59.6,
+      "actual_diff": -714,
+      "actual_games": 2215,
+      "positive": false
+    },
+    {
+      "rank": 51,
+      "unit": 934,
+      "machine": "ネオアイムジャグラーEX",
+      "prediction_score": 59.6,
+      "actual_diff": 422,
+      "actual_games": 7949,
+      "positive": true
+    },
+    {
+      "rank": 52,
+      "unit": 1025,
+      "machine": "ミリオンゴッド‐神々の軌跡‐",
+      "prediction_score": 59.3,
+      "actual_diff": 2741,
+      "actual_games": 4692,
+      "positive": true
+    },
+    {
+      "rank": 53,
+      "unit": 870,
+      "machine": "マイジャグラーV",
+      "prediction_score": 59.3,
+      "actual_diff": 1760,
+      "actual_games": 7114,
+      "positive": true
+    },
+    {
+      "rank": 54,
+      "unit": 922,
+      "machine": "マイジャグラーV",
+      "prediction_score": 59.3,
+      "actual_diff": -1185,
+      "actual_games": 5746,
+      "positive": false
+    },
+    {
+      "rank": 55,
+      "unit": 836,
+      "machine": "東京喰種",
+      "prediction_score": 59.2,
+      "actual_diff": -465,
+      "actual_games": 5373,
+      "positive": false
+    },
+    {
+      "rank": 56,
+      "unit": 572,
+      "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+      "prediction_score": 59.1,
+      "actual_diff": 4698,
+      "actual_games": 4856,
+      "positive": true
+    },
+    {
+      "rank": 57,
+      "unit": 753,
+      "machine": "リコリス・リコイル",
+      "prediction_score": 59.0,
+      "actual_diff": -3189,
+      "actual_games": 5645,
+      "positive": false
+    },
+    {
+      "rank": 58,
+      "unit": 826,
+      "machine": "東京喰種",
+      "prediction_score": 59.0,
+      "actual_diff": 1166,
+      "actual_games": 7818,
+      "positive": true
+    },
+    {
+      "rank": 59,
+      "unit": 947,
+      "machine": "ハッピージャグラーVⅢ",
+      "prediction_score": 58.9,
+      "actual_diff": -204,
+      "actual_games": 6119,
+      "positive": false
+    },
+    {
+      "rank": 60,
+      "unit": 1040,
+      "machine": "ミリオンゴッド‐神々の軌跡‐",
+      "prediction_score": 58.8,
+      "actual_diff": -1419,
+      "actual_games": 4843,
+      "positive": false
+    },
+    {
+      "rank": 61,
+      "unit": 897,
+      "machine": "マイジャグラーV",
+      "prediction_score": 58.8,
+      "actual_diff": 2367,
+      "actual_games": 9249,
+      "positive": true
+    },
+    {
+      "rank": 62,
+      "unit": 931,
+      "machine": "ネオアイムジャグラーEX",
+      "prediction_score": 58.8,
+      "actual_diff": -625,
+      "actual_games": 5815,
+      "positive": false
+    },
+    {
+      "rank": 63,
+      "unit": 1006,
+      "machine": "マイジャグラーV",
+      "prediction_score": 58.7,
+      "actual_diff": -1805,
+      "actual_games": 5146,
+      "positive": false
+    },
+    {
+      "rank": 64,
+      "unit": 803,
+      "machine": "ゴーゴージャグラー3",
+      "prediction_score": 58.7,
+      "actual_diff": -1269,
+      "actual_games": 6616,
+      "positive": false
+    },
+    {
+      "rank": 65,
+      "unit": 982,
+      "machine": "ファンキージャグラー2",
+      "prediction_score": 58.6,
+      "actual_diff": 1508,
+      "actual_games": 8339,
+      "positive": true
+    },
+    {
+      "rank": 66,
+      "unit": 736,
+      "machine": "獣王",
+      "prediction_score": 58.5,
+      "actual_diff": 243,
+      "actual_games": 7405,
+      "positive": true
+    },
+    {
+      "rank": 67,
+      "unit": 1005,
+      "machine": "マイジャグラーV",
+      "prediction_score": 58.4,
+      "actual_diff": -66,
+      "actual_games": 5778,
+      "positive": false
+    },
+    {
+      "rank": 68,
+      "unit": 941,
+      "machine": "マイジャグラーV",
+      "prediction_score": 58.4,
+      "actual_diff": -575,
+      "actual_games": 5580,
+      "positive": false
+    },
+    {
+      "rank": 69,
+      "unit": 611,
+      "machine": "甲鉄城のカバネリ 海門決戦",
+      "prediction_score": 58.2,
+      "actual_diff": -594,
+      "actual_games": 2772,
+      "positive": false
+    },
+    {
+      "rank": 70,
+      "unit": 899,
+      "machine": "マイジャグラーV",
+      "prediction_score": 58.2,
+      "actual_diff": 2961,
+      "actual_games": 8309,
+      "positive": true
+    },
+    {
+      "rank": 71,
+      "unit": 919,
+      "machine": "マイジャグラーV",
+      "prediction_score": 58.2,
+      "actual_diff": 1567,
+      "actual_games": 7809,
+      "positive": true
+    },
+    {
+      "rank": 72,
+      "unit": 951,
+      "machine": "ミスタージャグラー",
+      "prediction_score": 58.2,
+      "actual_diff": -91,
+      "actual_games": 7272,
+      "positive": false
+    },
+    {
+      "rank": 73,
+      "unit": 1099,
+      "machine": "スーパーブラックジャック",
+      "prediction_score": 58.1,
+      "actual_diff": -589,
+      "actual_games": 1698,
+      "positive": false
+    },
+    {
+      "rank": 74,
+      "unit": 981,
+      "machine": "ファンキージャグラー2",
+      "prediction_score": 58.1,
+      "actual_diff": -1402,
+      "actual_games": 2378,
+      "positive": false
+    },
+    {
+      "rank": 75,
+      "unit": 734,
+      "machine": "獣王",
+      "prediction_score": 58.1,
+      "actual_diff": 467,
+      "actual_games": 7388,
+      "positive": true
+    },
+    {
+      "rank": 76,
+      "unit": 888,
+      "machine": "マイジャグラーV",
+      "prediction_score": 58.0,
+      "actual_diff": -471,
+      "actual_games": 7414,
+      "positive": false
+    },
+    {
+      "rank": 77,
+      "unit": 881,
+      "machine": "マイジャグラーV",
+      "prediction_score": 57.9,
+      "actual_diff": -1141,
+      "actual_games": 6045,
+      "positive": false
+    },
+    {
+      "rank": 78,
+      "unit": 848,
+      "machine": "シャーマンキング",
+      "prediction_score": 57.8,
+      "actual_diff": -2360,
+      "actual_games": 6064,
+      "positive": false
+    },
+    {
+      "rank": 79,
+      "unit": 872,
+      "machine": "マイジャグラーV",
+      "prediction_score": 57.8,
+      "actual_diff": -297,
+      "actual_games": 5842,
+      "positive": false
+    },
+    {
+      "rank": 80,
+      "unit": 903,
+      "machine": "マイジャグラーV",
+      "prediction_score": 57.8,
+      "actual_diff": 2495,
+      "actual_games": 8168,
+      "positive": true
+    },
+    {
+      "rank": 81,
+      "unit": 804,
+      "machine": "ゴーゴージャグラー3",
+      "prediction_score": 57.7,
+      "actual_diff": -36,
+      "actual_games": 5567,
+      "positive": false
+    },
+    {
+      "rank": 82,
+      "unit": 673,
+      "machine": "モンキーターンV",
+      "prediction_score": 57.6,
+      "actual_diff": -964,
+      "actual_games": 2911,
+      "positive": false
+    },
+    {
+      "rank": 83,
+      "unit": 976,
+      "machine": "ファンキージャグラー2",
+      "prediction_score": 57.6,
+      "actual_diff": -1054,
+      "actual_games": 4975,
+      "positive": false
+    },
+    {
+      "rank": 84,
+      "unit": 1105,
+      "machine": "戦国コレクション6",
+      "prediction_score": 57.5,
+      "actual_diff": 3650,
+      "actual_games": 5168,
+      "positive": true
+    },
+    {
+      "rank": 85,
+      "unit": 748,
+      "machine": "リコリス・リコイル",
+      "prediction_score": 57.5,
+      "actual_diff": 6523,
+      "actual_games": 4151,
+      "positive": true
+    },
+    {
+      "rank": 86,
+      "unit": 1004,
+      "machine": "マイジャグラーV",
+      "prediction_score": 57.4,
+      "actual_diff": 504,
+      "actual_games": 6068,
+      "positive": true
+    },
+    {
+      "rank": 87,
+      "unit": 618,
+      "machine": "甲鉄城のカバネリ 海門決戦",
+      "prediction_score": 57.3,
+      "actual_diff": -261,
+      "actual_games": 1370,
+      "positive": false
+    },
+    {
+      "rank": 88,
+      "unit": 811,
+      "machine": "ゴーゴージャグラー3",
+      "prediction_score": 57.2,
+      "actual_diff": -600,
+      "actual_games": 6821,
+      "positive": false
+    },
+    {
+      "rank": 89,
+      "unit": 1012,
+      "machine": "ミリオンゴッド‐神々の軌跡‐",
+      "prediction_score": 57.1,
+      "actual_diff": -1794,
+      "actual_games": 2669,
+      "positive": false
+    },
+    {
+      "rank": 90,
+      "unit": 921,
+      "machine": "マイジャグラーV",
+      "prediction_score": 57.1,
+      "actual_diff": -436,
+      "actual_games": 8675,
+      "positive": false
+    },
+    {
+      "rank": 91,
+      "unit": 968,
+      "machine": "ウルトラミラクルジャグラー",
+      "prediction_score": 57.1,
+      "actual_diff": -1075,
+      "actual_games": 4475,
+      "positive": false
+    },
+    {
+      "rank": 92,
+      "unit": 1000,
+      "machine": "マイジャグラーV",
+      "prediction_score": 57.0,
+      "actual_diff": 2766,
+      "actual_games": 8561,
+      "positive": true
+    },
+    {
+      "rank": 93,
+      "unit": 1033,
+      "machine": "東京喰種",
+      "prediction_score": 56.9,
+      "actual_diff": 34,
+      "actual_games": 5987,
+      "positive": true
+    },
+    {
+      "rank": 94,
+      "unit": 651,
+      "machine": "真打 吉宗",
+      "prediction_score": 56.8,
+      "actual_diff": -4845,
+      "actual_games": 5273,
+      "positive": false
+    },
+    {
+      "rank": 95,
+      "unit": 961,
+      "machine": "ネオアイムジャグラーEX",
+      "prediction_score": 56.8,
+      "actual_diff": 633,
+      "actual_games": 6998,
+      "positive": true
+    },
+    {
+      "rank": 96,
+      "unit": 773,
+      "machine": "リコリス・リコイル",
+      "prediction_score": 56.7,
+      "actual_diff": 1326,
+      "actual_games": 6001,
+      "positive": true
+    },
+    {
+      "rank": 97,
+      "unit": 957,
+      "machine": "ネオアイムジャグラーEX",
+      "prediction_score": 56.7,
+      "actual_diff": -1567,
+      "actual_games": 8268,
+      "positive": false
+    },
+    {
+      "rank": 98,
+      "unit": 820,
+      "machine": "ゴーゴージャグラー3",
+      "prediction_score": 56.6,
+      "actual_diff": -1101,
+      "actual_games": 7488,
+      "positive": false
+    },
+    {
+      "rank": 99,
+      "unit": 915,
+      "machine": "マイジャグラーV",
+      "prediction_score": 56.6,
+      "actual_diff": 630,
+      "actual_games": 7587,
+      "positive": true
+    },
+    {
+      "rank": 100,
+      "unit": 979,
+      "machine": "ファンキージャグラー2",
+      "prediction_score": 56.5,
+      "actual_diff": -959,
+      "actual_games": 5273,
+      "positive": false
+    }
+  ],
+  "notes": [
+    "プラス差枚を好成績として集計",
+    "予測スコアは設定投入確率ではありません",
+    "実際の差枚は高設定を証明しません",
+    "照合できなかった台は成績集計から除外"
+  ]
+}
