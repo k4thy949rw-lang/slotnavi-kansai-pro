@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T22:08:50.396511+09:00",
+  "updated_at": "2026-10-27T23:06:54.430242+09:00",
   "store": "HYPER ARROW美原店",
   "analysis_days": 30,
   "minimum_days": 3,
@@ -132,21 +132,21 @@
       "score": 80.5
     },
     {
-      "unit": 848,
-      "machine": "シャーマンキング",
-      "days": 30,
-      "avg_diff": 1020,
-      "avg_games": 4529,
-      "win_rate": 50.0,
-      "score": 80.1
-    },
-    {
       "unit": 737,
       "machine": "獣王",
       "days": 21,
       "avg_diff": 946,
       "avg_games": 7921,
       "win_rate": 42.9,
+      "score": 80.1
+    },
+    {
+      "unit": 848,
+      "machine": "シャーマンキング",
+      "days": 30,
+      "avg_diff": 1020,
+      "avg_games": 4529,
+      "win_rate": 50.0,
       "score": 80.1
     },
     {
@@ -1527,21 +1527,21 @@
       "score": 41.9
     },
     {
-      "unit": 1102,
-      "machine": "戦国コレクション6",
-      "days": 30,
-      "avg_diff": 367,
-      "avg_games": 3783,
-      "win_rate": 36.7,
-      "score": 41.9
-    },
-    {
       "unit": 735,
       "machine": "獣王",
       "days": 21,
       "avg_diff": 209,
       "avg_games": 7473,
       "win_rate": 38.1,
+      "score": 41.9
+    },
+    {
+      "unit": 1102,
+      "machine": "戦国コレクション6",
+      "days": 30,
+      "avg_diff": 367,
+      "avg_games": 3783,
+      "win_rate": 36.7,
       "score": 41.9
     },
     {
@@ -2850,21 +2850,21 @@
       "score": 27.9
     },
     {
-      "unit": 723,
-      "machine": "革命機ヴァルヴレイヴ2",
-      "days": 30,
-      "avg_diff": 112,
-      "avg_games": 3641,
-      "win_rate": 33.3,
-      "score": 27.8
-    },
-    {
       "unit": 703,
       "machine": "彼女、お借りします",
       "days": 30,
       "avg_diff": 221,
       "avg_games": 2337,
       "win_rate": 30.0,
+      "score": 27.8
+    },
+    {
+      "unit": 723,
+      "machine": "革命機ヴァルヴレイヴ2",
+      "days": 30,
+      "avg_diff": 112,
+      "avg_games": 3641,
+      "win_rate": 33.3,
       "score": 27.8
     },
     {
@@ -3453,21 +3453,21 @@
       "score": 22.0
     },
     {
-      "unit": 722,
-      "machine": "革命機ヴァルヴレイヴ2",
-      "days": 30,
-      "avg_diff": 3,
-      "avg_games": 3829,
-      "win_rate": 30.0,
-      "score": 21.9
-    },
-    {
       "unit": 651,
       "machine": "真打 吉宗",
       "days": 30,
       "avg_diff": -124,
       "avg_games": 4542,
       "win_rate": 43.3,
+      "score": 21.9
+    },
+    {
+      "unit": 722,
+      "machine": "革命機ヴァルヴレイヴ2",
+      "days": 30,
+      "avg_diff": 3,
+      "avg_games": 3829,
+      "win_rate": 30.0,
       "score": 21.9
     },
     {
@@ -4065,21 +4065,21 @@
       "score": 14.0
     },
     {
-      "unit": 855,
-      "machine": "無職転生 ～異世界行ったら本気だす～",
-      "days": 9,
-      "avg_diff": -216,
-      "avg_games": 4367,
-      "win_rate": 33.3,
-      "score": 13.8
-    },
-    {
       "unit": 1070,
       "machine": "とんでもスキルで異世界放浪メシ",
       "days": 30,
       "avg_diff": -126,
       "avg_games": 3916,
       "win_rate": 23.3,
+      "score": 13.8
+    },
+    {
+      "unit": 855,
+      "machine": "無職転生 ～異世界行ったら本気だす～",
+      "days": 9,
+      "avg_diff": -216,
+      "avg_games": 4367,
+      "win_rate": 33.3,
       "score": 13.8
     },
     {
@@ -4236,21 +4236,21 @@
       "score": 11.7
     },
     {
-      "unit": 949,
-      "machine": "ハッピージャグラーVⅢ",
-      "days": 30,
-      "avg_diff": -263,
-      "avg_games": 5054,
-      "win_rate": 26.7,
-      "score": 11.7
-    },
-    {
       "unit": 854,
       "machine": "パリピ孔明",
       "days": 21,
       "avg_diff": -137,
       "avg_games": 3424,
       "win_rate": 23.8,
+      "score": 11.7
+    },
+    {
+      "unit": 949,
+      "machine": "ハッピージャグラーVⅢ",
+      "days": 30,
+      "avg_diff": -263,
+      "avg_games": 5054,
+      "win_rate": 26.7,
       "score": 11.7
     },
     {
@@ -4317,21 +4317,21 @@
       "score": 10.4
     },
     {
-      "unit": 1062,
-      "machine": "ワールドダイスター",
-      "days": 30,
-      "avg_diff": -329,
-      "avg_games": 4941,
-      "win_rate": 33.3,
-      "score": 10.0
-    },
-    {
       "unit": 1097,
       "machine": "攻殻機動隊",
       "days": 21,
       "avg_diff": -256,
       "avg_games": 4270,
       "win_rate": 28.6,
+      "score": 10.0
+    },
+    {
+      "unit": 1062,
+      "machine": "ワールドダイスター",
+      "days": 30,
+      "avg_diff": -329,
+      "avg_games": 4941,
+      "win_rate": 33.3,
       "score": 10.0
     },
     {
@@ -4362,21 +4362,21 @@
       "score": 9.4
     },
     {
-      "unit": 733,
-      "machine": "革命機ヴァルヴレイヴ2",
-      "days": 9,
-      "avg_diff": -278,
-      "avg_games": 2989,
-      "win_rate": 44.4,
-      "score": 9.4
-    },
-    {
       "unit": 784,
       "machine": "炎炎ノ消防隊2",
       "days": 30,
       "avg_diff": -317,
       "avg_games": 3686,
       "win_rate": 43.3,
+      "score": 9.4
+    },
+    {
+      "unit": 733,
+      "machine": "革命機ヴァルヴレイヴ2",
+      "days": 9,
+      "avg_diff": -278,
+      "avg_games": 2989,
+      "win_rate": 44.4,
       "score": 9.4
     },
     {
