@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T01:19:55.966912+09:00",
+  "updated_at": "2026-10-28T02:07:29.326416+09:00",
   "store": "HYPER ARROW美原店",
   "history_days": 180,
   "future_days": 90,
@@ -58502,8 +58502,1573 @@
           "origin": "automatic"
         }
       ],
-      "actual": null,
-      "machines": []
+      "actual": {
+        "units": 682,
+        "total_diff": 51285,
+        "avg_diff": 75,
+        "avg_games": 3683,
+        "positive_units": 223,
+        "positive_rate": 32.7
+      },
+      "machines": [
+        {
+          "machine": "喰霊‐零‐Re",
+          "units": 1,
+          "total_diff": 5547,
+          "avg_diff": 5547,
+          "avg_games": 8872,
+          "positive_units": 1,
+          "positive_rate": 100.0
+        },
+        {
+          "machine": "魔法少女にあこがれて",
+          "units": 3,
+          "total_diff": 10423,
+          "avg_diff": 3474,
+          "avg_games": 7796,
+          "positive_units": 2,
+          "positive_rate": 66.7
+        },
+        {
+          "machine": "タコスロ",
+          "units": 2,
+          "total_diff": 4417,
+          "avg_diff": 2208,
+          "avg_games": 4260,
+          "positive_units": 1,
+          "positive_rate": 50.0
+        },
+        {
+          "machine": "うみねこのなく頃に2",
+          "units": 1,
+          "total_diff": 2090,
+          "avg_diff": 2090,
+          "avg_games": 8299,
+          "positive_units": 1,
+          "positive_rate": 100.0
+        },
+        {
+          "machine": "真打 吉宗",
+          "units": 10,
+          "total_diff": 15088,
+          "avg_diff": 1509,
+          "avg_games": 4706,
+          "positive_units": 5,
+          "positive_rate": 50.0
+        },
+        {
+          "machine": "ディスクアップ2",
+          "units": 1,
+          "total_diff": 1493,
+          "avg_diff": 1493,
+          "avg_games": 5072,
+          "positive_units": 1,
+          "positive_rate": 100.0
+        },
+        {
+          "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+          "units": 30,
+          "total_diff": 44752,
+          "avg_diff": 1492,
+          "avg_games": 5026,
+          "positive_units": 19,
+          "positive_rate": 63.3
+        },
+        {
+          "machine": "バーサスリヴァイズ",
+          "units": 1,
+          "total_diff": 1419,
+          "avg_diff": 1419,
+          "avg_games": 7060,
+          "positive_units": 1,
+          "positive_rate": 100.0
+        },
+        {
+          "machine": "モンスターハンターライズ:サンブレイク",
+          "units": 10,
+          "total_diff": 12928,
+          "avg_diff": 1293,
+          "avg_games": 3963,
+          "positive_units": 4,
+          "positive_rate": 40.0
+        },
+        {
+          "machine": "モンキーターンV",
+          "units": 20,
+          "total_diff": 20451,
+          "avg_diff": 1023,
+          "avg_games": 3835,
+          "positive_units": 7,
+          "positive_rate": 35.0
+        },
+        {
+          "machine": "サンダーV",
+          "units": 3,
+          "total_diff": 2395,
+          "avg_diff": 798,
+          "avg_games": 5615,
+          "positive_units": 1,
+          "positive_rate": 33.3
+        },
+        {
+          "machine": "革命機ヴァルヴレイヴ2",
+          "units": 10,
+          "total_diff": 5840,
+          "avg_diff": 584,
+          "avg_games": 2529,
+          "positive_units": 4,
+          "positive_rate": 40.0
+        },
+        {
+          "machine": "邪神ちゃんドロップキック",
+          "units": 3,
+          "total_diff": 1493,
+          "avg_diff": 498,
+          "avg_games": 3599,
+          "positive_units": 1,
+          "positive_rate": 33.3
+        },
+        {
+          "machine": "北斗の拳",
+          "units": 20,
+          "total_diff": 9606,
+          "avg_diff": 480,
+          "avg_games": 2434,
+          "positive_units": 11,
+          "positive_rate": 55.0
+        },
+        {
+          "machine": "ファンキージャグラー2",
+          "units": 23,
+          "total_diff": 10706,
+          "avg_diff": 465,
+          "avg_games": 4195,
+          "positive_units": 11,
+          "positive_rate": 47.8
+        },
+        {
+          "machine": "ミスタージャグラー",
+          "units": 4,
+          "total_diff": 1710,
+          "avg_diff": 428,
+          "avg_games": 3450,
+          "positive_units": 2,
+          "positive_rate": 50.0
+        },
+        {
+          "machine": "甲鉄城のカバネリ 海門決戦",
+          "units": 30,
+          "total_diff": 4880,
+          "avg_diff": 163,
+          "avg_games": 4729,
+          "positive_units": 14,
+          "positive_rate": 46.7
+        },
+        {
+          "machine": "ミリオンゴッド‐神々の軌跡‐",
+          "units": 31,
+          "total_diff": 3744,
+          "avg_diff": 121,
+          "avg_games": 2813,
+          "positive_units": 8,
+          "positive_rate": 25.8
+        },
+        {
+          "machine": "ジャグラーガールズSS",
+          "units": 6,
+          "total_diff": 412,
+          "avg_diff": 69,
+          "avg_games": 5126,
+          "positive_units": 3,
+          "positive_rate": 50.0
+        },
+        {
+          "machine": "ソードアート・オンラインⅡ",
+          "units": 10,
+          "total_diff": 618,
+          "avg_diff": 62,
+          "avg_games": 4916,
+          "positive_units": 4,
+          "positive_rate": 40.0
+        },
+        {
+          "machine": "725",
+          "units": 1,
+          "total_diff": 59,
+          "avg_diff": 59,
+          "avg_games": 2855,
+          "positive_units": 1,
+          "positive_rate": 100.0
+        },
+        {
+          "machine": "728",
+          "units": 1,
+          "total_diff": 58,
+          "avg_diff": 58,
+          "avg_games": 4390,
+          "positive_units": 1,
+          "positive_rate": 100.0
+        },
+        {
+          "machine": "721",
+          "units": 1,
+          "total_diff": 57,
+          "avg_diff": 57,
+          "avg_games": 3787,
+          "positive_units": 1,
+          "positive_rate": 100.0
+        },
+        {
+          "machine": "ウルトラミラクルジャグラー",
+          "units": 6,
+          "total_diff": 325,
+          "avg_diff": 54,
+          "avg_games": 3258,
+          "positive_units": 1,
+          "positive_rate": 16.7
+        },
+        {
+          "machine": "マイジャグラーV",
+          "units": 76,
+          "total_diff": 2963,
+          "avg_diff": 39,
+          "avg_games": 5043,
+          "positive_units": 32,
+          "positive_rate": 42.1
+        },
+        {
+          "machine": "665",
+          "units": 1,
+          "total_diff": 39,
+          "avg_diff": 39,
+          "avg_games": 3464,
+          "positive_units": 1,
+          "positive_rate": 100.0
+        },
+        {
+          "machine": "664",
+          "units": 1,
+          "total_diff": 38,
+          "avg_diff": 38,
+          "avg_games": 7803,
+          "positive_units": 1,
+          "positive_rate": 100.0
+        },
+        {
+          "machine": "666",
+          "units": 1,
+          "total_diff": 37,
+          "avg_diff": 37,
+          "avg_games": 7279,
+          "positive_units": 1,
+          "positive_rate": 100.0
+        },
+        {
+          "machine": "670",
+          "units": 1,
+          "total_diff": 27,
+          "avg_diff": 27,
+          "avg_games": 575,
+          "positive_units": 1,
+          "positive_rate": 100.0
+        },
+        {
+          "machine": "1026",
+          "units": 1,
+          "total_diff": 18,
+          "avg_diff": 18,
+          "avg_games": 4043,
+          "positive_units": 1,
+          "positive_rate": 100.0
+        },
+        {
+          "machine": "723",
+          "units": 1,
+          "total_diff": 18,
+          "avg_diff": 18,
+          "avg_games": 193,
+          "positive_units": 1,
+          "positive_rate": 100.0
+        },
+        {
+          "machine": "844",
+          "units": 1,
+          "total_diff": 17,
+          "avg_diff": 17,
+          "avg_games": 834,
+          "positive_units": 1,
+          "positive_rate": 100.0
+        },
+        {
+          "machine": "1034",
+          "units": 1,
+          "total_diff": 13,
+          "avg_diff": 13,
+          "avg_games": 6510,
+          "positive_units": 1,
+          "positive_rate": 100.0
+        },
+        {
+          "machine": "1018",
+          "units": 1,
+          "total_diff": 7,
+          "avg_diff": 7,
+          "avg_games": 8378,
+          "positive_units": 1,
+          "positive_rate": 100.0
+        },
+        {
+          "machine": "平均",
+          "units": 12,
+          "total_diff": 53,
+          "avg_diff": 4,
+          "avg_games": 852,
+          "positive_units": 3,
+          "positive_rate": 25.0
+        },
+        {
+          "machine": "リコリス・リコイル",
+          "units": 40,
+          "total_diff": 134,
+          "avg_diff": 3,
+          "avg_games": 3818,
+          "positive_units": 16,
+          "positive_rate": 40.0
+        },
+        {
+          "machine": "炎炎ノ消防隊2",
+          "units": 10,
+          "total_diff": -2,
+          "avg_diff": 0,
+          "avg_games": 1788,
+          "positive_units": 5,
+          "positive_rate": 50.0
+        },
+        {
+          "machine": "824",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 3425,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "827",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 3005,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "829",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 735,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "830",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 4084,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "831",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 5007,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "832",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 643,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "833",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 81,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "1030",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 4743,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "1031",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 1149,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "1073",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 549,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "1074",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 8545,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "1077",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 3873,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "1081",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 3586,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "1087",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 2397,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "741",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 233,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "745",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 3356,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "746",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 370,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "747",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 7897,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "750",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 506,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "752",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 2366,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "757",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 2065,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "758",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 2762,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "760",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 1418,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "764",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 2795,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "770",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 1655,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "772",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 1,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "773",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 72,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "777",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 412,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "778",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 670,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "779",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 503,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "1023",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 154,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "1025",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 770,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "1036",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 339,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "1040",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 9943,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "1042",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 300,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "563",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 2490,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "564",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 3588,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "567",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 3851,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "568",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 4813,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "571",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 809,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "572",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 7935,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "573",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 3487,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "574",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 166,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "575",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 314,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "576",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 625,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "578",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 238,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "579",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 2854,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "580",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 2098,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "622",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 6403,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "623",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 1878,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "624",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 191,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "627",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 11278,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "628",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 7513,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "629",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 2716,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "583",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 228,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "590",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 88,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "591",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 4087,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "592",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 173,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "593",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 3814,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "594",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 3961,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "597",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 370,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "598",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 674,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "599",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 2484,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "611",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 1749,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "612",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 1028,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "614",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 3913,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "615",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 318,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "618",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 3199,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "675",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 14417,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "676",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 834,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "680",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 7038,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "683",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 265,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "685",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 2391,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "686",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 834,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "689",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 3563,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "602",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 2262,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "604",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 327,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "609",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 5738,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "610",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 6989,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "651",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 7662,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "652",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 8458,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "657",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 1957,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "659",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 3813,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "660",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 1434,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "692",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 1214,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "694",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 565,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "696",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 268,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "733",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 1495,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "738",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 1304,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "740",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 382,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "781",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 347,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "785",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 369,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "789",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 1103,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "790",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 592,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "793",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 266,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "797",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 1068,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "798",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 22,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "1094",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 3061,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "1103",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 3932,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "1106",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 9044,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "637",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 1372,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "860",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 460,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "862",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 10021,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "863",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 2843,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "866",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 3208,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "1070",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 10,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "1098",
+          "units": 1,
+          "total_diff": 0,
+          "avg_diff": 0,
+          "avg_games": 202,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "からくりサーカス2",
+          "units": 10,
+          "total_diff": -706,
+          "avg_diff": -71,
+          "avg_games": 695,
+          "positive_units": 5,
+          "positive_rate": 50.0
+        },
+        {
+          "machine": "モンスターハンターライズ",
+          "units": 6,
+          "total_diff": -463,
+          "avg_diff": -77,
+          "avg_games": 3502,
+          "positive_units": 1,
+          "positive_rate": 16.7
+        },
+        {
+          "machine": "ハナビ",
+          "units": 3,
+          "total_diff": -437,
+          "avg_diff": -146,
+          "avg_games": 1433,
+          "positive_units": 1,
+          "positive_rate": 33.3
+        },
+        {
+          "machine": "ゴーゴージャグラー3",
+          "units": 20,
+          "total_diff": -3417,
+          "avg_diff": -171,
+          "avg_games": 4840,
+          "positive_units": 7,
+          "positive_rate": 35.0
+        },
+        {
+          "machine": "スーパーブラックジャック",
+          "units": 2,
+          "total_diff": -409,
+          "avg_diff": -204,
+          "avg_games": 3466,
+          "positive_units": 1,
+          "positive_rate": 50.0
+        },
+        {
+          "machine": "彼女、お借りします",
+          "units": 10,
+          "total_diff": -2202,
+          "avg_diff": -220,
+          "avg_games": 634,
+          "positive_units": 3,
+          "positive_rate": 30.0
+        },
+        {
+          "machine": "ケロット5BT",
+          "units": 1,
+          "total_diff": -229,
+          "avg_diff": -229,
+          "avg_games": 1735,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "ハッピージャグラーVⅢ",
+          "units": 4,
+          "total_diff": -1348,
+          "avg_diff": -337,
+          "avg_games": 2921,
+          "positive_units": 1,
+          "positive_rate": 25.0
+        },
+        {
+          "machine": "ネオアイムジャグラーEX",
+          "units": 21,
+          "total_diff": -7491,
+          "avg_diff": -357,
+          "avg_games": 3849,
+          "positive_units": 6,
+          "positive_rate": 28.6
+        },
+        {
+          "machine": "東京喰種",
+          "units": 46,
+          "total_diff": -19348,
+          "avg_diff": -421,
+          "avg_games": 4709,
+          "positive_units": 14,
+          "positive_rate": 30.4
+        },
+        {
+          "machine": "ゴッドイーター リザレクション",
+          "units": 5,
+          "total_diff": -2420,
+          "avg_diff": -484,
+          "avg_games": 783,
+          "positive_units": 1,
+          "positive_rate": 20.0
+        },
+        {
+          "machine": "戦国コレクション6",
+          "units": 6,
+          "total_diff": -2925,
+          "avg_diff": -488,
+          "avg_games": 3135,
+          "positive_units": 1,
+          "positive_rate": 16.7
+        },
+        {
+          "machine": "とある魔術の禁書目録2",
+          "units": 10,
+          "total_diff": -5074,
+          "avg_diff": -507,
+          "avg_games": 2354,
+          "positive_units": 3,
+          "positive_rate": 30.0
+        },
+        {
+          "machine": "とんでもスキルで異世界放浪メシ",
+          "units": 3,
+          "total_diff": -1666,
+          "avg_diff": -555,
+          "avg_games": 773,
+          "positive_units": 1,
+          "positive_rate": 33.3
+        },
+        {
+          "machine": "新ハナビ",
+          "units": 2,
+          "total_diff": -1265,
+          "avg_diff": -632,
+          "avg_games": 2640,
+          "positive_units": 1,
+          "positive_rate": 50.0
+        },
+        {
+          "machine": "マギアレコード 魔法少女まどか☆マギカ外伝",
+          "units": 6,
+          "total_diff": -3859,
+          "avg_diff": -643,
+          "avg_games": 3329,
+          "positive_units": 1,
+          "positive_rate": 16.7
+        },
+        {
+          "machine": "スーパーリオエース2",
+          "units": 2,
+          "total_diff": -1366,
+          "avg_diff": -683,
+          "avg_games": 476,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "やじきた道中記参る！",
+          "units": 3,
+          "total_diff": -2154,
+          "avg_diff": -718,
+          "avg_games": 3233,
+          "positive_units": 1,
+          "positive_rate": 33.3
+        },
+        {
+          "machine": "攻殻機動隊",
+          "units": 6,
+          "total_diff": -4414,
+          "avg_diff": -736,
+          "avg_games": 4388,
+          "positive_units": 1,
+          "positive_rate": 16.7
+        },
+        {
+          "machine": "無職転生 ～異世界行ったら本気だす～",
+          "units": 2,
+          "total_diff": -1772,
+          "avg_diff": -886,
+          "avg_games": 3748,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "モグモグ風林火山 大海戦の巻",
+          "units": 3,
+          "total_diff": -3000,
+          "avg_diff": -1000,
+          "avg_games": 3254,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "アレックス ブライト",
+          "units": 1,
+          "total_diff": -1042,
+          "avg_diff": -1042,
+          "avg_games": 3942,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "ワールドダイスター",
+          "units": 3,
+          "total_diff": -3299,
+          "avg_diff": -1100,
+          "avg_games": 2106,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "不二子BT",
+          "units": 1,
+          "total_diff": -1187,
+          "avg_diff": -1187,
+          "avg_games": 6438,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "パリピ孔明",
+          "units": 5,
+          "total_diff": -6498,
+          "avg_diff": -1300,
+          "avg_games": 1373,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "獣王",
+          "units": 10,
+          "total_diff": -16297,
+          "avg_diff": -1630,
+          "avg_games": 5720,
+          "positive_units": 3,
+          "positive_rate": 30.0
+        },
+        {
+          "machine": "A‐SLOT+ ディスクアップ ULTRAREMIX",
+          "units": 1,
+          "total_diff": -1705,
+          "avg_diff": -1705,
+          "avg_games": 5665,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        },
+        {
+          "machine": "青春ブタ野郎はバニーガール先輩の夢を見ない",
+          "units": 5,
+          "total_diff": -10325,
+          "avg_diff": -2065,
+          "avg_games": 4342,
+          "positive_units": 1,
+          "positive_rate": 20.0
+        },
+        {
+          "machine": "シャーマンキング",
+          "units": 3,
+          "total_diff": -6270,
+          "avg_diff": -2090,
+          "avg_games": 3755,
+          "positive_units": 0,
+          "positive_rate": 0.0
+        }
+      ]
     },
     {
       "date": "2026-10-29",
