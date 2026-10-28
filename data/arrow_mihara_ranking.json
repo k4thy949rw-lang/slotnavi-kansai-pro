@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T00:23:39.811255+09:00",
+  "updated_at": "2026-10-29T01:24:53.164855+09:00",
   "store": "HYPER ARROW美原店",
   "analysis_days": 30,
   "minimum_days": 3,
@@ -1806,21 +1806,21 @@
       "score": 38.3
     },
     {
-      "unit": 664,
-      "machine": "モンスターハンターライズ:サンブレイク",
-      "days": 22,
-      "avg_diff": 166,
-      "avg_games": 4864,
-      "win_rate": 45.5,
-      "score": 38.1
-    },
-    {
       "unit": 723,
       "machine": "革命機ヴァルヴレイヴ2",
       "days": 29,
       "avg_diff": 293,
       "avg_games": 3612,
       "win_rate": 37.9,
+      "score": 38.1
+    },
+    {
+      "unit": 664,
+      "machine": "モンスターハンターライズ:サンブレイク",
+      "days": 22,
+      "avg_diff": 166,
+      "avg_games": 4864,
+      "win_rate": 45.5,
       "score": 38.1
     },
     {
@@ -2292,21 +2292,21 @@
       "score": 32.7
     },
     {
-      "unit": 735,
-      "machine": "獣王",
-      "days": 22,
-      "avg_diff": 32,
-      "avg_games": 7398,
-      "win_rate": 36.4,
-      "score": 32.5
-    },
-    {
       "unit": 968,
       "machine": "ウルトラミラクルジャグラー",
       "days": 29,
       "avg_diff": 97,
       "avg_games": 4883,
       "win_rate": 37.9,
+      "score": 32.5
+    },
+    {
+      "unit": 735,
+      "machine": "獣王",
+      "days": 22,
+      "avg_diff": 32,
+      "avg_games": 7398,
+      "win_rate": 36.4,
       "score": 32.5
     },
     {
@@ -3201,21 +3201,21 @@
       "score": 24.9
     },
     {
-      "unit": 1094,
-      "machine": "攻殻機動隊",
-      "days": 22,
-      "avg_diff": -82,
-      "avg_games": 5017,
-      "win_rate": 40.9,
-      "score": 24.9
-    },
-    {
       "unit": 1063,
       "machine": "ワールドダイスター",
       "days": 29,
       "avg_diff": 85,
       "avg_games": 3706,
       "win_rate": 27.6,
+      "score": 24.9
+    },
+    {
+      "unit": 1094,
+      "machine": "攻殻機動隊",
+      "days": 22,
+      "avg_diff": -82,
+      "avg_games": 5017,
+      "win_rate": 40.9,
       "score": 24.9
     },
     {
@@ -4101,21 +4101,21 @@
       "score": 12.9
     },
     {
-      "unit": 662,
-      "machine": "モンスターハンターライズ:サンブレイク",
-      "days": 22,
-      "avg_diff": -318,
-      "avg_games": 4953,
-      "win_rate": 40.9,
-      "score": 12.9
-    },
-    {
       "unit": 868,
       "machine": "喰霊‐零‐Re",
       "days": 29,
       "avg_diff": -251,
       "avg_games": 4843,
       "win_rate": 31.0,
+      "score": 12.9
+    },
+    {
+      "unit": 662,
+      "machine": "モンスターハンターライズ:サンブレイク",
+      "days": 22,
+      "avg_diff": -318,
+      "avg_games": 4953,
+      "win_rate": 40.9,
       "score": 12.9
     },
     {
@@ -4191,21 +4191,21 @@
       "score": 11.4
     },
     {
-      "unit": 634,
-      "machine": "ゴッドイーター リザレクション",
-      "days": 29,
-      "avg_diff": -146,
-      "avg_games": 2809,
-      "win_rate": 31.0,
-      "score": 11.4
-    },
-    {
       "unit": 665,
       "machine": "攻殻機動隊",
       "days": 7,
       "avg_diff": -103,
       "avg_games": 2391,
       "win_rate": 28.6,
+      "score": 11.4
+    },
+    {
+      "unit": 634,
+      "machine": "ゴッドイーター リザレクション",
+      "days": 29,
+      "avg_diff": -146,
+      "avg_games": 2809,
+      "win_rate": 31.0,
       "score": 11.4
     },
     {
@@ -5028,21 +5028,21 @@
       "score": -14.4
     },
     {
-      "unit": 669,
-      "machine": "モンスターハンターライズ:サンブレイク",
-      "days": 22,
-      "avg_diff": -753,
-      "avg_games": 4809,
-      "win_rate": 22.7,
-      "score": -14.8
-    },
-    {
       "unit": 792,
       "machine": "からくりサーカス2",
       "days": 29,
       "avg_diff": -593,
       "avg_games": 2597,
       "win_rate": 20.7,
+      "score": -14.8
+    },
+    {
+      "unit": 669,
+      "machine": "モンスターハンターライズ:サンブレイク",
+      "days": 22,
+      "avg_diff": -753,
+      "avg_games": 4809,
+      "win_rate": 22.7,
       "score": -14.8
     },
     {
