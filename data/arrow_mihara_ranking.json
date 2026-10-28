@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T18:21:29.456396+09:00",
+  "updated_at": "2026-10-28T19:09:24.532612+09:00",
   "store": "HYPER ARROW美原店",
   "analysis_days": 30,
   "minimum_days": 3,
@@ -672,21 +672,21 @@
       "score": 56.3
     },
     {
-      "unit": 844,
-      "machine": "マギアレコード 魔法少女まどか☆マギカ外伝",
-      "days": 30,
-      "avg_diff": 574,
-      "avg_games": 3775,
-      "win_rate": 50.0,
-      "score": 56.3
-    },
-    {
       "unit": 736,
       "machine": "獣王",
       "days": 22,
       "avg_diff": 399,
       "avg_games": 7289,
       "win_rate": 54.5,
+      "score": 56.3
+    },
+    {
+      "unit": 844,
+      "machine": "マギアレコード 魔法少女まどか☆マギカ外伝",
+      "days": 30,
+      "avg_diff": 574,
+      "avg_games": 3775,
+      "win_rate": 50.0,
       "score": 56.3
     },
     {
@@ -2238,21 +2238,21 @@
       "score": 33.7
     },
     {
-      "unit": 1067,
-      "machine": "戦国乙女4 戦乱に閃く炯眼の軍師",
-      "days": 8,
-      "avg_diff": 374,
-      "avg_games": 2225,
-      "win_rate": 25.0,
-      "score": 33.6
-    },
-    {
       "unit": 1060,
       "machine": "ハナビ",
       "days": 30,
       "avg_diff": 150,
       "avg_games": 3614,
       "win_rate": 46.7,
+      "score": 33.6
+    },
+    {
+      "unit": 1067,
+      "machine": "戦国乙女4 戦乱に閃く炯眼の軍師",
+      "days": 8,
+      "avg_diff": 374,
+      "avg_games": 2225,
+      "win_rate": 25.0,
       "score": 33.6
     },
     {
@@ -3021,15 +3021,6 @@
       "score": 26.4
     },
     {
-      "unit": 665,
-      "machine": "攻殻機動隊",
-      "days": 8,
-      "avg_diff": 106,
-      "avg_games": 2919,
-      "win_rate": 37.5,
-      "score": 26.3
-    },
-    {
       "unit": 1051,
       "machine": "不二子BT",
       "days": 30,
@@ -3045,6 +3036,15 @@
       "avg_diff": 19,
       "avg_games": 4306,
       "win_rate": 36.7,
+      "score": 26.3
+    },
+    {
+      "unit": 665,
+      "machine": "攻殻機動隊",
+      "days": 8,
+      "avg_diff": 106,
+      "avg_games": 2919,
+      "win_rate": 37.5,
       "score": 26.3
     },
     {
@@ -4875,21 +4875,21 @@
       "score": -5.2
     },
     {
-      "unit": 1096,
-      "machine": "ストリートファイター6",
-      "days": 8,
-      "avg_diff": -302,
-      "avg_games": 1495,
-      "win_rate": 12.5,
-      "score": -6.4
-    },
-    {
       "unit": 863,
       "machine": "魔法少女にあこがれて",
       "days": 22,
       "avg_diff": -438,
       "avg_games": 3018,
       "win_rate": 18.2,
+      "score": -6.4
+    },
+    {
+      "unit": 1096,
+      "machine": "ストリートファイター6",
+      "days": 8,
+      "avg_diff": -302,
+      "avg_games": 1495,
+      "win_rate": 12.5,
       "score": -6.4
     },
     {
@@ -5280,21 +5280,21 @@
       "score": -32.2
     },
     {
-      "unit": 740,
-      "machine": "革命機ヴァルヴレイヴ2",
-      "days": 8,
-      "avg_diff": -1209,
-      "avg_games": 2940,
-      "win_rate": 25.0,
-      "score": -32.7
-    },
-    {
       "unit": 789,
       "machine": "炎炎ノ消防隊2",
       "days": 30,
       "avg_diff": -1045,
       "avg_games": 3976,
       "win_rate": 13.3,
+      "score": -32.7
+    },
+    {
+      "unit": 740,
+      "machine": "革命機ヴァルヴレイヴ2",
+      "days": 8,
+      "avg_diff": -1209,
+      "avg_games": 2940,
+      "win_rate": 25.0,
       "score": -32.7
     },
     {
