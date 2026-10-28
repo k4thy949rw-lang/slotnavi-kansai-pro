@@ -1,0 +1,6862 @@
+[
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 869,
+    "games": 6823,
+    "diff": -1719,
+    "bb": 19,
+    "rb": 18
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 870,
+    "games": 6687,
+    "diff": 59,
+    "bb": 23,
+    "rb": 18
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 871,
+    "games": 5041,
+    "diff": -592,
+    "bb": 18,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 872,
+    "games": 8237,
+    "diff": 1207,
+    "bb": 33,
+    "rb": 31
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 873,
+    "games": 6431,
+    "diff": 189,
+    "bb": 25,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 874,
+    "games": 6523,
+    "diff": -742,
+    "bb": 23,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 875,
+    "games": 7838,
+    "diff": -756,
+    "bb": 26,
+    "rb": 22
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 876,
+    "games": 3507,
+    "diff": -1249,
+    "bb": 10,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 877,
+    "games": 6445,
+    "diff": 659,
+    "bb": 31,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 878,
+    "games": 6149,
+    "diff": 1018,
+    "bb": 27,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 879,
+    "games": 8679,
+    "diff": 1819,
+    "bb": 38,
+    "rb": 28
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 880,
+    "games": 6535,
+    "diff": 2593,
+    "bb": 33,
+    "rb": 23
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 881,
+    "games": 5735,
+    "diff": -565,
+    "bb": 21,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 882,
+    "games": 8482,
+    "diff": 249,
+    "bb": 32,
+    "rb": 25
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 883,
+    "games": 5565,
+    "diff": -839,
+    "bb": 19,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 884,
+    "games": 8100,
+    "diff": 486,
+    "bb": 31,
+    "rb": 26
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 885,
+    "games": 3358,
+    "diff": -467,
+    "bb": 13,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 886,
+    "games": 6516,
+    "diff": -16,
+    "bb": 23,
+    "rb": 17
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 887,
+    "games": 3072,
+    "diff": -1380,
+    "bb": 8,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 888,
+    "games": 4644,
+    "diff": -1000,
+    "bb": 14,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 889,
+    "games": 3556,
+    "diff": -1488,
+    "bb": 9,
+    "rb": 5
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 890,
+    "games": 6675,
+    "diff": -215,
+    "bb": 26,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 891,
+    "games": 3746,
+    "diff": -934,
+    "bb": 12,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 892,
+    "games": 6785,
+    "diff": 2411,
+    "bb": 33,
+    "rb": 26
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 893,
+    "games": 3985,
+    "diff": 760,
+    "bb": 20,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 894,
+    "games": 7250,
+    "diff": 850,
+    "bb": 29,
+    "rb": 24
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 895,
+    "games": 6495,
+    "diff": 1133,
+    "bb": 28,
+    "rb": 18
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 896,
+    "games": 6834,
+    "diff": -642,
+    "bb": 25,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 897,
+    "games": 7176,
+    "diff": -1778,
+    "bb": 19,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 898,
+    "games": 3665,
+    "diff": -629,
+    "bb": 11,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 899,
+    "games": 6798,
+    "diff": -568,
+    "bb": 26,
+    "rb": 17
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 900,
+    "games": 4994,
+    "diff": -49,
+    "bb": 18,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 901,
+    "games": 6765,
+    "diff": -436,
+    "bb": 26,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 902,
+    "games": 5355,
+    "diff": -660,
+    "bb": 17,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 903,
+    "games": 7524,
+    "diff": -145,
+    "bb": 28,
+    "rb": 24
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 904,
+    "games": 8698,
+    "diff": 2550,
+    "bb": 39,
+    "rb": 32
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 905,
+    "games": 5695,
+    "diff": 122,
+    "bb": 21,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 906,
+    "games": 8711,
+    "diff": 1105,
+    "bb": 37,
+    "rb": 24
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 907,
+    "games": 4956,
+    "diff": -645,
+    "bb": 18,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 908,
+    "games": 6979,
+    "diff": 357,
+    "bb": 30,
+    "rb": 18
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 909,
+    "games": 7709,
+    "diff": 919,
+    "bb": 32,
+    "rb": 16
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 910,
+    "games": 5772,
+    "diff": -1308,
+    "bb": 16,
+    "rb": 21
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 911,
+    "games": 5117,
+    "diff": -321,
+    "bb": 17,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 912,
+    "games": 6837,
+    "diff": -1590,
+    "bb": 20,
+    "rb": 19
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 913,
+    "games": 1788,
+    "diff": -846,
+    "bb": 5,
+    "rb": 1
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 914,
+    "games": 7620,
+    "diff": 1234,
+    "bb": 32,
+    "rb": 28
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 915,
+    "games": 4034,
+    "diff": -1023,
+    "bb": 10,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 916,
+    "games": 8705,
+    "diff": 1987,
+    "bb": 38,
+    "rb": 28
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 917,
+    "games": 8229,
+    "diff": 3376,
+    "bb": 44,
+    "rb": 27
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 918,
+    "games": 6473,
+    "diff": -1423,
+    "bb": 21,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 919,
+    "games": 8140,
+    "diff": 1182,
+    "bb": 36,
+    "rb": 21
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 920,
+    "games": 2251,
+    "diff": -952,
+    "bb": 6,
+    "rb": 2
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 921,
+    "games": 7507,
+    "diff": 1325,
+    "bb": 33,
+    "rb": 24
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 922,
+    "games": 4445,
+    "diff": -1158,
+    "bb": 13,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 937,
+    "games": 7064,
+    "diff": -1128,
+    "bb": 22,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 938,
+    "games": 7788,
+    "diff": 2377,
+    "bb": 41,
+    "rb": 19
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 939,
+    "games": 3690,
+    "diff": -577,
+    "bb": 12,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 940,
+    "games": 5725,
+    "diff": -1334,
+    "bb": 14,
+    "rb": 18
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 941,
+    "games": 7237,
+    "diff": -795,
+    "bb": 25,
+    "rb": 17
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 942,
+    "games": 7051,
+    "diff": -1101,
+    "bb": 20,
+    "rb": 25
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 943,
+    "games": 4453,
+    "diff": -1179,
+    "bb": 12,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 944,
+    "games": 5724,
+    "diff": 69,
+    "bb": 23,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 945,
+    "games": 6478,
+    "diff": 427,
+    "bb": 22,
+    "rb": 27
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 946,
+    "games": 7521,
+    "diff": 2462,
+    "bb": 38,
+    "rb": 23
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 997,
+    "games": 6306,
+    "diff": 242,
+    "bb": 26,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 998,
+    "games": 2508,
+    "diff": -826,
+    "bb": 7,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 999,
+    "games": 8211,
+    "diff": 2703,
+    "bb": 42,
+    "rb": 22
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 1000,
+    "games": 7917,
+    "diff": 1708,
+    "bb": 37,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 1001,
+    "games": 5261,
+    "diff": -618,
+    "bb": 20,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 1002,
+    "games": 6958,
+    "diff": 821,
+    "bb": 30,
+    "rb": 19
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 1003,
+    "games": 3716,
+    "diff": -552,
+    "bb": 12,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 1004,
+    "games": 5334,
+    "diff": -1716,
+    "bb": 12,
+    "rb": 16
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 1005,
+    "games": 8237,
+    "diff": -245,
+    "bb": 27,
+    "rb": 25
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 1006,
+    "games": 3817,
+    "diff": -83,
+    "bb": 15,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 1007,
+    "games": 8170,
+    "diff": -763,
+    "bb": 28,
+    "rb": 22
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マイジャグラーV",
+    "unit": 1008,
+    "games": 3692,
+    "diff": -765,
+    "bb": 13,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 821,
+    "games": 8402,
+    "diff": 468,
+    "bb": 0,
+    "rb": 18
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 822,
+    "games": 6336,
+    "diff": -5436,
+    "bb": 0,
+    "rb": 22
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 823,
+    "games": 8600,
+    "diff": 4454,
+    "bb": 0,
+    "rb": 24
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 824,
+    "games": 3839,
+    "diff": -2367,
+    "bb": 0,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 825,
+    "games": 4407,
+    "diff": -2489,
+    "bb": 0,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 826,
+    "games": 7703,
+    "diff": 12149,
+    "bb": 0,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 827,
+    "games": 7649,
+    "diff": -44,
+    "bb": 0,
+    "rb": 23
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 828,
+    "games": 8274,
+    "diff": 3155,
+    "bb": 0,
+    "rb": 22
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 829,
+    "games": 5741,
+    "diff": -1421,
+    "bb": 0,
+    "rb": 19
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 830,
+    "games": 4545,
+    "diff": -3716,
+    "bb": 0,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 831,
+    "games": 5876,
+    "diff": 3840,
+    "bb": 0,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 832,
+    "games": 7748,
+    "diff": 10509,
+    "bb": 0,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 833,
+    "games": 8554,
+    "diff": -4631,
+    "bb": 0,
+    "rb": 24
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 834,
+    "games": 7519,
+    "diff": 2795,
+    "bb": 0,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 835,
+    "games": 4743,
+    "diff": -124,
+    "bb": 0,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 836,
+    "games": 7935,
+    "diff": -443,
+    "bb": 0,
+    "rb": 21
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 837,
+    "games": 2471,
+    "diff": -2921,
+    "bb": 0,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 838,
+    "games": 6153,
+    "diff": 2206,
+    "bb": 0,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 839,
+    "games": 7860,
+    "diff": -1058,
+    "bb": 0,
+    "rb": 23
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 840,
+    "games": 8075,
+    "diff": 3366,
+    "bb": 0,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1028,
+    "games": 5107,
+    "diff": -2054,
+    "bb": 0,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1029,
+    "games": 8048,
+    "diff": 8165,
+    "bb": 0,
+    "rb": 23
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1030,
+    "games": 7288,
+    "diff": -999,
+    "bb": 0,
+    "rb": 22
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1031,
+    "games": 6969,
+    "diff": -3695,
+    "bb": 0,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1032,
+    "games": 7963,
+    "diff": -1536,
+    "bb": 0,
+    "rb": 27
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1033,
+    "games": 6867,
+    "diff": -6563,
+    "bb": 0,
+    "rb": 16
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1072,
+    "games": 7595,
+    "diff": -3188,
+    "bb": 0,
+    "rb": 22
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1073,
+    "games": 8586,
+    "diff": -1968,
+    "bb": 0,
+    "rb": 21
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1074,
+    "games": 4410,
+    "diff": -4252,
+    "bb": 0,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1075,
+    "games": 4954,
+    "diff": -1571,
+    "bb": 0,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1076,
+    "games": 4801,
+    "diff": 942,
+    "bb": 0,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1077,
+    "games": 6974,
+    "diff": 4177,
+    "bb": 0,
+    "rb": 19
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1078,
+    "games": 9480,
+    "diff": 6326,
+    "bb": 0,
+    "rb": 18
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1079,
+    "games": 4138,
+    "diff": -2249,
+    "bb": 0,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1080,
+    "games": 9135,
+    "diff": 820,
+    "bb": 0,
+    "rb": 22
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1081,
+    "games": 6288,
+    "diff": -3340,
+    "bb": 0,
+    "rb": 18
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1082,
+    "games": 0,
+    "diff": 0,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1083,
+    "games": 8265,
+    "diff": 3085,
+    "bb": 0,
+    "rb": 22
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1084,
+    "games": 4651,
+    "diff": 58,
+    "bb": 0,
+    "rb": 16
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1085,
+    "games": 7733,
+    "diff": 3739,
+    "bb": 0,
+    "rb": 21
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1086,
+    "games": 3834,
+    "diff": -860,
+    "bb": 0,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1087,
+    "games": 4975,
+    "diff": -1787,
+    "bb": 0,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1088,
+    "games": 8988,
+    "diff": -1557,
+    "bb": 0,
+    "rb": 27
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1089,
+    "games": 8447,
+    "diff": 5618,
+    "bb": 0,
+    "rb": 19
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1090,
+    "games": 3569,
+    "diff": -1713,
+    "bb": 0,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "東京喰種",
+    "unit": 1091,
+    "games": 7258,
+    "diff": 3107,
+    "bb": 0,
+    "rb": 17
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 741,
+    "games": 4922,
+    "diff": -2695,
+    "bb": 0,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 742,
+    "games": 1312,
+    "diff": 637,
+    "bb": 0,
+    "rb": 3
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 743,
+    "games": 4982,
+    "diff": -338,
+    "bb": 0,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 744,
+    "games": 2829,
+    "diff": 163,
+    "bb": 0,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 745,
+    "games": 9094,
+    "diff": 1265,
+    "bb": 0,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 746,
+    "games": 8481,
+    "diff": 3659,
+    "bb": 0,
+    "rb": 16
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 747,
+    "games": 304,
+    "diff": -27,
+    "bb": 0,
+    "rb": 1
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 748,
+    "games": 4341,
+    "diff": -1481,
+    "bb": 0,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 749,
+    "games": 4844,
+    "diff": 1584,
+    "bb": 0,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 750,
+    "games": 2490,
+    "diff": -1791,
+    "bb": 0,
+    "rb": 3
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 751,
+    "games": 5176,
+    "diff": -2420,
+    "bb": 0,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 752,
+    "games": 431,
+    "diff": -36,
+    "bb": 0,
+    "rb": 1
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 753,
+    "games": 8560,
+    "diff": -1512,
+    "bb": 0,
+    "rb": 18
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 754,
+    "games": 9488,
+    "diff": -1304,
+    "bb": 0,
+    "rb": 25
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 755,
+    "games": 5287,
+    "diff": -360,
+    "bb": 0,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 756,
+    "games": 5985,
+    "diff": -2881,
+    "bb": 0,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 757,
+    "games": 3352,
+    "diff": -1258,
+    "bb": 0,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 758,
+    "games": 2546,
+    "diff": -1602,
+    "bb": 0,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 759,
+    "games": 533,
+    "diff": 178,
+    "bb": 0,
+    "rb": 1
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 760,
+    "games": 9363,
+    "diff": -2528,
+    "bb": 0,
+    "rb": 18
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 761,
+    "games": 6060,
+    "diff": 875,
+    "bb": 0,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 762,
+    "games": 8025,
+    "diff": 6296,
+    "bb": 0,
+    "rb": 19
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 763,
+    "games": 7762,
+    "diff": 2591,
+    "bb": 0,
+    "rb": 16
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 764,
+    "games": 5352,
+    "diff": -2904,
+    "bb": 0,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 765,
+    "games": 2923,
+    "diff": -2200,
+    "bb": 0,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 766,
+    "games": 814,
+    "diff": -342,
+    "bb": 0,
+    "rb": 1
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 767,
+    "games": 2810,
+    "diff": -2734,
+    "bb": 0,
+    "rb": 5
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 768,
+    "games": 8469,
+    "diff": 966,
+    "bb": 0,
+    "rb": 17
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 769,
+    "games": 3415,
+    "diff": 1289,
+    "bb": 0,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 770,
+    "games": 1926,
+    "diff": -1761,
+    "bb": 0,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 771,
+    "games": 6045,
+    "diff": -1339,
+    "bb": 0,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 772,
+    "games": 5009,
+    "diff": -2470,
+    "bb": 0,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 773,
+    "games": 5555,
+    "diff": -2913,
+    "bb": 0,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 774,
+    "games": 4884,
+    "diff": 122,
+    "bb": 0,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 775,
+    "games": 4352,
+    "diff": -2992,
+    "bb": 0,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 776,
+    "games": 1482,
+    "diff": -368,
+    "bb": 0,
+    "rb": 3
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 777,
+    "games": 3647,
+    "diff": 2425,
+    "bb": 0,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 778,
+    "games": 5670,
+    "diff": -897,
+    "bb": 0,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 779,
+    "games": 942,
+    "diff": -1265,
+    "bb": 0,
+    "rb": 3
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "リコリス・リコイル",
+    "unit": 780,
+    "games": 7334,
+    "diff": -2168,
+    "bb": 0,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1009,
+    "games": 8986,
+    "diff": -3506,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1010,
+    "games": 7135,
+    "diff": -3439,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1011,
+    "games": 8399,
+    "diff": 1114,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1012,
+    "games": 4898,
+    "diff": -3487,
+    "bb": 10,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1013,
+    "games": 5626,
+    "diff": -4218,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1014,
+    "games": 5922,
+    "diff": 5407,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1015,
+    "games": 3193,
+    "diff": -2585,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1016,
+    "games": 9108,
+    "diff": 11933,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1017,
+    "games": 7104,
+    "diff": 3413,
+    "bb": 3,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1018,
+    "games": 6866,
+    "diff": -3464,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1019,
+    "games": 6600,
+    "diff": -2878,
+    "bb": 6,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1020,
+    "games": 7155,
+    "diff": 4224,
+    "bb": 9,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1021,
+    "games": 5983,
+    "diff": 1103,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1022,
+    "games": 5962,
+    "diff": -2370,
+    "bb": 3,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1023,
+    "games": 4381,
+    "diff": -3664,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1024,
+    "games": 9516,
+    "diff": 6580,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1025,
+    "games": 5435,
+    "diff": 3220,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1026,
+    "games": 4647,
+    "diff": -3191,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1027,
+    "games": 8003,
+    "diff": 4647,
+    "bb": 12,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1034,
+    "games": 7722,
+    "diff": 2300,
+    "bb": 8,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1035,
+    "games": 2199,
+    "diff": -1730,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1036,
+    "games": 6664,
+    "diff": 5727,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1037,
+    "games": 7034,
+    "diff": -2155,
+    "bb": 4,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1038,
+    "games": 6864,
+    "diff": -4106,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1039,
+    "games": 6110,
+    "diff": -3136,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1040,
+    "games": 5697,
+    "diff": -991,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1041,
+    "games": 6301,
+    "diff": -1643,
+    "bb": 7,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1042,
+    "games": 4319,
+    "diff": -2788,
+    "bb": 3,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1043,
+    "games": 4996,
+    "diff": -1760,
+    "bb": 2,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1044,
+    "games": 6120,
+    "diff": 725,
+    "bb": 14,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミリオンゴッド‐神々の軌跡‐",
+    "unit": 1045,
+    "games": 5550,
+    "diff": -5472,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 561,
+    "games": 6749,
+    "diff": -2820,
+    "bb": 0,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 562,
+    "games": 5865,
+    "diff": -2451,
+    "bb": 0,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 563,
+    "games": 8251,
+    "diff": 257,
+    "bb": 0,
+    "rb": 17
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 564,
+    "games": 9990,
+    "diff": -4598,
+    "bb": 0,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 565,
+    "games": 8354,
+    "diff": 14416,
+    "bb": 0,
+    "rb": 26
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 566,
+    "games": 8066,
+    "diff": -1011,
+    "bb": 0,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 567,
+    "games": 3793,
+    "diff": -2433,
+    "bb": 0,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 568,
+    "games": 4860,
+    "diff": -3514,
+    "bb": 0,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 569,
+    "games": 7993,
+    "diff": 7470,
+    "bb": 0,
+    "rb": 29
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 570,
+    "games": 4609,
+    "diff": -2691,
+    "bb": 0,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 571,
+    "games": 8527,
+    "diff": 2854,
+    "bb": 0,
+    "rb": 29
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 572,
+    "games": 4246,
+    "diff": -2389,
+    "bb": 0,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 573,
+    "games": 5216,
+    "diff": 3537,
+    "bb": 0,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 574,
+    "games": 7704,
+    "diff": -3009,
+    "bb": 0,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 575,
+    "games": 4947,
+    "diff": -2214,
+    "bb": 0,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 576,
+    "games": 8540,
+    "diff": -1441,
+    "bb": 0,
+    "rb": 16
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 577,
+    "games": 6088,
+    "diff": 2919,
+    "bb": 0,
+    "rb": 17
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 578,
+    "games": 5346,
+    "diff": 3758,
+    "bb": 0,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 579,
+    "games": 4872,
+    "diff": -3685,
+    "bb": 0,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 580,
+    "games": 3498,
+    "diff": -3434,
+    "bb": 0,
+    "rb": 1
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 621,
+    "games": 6338,
+    "diff": -5435,
+    "bb": 0,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 622,
+    "games": 2318,
+    "diff": -696,
+    "bb": 0,
+    "rb": 5
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 623,
+    "games": 7090,
+    "diff": -79,
+    "bb": 0,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 624,
+    "games": 4974,
+    "diff": -2239,
+    "bb": 0,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 625,
+    "games": 8834,
+    "diff": 12312,
+    "bb": 0,
+    "rb": 42
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 626,
+    "games": 8151,
+    "diff": 3683,
+    "bb": 0,
+    "rb": 21
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 627,
+    "games": 3712,
+    "diff": -2787,
+    "bb": 0,
+    "rb": 1
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 628,
+    "games": 8540,
+    "diff": 9668,
+    "bb": 0,
+    "rb": 34
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 629,
+    "games": 4460,
+    "diff": 1418,
+    "bb": 0,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+    "unit": 630,
+    "games": 7650,
+    "diff": -2574,
+    "bb": 0,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 581,
+    "games": 8279,
+    "diff": 5411,
+    "bb": 0,
+    "rb": 16
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 582,
+    "games": 4151,
+    "diff": -2075,
+    "bb": 0,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 583,
+    "games": 7539,
+    "diff": -1742,
+    "bb": 0,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 584,
+    "games": 9139,
+    "diff": -103,
+    "bb": 0,
+    "rb": 26
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 585,
+    "games": 7916,
+    "diff": -2059,
+    "bb": 0,
+    "rb": 27
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 586,
+    "games": 6994,
+    "diff": -538,
+    "bb": 0,
+    "rb": 19
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 587,
+    "games": 5632,
+    "diff": -1109,
+    "bb": 0,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 588,
+    "games": 5278,
+    "diff": -987,
+    "bb": 0,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 589,
+    "games": 9391,
+    "diff": 3046,
+    "bb": 0,
+    "rb": 23
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 590,
+    "games": 8690,
+    "diff": 5464,
+    "bb": 0,
+    "rb": 26
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 591,
+    "games": 3027,
+    "diff": -1170,
+    "bb": 0,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 592,
+    "games": 4224,
+    "diff": 21,
+    "bb": 0,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 593,
+    "games": 4216,
+    "diff": -243,
+    "bb": 0,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 594,
+    "games": 2206,
+    "diff": -1195,
+    "bb": 0,
+    "rb": 5
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 595,
+    "games": 7148,
+    "diff": -314,
+    "bb": 0,
+    "rb": 22
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 596,
+    "games": 8786,
+    "diff": 1803,
+    "bb": 0,
+    "rb": 25
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 597,
+    "games": 2558,
+    "diff": -319,
+    "bb": 0,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 598,
+    "games": 8032,
+    "diff": -989,
+    "bb": 0,
+    "rb": 25
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 599,
+    "games": 3561,
+    "diff": -1499,
+    "bb": 0,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 600,
+    "games": 7865,
+    "diff": -4489,
+    "bb": 0,
+    "rb": 21
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 611,
+    "games": 4082,
+    "diff": -1430,
+    "bb": 0,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 612,
+    "games": 9332,
+    "diff": -2603,
+    "bb": 0,
+    "rb": 26
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 613,
+    "games": 9031,
+    "diff": 4719,
+    "bb": 0,
+    "rb": 21
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 614,
+    "games": 6362,
+    "diff": 2888,
+    "bb": 0,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 615,
+    "games": 3650,
+    "diff": -2700,
+    "bb": 0,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 616,
+    "games": 3123,
+    "diff": -1345,
+    "bb": 0,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 617,
+    "games": 7388,
+    "diff": 5188,
+    "bb": 0,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 618,
+    "games": 5390,
+    "diff": 145,
+    "bb": 0,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 619,
+    "games": 7567,
+    "diff": 9350,
+    "bb": 0,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "甲鉄城のカバネリ 海門決戦",
+    "unit": 620,
+    "games": 2678,
+    "diff": -2122,
+    "bb": 0,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 965,
+    "games": 6868,
+    "diff": 1004,
+    "bb": 32,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 975,
+    "games": 7361,
+    "diff": -171,
+    "bb": 26,
+    "rb": 18
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 976,
+    "games": 7216,
+    "diff": 2175,
+    "bb": 35,
+    "rb": 24
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 977,
+    "games": 6837,
+    "diff": -1462,
+    "bb": 18,
+    "rb": 25
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 978,
+    "games": 2789,
+    "diff": -370,
+    "bb": 8,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 979,
+    "games": 5688,
+    "diff": 442,
+    "bb": 22,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 980,
+    "games": 2176,
+    "diff": -752,
+    "bb": 5,
+    "rb": 5
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 981,
+    "games": 2932,
+    "diff": -1550,
+    "bb": 6,
+    "rb": 5
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 982,
+    "games": 7010,
+    "diff": 1574,
+    "bb": 32,
+    "rb": 18
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 983,
+    "games": 2932,
+    "diff": -263,
+    "bb": 10,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 984,
+    "games": 7878,
+    "diff": 360,
+    "bb": 28,
+    "rb": 24
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 985,
+    "games": 7056,
+    "diff": -637,
+    "bb": 24,
+    "rb": 25
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 986,
+    "games": 3004,
+    "diff": -93,
+    "bb": 10,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 987,
+    "games": 9217,
+    "diff": -1025,
+    "bb": 29,
+    "rb": 28
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 988,
+    "games": 4221,
+    "diff": 125,
+    "bb": 16,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 989,
+    "games": 5462,
+    "diff": 173,
+    "bb": 24,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 990,
+    "games": 7484,
+    "diff": 22,
+    "bb": 27,
+    "rb": 27
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 991,
+    "games": 8265,
+    "diff": 1042,
+    "bb": 31,
+    "rb": 31
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 992,
+    "games": 3285,
+    "diff": -1078,
+    "bb": 10,
+    "rb": 5
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 993,
+    "games": 4301,
+    "diff": -1015,
+    "bb": 14,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 994,
+    "games": 2885,
+    "diff": -586,
+    "bb": 8,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 995,
+    "games": 7510,
+    "diff": -396,
+    "bb": 24,
+    "rb": 26
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ファンキージャグラー2",
+    "unit": 996,
+    "games": 5720,
+    "diff": 649,
+    "bb": 25,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 929,
+    "games": 5496,
+    "diff": -1102,
+    "bb": 16,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 930,
+    "games": 6481,
+    "diff": 1130,
+    "bb": 27,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 931,
+    "games": 7754,
+    "diff": 2369,
+    "bb": 38,
+    "rb": 16
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 932,
+    "games": 7452,
+    "diff": 799,
+    "bb": 30,
+    "rb": 23
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 933,
+    "games": 6142,
+    "diff": 425,
+    "bb": 23,
+    "rb": 21
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 934,
+    "games": 5491,
+    "diff": 489,
+    "bb": 23,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 935,
+    "games": 7878,
+    "diff": 1382,
+    "bb": 30,
+    "rb": 34
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 936,
+    "games": 4737,
+    "diff": -95,
+    "bb": 18,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 955,
+    "games": 8422,
+    "diff": 1233,
+    "bb": 33,
+    "rb": 34
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 956,
+    "games": 2510,
+    "diff": -1586,
+    "bb": 3,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 957,
+    "games": 8262,
+    "diff": 592,
+    "bb": 29,
+    "rb": 31
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 958,
+    "games": 6048,
+    "diff": 1328,
+    "bb": 27,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 959,
+    "games": 7100,
+    "diff": 823,
+    "bb": 29,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 960,
+    "games": 6412,
+    "diff": 1671,
+    "bb": 33,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 961,
+    "games": 3621,
+    "diff": -772,
+    "bb": 10,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 962,
+    "games": 2443,
+    "diff": -1327,
+    "bb": 4,
+    "rb": 5
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 963,
+    "games": 4706,
+    "diff": -1090,
+    "bb": 14,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 964,
+    "games": 6911,
+    "diff": 1520,
+    "bb": 33,
+    "rb": 19
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 972,
+    "games": 3118,
+    "diff": -914,
+    "bb": 8,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 973,
+    "games": 5026,
+    "diff": 223,
+    "bb": 20,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ネオアイムジャグラーEX",
+    "unit": 974,
+    "games": 8851,
+    "diff": -209,
+    "bb": 31,
+    "rb": 30
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 641,
+    "games": 2922,
+    "diff": -1700,
+    "bb": 20,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 642,
+    "games": 5778,
+    "diff": 3571,
+    "bb": 80,
+    "rb": 23
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 643,
+    "games": 5384,
+    "diff": 1521,
+    "bb": 70,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 644,
+    "games": 5039,
+    "diff": 141,
+    "bb": 58,
+    "rb": 16
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 645,
+    "games": 2926,
+    "diff": 784,
+    "bb": 39,
+    "rb": 5
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 646,
+    "games": 5731,
+    "diff": -3087,
+    "bb": 38,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 647,
+    "games": 4452,
+    "diff": -1186,
+    "bb": 43,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 648,
+    "games": 1336,
+    "diff": -480,
+    "bb": 11,
+    "rb": 2
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 649,
+    "games": 6017,
+    "diff": 2882,
+    "bb": 82,
+    "rb": 23
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 650,
+    "games": 5598,
+    "diff": 2022,
+    "bb": 77,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 711,
+    "games": 3912,
+    "diff": 632,
+    "bb": 52,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 712,
+    "games": 4035,
+    "diff": -993,
+    "bb": 36,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 713,
+    "games": 1487,
+    "diff": 912,
+    "bb": 24,
+    "rb": 2
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 714,
+    "games": 4697,
+    "diff": 4756,
+    "bb": 85,
+    "rb": 18
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 715,
+    "games": 2071,
+    "diff": -1638,
+    "bb": 9,
+    "rb": 3
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 716,
+    "games": 4925,
+    "diff": -3352,
+    "bb": 23,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 717,
+    "games": 1795,
+    "diff": -907,
+    "bb": 13,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 718,
+    "games": 4150,
+    "diff": -884,
+    "bb": 36,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 719,
+    "games": 4051,
+    "diff": -534,
+    "bb": 38,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "北斗の拳",
+    "unit": 720,
+    "games": 5256,
+    "diff": 1234,
+    "bb": 69,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 671,
+    "games": 4513,
+    "diff": -732,
+    "bb": 0,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 672,
+    "games": 5463,
+    "diff": 2105,
+    "bb": 0,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 673,
+    "games": 4007,
+    "diff": -122,
+    "bb": 0,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 674,
+    "games": 6220,
+    "diff": -721,
+    "bb": 0,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 675,
+    "games": 3243,
+    "diff": -650,
+    "bb": 0,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 676,
+    "games": 2463,
+    "diff": -1753,
+    "bb": 0,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 677,
+    "games": 1161,
+    "diff": -912,
+    "bb": 0,
+    "rb": 2
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 678,
+    "games": 3781,
+    "diff": 128,
+    "bb": 0,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 679,
+    "games": 10362,
+    "diff": 4033,
+    "bb": 0,
+    "rb": 25
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 680,
+    "games": 2516,
+    "diff": -826,
+    "bb": 0,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 681,
+    "games": 6361,
+    "diff": -465,
+    "bb": 0,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 682,
+    "games": 5802,
+    "diff": -2524,
+    "bb": 0,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 683,
+    "games": 1177,
+    "diff": -521,
+    "bb": 0,
+    "rb": 2
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 684,
+    "games": 2974,
+    "diff": -1734,
+    "bb": 0,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 685,
+    "games": 2262,
+    "diff": -1684,
+    "bb": 0,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 686,
+    "games": 2970,
+    "diff": -1124,
+    "bb": 0,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 687,
+    "games": 5184,
+    "diff": -996,
+    "bb": 0,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 688,
+    "games": 3758,
+    "diff": -1024,
+    "bb": 0,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 689,
+    "games": 3068,
+    "diff": -1297,
+    "bb": 0,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンキーターンV",
+    "unit": 690,
+    "games": 7769,
+    "diff": 4730,
+    "bb": 0,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 801,
+    "games": 8404,
+    "diff": -1146,
+    "bb": 27,
+    "rb": 28
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 802,
+    "games": 4271,
+    "diff": 1541,
+    "bb": 21,
+    "rb": 17
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 803,
+    "games": 5670,
+    "diff": 910,
+    "bb": 28,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 804,
+    "games": 4108,
+    "diff": -1850,
+    "bb": 10,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 805,
+    "games": 2012,
+    "diff": -613,
+    "bb": 7,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 806,
+    "games": 3912,
+    "diff": 340,
+    "bb": 16,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 807,
+    "games": 6287,
+    "diff": 390,
+    "bb": 24,
+    "rb": 25
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 808,
+    "games": 3393,
+    "diff": -804,
+    "bb": 12,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 809,
+    "games": 4338,
+    "diff": -1134,
+    "bb": 15,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 810,
+    "games": 5731,
+    "diff": -986,
+    "bb": 19,
+    "rb": 18
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 811,
+    "games": 6697,
+    "diff": -57,
+    "bb": 27,
+    "rb": 17
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 812,
+    "games": 8621,
+    "diff": 1852,
+    "bb": 36,
+    "rb": 37
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 813,
+    "games": 5826,
+    "diff": 202,
+    "bb": 23,
+    "rb": 18
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 814,
+    "games": 1623,
+    "diff": -705,
+    "bb": 5,
+    "rb": 1
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 815,
+    "games": 5452,
+    "diff": 367,
+    "bb": 23,
+    "rb": 16
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 816,
+    "games": 3452,
+    "diff": -1102,
+    "bb": 9,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 817,
+    "games": 7360,
+    "diff": 1411,
+    "bb": 35,
+    "rb": 23
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 818,
+    "games": 7455,
+    "diff": 2780,
+    "bb": 37,
+    "rb": 34
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 819,
+    "games": 3444,
+    "diff": -725,
+    "bb": 12,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴーゴージャグラー3",
+    "unit": 820,
+    "games": 5702,
+    "diff": -325,
+    "bb": 24,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ソードアート・オンラインⅡ",
+    "unit": 601,
+    "games": 9318,
+    "diff": 7439,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ソードアート・オンラインⅡ",
+    "unit": 602,
+    "games": 7193,
+    "diff": 11478,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ソードアート・オンラインⅡ",
+    "unit": 603,
+    "games": 5086,
+    "diff": 4359,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ソードアート・オンラインⅡ",
+    "unit": 604,
+    "games": 6010,
+    "diff": 1340,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ソードアート・オンラインⅡ",
+    "unit": 605,
+    "games": 6571,
+    "diff": -1369,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ソードアート・オンラインⅡ",
+    "unit": 606,
+    "games": 5267,
+    "diff": -2761,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ソードアート・オンラインⅡ",
+    "unit": 607,
+    "games": 5351,
+    "diff": 2355,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ソードアート・オンラインⅡ",
+    "unit": 608,
+    "games": 8199,
+    "diff": -4535,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ソードアート・オンラインⅡ",
+    "unit": 609,
+    "games": 6131,
+    "diff": 339,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ソードアート・オンラインⅡ",
+    "unit": 610,
+    "games": 6449,
+    "diff": -5745,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "真打 吉宗",
+    "unit": 651,
+    "games": 5010,
+    "diff": -3182,
+    "bb": 0,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "真打 吉宗",
+    "unit": 652,
+    "games": 4257,
+    "diff": -3703,
+    "bb": 0,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "真打 吉宗",
+    "unit": 653,
+    "games": 8448,
+    "diff": 999,
+    "bb": 0,
+    "rb": 21
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "真打 吉宗",
+    "unit": 654,
+    "games": 4091,
+    "diff": -4842,
+    "bb": 0,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "真打 吉宗",
+    "unit": 655,
+    "games": 6063,
+    "diff": -1787,
+    "bb": 0,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "真打 吉宗",
+    "unit": 656,
+    "games": 7098,
+    "diff": -3533,
+    "bb": 0,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "真打 吉宗",
+    "unit": 657,
+    "games": 8404,
+    "diff": 2521,
+    "bb": 0,
+    "rb": 16
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "真打 吉宗",
+    "unit": 658,
+    "games": 8714,
+    "diff": 1736,
+    "bb": 0,
+    "rb": 26
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "真打 吉宗",
+    "unit": 659,
+    "games": 5776,
+    "diff": 636,
+    "bb": 0,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "真打 吉宗",
+    "unit": 660,
+    "games": 6313,
+    "diff": -1067,
+    "bb": 0,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンスターハンターライズ:サンブレイク",
+    "unit": 661,
+    "games": 4672,
+    "diff": -337,
+    "bb": 26,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンスターハンターライズ:サンブレイク",
+    "unit": 662,
+    "games": 4547,
+    "diff": -3127,
+    "bb": 18,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンスターハンターライズ:サンブレイク",
+    "unit": 663,
+    "games": 6221,
+    "diff": -4762,
+    "bb": 24,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンスターハンターライズ:サンブレイク",
+    "unit": 664,
+    "games": 4679,
+    "diff": -1052,
+    "bb": 25,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンスターハンターライズ:サンブレイク",
+    "unit": 665,
+    "games": 5156,
+    "diff": -1923,
+    "bb": 19,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンスターハンターライズ:サンブレイク",
+    "unit": 666,
+    "games": 3468,
+    "diff": -3461,
+    "bb": 8,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンスターハンターライズ:サンブレイク",
+    "unit": 667,
+    "games": 4395,
+    "diff": -867,
+    "bb": 27,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンスターハンターライズ:サンブレイク",
+    "unit": 668,
+    "games": 4984,
+    "diff": 104,
+    "bb": 28,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンスターハンターライズ:サンブレイク",
+    "unit": 669,
+    "games": 5235,
+    "diff": 3714,
+    "bb": 45,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンスターハンターライズ:サンブレイク",
+    "unit": 670,
+    "games": 5146,
+    "diff": -3545,
+    "bb": 14,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "とある魔術の禁書目録2",
+    "unit": 691,
+    "games": 9317,
+    "diff": 8806,
+    "bb": 0,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "とある魔術の禁書目録2",
+    "unit": 692,
+    "games": 4511,
+    "diff": -1942,
+    "bb": 0,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "とある魔術の禁書目録2",
+    "unit": 693,
+    "games": 2327,
+    "diff": -1305,
+    "bb": 0,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "とある魔術の禁書目録2",
+    "unit": 694,
+    "games": 6855,
+    "diff": 1903,
+    "bb": 0,
+    "rb": 23
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "とある魔術の禁書目録2",
+    "unit": 695,
+    "games": 3953,
+    "diff": -1855,
+    "bb": 0,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "とある魔術の禁書目録2",
+    "unit": 696,
+    "games": 5062,
+    "diff": -1489,
+    "bb": 0,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "とある魔術の禁書目録2",
+    "unit": 697,
+    "games": 2184,
+    "diff": -258,
+    "bb": 0,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "とある魔術の禁書目録2",
+    "unit": 698,
+    "games": 3208,
+    "diff": -1141,
+    "bb": 0,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "とある魔術の禁書目録2",
+    "unit": 699,
+    "games": 5119,
+    "diff": -365,
+    "bb": 0,
+    "rb": 16
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "とある魔術の禁書目録2",
+    "unit": 700,
+    "games": 4607,
+    "diff": -3396,
+    "bb": 0,
+    "rb": 21
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "彼女、お借りします",
+    "unit": 701,
+    "games": 3103,
+    "diff": -611,
+    "bb": 27,
+    "rb": 2
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "彼女、お借りします",
+    "unit": 702,
+    "games": 2996,
+    "diff": 1124,
+    "bb": 34,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "彼女、お借りします",
+    "unit": 703,
+    "games": 1698,
+    "diff": -1119,
+    "bb": 10,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "彼女、お借りします",
+    "unit": 704,
+    "games": 649,
+    "diff": -863,
+    "bb": 1,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "彼女、お借りします",
+    "unit": 705,
+    "games": 1160,
+    "diff": -1468,
+    "bb": 2,
+    "rb": 1
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "彼女、お借りします",
+    "unit": 706,
+    "games": 1201,
+    "diff": -1310,
+    "bb": 4,
+    "rb": 1
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "彼女、お借りします",
+    "unit": 707,
+    "games": 2453,
+    "diff": 3245,
+    "bb": 40,
+    "rb": 2
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "彼女、お借りします",
+    "unit": 708,
+    "games": 2992,
+    "diff": -2210,
+    "bb": 14,
+    "rb": 3
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "彼女、お借りします",
+    "unit": 709,
+    "games": 1583,
+    "diff": -948,
+    "bb": 10,
+    "rb": 1
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "彼女、お借りします",
+    "unit": 710,
+    "games": 2255,
+    "diff": -884,
+    "bb": 16,
+    "rb": 3
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "革命機ヴァルヴレイヴ2",
+    "unit": 721,
+    "games": 4868,
+    "diff": -3532,
+    "bb": 18,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "革命機ヴァルヴレイヴ2",
+    "unit": 722,
+    "games": 1470,
+    "diff": -1487,
+    "bb": 4,
+    "rb": 2
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "革命機ヴァルヴレイヴ2",
+    "unit": 723,
+    "games": 6517,
+    "diff": 2787,
+    "bb": 70,
+    "rb": 5
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "革命機ヴァルヴレイヴ2",
+    "unit": 724,
+    "games": 3605,
+    "diff": -1491,
+    "bb": 17,
+    "rb": 2
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "革命機ヴァルヴレイヴ2",
+    "unit": 725,
+    "games": 5802,
+    "diff": -1626,
+    "bb": 36,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "革命機ヴァルヴレイヴ2",
+    "unit": 726,
+    "games": 7687,
+    "diff": 8057,
+    "bb": 114,
+    "rb": 5
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "革命機ヴァルヴレイヴ2",
+    "unit": 727,
+    "games": 7260,
+    "diff": 3317,
+    "bb": 100,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "革命機ヴァルヴレイヴ2",
+    "unit": 728,
+    "games": 7150,
+    "diff": 131,
+    "bb": 53,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "革命機ヴァルヴレイヴ2",
+    "unit": 729,
+    "games": 4543,
+    "diff": 3970,
+    "bb": 67,
+    "rb": 2
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "革命機ヴァルヴレイヴ2",
+    "unit": 730,
+    "games": 7409,
+    "diff": -3478,
+    "bb": 33,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "獣王",
+    "unit": 731,
+    "games": 8091,
+    "diff": 13718,
+    "bb": 0,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "獣王",
+    "unit": 732,
+    "games": 5706,
+    "diff": -6119,
+    "bb": 0,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "獣王",
+    "unit": 733,
+    "games": 7805,
+    "diff": 993,
+    "bb": 0,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "獣王",
+    "unit": 734,
+    "games": 6679,
+    "diff": -4027,
+    "bb": 0,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "獣王",
+    "unit": 735,
+    "games": 8925,
+    "diff": -3594,
+    "bb": 0,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "獣王",
+    "unit": 736,
+    "games": 9363,
+    "diff": -3185,
+    "bb": 0,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "獣王",
+    "unit": 737,
+    "games": 7313,
+    "diff": -5821,
+    "bb": 0,
+    "rb": 2
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "獣王",
+    "unit": 738,
+    "games": 8698,
+    "diff": -545,
+    "bb": 0,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "獣王",
+    "unit": 739,
+    "games": 8210,
+    "diff": -2252,
+    "bb": 0,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "獣王",
+    "unit": 740,
+    "games": 8622,
+    "diff": 2172,
+    "bb": 0,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "炎炎ノ消防隊2",
+    "unit": 781,
+    "games": 7298,
+    "diff": 1593,
+    "bb": 0,
+    "rb": 19
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "炎炎ノ消防隊2",
+    "unit": 782,
+    "games": 7292,
+    "diff": 2107,
+    "bb": 0,
+    "rb": 16
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "炎炎ノ消防隊2",
+    "unit": 783,
+    "games": 3046,
+    "diff": -1711,
+    "bb": 0,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "炎炎ノ消防隊2",
+    "unit": 784,
+    "games": 9306,
+    "diff": -736,
+    "bb": 0,
+    "rb": 19
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "炎炎ノ消防隊2",
+    "unit": 785,
+    "games": 7061,
+    "diff": 1988,
+    "bb": 0,
+    "rb": 16
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "炎炎ノ消防隊2",
+    "unit": 786,
+    "games": 8624,
+    "diff": 7869,
+    "bb": 0,
+    "rb": 17
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "炎炎ノ消防隊2",
+    "unit": 787,
+    "games": 7088,
+    "diff": 1417,
+    "bb": 0,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "炎炎ノ消防隊2",
+    "unit": 788,
+    "games": 4864,
+    "diff": -3948,
+    "bb": 0,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "炎炎ノ消防隊2",
+    "unit": 789,
+    "games": 7626,
+    "diff": 3079,
+    "bb": 0,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "炎炎ノ消防隊2",
+    "unit": 790,
+    "games": 5197,
+    "diff": -3401,
+    "bb": 0,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "からくりサーカス2",
+    "unit": 791,
+    "games": 8979,
+    "diff": 6289,
+    "bb": 0,
+    "rb": 17
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "からくりサーカス2",
+    "unit": 792,
+    "games": 944,
+    "diff": -28,
+    "bb": 0,
+    "rb": 3
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "からくりサーカス2",
+    "unit": 793,
+    "games": 6459,
+    "diff": -3816,
+    "bb": 0,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "からくりサーカス2",
+    "unit": 794,
+    "games": 531,
+    "diff": -213,
+    "bb": 0,
+    "rb": 1
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "からくりサーカス2",
+    "unit": 795,
+    "games": 2002,
+    "diff": 2296,
+    "bb": 0,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "からくりサーカス2",
+    "unit": 796,
+    "games": 1924,
+    "diff": -1363,
+    "bb": 0,
+    "rb": 5
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "からくりサーカス2",
+    "unit": 797,
+    "games": 2242,
+    "diff": 683,
+    "bb": 0,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "からくりサーカス2",
+    "unit": 798,
+    "games": 769,
+    "diff": -586,
+    "bb": 0,
+    "rb": 1
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "からくりサーカス2",
+    "unit": 799,
+    "games": 6978,
+    "diff": 12202,
+    "bb": 0,
+    "rb": 19
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "からくりサーカス2",
+    "unit": 800,
+    "games": 624,
+    "diff": -768,
+    "bb": 0,
+    "rb": 3
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マギアレコード 魔法少女まどか☆マギカ外伝",
+    "unit": 841,
+    "games": 5152,
+    "diff": -2153,
+    "bb": 17,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マギアレコード 魔法少女まどか☆マギカ外伝",
+    "unit": 842,
+    "games": 2834,
+    "diff": -1933,
+    "bb": 8,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マギアレコード 魔法少女まどか☆マギカ外伝",
+    "unit": 843,
+    "games": 8246,
+    "diff": 5697,
+    "bb": 24,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マギアレコード 魔法少女まどか☆マギカ外伝",
+    "unit": 844,
+    "games": 5656,
+    "diff": -1839,
+    "bb": 17,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マギアレコード 魔法少女まどか☆マギカ外伝",
+    "unit": 845,
+    "games": 4302,
+    "diff": -3923,
+    "bb": 16,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "マギアレコード 魔法少女まどか☆マギカ外伝",
+    "unit": 846,
+    "games": 6691,
+    "diff": 290,
+    "bb": 24,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ジャグラーガールズSS",
+    "unit": 923,
+    "games": 9388,
+    "diff": 1469,
+    "bb": 38,
+    "rb": 35
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ジャグラーガールズSS",
+    "unit": 924,
+    "games": 7090,
+    "diff": -973,
+    "bb": 22,
+    "rb": 27
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ジャグラーガールズSS",
+    "unit": 925,
+    "games": 3532,
+    "diff": -795,
+    "bb": 11,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ジャグラーガールズSS",
+    "unit": 926,
+    "games": 7328,
+    "diff": 59,
+    "bb": 26,
+    "rb": 28
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ジャグラーガールズSS",
+    "unit": 927,
+    "games": 6829,
+    "diff": -812,
+    "bb": 20,
+    "rb": 27
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ジャグラーガールズSS",
+    "unit": 928,
+    "games": 5034,
+    "diff": -890,
+    "bb": 18,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ウルトラミラクルジャグラー",
+    "unit": 966,
+    "games": 3854,
+    "diff": -557,
+    "bb": 14,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ウルトラミラクルジャグラー",
+    "unit": 967,
+    "games": 3811,
+    "diff": -124,
+    "bb": 16,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ウルトラミラクルジャグラー",
+    "unit": 968,
+    "games": 7262,
+    "diff": -520,
+    "bb": 21,
+    "rb": 28
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ウルトラミラクルジャグラー",
+    "unit": 969,
+    "games": 3813,
+    "diff": -1630,
+    "bb": 7,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ウルトラミラクルジャグラー",
+    "unit": 970,
+    "games": 4981,
+    "diff": 733,
+    "bb": 18,
+    "rb": 24
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ウルトラミラクルジャグラー",
+    "unit": 971,
+    "games": 3870,
+    "diff": -1454,
+    "bb": 10,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "攻殻機動隊",
+    "unit": 1092,
+    "games": 8277,
+    "diff": 12301,
+    "bb": 0,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "攻殻機動隊",
+    "unit": 1093,
+    "games": 4600,
+    "diff": -2117,
+    "bb": 0,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "攻殻機動隊",
+    "unit": 1094,
+    "games": 2934,
+    "diff": -2433,
+    "bb": 0,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "攻殻機動隊",
+    "unit": 1095,
+    "games": 5200,
+    "diff": -2210,
+    "bb": 0,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "攻殻機動隊",
+    "unit": 1096,
+    "games": 7332,
+    "diff": -542,
+    "bb": 0,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "攻殻機動隊",
+    "unit": 1097,
+    "games": 7147,
+    "diff": 16045,
+    "bb": 0,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国コレクション6",
+    "unit": 1100,
+    "games": 6857,
+    "diff": 1785,
+    "bb": 0,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国コレクション6",
+    "unit": 1101,
+    "games": 6075,
+    "diff": -2020,
+    "bb": 0,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国コレクション6",
+    "unit": 1102,
+    "games": 6911,
+    "diff": 1336,
+    "bb": 0,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国コレクション6",
+    "unit": 1103,
+    "games": 6447,
+    "diff": -329,
+    "bb": 0,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国コレクション6",
+    "unit": 1104,
+    "games": 8514,
+    "diff": 852,
+    "bb": 0,
+    "rb": 17
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "戦国コレクション6",
+    "unit": 1105,
+    "games": 5950,
+    "diff": -2486,
+    "bb": 0,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンスターハンターライズ",
+    "unit": 1106,
+    "games": 4216,
+    "diff": -2978,
+    "bb": 0,
+    "rb": 5
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンスターハンターライズ",
+    "unit": 1107,
+    "games": 6181,
+    "diff": 1067,
+    "bb": 0,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンスターハンターライズ",
+    "unit": 1108,
+    "games": 6576,
+    "diff": -4788,
+    "bb": 0,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンスターハンターライズ",
+    "unit": 1109,
+    "games": 7677,
+    "diff": -3188,
+    "bb": 0,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンスターハンターライズ",
+    "unit": 1110,
+    "games": 5210,
+    "diff": -2624,
+    "bb": 0,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モンスターハンターライズ",
+    "unit": 1111,
+    "games": 7010,
+    "diff": -882,
+    "bb": 0,
+    "rb": 19
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴッドイーター リザレクション",
+    "unit": 631,
+    "games": 1374,
+    "diff": -643,
+    "bb": 0,
+    "rb": 3
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴッドイーター リザレクション",
+    "unit": 632,
+    "games": 2435,
+    "diff": -1310,
+    "bb": 0,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴッドイーター リザレクション",
+    "unit": 633,
+    "games": 9538,
+    "diff": 8780,
+    "bb": 0,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴッドイーター リザレクション",
+    "unit": 634,
+    "games": 1740,
+    "diff": -1212,
+    "bb": 0,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ゴッドイーター リザレクション",
+    "unit": 635,
+    "games": 3446,
+    "diff": -1998,
+    "bb": 0,
+    "rb": 5
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "青春ブタ野郎はバニーガール先輩の夢を見ない",
+    "unit": 636,
+    "games": 5846,
+    "diff": 1792,
+    "bb": 0,
+    "rb": 23
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "青春ブタ野郎はバニーガール先輩の夢を見ない",
+    "unit": 637,
+    "games": 2955,
+    "diff": -3122,
+    "bb": 0,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "青春ブタ野郎はバニーガール先輩の夢を見ない",
+    "unit": 638,
+    "games": 4998,
+    "diff": -1750,
+    "bb": 0,
+    "rb": 15
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "青春ブタ野郎はバニーガール先輩の夢を見ない",
+    "unit": 639,
+    "games": 7003,
+    "diff": -803,
+    "bb": 0,
+    "rb": 36
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "青春ブタ野郎はバニーガール先輩の夢を見ない",
+    "unit": 640,
+    "games": 7064,
+    "diff": -818,
+    "bb": 0,
+    "rb": 38
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "パリピ孔明",
+    "unit": 853,
+    "games": 2798,
+    "diff": -1067,
+    "bb": 0,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "パリピ孔明",
+    "unit": 854,
+    "games": 1736,
+    "diff": -1097,
+    "bb": 0,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "パリピ孔明",
+    "unit": 855,
+    "games": 6595,
+    "diff": 1668,
+    "bb": 0,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "パリピ孔明",
+    "unit": 856,
+    "games": 2889,
+    "diff": -893,
+    "bb": 0,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "パリピ孔明",
+    "unit": 857,
+    "games": 4600,
+    "diff": -181,
+    "bb": 0,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ハッピージャグラーVⅢ",
+    "unit": 947,
+    "games": 8019,
+    "diff": 77,
+    "bb": 30,
+    "rb": 26
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ハッピージャグラーVⅢ",
+    "unit": 948,
+    "games": 2417,
+    "diff": -758,
+    "bb": 7,
+    "rb": 5
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ハッピージャグラーVⅢ",
+    "unit": 949,
+    "games": 2408,
+    "diff": -1531,
+    "bb": 4,
+    "rb": 3
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ハッピージャグラーVⅢ",
+    "unit": 950,
+    "games": 7428,
+    "diff": 1092,
+    "bb": 28,
+    "rb": 35
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミスタージャグラー",
+    "unit": 951,
+    "games": 7416,
+    "diff": 2183,
+    "bb": 37,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミスタージャグラー",
+    "unit": 952,
+    "games": 5266,
+    "diff": -806,
+    "bb": 17,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミスタージャグラー",
+    "unit": 953,
+    "games": 7332,
+    "diff": -1002,
+    "bb": 26,
+    "rb": 17
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ミスタージャグラー",
+    "unit": 954,
+    "games": 5429,
+    "diff": -1872,
+    "bb": 12,
+    "rb": 17
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "シャーマンキング",
+    "unit": 847,
+    "games": 5843,
+    "diff": -2952,
+    "bb": 16,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "シャーマンキング",
+    "unit": 848,
+    "games": 4536,
+    "diff": -857,
+    "bb": 11,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "シャーマンキング",
+    "unit": 849,
+    "games": 7139,
+    "diff": 5956,
+    "bb": 17,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モグモグ風林火山 大海戦の巻",
+    "unit": 850,
+    "games": 314,
+    "diff": 265,
+    "bb": 0,
+    "rb": 1
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モグモグ風林火山 大海戦の巻",
+    "unit": 851,
+    "games": 3774,
+    "diff": 4537,
+    "bb": 0,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "モグモグ風林火山 大海戦の巻",
+    "unit": 852,
+    "games": 2280,
+    "diff": -1575,
+    "bb": 0,
+    "rb": 6
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "やじきた道中記参る！",
+    "unit": 858,
+    "games": 3080,
+    "diff": -772,
+    "bb": 0,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "やじきた道中記参る！",
+    "unit": 859,
+    "games": 9516,
+    "diff": 1081,
+    "bb": 0,
+    "rb": 29
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "やじきた道中記参る！",
+    "unit": 860,
+    "games": 8369,
+    "diff": -1850,
+    "bb": 0,
+    "rb": 34
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "魔法少女にあこがれて",
+    "unit": 861,
+    "games": 8286,
+    "diff": 275,
+    "bb": 0,
+    "rb": 42
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "魔法少女にあこがれて",
+    "unit": 862,
+    "games": 7119,
+    "diff": -3748,
+    "bb": 0,
+    "rb": 26
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "魔法少女にあこがれて",
+    "unit": 863,
+    "games": 6897,
+    "diff": -2954,
+    "bb": 0,
+    "rb": 28
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "邪神ちゃんドロップキック",
+    "unit": 864,
+    "games": 6375,
+    "diff": 4320,
+    "bb": 0,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "邪神ちゃんドロップキック",
+    "unit": 865,
+    "games": 4291,
+    "diff": -3087,
+    "bb": 0,
+    "rb": 3
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "邪神ちゃんドロップキック",
+    "unit": 866,
+    "games": 4201,
+    "diff": -2323,
+    "bb": 0,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "サンダーV",
+    "unit": 1056,
+    "games": 4797,
+    "diff": 3343,
+    "bb": 24,
+    "rb": 8
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "サンダーV",
+    "unit": 1057,
+    "games": 1332,
+    "diff": -1350,
+    "bb": 2,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "サンダーV",
+    "unit": 1058,
+    "games": 7078,
+    "diff": 1836,
+    "bb": 30,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ハナビ",
+    "unit": 1059,
+    "games": 6685,
+    "diff": -1942,
+    "bb": 15,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ハナビ",
+    "unit": 1060,
+    "games": 7713,
+    "diff": 3498,
+    "bb": 36,
+    "rb": 26
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ハナビ",
+    "unit": 1061,
+    "games": 6218,
+    "diff": -1152,
+    "bb": 19,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ワールドダイスター",
+    "unit": 1062,
+    "games": 3728,
+    "diff": -274,
+    "bb": 0,
+    "rb": 25
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ワールドダイスター",
+    "unit": 1063,
+    "games": 3248,
+    "diff": -3748,
+    "bb": 0,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ワールドダイスター",
+    "unit": 1064,
+    "games": 7554,
+    "diff": 3573,
+    "bb": 0,
+    "rb": 52
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "とんでもスキルで異世界放浪メシ",
+    "unit": 1069,
+    "games": 3398,
+    "diff": 1390,
+    "bb": 0,
+    "rb": 3
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "とんでもスキルで異世界放浪メシ",
+    "unit": 1070,
+    "games": 6458,
+    "diff": 656,
+    "bb": 0,
+    "rb": 16
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "とんでもスキルで異世界放浪メシ",
+    "unit": 1071,
+    "games": 5237,
+    "diff": 5321,
+    "bb": 0,
+    "rb": 5
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "タコスロ",
+    "unit": 1046,
+    "games": 6247,
+    "diff": -1601,
+    "bb": 15,
+    "rb": 16
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "タコスロ",
+    "unit": 1047,
+    "games": 4958,
+    "diff": -483,
+    "bb": 14,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "新ハナビ",
+    "unit": 1052,
+    "games": 4203,
+    "diff": -548,
+    "bb": 13,
+    "rb": 12
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "新ハナビ",
+    "unit": 1053,
+    "games": 8237,
+    "diff": 1127,
+    "bb": 31,
+    "rb": 26
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "無職転生 ～異世界行ったら本気だす～",
+    "unit": 1065,
+    "games": 8423,
+    "diff": 6770,
+    "bb": 0,
+    "rb": 28
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "無職転生 ～異世界行ったら本気だす～",
+    "unit": 1066,
+    "games": 1905,
+    "diff": -1766,
+    "bb": 0,
+    "rb": 10
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "スーパーリオエース2",
+    "unit": 1067,
+    "games": 4885,
+    "diff": -810,
+    "bb": 0,
+    "rb": 22
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "スーパーリオエース2",
+    "unit": 1068,
+    "games": 2538,
+    "diff": -1871,
+    "bb": 0,
+    "rb": 5
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "スーパーブラックジャック",
+    "unit": 1098,
+    "games": 2464,
+    "diff": -1533,
+    "bb": 0,
+    "rb": 1
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "スーパーブラックジャック",
+    "unit": 1099,
+    "games": 4116,
+    "diff": -2187,
+    "bb": 0,
+    "rb": 9
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "うみねこのなく頃に2",
+    "unit": 867,
+    "games": 6386,
+    "diff": 627,
+    "bb": 15,
+    "rb": 21
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "喰霊‐零‐Re",
+    "unit": 868,
+    "games": 7954,
+    "diff": 4257,
+    "bb": 39,
+    "rb": 0
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ケロット5BT",
+    "unit": 1048,
+    "games": 5691,
+    "diff": -693,
+    "bb": 23,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "ディスクアップ2",
+    "unit": 1049,
+    "games": 8639,
+    "diff": 1541,
+    "bb": 27,
+    "rb": 26
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "A‐SLOT+ ディスクアップ ULTRAREMIX",
+    "unit": 1050,
+    "games": 5658,
+    "diff": 142,
+    "bb": 21,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "不二子BT",
+    "unit": 1051,
+    "games": 8536,
+    "diff": 333,
+    "bb": 57,
+    "rb": 31
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "バーサスリヴァイズ",
+    "unit": 1054,
+    "games": 3716,
+    "diff": -24,
+    "bb": 13,
+    "rb": 4
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "アレックス ブライト",
+    "unit": 1055,
+    "games": 2939,
+    "diff": -560,
+    "bb": 8,
+    "rb": 7
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "821",
+    "unit": 8402,
+    "games": 468,
+    "diff": 0,
+    "bb": 18,
+    "rb": 39
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "823",
+    "unit": 8600,
+    "games": 4454,
+    "diff": 0,
+    "bb": 24,
+    "rb": 67
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "826",
+    "unit": 7703,
+    "games": 12149,
+    "diff": 0,
+    "bb": 10,
+    "rb": 55
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "828",
+    "unit": 8274,
+    "games": 3155,
+    "diff": 0,
+    "bb": 22,
+    "rb": 48
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "831",
+    "unit": 5876,
+    "games": 3840,
+    "diff": 0,
+    "bb": 8,
+    "rb": 34
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "832",
+    "unit": 7748,
+    "games": 10509,
+    "diff": 0,
+    "bb": 15,
+    "rb": 60
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "834",
+    "unit": 7519,
+    "games": 2795,
+    "diff": 0,
+    "bb": 20,
+    "rb": 53
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "838",
+    "unit": 6153,
+    "games": 2206,
+    "diff": 0,
+    "bb": 15,
+    "rb": 28
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "840",
+    "unit": 8075,
+    "games": 3366,
+    "diff": 0,
+    "bb": 20,
+    "rb": 36
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1029",
+    "unit": 8048,
+    "games": 8165,
+    "diff": 0,
+    "bb": 23,
+    "rb": 53
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1076",
+    "unit": 4801,
+    "games": 942,
+    "diff": 0,
+    "bb": 13,
+    "rb": 21
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1077",
+    "unit": 6974,
+    "games": 4177,
+    "diff": 0,
+    "bb": 19,
+    "rb": 40
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1078",
+    "unit": 9480,
+    "games": 6326,
+    "diff": 0,
+    "bb": 18,
+    "rb": 57
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1080",
+    "unit": 9135,
+    "games": 820,
+    "diff": 0,
+    "bb": 22,
+    "rb": 54
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1083",
+    "unit": 8265,
+    "games": 3085,
+    "diff": 0,
+    "bb": 22,
+    "rb": 28
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1084",
+    "unit": 4651,
+    "games": 58,
+    "diff": 0,
+    "bb": 16,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1085",
+    "unit": 7733,
+    "games": 3739,
+    "diff": 0,
+    "bb": 21,
+    "rb": 53
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1089",
+    "unit": 8447,
+    "games": 5618,
+    "diff": 0,
+    "bb": 19,
+    "rb": 59
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1091",
+    "unit": 7258,
+    "games": 3107,
+    "diff": 0,
+    "bb": 17,
+    "rb": 47
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "平均",
+    "unit": 6495,
+    "games": 370,
+    "diff": 0,
+    "bb": 17,
+    "rb": 31
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "742",
+    "unit": 1312,
+    "games": 637,
+    "diff": 0,
+    "bb": 3,
+    "rb": 14
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "744",
+    "unit": 2829,
+    "games": 163,
+    "diff": 0,
+    "bb": 4,
+    "rb": 30
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "745",
+    "unit": 9094,
+    "games": 1265,
+    "diff": 0,
+    "bb": 13,
+    "rb": 95
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "746",
+    "unit": 8481,
+    "games": 3659,
+    "diff": 0,
+    "bb": 16,
+    "rb": 94
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "749",
+    "unit": 4844,
+    "games": 1584,
+    "diff": 0,
+    "bb": 9,
+    "rb": 60
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "759",
+    "unit": 533,
+    "games": 178,
+    "diff": 0,
+    "bb": 1,
+    "rb": 3
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "761",
+    "unit": 6060,
+    "games": 875,
+    "diff": 0,
+    "bb": 11,
+    "rb": 64
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "762",
+    "unit": 8025,
+    "games": 6296,
+    "diff": 0,
+    "bb": 19,
+    "rb": 106
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "763",
+    "unit": 7762,
+    "games": 2591,
+    "diff": 0,
+    "bb": 16,
+    "rb": 83
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "768",
+    "unit": 8469,
+    "games": 966,
+    "diff": 0,
+    "bb": 17,
+    "rb": 89
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "769",
+    "unit": 3415,
+    "games": 1289,
+    "diff": 0,
+    "bb": 6,
+    "rb": 35
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "774",
+    "unit": 4884,
+    "games": 122,
+    "diff": 0,
+    "bb": 11,
+    "rb": 55
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "777",
+    "unit": 3647,
+    "games": 2425,
+    "diff": 0,
+    "bb": 6,
+    "rb": 49
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1011",
+    "unit": 8399,
+    "games": 1114,
+    "diff": 0,
+    "bb": 0,
+    "rb": 33
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1014",
+    "unit": 5922,
+    "games": 5407,
+    "diff": 0,
+    "bb": 0,
+    "rb": 35
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1016",
+    "unit": 9108,
+    "games": 11933,
+    "diff": 0,
+    "bb": 0,
+    "rb": 60
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1017",
+    "unit": 7104,
+    "games": 3413,
+    "diff": 3,
+    "bb": 0,
+    "rb": 37
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1020",
+    "unit": 7155,
+    "games": 4224,
+    "diff": 9,
+    "bb": 0,
+    "rb": 44
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1021",
+    "unit": 5983,
+    "games": 1103,
+    "diff": 0,
+    "bb": 0,
+    "rb": 24
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1024",
+    "unit": 9516,
+    "games": 6580,
+    "diff": 0,
+    "bb": 0,
+    "rb": 49
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1025",
+    "unit": 5435,
+    "games": 3220,
+    "diff": 0,
+    "bb": 0,
+    "rb": 27
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1027",
+    "unit": 8003,
+    "games": 4647,
+    "diff": 12,
+    "bb": 0,
+    "rb": 49
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1034",
+    "unit": 7722,
+    "games": 2300,
+    "diff": 8,
+    "bb": 0,
+    "rb": 39
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1036",
+    "unit": 6664,
+    "games": 5727,
+    "diff": 0,
+    "bb": 0,
+    "rb": 36
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1044",
+    "unit": 6120,
+    "games": 725,
+    "diff": 14,
+    "bb": 0,
+    "rb": 34
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "563",
+    "unit": 8251,
+    "games": 257,
+    "diff": 0,
+    "bb": 17,
+    "rb": 55
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "565",
+    "unit": 8354,
+    "games": 14416,
+    "diff": 0,
+    "bb": 26,
+    "rb": 92
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "569",
+    "unit": 7993,
+    "games": 7470,
+    "diff": 0,
+    "bb": 29,
+    "rb": 74
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "571",
+    "unit": 8527,
+    "games": 2854,
+    "diff": 0,
+    "bb": 29,
+    "rb": 59
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "573",
+    "unit": 5216,
+    "games": 3537,
+    "diff": 0,
+    "bb": 20,
+    "rb": 41
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "577",
+    "unit": 6088,
+    "games": 2919,
+    "diff": 0,
+    "bb": 17,
+    "rb": 44
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "578",
+    "unit": 5346,
+    "games": 3758,
+    "diff": 0,
+    "bb": 15,
+    "rb": 40
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "625",
+    "unit": 8834,
+    "games": 12312,
+    "diff": 0,
+    "bb": 42,
+    "rb": 98
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "626",
+    "unit": 8151,
+    "games": 3683,
+    "diff": 0,
+    "bb": 21,
+    "rb": 57
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "628",
+    "unit": 8540,
+    "games": 9668,
+    "diff": 0,
+    "bb": 34,
+    "rb": 88
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "629",
+    "unit": 4460,
+    "games": 1418,
+    "diff": 0,
+    "bb": 12,
+    "rb": 30
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "平均",
+    "unit": 6319,
+    "games": 426,
+    "diff": 0,
+    "bb": 14,
+    "rb": 40
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "581",
+    "unit": 8279,
+    "games": 5411,
+    "diff": 0,
+    "bb": 16,
+    "rb": 69
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "589",
+    "unit": 9391,
+    "games": 3046,
+    "diff": 0,
+    "bb": 23,
+    "rb": 71
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "590",
+    "unit": 8690,
+    "games": 5464,
+    "diff": 0,
+    "bb": 26,
+    "rb": 76
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "592",
+    "unit": 4224,
+    "games": 21,
+    "diff": 0,
+    "bb": 11,
+    "rb": 28
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "596",
+    "unit": 8786,
+    "games": 1803,
+    "diff": 0,
+    "bb": 25,
+    "rb": 67
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "613",
+    "unit": 9031,
+    "games": 4719,
+    "diff": 0,
+    "bb": 21,
+    "rb": 76
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "614",
+    "unit": 6362,
+    "games": 2888,
+    "diff": 0,
+    "bb": 9,
+    "rb": 55
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "617",
+    "unit": 7388,
+    "games": 5188,
+    "diff": 0,
+    "bb": 13,
+    "rb": 62
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "618",
+    "unit": 5390,
+    "games": 145,
+    "diff": 0,
+    "bb": 13,
+    "rb": 36
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "619",
+    "unit": 7567,
+    "games": 9350,
+    "diff": 0,
+    "bb": 14,
+    "rb": 80
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "平均",
+    "unit": 6108,
+    "games": 300,
+    "diff": 0,
+    "bb": 16,
+    "rb": 42
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "672",
+    "unit": 5463,
+    "games": 2105,
+    "diff": 0,
+    "bb": 14,
+    "rb": 45
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "678",
+    "unit": 3781,
+    "games": 128,
+    "diff": 0,
+    "bb": 10,
+    "rb": 28
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "679",
+    "unit": 10362,
+    "games": 4033,
+    "diff": 0,
+    "bb": 25,
+    "rb": 88
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "690",
+    "unit": 7769,
+    "games": 4730,
+    "diff": 0,
+    "bb": 20,
+    "rb": 67
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "601",
+    "unit": 9318,
+    "games": 7439,
+    "diff": 0,
+    "bb": 0,
+    "rb": 87
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "602",
+    "unit": 7193,
+    "games": 11478,
+    "diff": 0,
+    "bb": 0,
+    "rb": 81
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "603",
+    "unit": 5086,
+    "games": 4359,
+    "diff": 0,
+    "bb": 0,
+    "rb": 44
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "604",
+    "unit": 6010,
+    "games": 1340,
+    "diff": 0,
+    "bb": 0,
+    "rb": 50
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "607",
+    "unit": 5351,
+    "games": 2355,
+    "diff": 0,
+    "bb": 0,
+    "rb": 45
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "609",
+    "unit": 6131,
+    "games": 339,
+    "diff": 0,
+    "bb": 0,
+    "rb": 61
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "平均",
+    "unit": 6558,
+    "games": 1290,
+    "diff": 0,
+    "bb": 0,
+    "rb": 57
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "653",
+    "unit": 8448,
+    "games": 999,
+    "diff": 0,
+    "bb": 21,
+    "rb": 75
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "657",
+    "unit": 8404,
+    "games": 2521,
+    "diff": 0,
+    "bb": 16,
+    "rb": 78
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "658",
+    "unit": 8714,
+    "games": 1736,
+    "diff": 0,
+    "bb": 26,
+    "rb": 77
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "659",
+    "unit": 5776,
+    "games": 636,
+    "diff": 0,
+    "bb": 13,
+    "rb": 46
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "668",
+    "unit": 4984,
+    "games": 104,
+    "diff": 28,
+    "bb": 0,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "669",
+    "unit": 5235,
+    "games": 3714,
+    "diff": 45,
+    "bb": 0,
+    "rb": 19
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "691",
+    "unit": 9317,
+    "games": 8806,
+    "diff": 0,
+    "bb": 20,
+    "rb": 52
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "694",
+    "unit": 6855,
+    "games": 1903,
+    "diff": 0,
+    "bb": 23,
+    "rb": 26
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "723",
+    "unit": 6517,
+    "games": 2787,
+    "diff": 70,
+    "bb": 5,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "726",
+    "unit": 7687,
+    "games": 8057,
+    "diff": 114,
+    "bb": 5,
+    "rb": 20
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "727",
+    "unit": 7260,
+    "games": 3317,
+    "diff": 100,
+    "bb": 8,
+    "rb": 24
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "728",
+    "unit": 7150,
+    "games": 131,
+    "diff": 53,
+    "bb": 6,
+    "rb": 23
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "729",
+    "unit": 4543,
+    "games": 3970,
+    "diff": 67,
+    "bb": 2,
+    "rb": 13
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "平均",
+    "unit": 5631,
+    "games": 665,
+    "diff": 51,
+    "bb": 5,
+    "rb": 18
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "731",
+    "unit": 8091,
+    "games": 13718,
+    "diff": 0,
+    "bb": 13,
+    "rb": 132
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "733",
+    "unit": 7805,
+    "games": 993,
+    "diff": 0,
+    "bb": 9,
+    "rb": 70
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "740",
+    "unit": 8622,
+    "games": 2172,
+    "diff": 0,
+    "bb": 9,
+    "rb": 81
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "781",
+    "unit": 7298,
+    "games": 1593,
+    "diff": 0,
+    "bb": 19,
+    "rb": 34
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "782",
+    "unit": 7292,
+    "games": 2107,
+    "diff": 0,
+    "bb": 16,
+    "rb": 43
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "785",
+    "unit": 7061,
+    "games": 1988,
+    "diff": 0,
+    "bb": 16,
+    "rb": 29
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "786",
+    "unit": 8624,
+    "games": 7869,
+    "diff": 0,
+    "bb": 17,
+    "rb": 63
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "787",
+    "unit": 7088,
+    "games": 1417,
+    "diff": 0,
+    "bb": 15,
+    "rb": 37
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "789",
+    "unit": 7626,
+    "games": 3079,
+    "diff": 0,
+    "bb": 12,
+    "rb": 48
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "平均",
+    "unit": 6740,
+    "games": 826,
+    "diff": 0,
+    "bb": 14,
+    "rb": 33
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "791",
+    "unit": 8979,
+    "games": 6289,
+    "diff": 0,
+    "bb": 17,
+    "rb": 82
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "795",
+    "unit": 2002,
+    "games": 2296,
+    "diff": 0,
+    "bb": 7,
+    "rb": 17
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "797",
+    "unit": 2242,
+    "games": 683,
+    "diff": 0,
+    "bb": 6,
+    "rb": 23
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "799",
+    "unit": 6978,
+    "games": 12202,
+    "diff": 0,
+    "bb": 19,
+    "rb": 70
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "平均",
+    "unit": 3145,
+    "games": 1470,
+    "diff": 0,
+    "bb": 7,
+    "rb": 25
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "843",
+    "unit": 8246,
+    "games": 5697,
+    "diff": 24,
+    "bb": 0,
+    "rb": 38
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "846",
+    "unit": 6691,
+    "games": 290,
+    "diff": 24,
+    "bb": 0,
+    "rb": 24
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1092",
+    "unit": 8277,
+    "games": 12301,
+    "diff": 0,
+    "bb": 13,
+    "rb": 43
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1097",
+    "unit": 7147,
+    "games": 16045,
+    "diff": 0,
+    "bb": 14,
+    "rb": 34
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "平均",
+    "unit": 5915,
+    "games": 3507,
+    "diff": 0,
+    "bb": 14,
+    "rb": 25
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1100",
+    "unit": 6857,
+    "games": 1785,
+    "diff": 0,
+    "bb": 12,
+    "rb": 21
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1102",
+    "unit": 6911,
+    "games": 1336,
+    "diff": 0,
+    "bb": 14,
+    "rb": 38
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1104",
+    "unit": 8514,
+    "games": 852,
+    "diff": 0,
+    "bb": 17,
+    "rb": 38
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1107",
+    "unit": 6181,
+    "games": 1067,
+    "diff": 0,
+    "bb": 15,
+    "rb": 53
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "633",
+    "unit": 9538,
+    "games": 8780,
+    "diff": 0,
+    "bb": 15,
+    "rb": 111
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "平均",
+    "unit": 3707,
+    "games": 723,
+    "diff": 0,
+    "bb": 6,
+    "rb": 32
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "636",
+    "unit": 5846,
+    "games": 1792,
+    "diff": 0,
+    "bb": 23,
+    "rb": 40
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "855",
+    "unit": 6595,
+    "games": 1668,
+    "diff": 0,
+    "bb": 13,
+    "rb": 42
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "849",
+    "unit": 7139,
+    "games": 5956,
+    "diff": 17,
+    "bb": 0,
+    "rb": 42
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "平均",
+    "unit": 5839,
+    "games": 716,
+    "diff": 15,
+    "bb": 0,
+    "rb": 26
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "850",
+    "unit": 314,
+    "games": 265,
+    "diff": 0,
+    "bb": 1,
+    "rb": 2
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "851",
+    "unit": 3774,
+    "games": 4537,
+    "diff": 0,
+    "bb": 7,
+    "rb": 21
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "平均",
+    "unit": 2123,
+    "games": 1076,
+    "diff": 0,
+    "bb": 5,
+    "rb": 11
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "861",
+    "unit": 8286,
+    "games": 275,
+    "diff": 0,
+    "bb": 42,
+    "rb": 29
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "864",
+    "unit": 6375,
+    "games": 4320,
+    "diff": 0,
+    "bb": 20,
+    "rb": 29
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1064",
+    "unit": 7554,
+    "games": 3573,
+    "diff": 0,
+    "bb": 52,
+    "rb": 19
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1069",
+    "unit": 3398,
+    "games": 1390,
+    "diff": 0,
+    "bb": 3,
+    "rb": 44
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1070",
+    "unit": 6458,
+    "games": 656,
+    "diff": 0,
+    "bb": 16,
+    "rb": 82
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1071",
+    "unit": 5237,
+    "games": 5321,
+    "diff": 0,
+    "bb": 5,
+    "rb": 81
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "平均",
+    "unit": 5031,
+    "games": 2456,
+    "diff": 0,
+    "bb": 8,
+    "rb": 69
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "1065",
+    "unit": 8423,
+    "games": 6770,
+    "diff": 0,
+    "bb": 28,
+    "rb": 119
+  },
+  {
+    "store": "HYPER ARROW美原店",
+    "date": "2026-10-28",
+    "machine": "平均",
+    "unit": 5164,
+    "games": 2502,
+    "diff": 0,
+    "bb": 19,
+    "rb": 62
+  }
+]
