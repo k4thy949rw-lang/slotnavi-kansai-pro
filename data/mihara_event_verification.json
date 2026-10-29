@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-30T01:11:06.180815+09:00",
+  "updated_at": "2026-10-30T02:10:47.754087+09:00",
   "store": "HYPER ARROW美原店",
   "total_events": 7,
   "confirmed_events": 0,
   "analysis_ready_events": 0,
-  "unverified_with_actual": 4,
+  "unverified_with_actual": 5,
   "events": [
     {
       "date": "2026-10-23",
@@ -85,9 +85,9 @@
       "status": "unverified",
       "period": "past",
       "analysis_ready": false,
-      "reason": "開催未確認・差枚実績なし",
-      "actual_available": false,
-      "actual_units": 0,
+      "reason": "差枚実績あり・開催未確認",
+      "actual_available": true,
+      "actual_units": 745,
       "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
       "first_seen": "2026-10-23T06:50:40.775032+09:00",
       "last_collected_at": "2026-10-29T23:18:56.714745+09:00",
@@ -108,8 +108,8 @@
       "actual_units": 0,
       "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
       "first_seen": "2026-10-23T06:50:40.775032+09:00",
-      "last_collected_at": "2026-10-30T01:11:04.491442+09:00",
-      "seen_count": 254,
+      "last_collected_at": "2026-10-30T02:10:46.157745+09:00",
+      "seen_count": 255,
       "listing_status": "当日掲載確認",
       "listed_on_event_day": true,
       "manual_record": false
@@ -126,8 +126,8 @@
       "actual_units": 0,
       "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
       "first_seen": "2026-10-24T00:34:31.922398+09:00",
-      "last_collected_at": "2026-10-30T01:11:04.491442+09:00",
-      "seen_count": 221,
+      "last_collected_at": "2026-10-30T02:10:46.157745+09:00",
+      "seen_count": 222,
       "listing_status": "掲載履歴あり",
       "listed_on_event_day": false,
       "manual_record": false
