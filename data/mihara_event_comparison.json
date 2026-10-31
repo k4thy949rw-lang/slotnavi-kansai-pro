@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-01T01:36:15.228525+09:00",
+  "updated_at": "2026-11-01T02:11:16.938986+09:00",
   "store": "HYPER ARROW美原店",
   "method": "confirmed_events_vs_same_weekday_no_event_days",
   "minimum_event_days": 3,
   "minimum_normal_days": 3,
-  "historical_days_with_data": 40,
+  "historical_days_with_data": 41,
   "confirmed_event_days": 0,
   "normal_days": 34,
   "comparison_count": 0,
