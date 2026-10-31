@@ -1,15 +1,63 @@
 {
-  "updated_at": "2026-10-31T10:21:50.357035+09:00",
+  "updated_at": "2026-10-31T11:11:11.614241+09:00",
   "store": "HYPER ARROW美原店",
   "history_days": 180,
   "future_days": 90,
-  "event_count": 7,
+  "event_count": 13,
   "confirmed_count": 0,
-  "unverified_count": 7,
+  "unverified_count": 13,
   "upcoming_events": [
     {
       "date": "2026-10-31",
       "name": "超エクソシスト取材",
+      "type": "取材",
+      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+      "status": "unverified",
+      "origin": "automatic"
+    },
+    {
+      "date": "2026-11-01",
+      "name": "スロパチ来店取材 橙",
+      "type": "取材",
+      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+      "status": "unverified",
+      "origin": "automatic"
+    },
+    {
+      "date": "2026-11-02",
+      "name": "超花鳥風月取材 月",
+      "type": "取材",
+      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+      "status": "unverified",
+      "origin": "automatic"
+    },
+    {
+      "date": "2026-11-03",
+      "name": "りおねる来店★関西大戦★",
+      "type": "来店",
+      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+      "status": "unverified",
+      "origin": "automatic"
+    },
+    {
+      "date": "2026-11-04",
+      "name": "ジャンバリ潜入来店取材 雷",
+      "type": "取材",
+      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+      "status": "unverified",
+      "origin": "automatic"
+    },
+    {
+      "date": "2026-11-06",
+      "name": "超花鳥風月取材 月",
+      "type": "取材",
+      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+      "status": "unverified",
+      "origin": "automatic"
+    },
+    {
+      "date": "2026-11-07",
+      "name": "スロパチ来店取材 紫",
       "type": "取材",
       "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
       "status": "unverified",
@@ -65379,6 +65427,110 @@
         {
           "date": "2026-10-31",
           "name": "超エクソシスト取材",
+          "type": "取材",
+          "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+          "status": "unverified",
+          "origin": "automatic"
+        }
+      ],
+      "actual": null,
+      "machines": []
+    },
+    {
+      "date": "2026-11-01",
+      "weekday": 6,
+      "calendar_tags": [
+        "1のつく日"
+      ],
+      "events": [
+        {
+          "date": "2026-11-01",
+          "name": "スロパチ来店取材 橙",
+          "type": "取材",
+          "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+          "status": "unverified",
+          "origin": "automatic"
+        }
+      ],
+      "actual": null,
+      "machines": []
+    },
+    {
+      "date": "2026-11-02",
+      "weekday": 0,
+      "calendar_tags": [],
+      "events": [
+        {
+          "date": "2026-11-02",
+          "name": "超花鳥風月取材 月",
+          "type": "取材",
+          "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+          "status": "unverified",
+          "origin": "automatic"
+        }
+      ],
+      "actual": null,
+      "machines": []
+    },
+    {
+      "date": "2026-11-03",
+      "weekday": 1,
+      "calendar_tags": [],
+      "events": [
+        {
+          "date": "2026-11-03",
+          "name": "りおねる来店★関西大戦★",
+          "type": "来店",
+          "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+          "status": "unverified",
+          "origin": "automatic"
+        }
+      ],
+      "actual": null,
+      "machines": []
+    },
+    {
+      "date": "2026-11-04",
+      "weekday": 2,
+      "calendar_tags": [],
+      "events": [
+        {
+          "date": "2026-11-04",
+          "name": "ジャンバリ潜入来店取材 雷",
+          "type": "取材",
+          "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+          "status": "unverified",
+          "origin": "automatic"
+        }
+      ],
+      "actual": null,
+      "machines": []
+    },
+    {
+      "date": "2026-11-06",
+      "weekday": 4,
+      "calendar_tags": [],
+      "events": [
+        {
+          "date": "2026-11-06",
+          "name": "超花鳥風月取材 月",
+          "type": "取材",
+          "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+          "status": "unverified",
+          "origin": "automatic"
+        }
+      ],
+      "actual": null,
+      "machines": []
+    },
+    {
+      "date": "2026-11-07",
+      "weekday": 5,
+      "calendar_tags": [],
+      "events": [
+        {
+          "date": "2026-11-07",
+          "name": "スロパチ来店取材 紫",
           "type": "取材",
           "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
           "status": "unverified",
