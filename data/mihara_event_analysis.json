@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-04T07:18:35.215438+09:00",
+  "updated_at": "2026-11-04T08:02:19.450960+09:00",
   "store": "HYPER ARROW美原店",
   "history_days": 180,
   "future_days": 90,
-  "event_count": 14,
+  "event_count": 15,
   "confirmed_count": 0,
-  "unverified_count": 14,
+  "unverified_count": 15,
   "upcoming_events": [
     {
       "date": "2026-11-04",
@@ -34,6 +34,14 @@
     {
       "date": "2026-11-09",
       "name": "ジャンバリ潜入来店取材 炎",
+      "type": "取材",
+      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+      "status": "unverified",
+      "origin": "automatic"
+    },
+    {
+      "date": "2026-11-10",
+      "name": "超花鳥風月取材 月",
       "type": "取材",
       "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
       "status": "unverified",
@@ -72630,6 +72638,25 @@
         {
           "date": "2026-11-09",
           "name": "ジャンバリ潜入来店取材 炎",
+          "type": "取材",
+          "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+          "status": "unverified",
+          "origin": "automatic"
+        }
+      ],
+      "actual": null,
+      "machines": []
+    },
+    {
+      "date": "2026-11-10",
+      "weekday": 1,
+      "calendar_tags": [
+        "0のつく日"
+      ],
+      "events": [
+        {
+          "date": "2026-11-10",
+          "name": "超花鳥風月取材 月",
           "type": "取材",
           "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
           "status": "unverified",
