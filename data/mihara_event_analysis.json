@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-05T23:56:03.218297+09:00",
+  "updated_at": "2026-11-06T00:57:56.912772+09:00",
   "store": "HYPER ARROW美原店",
   "history_days": 180,
   "future_days": 90,
-  "event_count": 16,
+  "event_count": 17,
   "confirmed_count": 0,
-  "unverified_count": 16,
+  "unverified_count": 17,
   "upcoming_events": [
     {
       "date": "2026-11-06",
@@ -43,6 +43,14 @@
       "date": "2026-11-12",
       "name": "超花鳥風月取材 月",
       "type": "取材",
+      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+      "status": "unverified",
+      "origin": "automatic"
+    },
+    {
+      "date": "2026-11-13",
+      "name": "黒バラ芦屋虎徹来店ジャンバリ炎",
+      "type": "来店",
       "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
       "status": "unverified",
       "origin": "automatic"
@@ -74132,6 +74140,23 @@
           "date": "2026-11-12",
           "name": "超花鳥風月取材 月",
           "type": "取材",
+          "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+          "status": "unverified",
+          "origin": "automatic"
+        }
+      ],
+      "actual": null,
+      "machines": []
+    },
+    {
+      "date": "2026-11-13",
+      "weekday": 4,
+      "calendar_tags": [],
+      "events": [
+        {
+          "date": "2026-11-13",
+          "name": "黒バラ芦屋虎徹来店ジャンバリ炎",
+          "type": "来店",
           "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
           "status": "unverified",
           "origin": "automatic"
