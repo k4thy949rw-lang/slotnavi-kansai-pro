@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T23:32:19.922117+09:00",
+  "updated_at": "2026-11-10T00:27:55.551376+09:00",
   "store": "HYPER ARROW美原店",
   "history_days": 180,
   "future_days": 90,
@@ -7,14 +7,6 @@
   "confirmed_count": 0,
   "unverified_count": 18,
   "upcoming_events": [
-    {
-      "date": "2026-11-09",
-      "name": "ジャンバリ潜入来店取材 炎",
-      "type": "取材",
-      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
-      "status": "unverified",
-      "origin": "automatic"
-    },
     {
       "date": "2026-11-10",
       "name": "超花鳥風月取材 月",
