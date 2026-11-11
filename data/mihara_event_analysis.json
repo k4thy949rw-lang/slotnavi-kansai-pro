@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-11T23:52:48.712213+09:00",
+  "updated_at": "2026-11-12T00:50:32.421891+09:00",
   "store": "HYPER ARROW美原店",
   "history_days": 180,
   "future_days": 90,
-  "event_count": 20,
+  "event_count": 21,
   "confirmed_count": 0,
-  "unverified_count": 20,
+  "unverified_count": 21,
   "upcoming_events": [
     {
       "date": "2026-11-12",
@@ -43,6 +43,14 @@
       "date": "2026-11-17",
       "name": "スロパチ来店取材 紫",
       "type": "取材",
+      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+      "status": "unverified",
+      "origin": "automatic"
+    },
+    {
+      "date": "2026-11-19",
+      "name": "ヨシノブ来店★ジャンバリ炎",
+      "type": "来店",
       "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
       "status": "unverified",
       "origin": "automatic"
@@ -83770,6 +83778,23 @@
           "date": "2026-11-17",
           "name": "スロパチ来店取材 紫",
           "type": "取材",
+          "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+          "status": "unverified",
+          "origin": "automatic"
+        }
+      ],
+      "actual": null,
+      "machines": []
+    },
+    {
+      "date": "2026-11-19",
+      "weekday": 3,
+      "calendar_tags": [],
+      "events": [
+        {
+          "date": "2026-11-19",
+          "name": "ヨシノブ来店★ジャンバリ炎",
+          "type": "来店",
           "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
           "status": "unverified",
           "origin": "automatic"
