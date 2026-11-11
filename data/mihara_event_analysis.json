@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-11T10:59:47.566760+09:00",
+  "updated_at": "2026-11-11T11:49:05.346496+09:00",
   "store": "HYPER ARROW美原店",
   "history_days": 180,
   "future_days": 90,
-  "event_count": 18,
+  "event_count": 20,
   "confirmed_count": 0,
-  "unverified_count": 18,
+  "unverified_count": 20,
   "upcoming_events": [
     {
       "date": "2026-11-12",
@@ -26,6 +26,22 @@
     {
       "date": "2026-11-14",
       "name": "超エクソシスト取材",
+      "type": "取材",
+      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+      "status": "unverified",
+      "origin": "automatic"
+    },
+    {
+      "date": "2026-11-16",
+      "name": "ジャンバリ潜入来店取材 雷",
+      "type": "取材",
+      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+      "status": "unverified",
+      "origin": "automatic"
+    },
+    {
+      "date": "2026-11-17",
+      "name": "スロパチ来店取材 紫",
       "type": "取材",
       "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
       "status": "unverified",
@@ -83719,6 +83735,40 @@
         {
           "date": "2026-11-14",
           "name": "超エクソシスト取材",
+          "type": "取材",
+          "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+          "status": "unverified",
+          "origin": "automatic"
+        }
+      ],
+      "actual": null,
+      "machines": []
+    },
+    {
+      "date": "2026-11-16",
+      "weekday": 0,
+      "calendar_tags": [],
+      "events": [
+        {
+          "date": "2026-11-16",
+          "name": "ジャンバリ潜入来店取材 雷",
+          "type": "取材",
+          "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+          "status": "unverified",
+          "origin": "automatic"
+        }
+      ],
+      "actual": null,
+      "machines": []
+    },
+    {
+      "date": "2026-11-17",
+      "weekday": 1,
+      "calendar_tags": [],
+      "events": [
+        {
+          "date": "2026-11-17",
+          "name": "スロパチ来店取材 紫",
           "type": "取材",
           "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
           "status": "unverified",
