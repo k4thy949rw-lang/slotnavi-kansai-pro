@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T21:42:51.993982+09:00",
+  "updated_at": "2026-11-13T22:57:41.699245+09:00",
   "store": "HYPER ARROW美原店",
   "evaluated_days": 22,
   "complete_top10_days": 12,
@@ -9,7 +9,7 @@
   "daily_results": [
     {
       "date": "2026-11-12",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 88,
       "actual_unit_count": 674,
@@ -839,7 +839,7 @@
     },
     {
       "date": "2026-11-11",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 88,
       "actual_unit_count": 704,
@@ -1669,7 +1669,7 @@
     },
     {
       "date": "2026-11-10",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 89,
       "actual_unit_count": 672,
@@ -2508,7 +2508,7 @@
     },
     {
       "date": "2026-11-09",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 83,
       "actual_unit_count": 682,
@@ -3293,7 +3293,7 @@
     },
     {
       "date": "2026-11-08",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 84,
       "actual_unit_count": 717,
@@ -4087,7 +4087,7 @@
     },
     {
       "date": "2026-11-07",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 84,
       "actual_unit_count": 698,
@@ -4881,7 +4881,7 @@
     },
     {
       "date": "2026-11-06",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 83,
       "actual_unit_count": 672,
@@ -5666,7 +5666,7 @@
     },
     {
       "date": "2026-11-05",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 83,
       "actual_unit_count": 679,
@@ -6451,7 +6451,7 @@
     },
     {
       "date": "2026-11-04",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 95,
       "actual_unit_count": 671,
@@ -7344,7 +7344,7 @@
     },
     {
       "date": "2026-11-03",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 95,
       "actual_unit_count": 708,
@@ -8237,7 +8237,7 @@
     },
     {
       "date": "2026-11-02",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 95,
       "actual_unit_count": 709,
@@ -9130,7 +9130,7 @@
     },
     {
       "date": "2026-11-01",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 95,
       "actual_unit_count": 719,
@@ -10023,7 +10023,7 @@
     },
     {
       "date": "2026-10-31",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 97,
       "actual_unit_count": 695,
@@ -10934,7 +10934,7 @@
     },
     {
       "date": "2026-10-30",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 97,
       "actual_unit_count": 693,
@@ -11845,7 +11845,7 @@
     },
     {
       "date": "2026-10-29",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 94,
       "actual_unit_count": 745,
@@ -12729,7 +12729,7 @@
     },
     {
       "date": "2026-10-28",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 95,
       "actual_unit_count": 686,
@@ -13622,7 +13622,7 @@
     },
     {
       "date": "2026-10-27",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 95,
       "actual_unit_count": 682,
@@ -14515,7 +14515,7 @@
     },
     {
       "date": "2026-10-26",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 96,
       "actual_unit_count": 703,
@@ -15417,7 +15417,7 @@
     },
     {
       "date": "2026-10-25",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 98,
       "actual_unit_count": 671,
@@ -16337,7 +16337,7 @@
     },
     {
       "date": "2026-10-24",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 95,
       "actual_unit_count": 700,
@@ -17230,7 +17230,7 @@
     },
     {
       "date": "2026-10-23",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 98,
       "actual_unit_count": 690,
@@ -18150,7 +18150,7 @@
     },
     {
       "date": "2026-10-22",
-      "evaluated_at": "2026-11-13T21:42:51.993982+09:00",
+      "evaluated_at": "2026-11-13T22:57:41.699245+09:00",
       "predicted_count": 100,
       "matched_count": 95,
       "actual_unit_count": 715,
