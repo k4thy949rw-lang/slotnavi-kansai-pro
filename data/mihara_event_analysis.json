@@ -1,20 +1,12 @@
 {
-  "updated_at": "2026-11-13T23:52:19.569792+09:00",
+  "updated_at": "2026-11-14T00:48:23.164644+09:00",
   "store": "HYPER ARROW美原店",
   "history_days": 180,
   "future_days": 90,
-  "event_count": 22,
+  "event_count": 23,
   "confirmed_count": 0,
-  "unverified_count": 22,
+  "unverified_count": 23,
   "upcoming_events": [
-    {
-      "date": "2026-11-13",
-      "name": "黒バラ芦屋虎徹来店ジャンバリ炎",
-      "type": "来店",
-      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
-      "status": "unverified",
-      "origin": "automatic"
-    },
     {
       "date": "2026-11-14",
       "name": "超エクソシスト取材",
@@ -50,6 +42,14 @@
     {
       "date": "2026-11-20",
       "name": "電飾鼻男来店★超花鳥風月取材月",
+      "type": "来店",
+      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+      "status": "unverified",
+      "origin": "automatic"
+    },
+    {
+      "date": "2026-11-21",
+      "name": "スロパチ来店取材 橙",
       "type": "来店",
       "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
       "status": "unverified",
@@ -87062,6 +87062,25 @@
         {
           "date": "2026-11-20",
           "name": "電飾鼻男来店★超花鳥風月取材月",
+          "type": "来店",
+          "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+          "status": "unverified",
+          "origin": "automatic"
+        }
+      ],
+      "actual": null,
+      "machines": []
+    },
+    {
+      "date": "2026-11-21",
+      "weekday": 5,
+      "calendar_tags": [
+        "1のつく日"
+      ],
+      "events": [
+        {
+          "date": "2026-11-21",
+          "name": "スロパチ来店取材 橙",
           "type": "来店",
           "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
           "status": "unverified",
