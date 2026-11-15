@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T21:14:16.318491+09:00",
+  "updated_at": "2026-11-15T22:15:18.486724+09:00",
   "store": "HYPER ARROW美原店",
   "analysis_days": 30,
   "minimum_days": 3,
@@ -1077,21 +1077,21 @@
       "score": 53.9
     },
     {
-      "unit": 906,
-      "machine": "マイジャグラーV",
-      "days": 20,
-      "avg_diff": 393,
-      "avg_games": 5268,
-      "win_rate": 55.0,
-      "score": 53.7
-    },
-    {
       "unit": 673,
       "machine": "モンキーターンV",
       "days": 30,
       "avg_diff": 673,
       "avg_games": 3606,
       "win_rate": 26.7,
+      "score": 53.7
+    },
+    {
+      "unit": 906,
+      "machine": "マイジャグラーV",
+      "days": 20,
+      "avg_diff": 393,
+      "avg_games": 5268,
+      "win_rate": 55.0,
       "score": 53.7
     },
     {
@@ -1102,6 +1102,15 @@
       "avg_games": 4882,
       "win_rate": 40.0,
       "score": 53.3
+    },
+    {
+      "unit": 945,
+      "machine": "ゴーゴージャグラー3",
+      "days": 10,
+      "avg_diff": 366,
+      "avg_games": 5929,
+      "win_rate": 50.0,
+      "score": 53.1
     },
     {
       "unit": 871,
@@ -1119,15 +1128,6 @@
       "avg_diff": 318,
       "avg_games": 5315,
       "win_rate": 65.0,
-      "score": 53.1
-    },
-    {
-      "unit": 945,
-      "machine": "ゴーゴージャグラー3",
-      "days": 10,
-      "avg_diff": 366,
-      "avg_games": 5929,
-      "win_rate": 50.0,
       "score": 53.1
     },
     {
@@ -1437,15 +1437,6 @@
       "score": 46.8
     },
     {
-      "unit": 873,
-      "machine": "マイジャグラーV",
-      "days": 20,
-      "avg_diff": 260,
-      "avg_games": 5600,
-      "win_rate": 50.0,
-      "score": 46.7
-    },
-    {
       "unit": 1031,
       "machine": "東京喰種",
       "days": 30,
@@ -1455,13 +1446,13 @@
       "score": 46.7
     },
     {
-      "unit": 867,
-      "machine": "うみねこのなく頃に2",
-      "days": 30,
-      "avg_diff": 354,
-      "avg_games": 3567,
-      "win_rate": 56.7,
-      "score": 46.6
+      "unit": 873,
+      "machine": "マイジャグラーV",
+      "days": 20,
+      "avg_diff": 260,
+      "avg_games": 5600,
+      "win_rate": 50.0,
+      "score": 46.7
     },
     {
       "unit": 1100,
@@ -1470,6 +1461,15 @@
       "avg_diff": 172,
       "avg_games": 6096,
       "win_rate": 60.0,
+      "score": 46.6
+    },
+    {
+      "unit": 867,
+      "machine": "うみねこのなく頃に2",
+      "days": 30,
+      "avg_diff": 354,
+      "avg_games": 3567,
+      "win_rate": 56.7,
       "score": 46.6
     },
     {
@@ -1563,6 +1563,15 @@
       "score": 45.6
     },
     {
+      "unit": 921,
+      "machine": "マイジャグラーVI",
+      "days": 10,
+      "avg_diff": 267,
+      "avg_games": 6826,
+      "win_rate": 40.0,
+      "score": 45.3
+    },
+    {
       "unit": 723,
       "machine": "革命機ヴァルヴレイヴ2",
       "days": 30,
@@ -1578,15 +1587,6 @@
       "avg_diff": 405,
       "avg_games": 4221,
       "win_rate": 36.7,
-      "score": 45.3
-    },
-    {
-      "unit": 921,
-      "machine": "マイジャグラーVI",
-      "days": 10,
-      "avg_diff": 267,
-      "avg_games": 6826,
-      "win_rate": 40.0,
       "score": 45.3
     },
     {
@@ -1941,15 +1941,6 @@
       "score": 40.1
     },
     {
-      "unit": 809,
-      "machine": "ゴーゴージャグラー3",
-      "days": 20,
-      "avg_diff": 141,
-      "avg_games": 5355,
-      "win_rate": 50.0,
-      "score": 39.9
-    },
-    {
       "unit": 693,
       "machine": "とある魔術の禁書目録2",
       "days": 30,
@@ -1959,13 +1950,13 @@
       "score": 39.9
     },
     {
-      "unit": 905,
-      "machine": "マイジャグラーV",
+      "unit": 809,
+      "machine": "ゴーゴージャグラー3",
       "days": 20,
-      "avg_diff": 156,
-      "avg_games": 5546,
-      "win_rate": 45.0,
-      "score": 39.8
+      "avg_diff": 141,
+      "avg_games": 5355,
+      "win_rate": 50.0,
+      "score": 39.9
     },
     {
       "unit": 995,
@@ -1977,13 +1968,13 @@
       "score": 39.8
     },
     {
-      "unit": 688,
-      "machine": "モンキーターンV",
-      "days": 30,
-      "avg_diff": 298,
-      "avg_games": 3852,
-      "win_rate": 40.0,
-      "score": 39.7
+      "unit": 905,
+      "machine": "マイジャグラーV",
+      "days": 20,
+      "avg_diff": 156,
+      "avg_games": 5546,
+      "win_rate": 45.0,
+      "score": 39.8
     },
     {
       "unit": 911,
@@ -1992,6 +1983,15 @@
       "avg_diff": 94,
       "avg_games": 6750,
       "win_rate": 50.0,
+      "score": 39.7
+    },
+    {
+      "unit": 688,
+      "machine": "モンキーターンV",
+      "days": 30,
+      "avg_diff": 298,
+      "avg_games": 3852,
+      "win_rate": 40.0,
       "score": 39.7
     },
     {
@@ -2067,15 +2067,6 @@
       "score": 38.8
     },
     {
-      "unit": 1053,
-      "machine": "新ハナビ",
-      "days": 30,
-      "avg_diff": 215,
-      "avg_games": 3867,
-      "win_rate": 50.0,
-      "score": 38.7
-    },
-    {
       "unit": 1102,
       "machine": "ラグナドール",
       "days": 10,
@@ -2085,13 +2076,13 @@
       "score": 38.7
     },
     {
-      "unit": 806,
-      "machine": "ゴーゴージャグラー3",
-      "days": 20,
-      "avg_diff": 183,
-      "avg_games": 4772,
-      "win_rate": 45.0,
-      "score": 38.6
+      "unit": 1053,
+      "machine": "新ハナビ",
+      "days": 30,
+      "avg_diff": 215,
+      "avg_games": 3867,
+      "win_rate": 50.0,
+      "score": 38.7
     },
     {
       "unit": 804,
@@ -2100,6 +2091,15 @@
       "avg_diff": 72,
       "avg_games": 6967,
       "win_rate": 50.0,
+      "score": 38.6
+    },
+    {
+      "unit": 806,
+      "machine": "ゴーゴージャグラー3",
+      "days": 20,
+      "avg_diff": 183,
+      "avg_games": 4772,
+      "win_rate": 45.0,
       "score": 38.6
     },
     {
@@ -2121,21 +2121,21 @@
       "score": 38.5
     },
     {
-      "unit": 818,
-      "machine": "ゴーゴージャグラー3",
-      "days": 20,
-      "avg_diff": 99,
-      "avg_games": 5543,
-      "win_rate": 50.0,
-      "score": 38.4
-    },
-    {
       "unit": 870,
       "machine": "ゴーゴージャグラー3",
       "days": 10,
       "avg_diff": 237,
       "avg_games": 5272,
       "win_rate": 30.0,
+      "score": 38.4
+    },
+    {
+      "unit": 818,
+      "machine": "ゴーゴージャグラー3",
+      "days": 20,
+      "avg_diff": 99,
+      "avg_games": 5543,
+      "win_rate": 50.0,
       "score": 38.4
     },
     {
@@ -2247,15 +2247,6 @@
       "score": 37.0
     },
     {
-      "unit": 874,
-      "machine": "マイジャグラーV",
-      "days": 20,
-      "avg_diff": 113,
-      "avg_games": 5314,
-      "win_rate": 45.0,
-      "score": 36.9
-    },
-    {
       "unit": 979,
       "machine": "ファンキージャグラー2",
       "days": 30,
@@ -2271,6 +2262,15 @@
       "avg_diff": 99,
       "avg_games": 7800,
       "win_rate": 40.0,
+      "score": 36.9
+    },
+    {
+      "unit": 874,
+      "machine": "マイジャグラーV",
+      "days": 20,
+      "avg_diff": 113,
+      "avg_games": 5314,
+      "win_rate": 45.0,
       "score": 36.9
     },
     {
@@ -2310,15 +2310,6 @@
       "score": 36.4
     },
     {
-      "unit": 900,
-      "machine": "マイジャグラーV",
-      "days": 30,
-      "avg_diff": 91,
-      "avg_games": 5017,
-      "win_rate": 50.0,
-      "score": 36.3
-    },
-    {
       "unit": 757,
       "machine": "リコリス・リコイル",
       "days": 30,
@@ -2328,20 +2319,29 @@
       "score": 36.3
     },
     {
-      "unit": 724,
-      "machine": "革命機ヴァルヴレイヴ2",
-      "days": 30,
-      "avg_diff": 223,
-      "avg_games": 3964,
-      "win_rate": 40.0,
-      "score": 36.3
-    },
-    {
       "unit": 803,
       "machine": "マイジャグラーVI",
       "days": 10,
       "avg_diff": 86,
       "avg_games": 7046,
+      "win_rate": 40.0,
+      "score": 36.3
+    },
+    {
+      "unit": 900,
+      "machine": "マイジャグラーV",
+      "days": 30,
+      "avg_diff": 91,
+      "avg_games": 5017,
+      "win_rate": 50.0,
+      "score": 36.3
+    },
+    {
+      "unit": 724,
+      "machine": "革命機ヴァルヴレイヴ2",
+      "days": 30,
+      "avg_diff": 223,
+      "avg_games": 3964,
       "win_rate": 40.0,
       "score": 36.3
     },
@@ -2382,6 +2382,15 @@
       "score": 36.1
     },
     {
+      "unit": 922,
+      "machine": "マイジャグラーVI",
+      "days": 10,
+      "avg_diff": 80,
+      "avg_games": 7372,
+      "win_rate": 40.0,
+      "score": 36.0
+    },
+    {
       "unit": 973,
       "machine": "ネオアイムジャグラーEX",
       "days": 30,
@@ -2406,15 +2415,6 @@
       "avg_diff": 46,
       "avg_games": 5915,
       "win_rate": 46.7,
-      "score": 36.0
-    },
-    {
-      "unit": 922,
-      "machine": "マイジャグラーVI",
-      "days": 10,
-      "avg_diff": 80,
-      "avg_games": 7372,
-      "win_rate": 40.0,
       "score": 36.0
     },
     {
@@ -2445,21 +2445,21 @@
       "score": 35.7
     },
     {
-      "unit": 1101,
-      "machine": "戦国コレクション6",
-      "days": 20,
-      "avg_diff": 272,
-      "avg_games": 4384,
-      "win_rate": 25.0,
-      "score": 35.7
-    },
-    {
       "unit": 940,
       "machine": "ゴーゴージャグラー3",
       "days": 10,
       "avg_diff": 131,
       "avg_games": 5143,
       "win_rate": 40.0,
+      "score": 35.7
+    },
+    {
+      "unit": 1101,
+      "machine": "戦国コレクション6",
+      "days": 20,
+      "avg_diff": 272,
+      "avg_games": 4384,
+      "win_rate": 25.0,
       "score": 35.7
     },
     {
@@ -2508,21 +2508,21 @@
       "score": 34.7
     },
     {
-      "unit": 1061,
-      "machine": "ハナビ",
-      "days": 30,
-      "avg_diff": 87,
-      "avg_games": 4902,
-      "win_rate": 46.7,
-      "score": 34.7
-    },
-    {
       "unit": 876,
       "machine": "ゴーゴージャグラー3",
       "days": 10,
       "avg_diff": 21,
       "avg_games": 5605,
       "win_rate": 50.0,
+      "score": 34.7
+    },
+    {
+      "unit": 1061,
+      "machine": "ハナビ",
+      "days": 30,
+      "avg_diff": 87,
+      "avg_games": 4902,
+      "win_rate": 46.7,
       "score": 34.7
     },
     {
@@ -2562,6 +2562,15 @@
       "score": 34.2
     },
     {
+      "unit": 915,
+      "machine": "マイジャグラーVI",
+      "days": 10,
+      "avg_diff": -17,
+      "avg_games": 6964,
+      "win_rate": 50.0,
+      "score": 34.1
+    },
+    {
       "unit": 887,
       "machine": "マイジャグラーV",
       "days": 30,
@@ -2598,15 +2607,6 @@
       "score": 34.1
     },
     {
-      "unit": 915,
-      "machine": "マイジャグラーVI",
-      "days": 10,
-      "avg_diff": -17,
-      "avg_games": 6964,
-      "win_rate": 50.0,
-      "score": 34.1
-    },
-    {
       "unit": 750,
       "machine": "リコリス・リコイル",
       "days": 30,
@@ -2614,15 +2614,6 @@
       "avg_games": 3670,
       "win_rate": 43.3,
       "score": 34.0
-    },
-    {
-      "unit": 911,
-      "machine": "マイジャグラーV",
-      "days": 20,
-      "avg_diff": -52,
-      "avg_games": 6076,
-      "win_rate": 55.0,
-      "score": 33.9
     },
     {
       "unit": 924,
@@ -2640,6 +2631,15 @@
       "avg_diff": 218,
       "avg_games": 4202,
       "win_rate": 30.0,
+      "score": 33.9
+    },
+    {
+      "unit": 911,
+      "machine": "マイジャグラーV",
+      "days": 20,
+      "avg_diff": -52,
+      "avg_games": 6076,
+      "win_rate": 55.0,
       "score": 33.9
     },
     {
@@ -2733,15 +2733,6 @@
       "score": 32.6
     },
     {
-      "unit": 927,
-      "machine": "ジャグラーガールズSS",
-      "days": 30,
-      "avg_diff": 56,
-      "avg_games": 5818,
-      "win_rate": 33.3,
-      "score": 32.2
-    },
-    {
       "unit": 914,
       "machine": "マイジャグラーVI",
       "days": 10,
@@ -2751,13 +2742,13 @@
       "score": 32.2
     },
     {
-      "unit": 939,
-      "machine": "マイジャグラーV",
-      "days": 20,
-      "avg_diff": 24,
-      "avg_games": 5678,
-      "win_rate": 40.0,
-      "score": 32.1
+      "unit": 927,
+      "machine": "ジャグラーガールズSS",
+      "days": 30,
+      "avg_diff": 56,
+      "avg_games": 5818,
+      "win_rate": 33.3,
+      "score": 32.2
     },
     {
       "unit": 563,
@@ -2784,6 +2775,15 @@
       "avg_diff": -1,
       "avg_games": 4855,
       "win_rate": 53.3,
+      "score": 32.1
+    },
+    {
+      "unit": 939,
+      "machine": "マイジャグラーV",
+      "days": 20,
+      "avg_diff": 24,
+      "avg_games": 5678,
+      "win_rate": 40.0,
       "score": 32.1
     },
     {
@@ -2823,21 +2823,21 @@
       "score": 31.8
     },
     {
-      "unit": 814,
-      "machine": "ゴーゴージャグラー3",
-      "days": 20,
-      "avg_diff": 65,
-      "avg_games": 4956,
-      "win_rate": 40.0,
-      "score": 31.8
-    },
-    {
       "unit": 857,
       "machine": "戦国コレクション6",
       "days": 10,
       "avg_diff": 27,
       "avg_games": 4642,
       "win_rate": 50.0,
+      "score": 31.8
+    },
+    {
+      "unit": 814,
+      "machine": "ゴーゴージャグラー3",
+      "days": 20,
+      "avg_diff": 65,
+      "avg_games": 4956,
+      "win_rate": 40.0,
       "score": 31.8
     },
     {
@@ -2886,15 +2886,6 @@
       "score": 31.6
     },
     {
-      "unit": 945,
-      "machine": "マイジャグラーV",
-      "days": 20,
-      "avg_diff": -51,
-      "avg_games": 5719,
-      "win_rate": 50.0,
-      "score": 31.5
-    },
-    {
       "unit": 974,
       "machine": "ネオアイムジャグラーEX",
       "days": 30,
@@ -2910,6 +2901,15 @@
       "avg_diff": 153,
       "avg_games": 3546,
       "win_rate": 40.0,
+      "score": 31.5
+    },
+    {
+      "unit": 945,
+      "machine": "マイジャグラーV",
+      "days": 20,
+      "avg_diff": -51,
+      "avg_games": 5719,
+      "win_rate": 50.0,
       "score": 31.5
     },
     {
@@ -3012,15 +3012,6 @@
       "score": 30.6
     },
     {
-      "unit": 923,
-      "machine": "ジャグラーガールズSS",
-      "days": 30,
-      "avg_diff": 17,
-      "avg_games": 5596,
-      "win_rate": 36.7,
-      "score": 30.5
-    },
-    {
       "unit": 791,
       "machine": "聖闘士星矢 黄金十二宮",
       "days": 10,
@@ -3030,13 +3021,13 @@
       "score": 30.5
     },
     {
-      "unit": 913,
-      "machine": "マイジャグラーV",
-      "days": 20,
-      "avg_diff": 40,
-      "avg_games": 5827,
-      "win_rate": 30.0,
-      "score": 30.4
+      "unit": 923,
+      "machine": "ジャグラーガールズSS",
+      "days": 30,
+      "avg_diff": 17,
+      "avg_games": 5596,
+      "win_rate": 36.7,
+      "score": 30.5
     },
     {
       "unit": 639,
@@ -3045,6 +3036,15 @@
       "avg_diff": -41,
       "avg_games": 5534,
       "win_rate": 46.7,
+      "score": 30.4
+    },
+    {
+      "unit": 913,
+      "machine": "マイジャグラーV",
+      "days": 20,
+      "avg_diff": 40,
+      "avg_games": 5827,
+      "win_rate": 30.0,
       "score": 30.4
     },
     {
@@ -3138,6 +3138,15 @@
       "score": 29.2
     },
     {
+      "unit": 816,
+      "machine": "マイジャグラーVI",
+      "days": 10,
+      "avg_diff": -57,
+      "avg_games": 6608,
+      "win_rate": 40.0,
+      "score": 29.1
+    },
+    {
       "unit": 980,
       "machine": "ファンキージャグラー2",
       "days": 30,
@@ -3152,15 +3161,6 @@
       "days": 30,
       "avg_diff": 88,
       "avg_games": 3813,
-      "win_rate": 40.0,
-      "score": 29.1
-    },
-    {
-      "unit": 816,
-      "machine": "マイジャグラーVI",
-      "days": 10,
-      "avg_diff": -57,
-      "avg_games": 6608,
       "win_rate": 40.0,
       "score": 29.1
     },
@@ -3183,21 +3183,21 @@
       "score": 28.9
     },
     {
-      "unit": 870,
-      "machine": "マイジャグラーV",
-      "days": 20,
-      "avg_diff": -74,
-      "avg_games": 5235,
-      "win_rate": 50.0,
-      "score": 28.8
-    },
-    {
       "unit": 734,
       "machine": "獣王",
       "days": 30,
       "avg_diff": -44,
       "avg_games": 6986,
       "win_rate": 36.7,
+      "score": 28.8
+    },
+    {
+      "unit": 870,
+      "machine": "マイジャグラーV",
+      "days": 20,
+      "avg_diff": -74,
+      "avg_games": 5235,
+      "win_rate": 50.0,
       "score": 28.8
     },
     {
@@ -3255,21 +3255,21 @@
       "score": 28.3
     },
     {
-      "unit": 872,
-      "machine": "マイジャグラーV",
-      "days": 20,
-      "avg_diff": -49,
-      "avg_games": 5592,
-      "win_rate": 40.0,
-      "score": 28.2
-    },
-    {
       "unit": 892,
       "machine": "マイジャグラーV",
       "days": 30,
       "avg_diff": 12,
       "avg_games": 5269,
       "win_rate": 33.3,
+      "score": 28.2
+    },
+    {
+      "unit": 872,
+      "machine": "マイジャグラーV",
+      "days": 20,
+      "avg_diff": -49,
+      "avg_games": 5592,
+      "win_rate": 40.0,
       "score": 28.2
     },
     {
@@ -3282,21 +3282,21 @@
       "score": 28.1
     },
     {
-      "unit": 896,
-      "machine": "マイジャグラーV",
-      "days": 30,
-      "avg_diff": -22,
-      "avg_games": 5440,
-      "win_rate": 36.7,
-      "score": 28.0
-    },
-    {
       "unit": 753,
       "machine": "リコリス・リコイル",
       "days": 30,
       "avg_diff": 64,
       "avg_games": 3857,
       "win_rate": 40.0,
+      "score": 28.0
+    },
+    {
+      "unit": 896,
+      "machine": "マイジャグラーV",
+      "days": 30,
+      "avg_diff": -22,
+      "avg_games": 5440,
+      "win_rate": 36.7,
       "score": 28.0
     },
     {
@@ -3327,15 +3327,6 @@
       "score": 27.6
     },
     {
-      "unit": 920,
-      "machine": "マイジャグラーV",
-      "days": 20,
-      "avg_diff": -100,
-      "avg_games": 5713,
-      "win_rate": 45.0,
-      "score": 27.5
-    },
-    {
       "unit": 1089,
       "machine": "東京喰種",
       "days": 30,
@@ -3360,6 +3351,15 @@
       "avg_diff": 78,
       "avg_games": 4080,
       "win_rate": 33.3,
+      "score": 27.5
+    },
+    {
+      "unit": 920,
+      "machine": "マイジャグラーV",
+      "days": 20,
+      "avg_diff": -100,
+      "avg_games": 5713,
+      "win_rate": 45.0,
       "score": 27.5
     },
     {
@@ -3489,21 +3489,21 @@
       "score": 25.8
     },
     {
-      "unit": 796,
-      "machine": "からくりサーカス2",
-      "days": 20,
-      "avg_diff": 160,
-      "avg_games": 2651,
-      "win_rate": 30.0,
-      "score": 25.8
-    },
-    {
       "unit": 925,
       "machine": "ジャグラーガールズSS",
       "days": 30,
       "avg_diff": -53,
       "avg_games": 5234,
       "win_rate": 36.7,
+      "score": 25.8
+    },
+    {
+      "unit": 796,
+      "machine": "からくりサーカス2",
+      "days": 20,
+      "avg_diff": 160,
+      "avg_games": 2651,
+      "win_rate": 30.0,
       "score": 25.8
     },
     {
@@ -3561,21 +3561,21 @@
       "score": 25.4
     },
     {
-      "unit": 941,
-      "machine": "マイジャグラーV",
-      "days": 20,
-      "avg_diff": -91,
-      "avg_games": 5813,
-      "win_rate": 35.0,
-      "score": 25.3
-    },
-    {
       "unit": 715,
       "machine": "北斗の拳",
       "days": 30,
       "avg_diff": 105,
       "avg_games": 2719,
       "win_rate": 36.7,
+      "score": 25.3
+    },
+    {
+      "unit": 941,
+      "machine": "マイジャグラーV",
+      "days": 20,
+      "avg_diff": -91,
+      "avg_games": 5813,
+      "win_rate": 35.0,
       "score": 25.3
     },
     {
@@ -3606,15 +3606,6 @@
       "score": 25.2
     },
     {
-      "unit": 903,
-      "machine": "マイジャグラーV",
-      "days": 20,
-      "avg_diff": -111,
-      "avg_games": 6044,
-      "win_rate": 35.0,
-      "score": 25.0
-    },
-    {
       "unit": 584,
       "machine": "甲鉄城のカバネリ 海門決戦",
       "days": 30,
@@ -3633,6 +3624,15 @@
       "score": 25.0
     },
     {
+      "unit": 903,
+      "machine": "マイジャグラーV",
+      "days": 20,
+      "avg_diff": -111,
+      "avg_games": 6044,
+      "win_rate": 35.0,
+      "score": 25.0
+    },
+    {
       "unit": 679,
       "machine": "モンキーターンV",
       "days": 30,
@@ -3640,15 +3640,6 @@
       "avg_games": 3526,
       "win_rate": 36.7,
       "score": 24.9
-    },
-    {
-      "unit": 575,
-      "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
-      "days": 30,
-      "avg_diff": -58,
-      "avg_games": 4721,
-      "win_rate": 40.0,
-      "score": 24.8
     },
     {
       "unit": 810,
@@ -3665,6 +3656,15 @@
       "days": 10,
       "avg_diff": -144,
       "avg_games": 6278,
+      "win_rate": 40.0,
+      "score": 24.8
+    },
+    {
+      "unit": 575,
+      "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+      "days": 30,
+      "avg_diff": -58,
+      "avg_games": 4721,
       "win_rate": 40.0,
       "score": 24.8
     },
@@ -3732,15 +3732,6 @@
       "score": 24.1
     },
     {
-      "unit": 811,
-      "machine": "ゴーゴージャグラー3",
-      "days": 20,
-      "avg_diff": -53,
-      "avg_games": 4832,
-      "win_rate": 35.0,
-      "score": 24.0
-    },
-    {
       "unit": 938,
       "machine": "ゴーゴージャグラー3",
       "days": 10,
@@ -3750,13 +3741,13 @@
       "score": 24.0
     },
     {
-      "unit": 882,
-      "machine": "マイジャグラーV",
-      "days": 30,
-      "avg_diff": -137,
-      "avg_games": 5320,
-      "win_rate": 43.3,
-      "score": 23.9
+      "unit": 811,
+      "machine": "ゴーゴージャグラー3",
+      "days": 20,
+      "avg_diff": -53,
+      "avg_games": 4832,
+      "win_rate": 35.0,
+      "score": 24.0
     },
     {
       "unit": 768,
@@ -3765,6 +3756,15 @@
       "avg_diff": -144,
       "avg_games": 4827,
       "win_rate": 50.0,
+      "score": 23.9
+    },
+    {
+      "unit": 882,
+      "machine": "マイジャグラーV",
+      "days": 30,
+      "avg_diff": -137,
+      "avg_games": 5320,
+      "win_rate": 43.3,
       "score": 23.9
     },
     {
@@ -3831,15 +3831,6 @@
       "score": 23.0
     },
     {
-      "unit": 943,
-      "machine": "マイジャグラーV",
-      "days": 20,
-      "avg_diff": -106,
-      "avg_games": 5309,
-      "win_rate": 35.0,
-      "score": 22.9
-    },
-    {
       "unit": 1079,
       "machine": "東京喰種",
       "days": 30,
@@ -3855,6 +3846,15 @@
       "avg_diff": -97,
       "avg_games": 4434,
       "win_rate": 43.3,
+      "score": 22.9
+    },
+    {
+      "unit": 943,
+      "machine": "マイジャグラーV",
+      "days": 20,
+      "avg_diff": -106,
+      "avg_games": 5309,
+      "win_rate": 35.0,
       "score": 22.9
     },
     {
@@ -3921,15 +3921,6 @@
       "score": 22.1
     },
     {
-      "unit": 878,
-      "machine": "マイジャグラーV",
-      "days": 20,
-      "avg_diff": -179,
-      "avg_games": 5652,
-      "win_rate": 40.0,
-      "score": 21.9
-    },
-    {
       "unit": 778,
       "machine": "リコリス・リコイル",
       "days": 30,
@@ -3945,6 +3936,15 @@
       "avg_diff": -10,
       "avg_games": 3731,
       "win_rate": 33.3,
+      "score": 21.9
+    },
+    {
+      "unit": 878,
+      "machine": "マイジャグラーV",
+      "days": 20,
+      "avg_diff": -179,
+      "avg_games": 5652,
+      "win_rate": 40.0,
       "score": 21.9
     },
     {
@@ -4092,15 +4092,6 @@
       "score": 20.1
     },
     {
-      "unit": 904,
-      "machine": "マイジャグラーV",
-      "days": 20,
-      "avg_diff": -122,
-      "avg_games": 5536,
-      "win_rate": 25.0,
-      "score": 19.8
-    },
-    {
       "unit": 798,
       "machine": "牙狼 闇を照らす者",
       "days": 10,
@@ -4110,13 +4101,13 @@
       "score": 19.8
     },
     {
-      "unit": 1037,
-      "machine": "ミリオンゴッド‐神々の軌跡‐",
-      "days": 30,
+      "unit": 904,
+      "machine": "マイジャグラーV",
+      "days": 20,
       "avg_diff": -122,
-      "avg_games": 4395,
-      "win_rate": 36.7,
-      "score": 19.6
+      "avg_games": 5536,
+      "win_rate": 25.0,
+      "score": 19.8
     },
     {
       "unit": 906,
@@ -4128,13 +4119,13 @@
       "score": 19.6
     },
     {
-      "unit": 947,
-      "machine": "ハッピージャグラーVⅢ",
+      "unit": 1037,
+      "machine": "ミリオンゴッド‐神々の軌跡‐",
       "days": 30,
-      "avg_diff": -251,
-      "avg_games": 6009,
-      "win_rate": 40.0,
-      "score": 19.4
+      "avg_diff": -122,
+      "avg_games": 4395,
+      "win_rate": 36.7,
+      "score": 19.6
     },
     {
       "unit": 812,
@@ -4142,6 +4133,15 @@
       "days": 10,
       "avg_diff": -252,
       "avg_games": 6264,
+      "win_rate": 40.0,
+      "score": 19.4
+    },
+    {
+      "unit": 947,
+      "machine": "ハッピージャグラーVⅢ",
+      "days": 30,
+      "avg_diff": -251,
+      "avg_games": 6009,
       "win_rate": 40.0,
       "score": 19.4
     },
@@ -4191,21 +4191,21 @@
       "score": 18.7
     },
     {
-      "unit": 854,
-      "machine": "パリピ孔明",
-      "days": 20,
-      "avg_diff": -31,
-      "avg_games": 2904,
-      "win_rate": 35.0,
-      "score": 18.6
-    },
-    {
       "unit": 873,
       "machine": "ゴーゴージャグラー3",
       "days": 10,
       "avg_diff": -269,
       "avg_games": 6228,
       "win_rate": 40.0,
+      "score": 18.6
+    },
+    {
+      "unit": 854,
+      "machine": "パリピ孔明",
+      "days": 20,
+      "avg_diff": -31,
+      "avg_games": 2904,
+      "win_rate": 35.0,
       "score": 18.6
     },
     {
@@ -4263,21 +4263,21 @@
       "score": 17.5
     },
     {
-      "unit": 795,
-      "machine": "からくりサーカス2",
-      "days": 20,
-      "avg_diff": -51,
-      "avg_games": 2412,
-      "win_rate": 40.0,
-      "score": 17.5
-    },
-    {
       "unit": 1094,
       "machine": "攻殻機動隊",
       "days": 30,
       "avg_diff": -152,
       "avg_games": 4239,
       "win_rate": 36.7,
+      "score": 17.5
+    },
+    {
+      "unit": 795,
+      "machine": "からくりサーカス2",
+      "days": 20,
+      "avg_diff": -51,
+      "avg_games": 2412,
+      "win_rate": 40.0,
       "score": 17.5
     },
     {
@@ -4371,21 +4371,21 @@
       "score": 16.5
     },
     {
-      "unit": 918,
-      "machine": "マイジャグラーV",
-      "days": 20,
-      "avg_diff": -244,
-      "avg_games": 5398,
-      "win_rate": 35.0,
-      "score": 16.3
-    },
-    {
       "unit": 628,
       "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
       "days": 30,
       "avg_diff": -146,
       "avg_games": 4373,
       "win_rate": 30.0,
+      "score": 16.3
+    },
+    {
+      "unit": 918,
+      "machine": "マイジャグラーV",
+      "days": 20,
+      "avg_diff": -244,
+      "avg_games": 5398,
+      "win_rate": 35.0,
       "score": 16.3
     },
     {
@@ -4461,21 +4461,21 @@
       "score": 15.2
     },
     {
-      "unit": 813,
-      "machine": "ゴーゴージャグラー3",
-      "days": 20,
-      "avg_diff": -195,
-      "avg_games": 4783,
-      "win_rate": 30.0,
-      "score": 15.2
-    },
-    {
       "unit": 1051,
       "machine": "不二子BT",
       "days": 30,
       "avg_diff": -164,
       "avg_games": 4009,
       "win_rate": 33.3,
+      "score": 15.2
+    },
+    {
+      "unit": 813,
+      "machine": "ゴーゴージャグラー3",
+      "days": 20,
+      "avg_diff": -195,
+      "avg_games": 4783,
+      "win_rate": 30.0,
       "score": 15.2
     },
     {
@@ -4515,21 +4515,21 @@
       "score": 14.7
     },
     {
-      "unit": 704,
-      "machine": "彼女、お借りします",
-      "days": 20,
-      "avg_diff": -14,
-      "avg_games": 1922,
-      "win_rate": 30.0,
-      "score": 14.7
-    },
-    {
       "unit": 861,
       "machine": "魔法少女にあこがれて",
       "days": 30,
       "avg_diff": -326,
       "avg_games": 6296,
       "win_rate": 36.7,
+      "score": 14.7
+    },
+    {
+      "unit": 704,
+      "machine": "彼女、お借りします",
+      "days": 20,
+      "avg_diff": -14,
+      "avg_games": 1922,
+      "win_rate": 30.0,
       "score": 14.7
     },
     {
@@ -4695,21 +4695,21 @@
       "score": 12.5
     },
     {
-      "unit": 709,
-      "machine": "彼女、お借りします",
-      "days": 20,
-      "avg_diff": -48,
-      "avg_games": 1702,
-      "win_rate": 30.0,
-      "score": 12.3
-    },
-    {
       "unit": 849,
       "machine": "シャーマンキング",
       "days": 30,
       "avg_diff": -248,
       "avg_games": 4401,
       "win_rate": 33.3,
+      "score": 12.3
+    },
+    {
+      "unit": 709,
+      "machine": "彼女、お借りします",
+      "days": 20,
+      "avg_diff": -48,
+      "avg_games": 1702,
+      "win_rate": 30.0,
       "score": 12.3
     },
     {
@@ -4830,21 +4830,21 @@
       "score": 9.9
     },
     {
-      "unit": 876,
-      "machine": "マイジャグラーV",
-      "days": 20,
-      "avg_diff": -299,
-      "avg_games": 5108,
-      "win_rate": 25.0,
-      "score": 9.6
-    },
-    {
       "unit": 1042,
       "machine": "ミリオンゴッド‐神々の軌跡‐",
       "days": 30,
       "avg_diff": -210,
       "avg_games": 3927,
       "win_rate": 23.3,
+      "score": 9.6
+    },
+    {
+      "unit": 876,
+      "machine": "マイジャグラーV",
+      "days": 20,
+      "avg_diff": -299,
+      "avg_games": 5108,
+      "win_rate": 25.0,
       "score": 9.6
     },
     {
@@ -5001,15 +5001,6 @@
       "score": 7.4
     },
     {
-      "unit": 580,
-      "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
-      "days": 30,
-      "avg_diff": -369,
-      "avg_games": 4970,
-      "win_rate": 30.0,
-      "score": 7.1
-    },
-    {
       "unit": 912,
       "machine": "マイジャグラーVI",
       "days": 10,
@@ -5019,13 +5010,13 @@
       "score": 7.1
     },
     {
-      "unit": 710,
-      "machine": "彼女、お借りします",
-      "days": 20,
-      "avg_diff": -204,
-      "avg_games": 2361,
+      "unit": 580,
+      "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+      "days": 30,
+      "avg_diff": -369,
+      "avg_games": 4970,
       "win_rate": 30.0,
-      "score": 6.7
+      "score": 7.1
     },
     {
       "unit": 843,
@@ -5033,6 +5024,15 @@
       "days": 30,
       "avg_diff": -275,
       "avg_games": 3450,
+      "win_rate": 30.0,
+      "score": 6.7
+    },
+    {
+      "unit": 710,
+      "machine": "彼女、お借りします",
+      "days": 20,
+      "avg_diff": -204,
+      "avg_games": 2361,
       "win_rate": 30.0,
       "score": 6.7
     },
@@ -5154,6 +5154,15 @@
       "score": 4.3
     },
     {
+      "unit": 919,
+      "machine": "マイジャグラーVI",
+      "days": 10,
+      "avg_diff": -570,
+      "avg_games": 7395,
+      "win_rate": 40.0,
+      "score": 3.5
+    },
+    {
       "unit": 963,
       "machine": "ネオアイムジャグラーEX",
       "days": 30,
@@ -5169,15 +5178,6 @@
       "avg_diff": -550,
       "avg_games": 6361,
       "win_rate": 36.7,
-      "score": 3.5
-    },
-    {
-      "unit": 919,
-      "machine": "マイジャグラーVI",
-      "days": 10,
-      "avg_diff": -570,
-      "avg_games": 7395,
-      "win_rate": 40.0,
       "score": 3.5
     },
     {
@@ -5397,20 +5397,20 @@
       "score": -1.5
     },
     {
-      "unit": 1102,
-      "machine": "戦国コレクション6",
-      "days": 20,
-      "avg_diff": -483,
-      "avg_games": 3925,
-      "win_rate": 30.0,
-      "score": -2.1
-    },
-    {
       "unit": 874,
       "machine": "ゴーゴージャグラー3",
       "days": 10,
       "avg_diff": -534,
       "avg_games": 4681,
+      "win_rate": 30.0,
+      "score": -2.1
+    },
+    {
+      "unit": 1102,
+      "machine": "戦国コレクション6",
+      "days": 20,
+      "avg_diff": -483,
+      "avg_games": 3925,
       "win_rate": 30.0,
       "score": -2.1
     },
@@ -5514,21 +5514,21 @@
       "score": -6.2
     },
     {
-      "unit": 566,
-      "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
-      "days": 30,
-      "avg_diff": -584,
-      "avg_games": 4387,
-      "win_rate": 23.3,
-      "score": -7.6
-    },
-    {
       "unit": 903,
       "machine": "マイジャグラーVI",
       "days": 10,
       "avg_diff": -732,
       "avg_games": 7013,
       "win_rate": 30.0,
+      "score": -7.6
+    },
+    {
+      "unit": 566,
+      "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+      "days": 30,
+      "avg_diff": -584,
+      "avg_games": 4387,
+      "win_rate": 23.3,
       "score": -7.6
     },
     {
