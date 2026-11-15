@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T08:13:27.247207+09:00",
+  "updated_at": "2026-11-16T08:58:35.281622+09:00",
   "store": "HYPER ARROW美原店",
   "total_events": 24,
   "confirmed_events": 0,
@@ -342,8 +342,8 @@
       "actual_units": 0,
       "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
       "first_seen": "2026-11-11T11:49:03.406089+09:00",
-      "last_collected_at": "2026-11-16T08:13:25.773693+09:00",
-      "seen_count": 130,
+      "last_collected_at": "2026-11-16T08:58:33.535723+09:00",
+      "seen_count": 131,
       "listing_status": "当日掲載確認",
       "listed_on_event_day": true,
       "manual_record": false
@@ -360,8 +360,8 @@
       "actual_units": 0,
       "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
       "first_seen": "2026-11-11T11:49:03.406089+09:00",
-      "last_collected_at": "2026-11-16T08:13:25.773693+09:00",
-      "seen_count": 130,
+      "last_collected_at": "2026-11-16T08:58:33.535723+09:00",
+      "seen_count": 131,
       "listing_status": "掲載履歴あり",
       "listed_on_event_day": false,
       "manual_record": false
@@ -378,8 +378,8 @@
       "actual_units": 0,
       "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
       "first_seen": "2026-11-12T00:50:30.165635+09:00",
-      "last_collected_at": "2026-11-16T08:13:25.773693+09:00",
-      "seen_count": 117,
+      "last_collected_at": "2026-11-16T08:58:33.535723+09:00",
+      "seen_count": 118,
       "listing_status": "掲載履歴あり",
       "listed_on_event_day": false,
       "manual_record": false
@@ -396,8 +396,8 @@
       "actual_units": 0,
       "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
       "first_seen": "2026-11-13T14:30:07.115827+09:00",
-      "last_collected_at": "2026-11-16T08:13:25.773693+09:00",
-      "seen_count": 79,
+      "last_collected_at": "2026-11-16T08:58:33.535723+09:00",
+      "seen_count": 80,
       "listing_status": "掲載履歴あり",
       "listed_on_event_day": false,
       "manual_record": false
@@ -414,8 +414,8 @@
       "actual_units": 0,
       "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
       "first_seen": "2026-11-14T00:48:20.849603+09:00",
-      "last_collected_at": "2026-11-16T08:13:25.773693+09:00",
-      "seen_count": 69,
+      "last_collected_at": "2026-11-16T08:58:33.535723+09:00",
+      "seen_count": 70,
       "listing_status": "掲載履歴あり",
       "listed_on_event_day": false,
       "manual_record": false
@@ -432,8 +432,8 @@
       "actual_units": 0,
       "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
       "first_seen": "2026-11-16T00:24:18.058370+09:00",
-      "last_collected_at": "2026-11-16T08:13:25.773693+09:00",
-      "seen_count": 12,
+      "last_collected_at": "2026-11-16T08:58:33.535723+09:00",
+      "seen_count": 13,
       "listing_status": "掲載履歴あり",
       "listed_on_event_day": false,
       "manual_record": false
