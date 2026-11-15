@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-15T23:47:06.809617+09:00",
+  "updated_at": "2026-11-16T00:24:20.032490+09:00",
   "store": "HYPER ARROW美原店",
   "history_days": 180,
   "future_days": 90,
-  "event_count": 23,
+  "event_count": 24,
   "confirmed_count": 0,
-  "unverified_count": 23,
+  "unverified_count": 24,
   "upcoming_events": [
     {
       "date": "2026-11-16",
@@ -43,6 +43,14 @@
       "date": "2026-11-21",
       "name": "スロパチ来店取材 橙",
       "type": "来店",
+      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+      "status": "unverified",
+      "origin": "automatic"
+    },
+    {
+      "date": "2026-11-23",
+      "name": "超エクソシスト取材",
+      "type": "取材",
       "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
       "status": "unverified",
       "origin": "automatic"
@@ -90357,6 +90365,23 @@
           "date": "2026-11-21",
           "name": "スロパチ来店取材 橙",
           "type": "来店",
+          "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+          "status": "unverified",
+          "origin": "automatic"
+        }
+      ],
+      "actual": null,
+      "machines": []
+    },
+    {
+      "date": "2026-11-23",
+      "weekday": 0,
+      "calendar_tags": [],
+      "events": [
+        {
+          "date": "2026-11-23",
+          "name": "超エクソシスト取材",
+          "type": "取材",
           "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
           "status": "unverified",
           "origin": "automatic"
