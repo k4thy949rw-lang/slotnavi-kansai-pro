@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T23:28:29.674124+09:00",
+  "updated_at": "2026-11-20T00:29:54.418230+09:00",
   "store": "HYPER ARROW美原店",
   "history_days": 180,
   "future_days": 90,
@@ -7,14 +7,6 @@
   "confirmed_count": 0,
   "unverified_count": 26,
   "upcoming_events": [
-    {
-      "date": "2026-11-19",
-      "name": "ヨシノブ来店★ジャンバリ炎",
-      "type": "来店",
-      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
-      "status": "unverified",
-      "origin": "automatic"
-    },
     {
       "date": "2026-11-20",
       "name": "電飾鼻男来店★超花鳥風月取材月",
