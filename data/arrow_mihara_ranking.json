@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T09:51:07.482363+09:00",
+  "updated_at": "2026-11-21T16:46:23.154913+09:00",
   "store": "HYPER ARROW美原店",
   "analysis_days": 30,
   "minimum_days": 3,
@@ -114,15 +114,6 @@
       "score": 85.0
     },
     {
-      "unit": 865,
-      "machine": "Vivy ‐Fluorite Eye's Song‐",
-      "days": 16,
-      "avg_diff": 1232,
-      "avg_games": 6003,
-      "win_rate": 50.0,
-      "score": 85.0
-    },
-    {
       "unit": 573,
       "machine": "甲鉄城のカバネリ 海門決戦",
       "days": 4,
@@ -146,6 +137,15 @@
       "days": 4,
       "avg_diff": 1960,
       "avg_games": 7980,
+      "win_rate": 50.0,
+      "score": 85.0
+    },
+    {
+      "unit": 865,
+      "machine": "Vivy ‐Fluorite Eye's Song‐",
+      "days": 16,
+      "avg_diff": 1232,
+      "avg_games": 6003,
       "win_rate": 50.0,
       "score": 85.0
     },
@@ -3048,15 +3048,6 @@
       "score": 31.9
     },
     {
-      "unit": 853,
-      "machine": "戦国コレクション6",
-      "days": 16,
-      "avg_diff": 84,
-      "avg_games": 4363,
-      "win_rate": 43.8,
-      "score": 31.9
-    },
-    {
       "unit": 570,
       "machine": "甲鉄城のカバネリ 海門決戦",
       "days": 4,
@@ -3072,6 +3063,15 @@
       "avg_diff": 180,
       "avg_games": 4632,
       "win_rate": 25.0,
+      "score": 31.9
+    },
+    {
+      "unit": 853,
+      "machine": "戦国コレクション6",
+      "days": 16,
+      "avg_diff": 84,
+      "avg_games": 4363,
+      "win_rate": 43.8,
       "score": 31.9
     },
     {
@@ -5163,21 +5163,21 @@
       "score": 11.4
     },
     {
-      "unit": 943,
-      "machine": "ゴーゴージャグラー3",
-      "days": 16,
-      "avg_diff": -360,
-      "avg_games": 6151,
-      "win_rate": 31.2,
-      "score": 11.4
-    },
-    {
       "unit": 568,
       "machine": "甲鉄城のカバネリ 海門決戦",
       "days": 4,
       "avg_diff": -390,
       "avg_games": 4764,
       "win_rate": 50.0,
+      "score": 11.4
+    },
+    {
+      "unit": 943,
+      "machine": "ゴーゴージャグラー3",
+      "days": 16,
+      "avg_diff": -360,
+      "avg_games": 6151,
+      "win_rate": 31.2,
       "score": 11.4
     },
     {
@@ -6288,6 +6288,15 @@
       "score": -21.8
     },
     {
+      "unit": 597,
+      "machine": "ソードアート・オンラインⅡ",
+      "days": 4,
+      "avg_diff": -1071,
+      "avg_games": 6316,
+      "win_rate": 25.0,
+      "score": -22.5
+    },
+    {
       "unit": 703,
       "machine": "ゴジラ対エヴァンゲリオン",
       "days": 16,
@@ -6302,15 +6311,6 @@
       "days": 16,
       "avg_diff": -1595,
       "avg_games": 7560,
-      "win_rate": 25.0,
-      "score": -22.5
-    },
-    {
-      "unit": 597,
-      "machine": "ソードアート・オンラインⅡ",
-      "days": 4,
-      "avg_diff": -1071,
-      "avg_games": 6316,
       "win_rate": 25.0,
       "score": -22.5
     },
