@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-22T17:43:22.495946+09:00",
+  "updated_at": "2026-11-23T01:41:09.069376+09:00",
   "store": "HYPER ARROW美原店",
   "history_days": 180,
   "future_days": 90,
-  "event_count": 28,
+  "event_count": 29,
   "confirmed_count": 0,
-  "unverified_count": 28,
+  "unverified_count": 29,
   "upcoming_events": [
     {
       "date": "2026-11-23",
@@ -43,6 +43,14 @@
       "date": "2026-11-29",
       "name": "でちゃう!ピスタチオ田中来店",
       "type": "来店",
+      "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+      "status": "unverified",
+      "origin": "automatic"
+    },
+    {
+      "date": "2026-11-30",
+      "name": "超エクソシスト取材",
+      "type": "取材",
       "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
       "status": "unverified",
       "origin": "automatic"
@@ -101577,6 +101585,25 @@
           "date": "2026-11-29",
           "name": "でちゃう!ピスタチオ田中来店",
           "type": "来店",
+          "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
+          "status": "unverified",
+          "origin": "automatic"
+        }
+      ],
+      "actual": null,
+      "machines": []
+    },
+    {
+      "date": "2026-11-30",
+      "weekday": 0,
+      "calendar_tags": [
+        "0のつく日"
+      ],
+      "events": [
+        {
+          "date": "2026-11-30",
+          "name": "超エクソシスト取材",
+          "type": "取材",
           "source": "https://www.p-world.co.jp/hall/interviews/prefs/osaka?city_cd=27007",
           "status": "unverified",
           "origin": "automatic"
