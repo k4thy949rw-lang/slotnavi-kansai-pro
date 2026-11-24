@@ -1,15 +1,746 @@
 {
-  "updated_at": "2026-11-23T21:12:51.675698+09:00",
+  "updated_at": "2026-11-24T09:00:36.470534+09:00",
   "store": "HYPER ARROW美原店",
-  "evaluated_days": 32,
+  "evaluated_days": 33,
   "complete_top10_days": 17,
   "top10_avg_diff": 198.9,
   "store_avg_diff": 65.2,
   "top10_advantage": 133.7,
   "daily_results": [
     {
+      "date": "2026-11-23",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
+      "predicted_count": 100,
+      "matched_count": 77,
+      "actual_unit_count": 680,
+      "store_avg_diff": -122.6,
+      "store_positive_rate": 32.2,
+      "top_5": {
+        "predicted_count": 5,
+        "matched_count": 4,
+        "avg_diff": 790.5,
+        "positive_rate": 75.0,
+        "total_diff": 3162
+      },
+      "top_10": {
+        "predicted_count": 10,
+        "matched_count": 8,
+        "avg_diff": -211.6,
+        "positive_rate": 50.0,
+        "total_diff": -1693
+      },
+      "top_20": {
+        "predicted_count": 20,
+        "matched_count": 18,
+        "avg_diff": -201.3,
+        "positive_rate": 38.9,
+        "total_diff": -3623
+      },
+      "matches": [
+        {
+          "rank": 1,
+          "unit": 709,
+          "machine": "ゴジラ対エヴァンゲリオン",
+          "prediction_score": 76.8,
+          "actual_diff": 887,
+          "actual_games": 6926,
+          "positive": true
+        },
+        {
+          "rank": 2,
+          "unit": 571,
+          "machine": "甲鉄城のカバネリ 海門決戦",
+          "prediction_score": 71.5,
+          "actual_diff": 4551,
+          "actual_games": 3482,
+          "positive": true
+        },
+        {
+          "rank": 3,
+          "unit": 600,
+          "machine": "ソードアート・オンラインⅡ",
+          "prediction_score": 68.2,
+          "actual_diff": 3393,
+          "actual_games": 7285,
+          "positive": true
+        },
+        {
+          "rank": 4,
+          "unit": 602,
+          "machine": "ソードアート・オンラインⅡ",
+          "prediction_score": 68.1,
+          "actual_diff": -5669,
+          "actual_games": 6826,
+          "positive": false
+        },
+        {
+          "rank": 6,
+          "unit": 836,
+          "machine": "東京喰種",
+          "prediction_score": 66.8,
+          "actual_diff": 1225,
+          "actual_games": 7540,
+          "positive": true
+        },
+        {
+          "rank": 7,
+          "unit": 910,
+          "machine": "マイジャグラーVI",
+          "prediction_score": 66.8,
+          "actual_diff": -2624,
+          "actual_games": 7237,
+          "positive": false
+        },
+        {
+          "rank": 9,
+          "unit": 635,
+          "machine": "ソードアート・オンライン オルタナティブ ガンゲイル・オンライン",
+          "prediction_score": 66.6,
+          "actual_diff": -3153,
+          "actual_games": 5807,
+          "positive": false
+        },
+        {
+          "rank": 10,
+          "unit": 575,
+          "machine": "甲鉄城のカバネリ 海門決戦",
+          "prediction_score": 66.6,
+          "actual_diff": -303,
+          "actual_games": 5696,
+          "positive": false
+        },
+        {
+          "rank": 11,
+          "unit": 830,
+          "machine": "東京喰種",
+          "prediction_score": 66.0,
+          "actual_diff": -2264,
+          "actual_games": 4222,
+          "positive": false
+        },
+        {
+          "rank": 12,
+          "unit": 918,
+          "machine": "マイジャグラーVI",
+          "prediction_score": 65.8,
+          "actual_diff": 1937,
+          "actual_games": 6253,
+          "positive": true
+        },
+        {
+          "rank": 13,
+          "unit": 811,
+          "machine": "マイジャグラーVI",
+          "prediction_score": 65.6,
+          "actual_diff": -629,
+          "actual_games": 6998,
+          "positive": false
+        },
+        {
+          "rank": 14,
+          "unit": 1087,
+          "machine": "東京喰種",
+          "prediction_score": 65.4,
+          "actual_diff": -1539,
+          "actual_games": 1932,
+          "positive": false
+        },
+        {
+          "rank": 15,
+          "unit": 807,
+          "machine": "マイジャグラーVI",
+          "prediction_score": 65.4,
+          "actual_diff": -559,
+          "actual_games": 4561,
+          "positive": false
+        },
+        {
+          "rank": 16,
+          "unit": 1075,
+          "machine": "東京喰種",
+          "prediction_score": 65.3,
+          "actual_diff": 7220,
+          "actual_games": 10152,
+          "positive": true
+        },
+        {
+          "rank": 17,
+          "unit": 605,
+          "machine": "ソードアート・オンラインⅡ",
+          "prediction_score": 65.3,
+          "actual_diff": -3192,
+          "actual_games": 7570,
+          "positive": false
+        },
+        {
+          "rank": 18,
+          "unit": 617,
+          "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+          "prediction_score": 65.3,
+          "actual_diff": -1920,
+          "actual_games": 2924,
+          "positive": false
+        },
+        {
+          "rank": 19,
+          "unit": 865,
+          "machine": "Vivy ‐Fluorite Eye's Song‐",
+          "prediction_score": 64.8,
+          "actual_diff": 791,
+          "actual_games": 8157,
+          "positive": true
+        },
+        {
+          "rank": 20,
+          "unit": 1032,
+          "machine": "東京喰種",
+          "prediction_score": 64.5,
+          "actual_diff": -1775,
+          "actual_games": 5404,
+          "positive": false
+        },
+        {
+          "rank": 21,
+          "unit": 862,
+          "machine": "魔法少女にあこがれて",
+          "prediction_score": 64.5,
+          "actual_diff": -597,
+          "actual_games": 5709,
+          "positive": false
+        },
+        {
+          "rank": 22,
+          "unit": 734,
+          "machine": "獣王",
+          "prediction_score": 64.3,
+          "actual_diff": -1682,
+          "actual_games": 5669,
+          "positive": false
+        },
+        {
+          "rank": 23,
+          "unit": 1033,
+          "machine": "東京喰種",
+          "prediction_score": 64.2,
+          "actual_diff": -1885,
+          "actual_games": 8345,
+          "positive": false
+        },
+        {
+          "rank": 24,
+          "unit": 700,
+          "machine": "モンスターハンターライズ",
+          "prediction_score": 64.2,
+          "actual_diff": -1267,
+          "actual_games": 1372,
+          "positive": false
+        },
+        {
+          "rank": 26,
+          "unit": 828,
+          "machine": "東京喰種",
+          "prediction_score": 63.8,
+          "actual_diff": 3553,
+          "actual_games": 6903,
+          "positive": true
+        },
+        {
+          "rank": 27,
+          "unit": 800,
+          "machine": "牙狼 闇を照らす者",
+          "prediction_score": 63.7,
+          "actual_diff": 100,
+          "actual_games": 7413,
+          "positive": true
+        },
+        {
+          "rank": 28,
+          "unit": 578,
+          "machine": "甲鉄城のカバネリ 海門決戦",
+          "prediction_score": 63.7,
+          "actual_diff": 140,
+          "actual_games": 2452,
+          "positive": true
+        },
+        {
+          "rank": 29,
+          "unit": 573,
+          "machine": "甲鉄城のカバネリ 海門決戦",
+          "prediction_score": 63.6,
+          "actual_diff": -1396,
+          "actual_games": 1764,
+          "positive": false
+        },
+        {
+          "rank": 30,
+          "unit": 1090,
+          "machine": "東京喰種",
+          "prediction_score": 63.3,
+          "actual_diff": 8493,
+          "actual_games": 6401,
+          "positive": true
+        },
+        {
+          "rank": 32,
+          "unit": 580,
+          "machine": "甲鉄城のカバネリ 海門決戦",
+          "prediction_score": 63.3,
+          "actual_diff": 246,
+          "actual_games": 3504,
+          "positive": true
+        },
+        {
+          "rank": 33,
+          "unit": 854,
+          "machine": "戦国コレクション6",
+          "prediction_score": 63.2,
+          "actual_diff": -1073,
+          "actual_games": 5011,
+          "positive": false
+        },
+        {
+          "rank": 34,
+          "unit": 855,
+          "machine": "戦国コレクション6",
+          "prediction_score": 63.2,
+          "actual_diff": -631,
+          "actual_games": 1075,
+          "positive": false
+        },
+        {
+          "rank": 35,
+          "unit": 693,
+          "machine": "モンスターハンターライズ",
+          "prediction_score": 63.0,
+          "actual_diff": 737,
+          "actual_games": 2236,
+          "positive": true
+        },
+        {
+          "rank": 36,
+          "unit": 1050,
+          "machine": "A‐SLOT+ ディスクアップ ULTRAREMIX",
+          "prediction_score": 62.7,
+          "actual_diff": -255,
+          "actual_games": 8029,
+          "positive": false
+        },
+        {
+          "rank": 37,
+          "unit": 611,
+          "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+          "prediction_score": 62.7,
+          "actual_diff": -1497,
+          "actual_games": 2127,
+          "positive": false
+        },
+        {
+          "rank": 38,
+          "unit": 822,
+          "machine": "東京喰種",
+          "prediction_score": 62.6,
+          "actual_diff": 5678,
+          "actual_games": 6797,
+          "positive": true
+        },
+        {
+          "rank": 39,
+          "unit": 1018,
+          "machine": "ミリオンゴッド‐神々の軌跡‐",
+          "prediction_score": 62.5,
+          "actual_diff": 6494,
+          "actual_games": 6595,
+          "positive": true
+        },
+        {
+          "rank": 41,
+          "unit": 739,
+          "machine": "獣王",
+          "prediction_score": 62.5,
+          "actual_diff": -1837,
+          "actual_games": 4797,
+          "positive": false
+        },
+        {
+          "rank": 42,
+          "unit": 1072,
+          "machine": "東京喰種",
+          "prediction_score": 62.4,
+          "actual_diff": -2780,
+          "actual_games": 7349,
+          "positive": false
+        },
+        {
+          "rank": 43,
+          "unit": 765,
+          "machine": "リコリス・リコイル",
+          "prediction_score": 62.4,
+          "actual_diff": -618,
+          "actual_games": 1416,
+          "positive": false
+        },
+        {
+          "rank": 46,
+          "unit": 565,
+          "machine": "甲鉄城のカバネリ 海門決戦",
+          "prediction_score": 62.1,
+          "actual_diff": -1978,
+          "actual_games": 2893,
+          "positive": false
+        },
+        {
+          "rank": 47,
+          "unit": 838,
+          "machine": "東京喰種",
+          "prediction_score": 61.7,
+          "actual_diff": 4115,
+          "actual_games": 8293,
+          "positive": true
+        },
+        {
+          "rank": 48,
+          "unit": 835,
+          "machine": "東京喰種",
+          "prediction_score": 61.2,
+          "actual_diff": 3282,
+          "actual_games": 6832,
+          "positive": true
+        },
+        {
+          "rank": 49,
+          "unit": 1111,
+          "machine": "とある魔術の禁書目録2",
+          "prediction_score": 61.0,
+          "actual_diff": -1690,
+          "actual_games": 1929,
+          "positive": false
+        },
+        {
+          "rank": 51,
+          "unit": 616,
+          "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+          "prediction_score": 60.9,
+          "actual_diff": -1337,
+          "actual_games": 1567,
+          "positive": false
+        },
+        {
+          "rank": 52,
+          "unit": 888,
+          "machine": "マイジャグラーV",
+          "prediction_score": 60.8,
+          "actual_diff": -267,
+          "actual_games": 5614,
+          "positive": false
+        },
+        {
+          "rank": 53,
+          "unit": 1074,
+          "machine": "東京喰種",
+          "prediction_score": 60.7,
+          "actual_diff": -278,
+          "actual_games": 4381,
+          "positive": false
+        },
+        {
+          "rank": 54,
+          "unit": 826,
+          "machine": "東京喰種",
+          "prediction_score": 60.7,
+          "actual_diff": -4226,
+          "actual_games": 4426,
+          "positive": false
+        },
+        {
+          "rank": 55,
+          "unit": 1109,
+          "machine": "とある魔術の禁書目録2",
+          "prediction_score": 60.7,
+          "actual_diff": -1402,
+          "actual_games": 3120,
+          "positive": false
+        },
+        {
+          "rank": 57,
+          "unit": 810,
+          "machine": "マイジャグラーVI",
+          "prediction_score": 60.5,
+          "actual_diff": 184,
+          "actual_games": 6841,
+          "positive": true
+        },
+        {
+          "rank": 58,
+          "unit": 728,
+          "machine": "革命機ヴァルヴレイヴ2",
+          "prediction_score": 60.3,
+          "actual_diff": -917,
+          "actual_games": 6877,
+          "positive": false
+        },
+        {
+          "rank": 60,
+          "unit": 942,
+          "machine": "ゴーゴージャグラー3",
+          "prediction_score": 60.1,
+          "actual_diff": -1118,
+          "actual_games": 6262,
+          "positive": false
+        },
+        {
+          "rank": 61,
+          "unit": 1081,
+          "machine": "東京喰種",
+          "prediction_score": 60.0,
+          "actual_diff": -1588,
+          "actual_games": 4089,
+          "positive": false
+        },
+        {
+          "rank": 63,
+          "unit": 796,
+          "machine": "牙狼 闇を照らす者",
+          "prediction_score": 60.0,
+          "actual_diff": -1625,
+          "actual_games": 6188,
+          "positive": false
+        },
+        {
+          "rank": 66,
+          "unit": 698,
+          "machine": "モンスターハンターライズ",
+          "prediction_score": 59.9,
+          "actual_diff": -617,
+          "actual_games": 3505,
+          "positive": false
+        },
+        {
+          "rank": 68,
+          "unit": 572,
+          "machine": "甲鉄城のカバネリ 海門決戦",
+          "prediction_score": 59.6,
+          "actual_diff": -888,
+          "actual_games": 878,
+          "positive": false
+        },
+        {
+          "rank": 70,
+          "unit": 585,
+          "machine": "戦国乙女5 業火を穿つ宿焔の双刃",
+          "prediction_score": 59.4,
+          "actual_diff": -1856,
+          "actual_games": 1766,
+          "positive": false
+        },
+        {
+          "rank": 71,
+          "unit": 623,
+          "machine": "甲鉄城のカバネリ 海門決戦",
+          "prediction_score": 59.4,
+          "actual_diff": 1474,
+          "actual_games": 7112,
+          "positive": true
+        },
+        {
+          "rank": 72,
+          "unit": 634,
+          "machine": "ソードアート・オンライン オルタナティブ ガンゲイル・オンライン",
+          "prediction_score": 59.3,
+          "actual_diff": -3311,
+          "actual_games": 6101,
+          "positive": false
+        },
+        {
+          "rank": 73,
+          "unit": 1058,
+          "machine": "サンダーV",
+          "prediction_score": 59.2,
+          "actual_diff": -994,
+          "actual_games": 3053,
+          "positive": false
+        },
+        {
+          "rank": 77,
+          "unit": 871,
+          "machine": "ゴーゴージャグラー3",
+          "prediction_score": 59.2,
+          "actual_diff": 838,
+          "actual_games": 7676,
+          "positive": true
+        },
+        {
+          "rank": 78,
+          "unit": 1031,
+          "machine": "東京喰種",
+          "prediction_score": 59.1,
+          "actual_diff": -1803,
+          "actual_games": 2170,
+          "positive": false
+        },
+        {
+          "rank": 79,
+          "unit": 851,
+          "machine": "モグモグ風林火山 大海戦の巻",
+          "prediction_score": 59.1,
+          "actual_diff": -477,
+          "actual_games": 5576,
+          "positive": false
+        },
+        {
+          "rank": 81,
+          "unit": 917,
+          "machine": "マイジャグラーVI",
+          "prediction_score": 59.1,
+          "actual_diff": 30,
+          "actual_games": 6776,
+          "positive": true
+        },
+        {
+          "rank": 82,
+          "unit": 941,
+          "machine": "ゴーゴージャグラー3",
+          "prediction_score": 59.1,
+          "actual_diff": -1140,
+          "actual_games": 4096,
+          "positive": false
+        },
+        {
+          "rank": 83,
+          "unit": 1077,
+          "machine": "東京喰種",
+          "prediction_score": 59.0,
+          "actual_diff": -2520,
+          "actual_games": 3489,
+          "positive": false
+        },
+        {
+          "rank": 84,
+          "unit": 790,
+          "machine": "聖闘士星矢 黄金十二宮",
+          "prediction_score": 59.0,
+          "actual_diff": -2523,
+          "actual_games": 3526,
+          "positive": false
+        },
+        {
+          "rank": 85,
+          "unit": 692,
+          "machine": "モンスターハンターライズ",
+          "prediction_score": 59.0,
+          "actual_diff": -550,
+          "actual_games": 1115,
+          "positive": false
+        },
+        {
+          "rank": 86,
+          "unit": 964,
+          "machine": "ネオアイムジャグラーEX",
+          "prediction_score": 58.9,
+          "actual_diff": -352,
+          "actual_games": 7252,
+          "positive": false
+        },
+        {
+          "rank": 88,
+          "unit": 1102,
+          "machine": "ラグナドール",
+          "prediction_score": 58.8,
+          "actual_diff": -404,
+          "actual_games": 5554,
+          "positive": false
+        },
+        {
+          "rank": 89,
+          "unit": 748,
+          "machine": "リコリス・リコイル",
+          "prediction_score": 58.7,
+          "actual_diff": -1070,
+          "actual_games": 4244,
+          "positive": false
+        },
+        {
+          "rank": 90,
+          "unit": 947,
+          "machine": "ハッピージャグラーVⅢ",
+          "prediction_score": 58.7,
+          "actual_diff": 692,
+          "actual_games": 6937,
+          "positive": true
+        },
+        {
+          "rank": 91,
+          "unit": 864,
+          "machine": "Vivy ‐Fluorite Eye's Song‐",
+          "prediction_score": 58.7,
+          "actual_diff": -1472,
+          "actual_games": 3276,
+          "positive": false
+        },
+        {
+          "rank": 92,
+          "unit": 610,
+          "machine": "ソードアート・オンラインⅡ",
+          "prediction_score": 58.5,
+          "actual_diff": 2437,
+          "actual_games": 7380,
+          "positive": true
+        },
+        {
+          "rank": 93,
+          "unit": 823,
+          "machine": "東京喰種",
+          "prediction_score": 58.5,
+          "actual_diff": 321,
+          "actual_games": 4841,
+          "positive": true
+        },
+        {
+          "rank": 94,
+          "unit": 816,
+          "machine": "マイジャグラーVI",
+          "prediction_score": 58.3,
+          "actual_diff": 1966,
+          "actual_games": 7410,
+          "positive": true
+        },
+        {
+          "rank": 95,
+          "unit": 1055,
+          "machine": "アレックス ブライト",
+          "prediction_score": 58.2,
+          "actual_diff": -301,
+          "actual_games": 4349,
+          "positive": false
+        },
+        {
+          "rank": 97,
+          "unit": 904,
+          "machine": "マイジャグラーVI",
+          "prediction_score": 58.2,
+          "actual_diff": -1382,
+          "actual_games": 5182,
+          "positive": false
+        },
+        {
+          "rank": 100,
+          "unit": 872,
+          "machine": "ゴーゴージャグラー3",
+          "prediction_score": 58.1,
+          "actual_diff": -214,
+          "actual_games": 6260,
+          "positive": false
+        }
+      ],
+      "notes": [
+        "プラス差枚を好成績として集計",
+        "予測スコアは設定投入確率ではありません",
+        "実際の差枚は高設定を証明しません",
+        "照合できなかった台は成績集計から除外"
+      ]
+    },
+    {
       "date": "2026-11-22",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 78,
       "actual_unit_count": 714,
@@ -749,7 +1480,7 @@
     },
     {
       "date": "2026-11-21",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 78,
       "actual_unit_count": 702,
@@ -1489,7 +2220,7 @@
     },
     {
       "date": "2026-11-20",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 83,
       "actual_unit_count": 674,
@@ -2274,7 +3005,7 @@
     },
     {
       "date": "2026-11-19",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 78,
       "actual_unit_count": 698,
@@ -3014,7 +3745,7 @@
     },
     {
       "date": "2026-11-18",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 78,
       "actual_unit_count": 695,
@@ -3754,7 +4485,7 @@
     },
     {
       "date": "2026-11-17",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 82,
       "actual_unit_count": 684,
@@ -4530,7 +5261,7 @@
     },
     {
       "date": "2026-11-16",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 86,
       "actual_unit_count": 670,
@@ -5342,7 +6073,7 @@
     },
     {
       "date": "2026-11-15",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 91,
       "actual_unit_count": 674,
@@ -6199,7 +6930,7 @@
     },
     {
       "date": "2026-11-14",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 88,
       "actual_unit_count": 699,
@@ -7029,7 +7760,7 @@
     },
     {
       "date": "2026-11-13",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 85,
       "actual_unit_count": 690,
@@ -7832,7 +8563,7 @@
     },
     {
       "date": "2026-11-12",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 88,
       "actual_unit_count": 674,
@@ -8662,7 +9393,7 @@
     },
     {
       "date": "2026-11-11",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 88,
       "actual_unit_count": 704,
@@ -9492,7 +10223,7 @@
     },
     {
       "date": "2026-11-10",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 89,
       "actual_unit_count": 672,
@@ -10331,7 +11062,7 @@
     },
     {
       "date": "2026-11-09",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 83,
       "actual_unit_count": 682,
@@ -11116,7 +11847,7 @@
     },
     {
       "date": "2026-11-08",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 84,
       "actual_unit_count": 717,
@@ -11910,7 +12641,7 @@
     },
     {
       "date": "2026-11-07",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 84,
       "actual_unit_count": 698,
@@ -12704,7 +13435,7 @@
     },
     {
       "date": "2026-11-06",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 83,
       "actual_unit_count": 672,
@@ -13489,7 +14220,7 @@
     },
     {
       "date": "2026-11-05",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 83,
       "actual_unit_count": 679,
@@ -14274,7 +15005,7 @@
     },
     {
       "date": "2026-11-04",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 95,
       "actual_unit_count": 671,
@@ -15167,7 +15898,7 @@
     },
     {
       "date": "2026-11-03",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 95,
       "actual_unit_count": 708,
@@ -16060,7 +16791,7 @@
     },
     {
       "date": "2026-11-02",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 95,
       "actual_unit_count": 709,
@@ -16953,7 +17684,7 @@
     },
     {
       "date": "2026-11-01",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 95,
       "actual_unit_count": 719,
@@ -17846,7 +18577,7 @@
     },
     {
       "date": "2026-10-31",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 97,
       "actual_unit_count": 695,
@@ -18757,7 +19488,7 @@
     },
     {
       "date": "2026-10-30",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 97,
       "actual_unit_count": 693,
@@ -19668,7 +20399,7 @@
     },
     {
       "date": "2026-10-29",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 94,
       "actual_unit_count": 745,
@@ -20552,7 +21283,7 @@
     },
     {
       "date": "2026-10-28",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 95,
       "actual_unit_count": 686,
@@ -21445,7 +22176,7 @@
     },
     {
       "date": "2026-10-27",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 95,
       "actual_unit_count": 682,
@@ -22338,7 +23069,7 @@
     },
     {
       "date": "2026-10-26",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 96,
       "actual_unit_count": 703,
@@ -23240,7 +23971,7 @@
     },
     {
       "date": "2026-10-25",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 98,
       "actual_unit_count": 671,
@@ -24160,7 +24891,7 @@
     },
     {
       "date": "2026-10-24",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 95,
       "actual_unit_count": 700,
@@ -25053,7 +25784,7 @@
     },
     {
       "date": "2026-10-23",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 98,
       "actual_unit_count": 690,
@@ -25973,7 +26704,7 @@
     },
     {
       "date": "2026-10-22",
-      "evaluated_at": "2026-11-23T21:12:51.675698+09:00",
+      "evaluated_at": "2026-11-24T09:00:36.470534+09:00",
       "predicted_count": 100,
       "matched_count": 95,
       "actual_unit_count": 715,
@@ -26867,7 +27598,7 @@
   ],
   "long_term_accuracy": {
     "all_time": {
-      "evaluated_days": 32,
+      "evaluated_days": 33,
       "complete_days": 17,
       "top10_avg_diff": 198.9,
       "store_avg_diff": 65.2,
@@ -26876,22 +27607,22 @@
     },
     "last_30_evaluated_days": {
       "evaluated_days": 30,
-      "complete_days": 15,
-      "top10_avg_diff": 201.2,
-      "store_avg_diff": 51.0,
-      "advantage": 150.2,
-      "top10_positive_rate": 39.3
+      "complete_days": 14,
+      "top10_avg_diff": 339.2,
+      "store_avg_diff": 51.4,
+      "advantage": 287.8,
+      "top10_positive_rate": 40.7
     },
     "previous_30_evaluated_days": {
-      "evaluated_days": 2,
-      "complete_days": 2,
-      "top10_avg_diff": 181.6,
-      "store_avg_diff": 171.8,
-      "advantage": 9.8,
-      "top10_positive_rate": 35.0
+      "evaluated_days": 3,
+      "complete_days": 3,
+      "top10_avg_diff": -456.0,
+      "store_avg_diff": 129.6,
+      "advantage": -585.6,
+      "top10_positive_rate": 30.0
     },
     "last_90_evaluated_days": {
-      "evaluated_days": 32,
+      "evaluated_days": 33,
       "complete_days": 17,
       "top10_avg_diff": 198.9,
       "store_avg_diff": 65.2,
