@@ -1,16 +1,17 @@
 {
-  "checked_at": "2026-11-26T23:18:30.870841+09:00",
+  "checked_at": "2026-11-27T08:04:46.044765+09:00",
   "store": "HYPER ARROW美原店",
   "status": "success",
-  "discovered_articles": 554,
+  "discovered_articles": 555,
   "saved_dates": [
     {
-      "date": "2026-11-25",
-      "records": 667,
-      "url": "https://slo-navi.com/data/2026-11-25-11019/"
+      "date": "2026-11-26",
+      "records": 688,
+      "url": "https://slo-navi.com/data/2026-11-26-11019/"
     }
   ],
   "skipped_dates": [
+    "2026-11-25",
     "2026-11-24",
     "2026-11-23",
     "2026-11-22",
@@ -38,8 +39,7 @@
     "2026-10-31",
     "2026-10-30",
     "2026-10-29",
-    "2026-10-28",
-    "2026-10-27"
+    "2026-10-28"
   ],
   "errors": []
 }
